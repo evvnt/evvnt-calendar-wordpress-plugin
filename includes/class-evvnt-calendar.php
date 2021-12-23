@@ -63,7 +63,7 @@ class Evvnt_Calendar {
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
-		//$this->define_public_hooks();
+		$this->define_public_hooks();
 	}
 
 	/**
@@ -160,8 +160,9 @@ class Evvnt_Calendar {
 	 */
 	private function define_public_hooks() {
 		$plugin_public = new Evvnt_Calendar_Public($this->get_plugin_name(), $this->get_version());
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
+		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
+		$plugin_public->register_shortcode();
 	}
 
 	/**

@@ -33,7 +33,6 @@ class Evvnt_Calendar_Admin {
     if ( ! empty( $this->settings_page ) ) {
       add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
       add_action( "admin_enqueue_styles", array( $this, 'enqueue_styles' ) );
-      add_filter( 'screen_layout_columns', array( $this, 'screen_layout_column' ), 10, 2 );
       add_action( $this->settings_page_id . '_settings_page_boxes', array( $this, 'add_meta_boxes' ) );
     }
   }
@@ -201,7 +200,7 @@ class Evvnt_Calendar_Admin {
                    id="widget-for-evvnt-calendar-settings-submission-label"
                    class="regular-text"
                    required
-                   value="<?php echo  $options['partner_name']; ?>"
+                   value="<?php echo  $options['submission_label']; ?>"
                    >
               <p>
                 <span class="description"><?php _e( 'The label displayed on the submit event button', 'widget-for-evvnt-calendar' ); ?></span>

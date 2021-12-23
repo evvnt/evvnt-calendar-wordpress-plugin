@@ -38,12 +38,23 @@ class Evvnt_Calendar_Public {
 		$this->version = $version;
 	}
 
-	public function add_short_code() {
-	   add_short_code('evvnt', array($this, 'build_shortcode'));
+	public function register_shortcode() {
+	   add_shortcode('evvnt', array($this, 'build_shortcode'));
 	}
 
-	public function build_shortcode($attrs) {
-    include plugin_dir_path(dirname(__FILE__)) . 'partials/evvnt-calendar-public-display.php';
+	public function build_shortcode($atts) {
+	  $defaults = array(
+     'detail_page_enabled' => '1',
+     'config_type'         => 'calendar',
+     'virtual'             => '0',
+     'map'                 => '0',
+     'seo_optimize'        => '0',
+     'category_id'         => ''
+    );
+	  extract(wp_parse_args($atts, $defaults));
+	  ob_start();
+    include plugin_dir_path(dirname(__FILE__)) . 'public/partials/evvnt-calendar-public-display.php';
+    return ob_get_clean();
 	}
 
 	/**
