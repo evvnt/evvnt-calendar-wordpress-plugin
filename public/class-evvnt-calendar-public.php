@@ -22,22 +22,7 @@
  */
 class Evvnt_Calendar_Public {
 
-	/**
-	 * The ID of this plugin.
-	 *
-	 * @since    1.0.0
-	 * @access   private
-	 * @var      string    $plugin_name    The ID of this plugin.
-	 */
 	private $plugin_name;
-
-	/**
-	 * The version of this plugin.
-	 *
-	 * @since    1.0.0
-	 * @access   private
-	 * @var      string    $version    The current version of this plugin.
-	 */
 	private $version;
 
 	/**
@@ -51,7 +36,14 @@ class Evvnt_Calendar_Public {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
+	}
 
+	public function add_short_code() {
+	   add_short_code('evvnt', array($this, 'build_shortcode'));
+	}
+
+	public function build_shortcode($attrs) {
+    include plugin_dir_path(dirname(__FILE__)) . 'partials/evvnt-calendar-public-display.php';
 	}
 
 	/**
@@ -73,7 +65,7 @@ class Evvnt_Calendar_Public {
 		 * class.
 		 */
 
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/plugin-name-public.css', array(), $this->version, 'all' );
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/evvnt-calendar-public.css', array(), $this->version, 'all' );
 
 	}
 
@@ -96,7 +88,7 @@ class Evvnt_Calendar_Public {
 		 * class.
 		 */
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/plugin-name-public.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/evvnt-calendar-public.js', array( 'jquery' ), $this->version, false );
 
 	}
 

@@ -16,6 +16,7 @@ class Evvnt_Calendar_Admin {
   protected  $settings_page;
   protected  $settings_page_id = 'settings_page_widget-for-evvnt-calendar-settings';
   protected  $option_group = 'widget-for-evvnt-calendar';
+  protected  $option_name = 'widget-for-evvnt-calendar-settings';
   protected  $settings_title;
 
 	private $plugin_name;
@@ -40,7 +41,7 @@ class Evvnt_Calendar_Admin {
 	public function register_settings() {
     register_setting(
         $this->option_group,
-        'widget-for-evvnt-calendar-settings',
+        $this->option_name,
         array( $this, 'sanitize_settings' )
     );
     $this->settings_page = add_submenu_page(
@@ -48,9 +49,13 @@ class Evvnt_Calendar_Admin {
                                  $this->settings_title,
                                  $this->settings_title,
                                  'manage_options',
-                                 'widget-for-evvnt-calendar-settings',
+                                 $this->option_name,
                                  array( $this, 'settings_page' )
                                );
+	}
+
+	public function register_widgets() {
+	  register_widget('Evvnt_Calendar_Widget');
 	}
 
 
@@ -58,7 +63,7 @@ class Evvnt_Calendar_Admin {
     if (empty($settings)) {
         return $settings;
     }
-    $options = get_option('widget-for-evvnt-calendar-settings');
+    $options = get_option($this->option_name);
     if (empty($options)) {
         return $settings;
     }
@@ -70,6 +75,14 @@ class Evvnt_Calendar_Admin {
 
     if (!isset( $settings['publisher_id'])) {
         $settings['publisher_id'] = '';
+    }
+
+    if (!isset( $settings['partner_name'])) {
+      $settings['partner_name'] = '';
+    }
+
+    if (!isset( $settings['submission_label'])) {
+        $settings['submission_label'] = 'Promote your event';
     }
 
     return $settings;
@@ -127,7 +140,11 @@ class Evvnt_Calendar_Admin {
   }
 
   public function settings_meta_box() {
-    $options = get_option($this->option_group);
+    $options = get_option($this->option_name);
+
+    if (!isset($options['submission_label'])) {
+      $options['submission_label'] = 'Promote your event';
+    }
     ?>
     <table class="form-table">
       <tbody>
@@ -138,7 +155,7 @@ class Evvnt_Calendar_Admin {
                    id="widget-for-evvnt-calendar-settings-api-key"
                    class="regular-text required"
                    required
-                   value="<?php echo  $options['api_key']; ?>"
+                   value="<?php echo $options['api_key']; ?>"
                    >
               <p class="api-key-result"></p>
               <p>
@@ -154,14 +171,44 @@ class Evvnt_Calendar_Admin {
                    id="widget-for-evvnt-calendar-settings-publisher-id"
                    class="regular-text required"
                    required
-                   value="<?php echo  $options['publisher_id']; ?>"
+                   value="<?php echo $options['publisher_id']; ?>"
                    >
-              <p class="api-key-result"></p>
               <p>
                 <span class="description"><?php _e( 'This should explain where to find publisher ID', 'widget-for-evvnt-calendar' ); ?></span>
               </p>
           </td>
         </tr>
+
+        <tr valign="top">
+          <th scope="row"><?php esc_html_e( 'Add Event Form Partner Name', 'widget-for-evvnt-calendar' ); ?></th>
+          <td>
+            <input type="text" name="widget-for-evvnt-calendar-settings[partner_name]"
+                   id="widget-for-evvnt-calendar-settings-partner-name"
+                   class="regular-text"
+                   required
+                   value="<?php echo $options['partner_name']; ?>"
+                   >
+              <p>
+                <span class="description"><?php _e( 'The name displayed on the add event form', 'widget-for-evvnt-calendar' ); ?></span>
+              </p>
+          </td>
+        </tr>
+
+        <tr valign="top">
+          <th scope="row"><?php esc_html_e( 'Submission button label', 'widget-for-evvnt-calendar' ); ?></th>
+          <td>
+            <input type="text" name="widget-for-evvnt-calendar-settings[submission_label]"
+                   id="widget-for-evvnt-calendar-settings-submission-label"
+                   class="regular-text"
+                   required
+                   value="<?php echo  $options['partner_name']; ?>"
+                   >
+              <p>
+                <span class="description"><?php _e( 'The label displayed on the submit event button', 'widget-for-evvnt-calendar' ); ?></span>
+              </p>
+          </td>
+        </tr>
+
         <tr>
           <td colspan="2">
             <div id="publishing-action">
