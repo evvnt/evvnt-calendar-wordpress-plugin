@@ -30,6 +30,22 @@ class Evvnt_Calendar_Widget extends WP_Widget {
       'category_id'         => ''
     );
     extract(wp_parse_args((array) $instance, $defaults));
+
+    $categories = [];
+    $cal_options = get_option('widget-for-evvnt-calendar-settings');
+    if (isset($cal_options['api_key']) && isset($cal_options['api_secret_key']) && isset($cal_options['publisher_id'])) {
+      $args = array(
+        'headers' => array(
+          'Authorization' => 'Basic ' . base64_encode( $cal_options['api_key'] . ':' . $cal_options['api_secret_key'] )
+        )
+      );
+      $url = 'https://api.evvnt.com/publishers/' . $cal_options['publisher_id'] . '/categories/';
+      $response = wp_remote_get($url, $args);
+      if (wp_remote_retrieve_response_code($response) == 200) {
+        $body = wp_remote_retrieve_body($response);
+        $categories = json_decode($body, true);
+      }
+    }
 ?>
     <p>
       <label for="<?php echo esc_attr($this->get_field_id('detail_page_enabled')); ?>"><?php _e( 'Click on event listings go to', 'text_domain' ); ?></label>
@@ -71,11 +87,18 @@ class Evvnt_Calendar_Widget extends WP_Widget {
       <input id="<?php echo esc_attr($this->get_field_id('seo_optimize'));?>" name="<?php echo esc_attr($this->get_field_name('seo_optimize')); ?>" type="checkbox" value="1" <?php checked('1', $seo_optimize); ?> />
       <label for="<?php echo esc_attr($this->get_field_id('seo_optimize')); ?>"><?php _e('Add rich text markup for events (SEO)', 'text_domain'); ?></label>
     </p>
+<?php if (!empty($categories)) { ?>
     <p>
-      <label for="<?php echo esc_attr( $this->get_field_id('category_id')); ?>"><?php _e('Category ID', 'text_domain'); ?></label>
-      <input class="widefat" id="<?php echo esc_attr( $this->get_field_id('category_id')); ?>" name="<?php echo esc_attr($this->get_field_name('category_id')); ?>" type="number" value="<?php echo esc_attr($category_id); ?>" />
+      <label for="<?php echo $this->get_field_id('category_id'); ?>"><?php _e('Category', 'text_domain'); ?></label>
+      <select name="<?php echo $this->get_field_name('category_id');?>" id="<?php echo $this->get_field_id('category_id'); ?>" class="widefat">
+        <option value="" id="All Categories">All Categories</option>
+        <?php
+        foreach ( $categories as $category ) {
+          echo '<option value="'.esc_attr($category['id']).'" id="'.esc_attr($category['name']).'" '.selected($category_id, $key, false ).'>'.$category['name'].'</option>';
+        } ?>
+      </select>
     </p>
-<?php
+<?php }
 
   }
 

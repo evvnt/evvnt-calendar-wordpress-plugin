@@ -57,7 +57,6 @@ class Evvnt_Calendar_Admin {
 	  register_widget('Evvnt_Calendar_Widget');
 	}
 
-
   public function sanitize_settings($settings) {
     if (empty($settings)) {
         return $settings;
@@ -67,24 +66,43 @@ class Evvnt_Calendar_Admin {
         return $settings;
     }
 
-    // TODO: Add method to validate these values against API?
-    if (!isset( $settings['api_key'])) {
+    if (!isset($settings['api_key'])) {
       $settings['api_key'] = '';
     }
 
-    if (!isset( $settings['publisher_id'])) {
+    if (!isset($settings['api_secret_key'])) {
+      $settings['api_secret_key'] = '';
+    }
+
+    if (!isset($settings['publisher_id'])) {
         $settings['publisher_id'] = '';
     }
 
-    if (!isset( $settings['partner_name'])) {
+    if (!isset($settings['partner_name'])) {
       $settings['partner_name'] = '';
     }
 
-    if (!isset( $settings['submission_label'])) {
+    if (!isset($settings['submission_label'])) {
         $settings['submission_label'] = 'Promote your event';
     }
 
+    if (!$this->valid_credentials($settings['api_key'], $settings['api_secret_key'], $settings['publisher_id'])) {
+        add_settings_error( 'general', 'settings_updated', __( "Unable to authenticate. Please check that your credentials are correct." ), 'error' );
+        set_transient( 'settings_errors', get_settings_errors(), 30 );
+    }
+
     return $settings;
+  }
+
+  function valid_credentials($api_key, $secret_key, $publisher_id) {
+    $args = array(
+      'headers' => array(
+        'Authorization' => 'Basic ' . base64_encode( $api_key . ':' . $secret_key )
+      )
+    );
+    $url = 'https://api.evvnt.com/publishers/' . $publisher_id . '/categories/';
+    $response = wp_remote_get($url, $args);
+    return wp_remote_retrieve_response_code($response) == 200;
   }
 
   public function add_meta_boxes() {
@@ -158,7 +176,23 @@ class Evvnt_Calendar_Admin {
                    >
               <p class="api-key-result"></p>
               <p>
-                <span class="description"><?php _e( 'The API key is required to display the Evvnt Calendar Plugin', 'widget-for-evvnt-calendar' ); ?></span>
+                <span class="description"><?php _e( 'The API Key is required to display the Evvnt Calendar Plugin', 'widget-for-evvnt-calendar' ); ?></span>
+              </p>
+          </td>
+        </tr>
+
+        <tr valign="top">
+          <th scope="row"><?php esc_html_e( 'API Secret Key', 'widget-for-evvnt-calendar' ); ?></th>
+          <td>
+            <input type="text" name="widget-for-evvnt-calendar-settings[api_secret_key]"
+                   id="widget-for-evvnt-calendar-settings-api-secret-key"
+                   class="regular-text required"
+                   required
+                   value="<?php echo $options['api_secret_key']; ?>"
+                   >
+              <p class="api-secret-key-result"></p>
+              <p>
+                <span class="description"><?php _e( 'The API Secret Key is required to validate the Evvnt Calendar Plugin', 'widget-for-evvnt-calendar' ); ?></span>
               </p>
           </td>
         </tr>
@@ -173,7 +207,7 @@ class Evvnt_Calendar_Admin {
                    value="<?php echo $options['publisher_id']; ?>"
                    >
               <p>
-                <span class="description"><?php _e( 'This should explain where to find publisher ID', 'widget-for-evvnt-calendar' ); ?></span>
+                <span class="description"><?php _e( 'Your Evvnt Publisher ID', 'widget-for-evvnt-calendar' ); ?></span>
               </p>
           </td>
         </tr>
@@ -228,4 +262,3 @@ class Evvnt_Calendar_Admin {
     wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/evvnt-calendar-admin.js', array( 'jquery' ), $this->version, false );
   }
 }
-
