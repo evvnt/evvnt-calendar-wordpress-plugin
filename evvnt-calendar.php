@@ -32,6 +32,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 define( 'EVVNT_CALENDAR_VERSION', '1.0.0' );
+define( 'EVVNT_CALENDAR_SCRIPT_URL', '//discovery.evvnt.com/prd/beta/evvnt_discovery_plugin_s.js');
 
 /**
  * The code that runs during plugin activation.

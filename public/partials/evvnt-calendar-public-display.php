@@ -15,7 +15,7 @@
   $cal_options = get_option('widget-for-evvnt-calendar-settings');
   if (isset($cal_options)) { ?>
 <div id="evvnt-calendar"></div>
-<script async defer src="//discovery.evvnt.com/prd/evvnt_discovery_plugin-latest.min.js" onload="evvntDiscoveryInit();"></script>
+<script async defer src="<?php echo EVVNT_CALENDAR_SCRIPT_URL ?>" onload="evvntDiscoveryInit();"></script>
 <script>
   function evvntDiscoveryInit() {
     evvnt_require("evvnt/discovery_plugin").init({
