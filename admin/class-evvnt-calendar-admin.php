@@ -100,16 +100,19 @@ class Evvnt_Calendar_Admin {
   public function add_meta_boxes() {
     add_meta_box(
         'settings',
-        /* Meta Box ID */
         __( 'Settings', 'widget-for-evvnt-calendar' ),
-        /* Title */
         array( $this, 'settings_meta_box' ),
-        /* Function Callback */
         $this->settings_page_id,
-        /* Screen: Our Settings Page */
         'normal',
-        /* Context */
         'default'
+    );
+    add_meta_box(
+        'help',
+        __( 'Evvnt Calendar', 'widget-for-evvnt-calendar' ).' '.EVVNT_CALENDAR_VERSION,
+        array( $this, 'help_meta_box' ),
+        $this->settings_page_id,
+        'side',
+        'high'
     );
   }
 
@@ -214,6 +217,24 @@ class Evvnt_Calendar_Admin {
       </tbody>
     </table>
   	<?php
+  }
+
+  public function help_meta_box() {
+    ?>
+    <div class="evvnt-calendar-credits">
+      <div>
+        <h4><?php _e('Need Help?', 'widget-for-evvnt-calendar') ?></h4>
+        <p>
+          <?php _e('For help configuring this plugin please view it’s', 'widget-for-evvnt-calendar') ?> <a href="https://partners.evvnt.com/hc/en-us/articles/4518157709714" target="_blank"><?php _e('documentation', 'widget-for-evvnt-calendar') ?></a>.
+          <?php _e('For any other issues or questions please contact', 'widget-for-evvnt-calendar') ?> <a href="https://partners.evvnt.com/hc/en-us/requests/new" target="_blank"><?php _e('support', 'widget-for-evvnt-calendar') ?></a>.
+        </p>
+        <h4><?php _e('Sign Up', 'widget-for-evvnt-calendar') ?></h4>
+        <p>
+          <?php _e('If you don’t currently have an account with Evvnt, sign up', 'widget-for-evvnt-calendar') ?> <a href="https://evvnt.com/network-partners/" target="_blank"><?php _e('here', 'widget-for-evvnt-calendar') ?>!
+        </p>
+      </div>
+    </div>
+    <?php
   }
 
   public function enqueue_styles() {
