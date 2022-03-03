@@ -230,7 +230,7 @@ class Evvnt_Calendar_Admin {
         </p>
         <h4><?php _e('Sign Up', 'widget-for-evvnt-calendar') ?></h4>
         <p>
-          <?php _e('If you don’t currently have an account with Evvnt, sign up', 'widget-for-evvnt-calendar') ?> <a href="https://evvnt.com/network-partners/" target="_blank"><?php _e('here', 'widget-for-evvnt-calendar') ?>!
+          <?php _e('If you don’t currently have an account with Evvnt, sign up', 'widget-for-evvnt-calendar') ?> <a href="https://evvnt.com/network-partners/" target="_blank"><?php _e('here', 'widget-for-evvnt-calendar') ?></a>!
         </p>
       </div>
     </div>
