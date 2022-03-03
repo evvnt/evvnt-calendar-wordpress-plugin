@@ -29,10 +29,6 @@
         map: <?php echo ($map == 1 || $map == 'true') ? 'true' : 'false' ?>,
         seo_optimize: <?php echo ($seo_optimize == 1 || $seo_optimize == 'true') ? 'true' : 'false' ?>,
        <?php if ($category_id != '') {  echo 'category_id: '.$category_id; } ?>
-      },
-      submission: {
-        partner_name: "<?php echo $cal_options['partner_name'] ?>",
-        text: "<?php echo $cal_options['submission_label'] ?>",
       }
    });
  }

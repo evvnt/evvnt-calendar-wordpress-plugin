@@ -78,14 +78,6 @@ class Evvnt_Calendar_Admin {
         $settings['publisher_id'] = '';
     }
 
-    if (!isset($settings['partner_name'])) {
-      $settings['partner_name'] = '';
-    }
-
-    if (!isset($settings['submission_label'])) {
-        $settings['submission_label'] = 'Promote your event';
-    }
-
     if (!$this->valid_credentials($settings['api_key'], $settings['api_secret_key'], $settings['publisher_id'])) {
         add_settings_error( 'general', 'settings_updated', __( "Unable to authenticate. Please check that your credentials are correct." ), 'error' );
         set_transient( 'settings_errors', get_settings_errors(), 30 );
@@ -208,36 +200,6 @@ class Evvnt_Calendar_Admin {
                    >
               <p>
                 <span class="description"><?php _e( 'Your Evvnt Publisher ID', 'widget-for-evvnt-calendar' ); ?></span>
-              </p>
-          </td>
-        </tr>
-
-        <tr valign="top">
-          <th scope="row"><?php esc_html_e( 'Add Event Form Partner Name', 'widget-for-evvnt-calendar' ); ?></th>
-          <td>
-            <input type="text" name="widget-for-evvnt-calendar-settings[partner_name]"
-                   id="widget-for-evvnt-calendar-settings-partner-name"
-                   class="regular-text"
-                   required
-                   value="<?php echo $options['partner_name']; ?>"
-                   >
-              <p>
-                <span class="description"><?php _e( 'The name displayed on the add event form', 'widget-for-evvnt-calendar' ); ?></span>
-              </p>
-          </td>
-        </tr>
-
-        <tr valign="top">
-          <th scope="row"><?php esc_html_e( 'Submission button label', 'widget-for-evvnt-calendar' ); ?></th>
-          <td>
-            <input type="text" name="widget-for-evvnt-calendar-settings[submission_label]"
-                   id="widget-for-evvnt-calendar-settings-submission-label"
-                   class="regular-text"
-                   required
-                   value="<?php echo  $options['submission_label']; ?>"
-                   >
-              <p>
-                <span class="description"><?php _e( 'The label displayed on the submit event button', 'widget-for-evvnt-calendar' ); ?></span>
               </p>
           </td>
         </tr>
