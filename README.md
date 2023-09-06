@@ -12,5 +12,4 @@ provides a Widget or Shortcode for displaying it on a page.
 1. Upload the plugin folder to your /wp-content/plugins/ folder.
 1. Go to the **Plugins** page and activate the plugin.
 1. Get your credentials from the Evvnt Admin and copy to the settings page of the plugin.
-1. Select the categories you would like to display.
-1. Add the Evvnt Widget to a page or section.
+1. Add the Evvnt Widget to a page or section using the shortcode `[evvnt]`
