@@ -1,5 +1,9 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 /**
  * The core plugin class.
  *
@@ -97,14 +101,20 @@ class Evvnt_Calendar {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-i18n.php';
 
 		/**
+		 * Settings accessor and the server-side Publisher API client.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-settings.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-publisher-client.php';
+
+		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-evvnt-calendar-admin.php';
 
-    /**
-     * The class responsible for defining all actions that occur in the admin area.
-     */
-    require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-widget.php';
+		/**
+		 * The legacy widget.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-widget.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
@@ -144,10 +154,8 @@ class Evvnt_Calendar {
 
 		$plugin_admin = new Evvnt_Calendar_Admin($this->get_plugin_name(), $this->get_version());
 
-		//$this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_styles');
-		//$this->loader->add_action('admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts');
-		$this->loader->add_action('admin_menu', $plugin_admin, 'settings_setup');
-    $this->loader->add_action('widgets_init', $plugin_admin, 'register_widgets');
+		$this->loader->add_action( 'admin_menu', $plugin_admin, 'settings_setup' );
+		$this->loader->add_action( 'widgets_init', $plugin_admin, 'register_widgets' );
 
 	}
 
@@ -160,9 +168,7 @@ class Evvnt_Calendar {
 	 */
 	private function define_public_hooks() {
 		$plugin_public = new Evvnt_Calendar_Public($this->get_plugin_name(), $this->get_version());
-		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
-		//$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
-		$plugin_public->register_shortcode();
+		$this->loader->add_action( 'init', $plugin_public, 'register_shortcode' );
 	}
 
 	/**
