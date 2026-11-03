@@ -13,3 +13,30 @@ provides a Widget or Shortcode for displaying it on a page.
 1. Go to the **Plugins** page and activate the plugin.
 1. Get your credentials from the Evvnt Admin and copy to the settings page of the plugin.
 1. Add the `[evvnt]` shortcode to a page, or add the Evvnt Calendar Widget to a sidebar. Choose a category in the widget settings or with `[evvnt category_id="123"]`.
+
+## Rendering modes
+
+**Settings → Evvnt Calendar Settings → Rendering** chooses how the `[evvnt]` shortcode is shown:
+
+- **In the browser (default):** the page loads Evvnt's discovery app, which fetches and draws the calendar with JavaScript.
+- **On the server (beta):** the calendar and event pages are built in PHP from Evvnt's public discovery API, so search engines and visitors without JavaScript see real content.
+  - **What gets rendered:**
+    - category tabs, featured events and the event list, with pagination
+    - event detail pages
+    - title, canonical, description, Open Graph and Event JSON-LD tags
+  - **URLs:** with pretty permalinks and a **Calendar page** chosen in the settings, calendar URLs are paths:
+    - events: `/event/{id}-{slug}/` (the `event` prefix can be changed with the `evvnt_calendar_event_base` filter)
+    - categories: `/{calendar-page}/category/{slug}/`, plus `/page/{n}/` for further pages
+    - Query-string links from the discovery app and Evvnt (`?_evDiscoveryPath=…`, `?_ev_id=…`, `?evPage=N`) get a single 301 to the path URL. Outdated slugs and missing trailing slashes are corrected too, and other query arguments such as `utm_*` are kept.
+    - With no Calendar page, or with plain permalinks, the query-string URLs are used as they are.
+    - A missing event returns 404. If Evvnt is unreachable and nothing is cached, the page returns 503.
+  - **Caching:** API responses are cached in transients (10 minutes for lists, 1 hour for events, 12 hours for publisher settings). Saving the settings clears the cache.
+  - **Not yet server-rendered:** the widget and `[evvnt config_type="widget"]` still use the discovery app.
+  - **Templates:** copy any file from `public/templates/` to `{your-theme}/evvnt-calendar/` to override it.
+
+## Tests
+
+```bash
+php tests/run-tests.php /path/to/wordpress            # unit tests, no network (uses tests/fixtures)
+tests/run-integration.sh /path/to/wordpress creds.txt # end-to-end; see the header of the script
+```

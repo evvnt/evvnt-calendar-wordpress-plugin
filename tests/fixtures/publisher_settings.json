@@ -1,0 +1,314 @@
+{
+ "publisher": {
+  "id": 5293,
+  "name": "Evvnt",
+  "url": "https://evvnt.com/events/",
+  "logo_url": "https://cdn.prod.mktg.evvnt.com/uploads/publisher/logo/5293/Evvnt_Rework_Final-Favicon-512-red-1-1.png",
+  "large_logo_url": "https://cdn.prod.mktg.evvnt.com/uploads/publisher/large_logo/5293/evvnt_182px_favicon.png",
+  "location_type": "Global",
+  "countries": [],
+  "eventbrite": {
+   "backfill": false,
+   "affiliate_id": "ebdivvevvnt",
+   "rss": false,
+   "feature": false
+  },
+  "show_publisher_logos": true,
+  "show_promoter_logos": false,
+  "ticketmaster": {
+   "backfill": true,
+   "affiliate_id": "374335",
+   "rss": false,
+   "feature": false
+  },
+  "goldstar": {
+   "backfill": false,
+   "feature": false,
+   "rss": false
+  },
+  "active_network": {
+   "backfill": false,
+   "rss": false,
+   "feature": false
+  },
+  "axs": {
+   "backfill": false,
+   "rss": false,
+   "feature": false
+  },
+  "enmotive": {
+   "backfill": false,
+   "rss": false,
+   "feature": false
+  },
+  "bandsintown": {
+   "backfill": false,
+   "rss": false,
+   "feature": false
+  },
+  "run_sign_up": {
+   "backfill": true,
+   "rss": false
+  },
+  "ticket_sign_up": {
+   "backfill": true,
+   "rss": false
+  },
+  "event_vesta": {
+   "backfill": true,
+   "rss": false
+  },
+  "race_entry": {
+   "backfill": true,
+   "rss": false
+  },
+  "meetup": {
+   "backfill": true,
+   "rss": true
+  },
+  "hotelmap": {
+   "enabled": true
+  },
+  "social_feed": {
+   "enabled": true
+  },
+  "category_specific": false,
+  "calendar_auto_scroll": true,
+  "categories": [],
+  "root_categories": [
+   {
+    "id": 151,
+    "parent_id": 26,
+    "name": "Exhibitions",
+    "extra_event_times": false,
+    "name_with_path": "Exhibitions",
+    "market_name": "Enterprise",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 5
+   },
+   {
+    "id": 9,
+    "parent_id": 26,
+    "name": "Food / Drink",
+    "extra_event_times": false,
+    "name_with_path": "Food / Drink",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 1,
+    "parent_id": 26,
+    "name": "Attractions",
+    "extra_event_times": false,
+    "name_with_path": "Attractions",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 2,
+    "parent_id": 26,
+    "name": "Classes / Courses",
+    "extra_event_times": false,
+    "name_with_path": "Classes / Courses",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 196,
+    "parent_id": 26,
+    "name": "Lifestyle",
+    "extra_event_times": false,
+    "name_with_path": "Lifestyle",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 18,
+    "parent_id": 26,
+    "name": "Pets / Animals",
+    "extra_event_times": false,
+    "name_with_path": "Pets / Animals",
+    "market_name": "Community",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 1
+   },
+   {
+    "id": 4,
+    "parent_id": 26,
+    "name": "Conferences",
+    "extra_event_times": false,
+    "name_with_path": "Conferences",
+    "market_name": "Enterprise",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 5
+   },
+   {
+    "id": 17,
+    "parent_id": 26,
+    "name": "Nightlife",
+    "extra_event_times": true,
+    "name_with_path": "Nightlife",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 21,
+    "parent_id": 26,
+    "name": "Retail",
+    "extra_event_times": false,
+    "name_with_path": "Retail",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 27,
+    "parent_id": 26,
+    "name": "Other",
+    "extra_event_times": false,
+    "name_with_path": "Other",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 22,
+    "parent_id": 26,
+    "name": "Sports / Leisure",
+    "extra_event_times": false,
+    "name_with_path": "Sports / Leisure",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 458,
+    "parent_id": 26,
+    "name": "Community",
+    "extra_event_times": false,
+    "name_with_path": "Community",
+    "market_name": "Community",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 1
+   },
+   {
+    "id": 16,
+    "parent_id": 26,
+    "name": "Live Music",
+    "extra_event_times": true,
+    "name_with_path": "Live Music",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 6,
+    "parent_id": 26,
+    "name": "Festivals",
+    "extra_event_times": false,
+    "name_with_path": "Festivals",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 28,
+    "parent_id": 26,
+    "name": "Arts",
+    "extra_event_times": false,
+    "name_with_path": "Arts",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   },
+   {
+    "id": 14,
+    "parent_id": 26,
+    "name": "Kids / Family",
+    "extra_event_times": false,
+    "name_with_path": "Kids / Family",
+    "market_name": "Entertainment",
+    "ancestry_depth": 1,
+    "pricing_tier_level": 3
+   }
+  ],
+  "promotional_assets": [
+   {
+    "asset_unit": "horizontal_widget",
+    "image_url": "https://cdn.prod.promo.evvnt.com/uploads/promotional_asset/image/default_300x250_v2.webp",
+    "event_category_id": null,
+    "metadata": {
+     "dimensions": [
+      300,
+      250
+     ]
+    }
+   },
+   {
+    "asset_unit": "vertical_widget",
+    "image_url": "https://cdn.prod.promo.evvnt.com/uploads/promotional_asset/image/default_500x250_v2.webp",
+    "event_category_id": null,
+    "metadata": {
+     "dimensions": [
+      500,
+      250
+     ]
+    }
+   },
+   {
+    "asset_unit": "event_list",
+    "image_url": "https://cdn.prod.promo.evvnt.com/uploads/promotional_asset/image/default_300x350_v2.webp",
+    "event_category_id": null,
+    "metadata": {
+     "dimensions": [
+      300,
+      350
+     ]
+    }
+   }
+  ],
+  "broadcast_moderation_delay": null,
+  "calendar_active_for_external_referrers": true,
+  "social_share_data": {
+   "message_template": "%event_title% %artists% in %city% at %venue_name%, %start_time%, %prices% %publisher_twitter%",
+   "twitter_name": "evvnt"
+  },
+  "scope_submission_categories": false,
+  "catchments": [],
+  "evvnt_ticketing_portal_id": 89,
+  "evvnt_ticketed_calendar_only": false,
+  "event_submission_url": null,
+  "sign_in_url": null,
+  "has_editors_picks": false,
+  "publisher_exclusions": [],
+  "seo_page_title": "",
+  "seo_meta_description": "",
+  "demo_banner": {
+   "show": true,
+   "banner_text": "Ticketing? ",
+   "button_text": "Create Ticketed Event",
+   "button_url": "https://platform.evvnt.com/submissions/new?portal=evvnt"
+  }
+ },
+ "theme": {
+  "plugin_primary_button_color": "#F53855",
+  "plugin_primary_button_text_color": "#ffffff",
+  "plugin_secondary_button_color": "#324d5c",
+  "plugin_secondary_button_text_color": "#ffffff",
+  "plugin_powered_by_evvnt": true,
+  "plugin_font": null,
+  "plugin_editors_pick_heading_text": "Editor's Picks",
+  "plugin_promoted_events_heading_text": "Upcoming Events",
+  "plugin_featured_events_heading_text": "Featured Events",
+  "plugin_other_events_heading_text": "Other Events",
+  "plugin_featured_events_badge_text": "Featured",
+  "plugin_editors_pick_badge_text": "Editor's Pick",
+  "plugin_buy_tickets_badge_text": "Buy Tickets Now"
+ },
+ "api_key": "test-public-api-key"
+}

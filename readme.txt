@@ -3,7 +3,7 @@ Contributors: evvnt
 Tags: evvnt, events, calendar, ticketing
 Requires at least: 6.0
 Tested up to: 6.2
-Stable tag: 0.0.2
+Stable tag: 0.1.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,6 +15,10 @@ A Wordpress Plugin for displaying the Evvnt Discovery Calendar.
 This is a simple plugin that provides an admin page to set your Evvnt Calendar credentials and settings, then allows
 provides a Widget or Shortcode for displaying it on a page.
 
+= Rendering modes =
+
+By default the calendar is drawn in the browser by Evvnt's discovery app. Under Settings → Evvnt Calendar Settings → Rendering you can switch the [evvnt] shortcode to server rendering (beta). The calendar and event pages are then built on your server, so search engines and visitors without JavaScript see the events, and event pages get proper titles, canonical URLs, social tags and Event structured data. Widgets still use the discovery app.
+
 == Installation ==
 
 1. Upload the plugin folder to your /wp-content/plugins/ folder.
@@ -23,6 +27,10 @@ provides a Widget or Shortcode for displaying it on a page.
 1. Add the `[evvnt]` shortcode to a page, or add the Evvnt Calendar Widget to a sidebar. Choose a category in the widget settings or with `[evvnt category_id="123"]`.
 
 == Changelog ==
+= 0.1.0 =
+* New (beta): optional server-side rendering of the calendar and event pages, with category tabs, pagination, SEO head tags and Event JSON-LD. Existing event links keep working; legacy and outdated links redirect.
+* With pretty permalinks and a Calendar page selected, event and category pages get clean URLs (/event/123-name/, /events/category/music/); older query-string links redirect to them.
+* Themes can override the calendar templates in {theme}/evvnt-calendar/.
 = 0.0.2 =
 * Security: shortcode and widget options are now type-checked and JSON-encoded before reaching the page, fixing a script-injection issue in the [evvnt] shortcode.
 * Security: settings are sanitized on save and escaped on output; the API secret is no longer displayed or sent to the browser, and the API key is no longer printed on public pages.

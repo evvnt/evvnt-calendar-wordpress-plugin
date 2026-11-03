@@ -88,7 +88,12 @@ class Evvnt_Calendar_Admin {
 			'submission_label' => ( isset( $input['submission_label'] ) && '' !== trim( $input['submission_label'] ) )
 				? sanitize_text_field( $input['submission_label'] )
 				: $defaults['submission_label'],
+			'render_mode'      => ( isset( $input['render_mode'] ) && 'server' === $input['render_mode'] ) ? 'server' : 'js',
+			'calendar_page_id' => ( isset( $input['calendar_page_id'] ) && 'page' === get_post_type( absint( $input['calendar_page_id'] ) ) ) ? absint( $input['calendar_page_id'] ) : 0,
 		);
+
+		// Settings may change the publisher or rendering; drop cached API responses.
+		Evvnt_Calendar_Cache::flush();
 
 		$client = new Evvnt_Calendar_Publisher_Client( $clean['api_key'], $clean['api_secret_key'], $clean['publisher_id'] );
 
@@ -237,6 +242,44 @@ class Evvnt_Calendar_Admin {
 							class="regular-text"
 							value="<?php echo esc_attr( $options['submission_label'] ); ?>">
 						<p><span class="description"><?php esc_html_e( 'The label displayed on the submit event button', 'evvnt-calendar' ); ?></span></p>
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<th scope="row"><?php esc_html_e( 'Rendering', 'evvnt-calendar' ); ?></th>
+					<td>
+						<fieldset>
+							<label><input type="radio" name="<?php echo esc_attr( $name ); ?>[render_mode]" value="js" <?php checked( 'server' !== $options['render_mode'] ); ?>> <?php esc_html_e( 'In the browser (Evvnt discovery app)', 'evvnt-calendar' ); ?></label><br>
+							<label><input type="radio" name="<?php echo esc_attr( $name ); ?>[render_mode]" value="server" <?php checked( 'server', $options['render_mode'] ); ?>> <?php esc_html_e( 'On the server (beta): event pages are crawlable and work without JavaScript', 'evvnt-calendar' ); ?></label>
+						</fieldset>
+						<p><span class="description"><?php esc_html_e( 'Server rendering applies to [evvnt] shortcodes in calendar mode. Widgets keep using the discovery app for now.', 'evvnt-calendar' ); ?></span></p>
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<th scope="row"><label for="<?php echo esc_attr( $name ); ?>-calendar-page"><?php esc_html_e( 'Calendar page', 'evvnt-calendar' ); ?></label></th>
+					<td>
+						<?php
+						wp_dropdown_pages(
+							array(
+								'name'              => esc_attr( $name ) . '[calendar_page_id]',
+								'id'                => esc_attr( $name ) . '-calendar-page',
+								'selected'          => absint( $options['calendar_page_id'] ),
+								'show_option_none'  => esc_html__( '— None —', 'evvnt-calendar' ),
+								'option_none_value' => '0',
+							)
+						);
+						?>
+						<p><span class="description">
+							<?php
+							printf(
+								/* translators: 1: example event URL, 2: example category URL. */
+								esc_html__( 'The page containing the [evvnt] shortcode. With server rendering and pretty permalinks, calendar links become paths such as %1$s and %2$s, and older ?_evDiscoveryPath= links redirect to them.', 'evvnt-calendar' ),
+								'<code>' . esc_html( home_url( '/event/123-event-name/' ) ) . '</code>',
+								'<code>' . esc_html( home_url( '/events/category/music/' ) ) . '</code>'
+							);
+							?>
+						</span></p>
 					</td>
 				</tr>
 

@@ -1,0 +1,5245 @@
+{
+ "events": [
+  {
+   "title": "Live Piano Karaoke @ Big Mini",
+   "category_ids": [
+    17
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "It's free to come sing with us, but mini-golf is BOGO all night!",
+   "hashtag": null,
+   "images": [
+    {
+     "id": 3311260,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/3acad6b3-e1e1-473f-8e81-a7ad6386b618.png/3acad6b3-e1e1-473f-8e81-a7ad6386b618.png",
+      "width": 469,
+      "height": 800
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/3acad6b3-e1e1-473f-8e81-a7ad6386b618.png/3acad6b3-e1e1-473f-8e81-a7ad6386b618_featured.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/3acad6b3-e1e1-473f-8e81-a7ad6386b618.png/3acad6b3-e1e1-473f-8e81-a7ad6386b618_list_thumb.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/3acad6b3-e1e1-473f-8e81-a7ad6386b618.png/3acad6b3-e1e1-473f-8e81-a7ad6386b618_hero.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/3acad6b3-e1e1-473f-8e81-a7ad6386b618.png/featured_3acad6b3-e1e1-473f-8e81-a7ad6386b618.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/3acad6b3-e1e1-473f-8e81-a7ad6386b618.png/list_thumb_3acad6b3-e1e1-473f-8e81-a7ad6386b618.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/3acad6b3-e1e1-473f-8e81-a7ad6386b618.png/hero_3acad6b3-e1e1-473f-8e81-a7ad6386b618.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3628939-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Big Mini Putt Club",
+   "category_name": "Nightlife",
+   "source_id_s": "3628939",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793838600,
+   "category_names_with_ids": [
+    "17|Nightlife"
+   ],
+   "has_evvnt_ticketing?": true,
+   "event_parent_id": 2742014,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3628939-live-piano-karaoke-big-mini",
+   "source_id": 3628939,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "It's free to come sing with us, but mini-golf is BOGO all night!",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17
+   ],
+   "city_country": "Chicago, United States",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T19:30:00-05:00",
+   "end_time": "2026-11-04T21:30:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://tickets.evvnt.com/events/live-piano-karaoke-big-mini"
+   },
+   "venue": {
+    "name": "3655 N Halsted St",
+    "address_1": "3655 N Halsted St",
+    "address_2": null,
+    "town": "Chicago",
+    "country": "United States",
+    "post_code": "60613",
+    "latitude": 41.9489124,
+    "longitude": -87.6491429
+   },
+   "_geoloc": {
+    "lat": 41.9489124,
+    "lng": -87.6491429
+   },
+   "start_time_i": 1793838600,
+   "end_time_i": 1793845800,
+   "created_time_i": 1778384036,
+   "last_indexed_i": 1778384038,
+   "score": 200,
+   "tags": [],
+   "objectID": "42985305"
+  },
+  {
+   "title": "Hump Day Comedy",
+   "category_ids": [
+    3,
+    366,
+    17
+   ],
+   "root_category_ids": [
+    28,
+    196,
+    17
+   ],
+   "summary": "HUMP DAY COMEDY is back Wednesday November 4th 8pm delivering cheeky mid-weeky laughs!",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3533900,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3533900/event_image/Gay_AF_Hump_Day_Squares__1_.jpg",
+      "width": 1080,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3533900/event_image/featured_Gay_AF_Hump_Day_Squares__1_.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3533900/event_image/list_thumb_Gay_AF_Hump_Day_Squares__1_.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3533900/event_image/hero_Gay_AF_Hump_Day_Squares__1_.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3533900/event_image/featured_Gay_AF_Hump_Day_Squares__1_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3533900/event_image/list_thumb_Gay_AF_Hump_Day_Squares__1_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3533900/event_image/hero_Gay_AF_Hump_Day_Squares__1_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3878075-0",
+    "Website": "https://go.evvnt.com/3878075-2"
+   },
+   "artists": "",
+   "keywords": "toronto",
+   "prices": {
+    "General Admission": "CAD 18.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "CA",
+    "name": "Canada",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Gay AF Comedy",
+   "category_name": "Comedy",
+   "source_id_s": "3878075",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    366,
+    17,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793840400,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "366|LGBT",
+    "17|Nightlife"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2903535,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3878075-hump-day-comedy",
+   "source_id": 3878075,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "HUMP DAY COMEDY is back serving cheeky mid-weeky laughs! We've got 3 fabulous comedians recording their sets to release as albums - advance tickets are $18 - code HUMPDAY gets an extra $5 dollars off - what's not to love?\n\nGay AF Comedy is serving Toronto\u2019s top comedians to get you over the hump and level-up your week! This month features three Gay AF lovelies each recording a lil ole EP, so you know it\u2019s gonna be good!\n\nOpeners\nJJ ARMSTRONG\nWILLIE COOMBS\n\nAnd featuring \nROBERT WATSON\nSARAH ASHBY\n& CLIF KNIGHT\n\nWednesday November 4th 8pm. Comedy Bar, 945 Bloor Street West. Tickets $18 Advance / $23 At the Door.\n\nCome support some Gay AF faves and enjoy a night of quality Queer comedy! \n\nACCESSIBILITY\nComedy Bar Bloor is a basement venue with 16 steps down to the entrance. Washrooms are located on the main floor. ",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    196,
+    366,
+    17
+   ],
+   "city_country": "Toronto, Canada",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T20:00:00-05:00",
+   "end_time": "2026-11-04T21:15:00-05:00",
+   "door_time": "2026-11-04T19:45:00-05:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://comedybar.ca/shows/gay-af",
+    "Website": "https://comedybar.ca/shows/gay-af"
+   },
+   "venue": {
+    "name": "Comedy Bar",
+    "address_1": "945 Bloor Street West",
+    "address_2": null,
+    "town": "Toronto",
+    "country": "Canada",
+    "post_code": "M6H 1L5",
+    "latitude": 43.661299,
+    "longitude": -79.4278082
+   },
+   "_geoloc": {
+    "lat": 43.661299,
+    "lng": -79.4278082
+   },
+   "start_time_i": 1793840400,
+   "end_time_i": 1793844900,
+   "created_time_i": 1792166867,
+   "last_indexed_i": 1792166868,
+   "score": 200,
+   "tags": [],
+   "objectID": "44871941"
+  },
+  {
+   "title": "FREE Nightclub Guestlist \u2013 The Grand Boston | Weekly Access",
+   "category_ids": [
+    581,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for The Grand\u2019s weekly guestlist with Bassline Boston! FREE entry before 11 PM.",
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115227,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/tg5.jpg",
+      "width": 1200,
+      "height": 800
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/featured_tg5.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/list_thumb_tg5.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/hero_tg5.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/featured_tg5.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/list_thumb_tg5.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/hero_tg5.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3394912-0",
+    "Website": "https://go.evvnt.com/3394912-2"
+   },
+   "artists": "",
+   "keywords": "thegrand, guestlist, free, nightlife, dance, music, basslineboston, edm",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "House",
+   "source_id_s": "3394912",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    581,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793845800,
+   "category_names_with_ids": [
+    "581|House",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593844,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3394912-free-nightclub-guestlist-the-grand-boston-weekly-access",
+   "source_id": 3394912,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Looking for free entry at The Grand Boston? Bassline Boston provides weekly guestlist access on select nights, Wednesday through Saturday.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.",
+   "main_category_path": [
+    17,
+    581
+   ],
+   "category_path_ids": [
+    17,
+    581,
+    217
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T21:30:00-05:00",
+   "end_time": "2026-11-04T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "The Grand Boston",
+    "address_1": "58 Seaport Boulevard",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02210",
+    "latitude": 42.3531349,
+    "longitude": -71.0474416
+   },
+   "_geoloc": {
+    "lat": 42.3531349,
+    "lng": -71.0474416
+   },
+   "start_time_i": 1793845800,
+   "end_time_i": 1793851200,
+   "created_time_i": 1766013884,
+   "last_indexed_i": 1766013885,
+   "score": 200,
+   "objectID": "41411546"
+  },
+  {
+   "title": "Boots, Beats & Line Dancing",
+   "category_ids": [
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Come join us for line dancing lessons!!!",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3307170,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3307170/event_image/IMG_2492.jpg",
+      "width": 819,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3307170/event_image/featured_IMG_2492.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3307170/event_image/list_thumb_IMG_2492.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3307170/event_image/hero_IMG_2492.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3307170/event_image/featured_IMG_2492.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3307170/event_image/list_thumb_IMG_2492.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3307170/event_image/hero_IMG_2492.webp"
+     }
+    }
+   ],
+   "links": {
+    "Facebook": "https://go.evvnt.com/3625189-0"
+   },
+   "artists": "",
+   "keywords": "linedancing, craftcocktails, dj",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Breathe Cocktail Lounge & Restaurant ",
+   "category_name": "Nightclub",
+   "source_id_s": "3625189",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793921400,
+   "category_names_with_ids": [
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2739032,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3625189-boots-beats-line-dancing",
+   "source_id": 3625189,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "\ud83e\udd20\u2728 Boots, Beats & Line Dancing with Liz & DJ Pretty D \u2728\ud83e\udd20\n\nJoin us every Thursday night at Breathe Cocktail Lounge & Restaurant for a high-energy night of line dancing, music, and great vibes!\n\n\ud83d\udd7a 6:30\u20137PM\nBeginner Warmup & Step Refresher\nGreat for building your foundation and getting comfortable on the dance floor\n\n\ud83d\udc83 7\u20138PM\nGuided Line Dancing Lesson\n\n\ud83c\udfb6 8\u201310PM\nOpen Dancing (requests welcome!)\n\n\ud83d\udcb2 $10 Cover\n\n\ud83c\udf7d\ufe0f Kitchen Open 5\u20139PM\nCome early for dinner & grab a great seat before we hit the dance floor!\n\n\u2e3b\n\nGrab your boots & your friends \u2014 see you on the dance floor! \ud83e\udd20\ud83d\udc83\n\n\ud83d\udccd 221 North Main St, 2nd Floor, Kernersville",
+   "main_category_path": [
+    17,
+    217
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Kernersville, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T18:30:00-05:00",
+   "end_time": "2026-11-05T22:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Facebook": "https://facebook.com/events/s/boots-beats-line-dancing/1627427878562973/"
+   },
+   "venue": {
+    "name": "Breathe Cocktail Lounge & Restaurant",
+    "address_1": "221 North Main Street",
+    "address_2": null,
+    "town": "Kernersville",
+    "country": "United States",
+    "post_code": "27284",
+    "latitude": 36.12176,
+    "longitude": -80.0721615
+   },
+   "_geoloc": {
+    "lat": 36.12176,
+    "lng": -80.0721615
+   },
+   "start_time_i": 1793921400,
+   "end_time_i": 1793934000,
+   "created_time_i": 1778118072,
+   "last_indexed_i": 1778118072,
+   "score": 200,
+   "tags": [],
+   "objectID": "42945110"
+  },
+  {
+   "title": "FREE Nightclub Guestlist \u2013 The Grand Boston | Weekly Access",
+   "category_ids": [
+    581,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for The Grand\u2019s weekly guestlist with Bassline Boston! FREE entry before 11 PM.",
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115227,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/tg5.jpg",
+      "width": 1200,
+      "height": 800
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/featured_tg5.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/list_thumb_tg5.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/hero_tg5.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/featured_tg5.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/list_thumb_tg5.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/hero_tg5.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3394913-0",
+    "Website": "https://go.evvnt.com/3394913-2"
+   },
+   "artists": "",
+   "keywords": "thegrand, guestlist, free, nightlife, dance, music, basslineboston, edm",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "House",
+   "source_id_s": "3394913",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    581,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793932200,
+   "category_names_with_ids": [
+    "581|House",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593844,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3394913-free-nightclub-guestlist-the-grand-boston-weekly-access",
+   "source_id": 3394913,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Looking for free entry at The Grand Boston? Bassline Boston provides weekly guestlist access on select nights, Wednesday through Saturday.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.",
+   "main_category_path": [
+    17,
+    581
+   ],
+   "category_path_ids": [
+    17,
+    581,
+    217
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T21:30:00-05:00",
+   "end_time": "2026-11-05T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "The Grand Boston",
+    "address_1": "58 Seaport Boulevard",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02210",
+    "latitude": 42.3531349,
+    "longitude": -71.0474416
+   },
+   "_geoloc": {
+    "lat": 42.3531349,
+    "lng": -71.0474416
+   },
+   "start_time_i": 1793932200,
+   "end_time_i": 1793937600,
+   "created_time_i": 1766013887,
+   "last_indexed_i": 1766013888,
+   "score": 200,
+   "objectID": "41411548"
+  },
+  {
+   "title": "FREE Guestlist - Empire Boston | Downtown Seaport \u2013 Weekly Access",
+   "category_ids": [
+    17,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for weekly guestlist access at Empire Boston with Bassline Boston. FREE entry before 11 PM.\n",
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115256,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/Screenshot_2025-12-17_at_4.22.06_PM.png",
+      "width": 859,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/featured_Screenshot_2025-12-17_at_4.22.06_PM.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/list_thumb_Screenshot_2025-12-17_at_4.22.06_PM.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/hero_Screenshot_2025-12-17_at_4.22.06_PM.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/featured_Screenshot_2025-12-17_at_4.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/list_thumb_Screenshot_2025-12-17_at_4.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/hero_Screenshot_2025-12-17_at_4.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3395312-0",
+    "Website": "https://go.evvnt.com/3395312-2"
+   },
+   "artists": "",
+   "keywords": "edm, free, guestlist, boston, seaport, nightlife, clubbing, music, dance, entertainment",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "Nightlife",
+   "source_id_s": "3395312",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793932200,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593867,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3395312-free-guestlist-empire-boston-downtown-seaport-weekly-access",
+   "source_id": 3395312,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Bassline Boston provides weekly guestlist access to Empire Boston, located in the Seaport District. Guestlist is available Wednesday through Saturday nights, offering a vibrant nightlife experience with rotating DJs.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T21:30:00-05:00",
+   "end_time": "2026-11-05T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "Empire",
+    "address_1": "1 Marina Park Drive",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02210",
+    "latitude": 42.3528656,
+    "longitude": -71.045336
+   },
+   "_geoloc": {
+    "lat": 42.3528656,
+    "lng": -71.045336
+   },
+   "start_time_i": 1793932200,
+   "end_time_i": 1793937600,
+   "created_time_i": 1766015931,
+   "last_indexed_i": 1766015932,
+   "score": 200,
+   "objectID": "41412116"
+  },
+  {
+   "title": "FREE Nightclub Guestlist \u2013 bsmnt Boston | Weekly Access",
+   "category_ids": [
+    17,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for weekly guestlist access at bsmnt with Bassline Boston. Enjoy house and tech house music in Downtown Boston. FREE entry before 11 PM.\n",
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115251,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/images-6.jpeg",
+      "width": 275,
+      "height": 183
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/featured_images-6.jpeg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/list_thumb_images-6.jpeg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/hero_images-6.jpeg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/featured_images-6.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/list_thumb_images-6.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/hero_images-6.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3395096-0",
+    "Website": "https://go.evvnt.com/3395096-2"
+   },
+   "artists": "",
+   "keywords": "bsmnt, edm, free, guestlist, downtownboston, boston, techhouse, house, raves, basslineboston",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "Nightlife",
+   "source_id_s": "3395096",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793932200,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593847,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3395096-free-nightclub-guestlist-bsmnt-boston-weekly-access",
+   "source_id": 3395096,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Bassline Boston provides weekly guestlist access to bsmnt, Downtown Boston\u2019s hotspot for house and tech house music. Guestlist is available Wednesday through Saturday nights.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here [THIS IS NOT YOUR TICKET] \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.\n",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T21:30:00-05:00",
+   "end_time": "2026-11-05T23:00:00-05:00",
+   "door_time": "2025-12-18T21:30:00-05:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "BSMNT",
+    "address_1": "100 Stuart Street",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02116",
+    "latitude": 42.3508419,
+    "longitude": -71.0656551
+   },
+   "_geoloc": {
+    "lat": 42.3508419,
+    "lng": -71.0656551
+   },
+   "start_time_i": 1793932200,
+   "end_time_i": 1793937600,
+   "created_time_i": 1766015137,
+   "last_indexed_i": 1766015138,
+   "score": 200,
+   "objectID": "41411839"
+  },
+  {
+   "title": "FREE Guestlist \u2013 Scorpion Bar Boston \u2013 Weekly Access \u2013 Seaport, Boston",
+   "category_ids": [
+    17,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for weekly guestlist access at Scorpion Bar Boston with Bassline Boston. FREE entry before 11 PM.",
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115257,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/93b786e0-dc8a-11ee-bd12-d18486f7d449.jpg",
+      "width": 1618,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/featured_93b786e0-dc8a-11ee-bd12-d18486f7d449.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/list_thumb_93b786e0-dc8a-11ee-bd12-d18486f7d449.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/hero_93b786e0-dc8a-11ee-bd12-d18486f7d449.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/featured_93b786e0-dc8a-11ee-bd12-d18486f7d449.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/list_thumb_93b786e0-dc8a-11ee-bd12-d18486f7d449.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/hero_93b786e0-dc8a-11ee-bd12-d18486f7d449.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3395476-0",
+    "Website": "https://go.evvnt.com/3395476-2"
+   },
+   "artists": "",
+   "keywords": "free, guestlist, seaport, scorpionbar, nightlife, bar, club, drinks, music, dance, edm, house",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "Nightlife",
+   "source_id_s": "3395476",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793932200,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593868,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3395476-free-guestlist-scorpion-bar-boston-weekly-access-seaport-boston",
+   "source_id": 3395476,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Bassline Boston provides weekly guestlist access to Scorpion Bar Boston in the Seaport District, Wednesday through Saturday nights. Enjoy energetic DJ sets and Seaport nightlife vibes.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here [THIS IS NOT YOUR TICKET] \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T21:30:00-05:00",
+   "end_time": "2026-11-05T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "Scorpion Boston",
+    "address_1": "58 Seaport Boulevard",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02210",
+    "latitude": 42.3530398,
+    "longitude": -71.0475667
+   },
+   "_geoloc": {
+    "lat": 42.3530398,
+    "lng": -71.0475667
+   },
+   "start_time_i": 1793932200,
+   "end_time_i": 1793937600,
+   "created_time_i": 1766016681,
+   "last_indexed_i": 1766016681,
+   "score": 200,
+   "objectID": "41413413"
+  },
+  {
+   "title": "Off Menu: A Late Night Spectacular",
+   "category_ids": [
+    638
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "POWER Drag Revue brings Off Menu to Parlour St Paul - a late-night drag and burlesque show with comedy, cabaret glamour and cocktails, one night only on Thursday 5 November.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3504471,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3504471/event_image/off-menu-parlour.png",
+      "width": 1533,
+      "height": 784
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3504471/event_image/featured_off-menu-parlour.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3504471/event_image/list_thumb_off-menu-parlour.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3504471/event_image/hero_off-menu-parlour.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3504471/event_image/featured_off-menu-parlour.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3504471/event_image/list_thumb_off-menu-parlour.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3504471/event_image/hero_off-menu-parlour.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3847770-0",
+    "Website": "https://go.evvnt.com/3847770-2"
+   },
+   "artists": "",
+   "keywords": "drag, burlesque, cabaret, saintpaul, nightlife",
+   "prices": {
+    "General Admission": "USD 30.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Events Guide",
+   "category_name": "Drag Show",
+   "source_id_s": "3847770",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    638,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793932200,
+   "category_names_with_ids": [
+    "638|Drag Show"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2882061,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3847770-off-menu-a-late-night-spectacular",
+   "source_id": 3847770,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Saint Paul, get ready. We are serving something not on the menu and absolutely worth staying out late for.\n\nPOWER Drag Revue brings Off Menu to Parlour St Paul on Thursday, November 5 at 8:30 PM. This late-night drag and burlesque show delivers an intimate mix of high-energy drag performances, sultry burlesque acts, comedy, glamour and a whisper of mischief.\n\nSet inside Parlour's signature Saint Paul atmosphere, Off Menu blends classic cabaret style with bold personalities, dramatic reveals, tiny outfits and cocktails that pair perfectly with a late-night adventure. Expect standout performers, unforgettable looks and a night filled with drinks, laughter and after-hours indulgence.\n\nCome for dinner. Stay for the spectacle. Leave with zero regrets.\n\nOff Menu - drag, burlesque, cocktails. Late night entertainment in Saint Paul.\nThursday 5 November 2026, 8:30 PM\nParlour Restaurant, 267 7th St W, Saint Paul, MN 55102\nTickets: $30 general admission ($20 early bird until 16 October)\n\nPlease note: your ticket includes admission to the show. Food and beverages are purchased separately from Parlour's menu. Tickets are very limited. No refunds except if the event is cancelled, in which case all tickets will be refunded in full.\n\nFor questions or enquiries, please email power@powerdragrevue.com",
+   "main_category_path": [
+    17,
+    638
+   ],
+   "category_path_ids": [
+    17,
+    638
+   ],
+   "city_country": "Saint Paul, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T20:30:00-06:00",
+   "end_time": "2026-11-05T21:30:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://all.events/go/80003378353924?utm_source=aedistribution&utm_medium=evvnt&utm_campaign=paid-ads",
+    "Website": "https://all.events/go/80003378353924?utm_source=aedistribution&utm_medium=evvnt&utm_campaign=paid-ads"
+   },
+   "venue": {
+    "name": "Parlour St. Paul",
+    "address_1": "267 7th Street West",
+    "address_2": null,
+    "town": "Saint Paul",
+    "country": "United States",
+    "post_code": "55102",
+    "latitude": 44.942355,
+    "longitude": -93.1057084
+   },
+   "_geoloc": {
+    "lat": 44.942355,
+    "lng": -93.1057084
+   },
+   "start_time_i": 1793932200,
+   "end_time_i": 1793935800,
+   "created_time_i": 1790541343,
+   "last_indexed_i": 1790541344,
+   "score": 200,
+   "tags": [],
+   "objectID": "44656209"
+  },
+  {
+   "title": "Global Vibes After Dark Thursdays",
+   "category_ids": [
+    587,
+    217,
+    9
+   ],
+   "root_category_ids": [
+    4,
+    17,
+    9
+   ],
+   "summary": "Get ready to vibe all night with global beats and good times in a chill, after-dark hangout.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3544925,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3544925/event_image/ladiesnight.weekly-3.jpg",
+      "width": 764,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3544925/event_image/featured_ladiesnight.weekly-3.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3544925/event_image/list_thumb_ladiesnight.weekly-3.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3544925/event_image/hero_ladiesnight.weekly-3.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3544925/event_image/featured_ladiesnight.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3544925/event_image/list_thumb_ladiesnight.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3544925/event_image/hero_ladiesnight.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3889342-0"
+   },
+   "artists": "",
+   "keywords": "newyork, nyc, events, nightlife, nightclubs",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "All4onegoup Entertament Group",
+   "category_name": "Events Industry",
+   "source_id_s": "3889342",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    587,
+    217,
+    9,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793934000,
+   "category_names_with_ids": [
+    "587|Events Industry",
+    "217|Nightclub",
+    "9|Food / Drink"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2912069,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3889342-global-vibes-after-dark-thursdays",
+   "source_id": 3889342,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Global Vibes After Dark Thursdays\nEach & Every Thursday Join us for\nThe Global Vibes After Dark Nights\nThursdays Starting November 5th\nFlair Maison Lounge Nyc\nDinner & Flair Drinks\nDoors Open at 9pm-Late\nLocated inside the Hilton Time Square South\nFlairmaison Bar and Lounge\n326 W 37th St, New York, NY 10018-4208, United States\nFlairmaison Bar and Lounge is an elevated cocktail destination where craftsmanship meets performance, bringing a bold new energy to Manhattan New York City\u2019s nightlife located in Hilton Garden Inn, New York, Times Square South . Designed with a refined gold-and-black aesthetic, the space blends luxury, intimacy, and vibrant ambiance into a seamless, immersive experience. At the heart of Midtown Manhattan Flairmaison Bar and Lounge is the art of world-class flair bartending, where precision, creativity, and live performance transform every handcrafted cocktail into a visual and sensory masterpiece near hell\u2019s kitchen.\n\nComplementing the cocktail experience is Global Tapas, a thoughtfully curated Menu of internationally inspired small plates influenced by the flavors of seven continents. Each dish is crafted with premium ingredients and designed to pair perfectly with our signature cocktails and curated selection of premium spirits. Whether you\u2019re joining us for after-work drinks, a night out with friends, late night party, or a special celebration, we deliver an unforgettable dining and nightlife experience where exceptional cocktails, global tapas, and live entertainment come together in the heart of Midtown New York City.\n\nFlairmaison Bar and Lounge is a Midtown Manhattan cocktail bar known for craft cocktails, Global Tapas, and live flair bartending near Penn Station and Madison Square Garden. Hilton Garden Inn New York Times Square South\n\nNOVEMBER 5TH\nOne Night. Endless Vibes.\nThursday nights in NYC just got a whole new energy!\nGet ready for an electrifying mix of EDM, Afrobeats, Dancehall, Hip-Hop, R&B and international party anthems!\nMusic Powered by La Gangri\nCome for dinner, stay for the drinks, dancing and unforgettable vibes!\nADMISSION & SPECIALS\n$10 General Admission\nLadies FREE before 10 PM\n2-for-1 Flair Drinks | 9 PM\u201310 PM\nDinner \u2022 Drinks \u2022 Dancing\nGroup and table reservations welcome\nEVENT DETAILS\nThursday, November 5, 2026 9 PM \u2013 Late\nFlair Maison Bar & Lounge Inside Hilton Garden Inn 326 W 37th Street, New York, NY 10018\nSecure your ticket and meet us AFTER DARK!\nDress Fly. Bring Your Energy. Experience the Vibe.\ncomplimentary bottle of champagne for Large groups\nParking Lot Avalable across the Street Discount avalable",
+   "main_category_path": [
+    4,
+    587
+   ],
+   "category_path_ids": [
+    4,
+    587,
+    17,
+    217,
+    9
+   ],
+   "city_country": "New York, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T22:00:00-05:00",
+   "end_time": "2026-11-06T04:00:00-05:00",
+   "door_time": "2026-11-05T22:00:00-05:00",
+   "last_entry_time": "2026-11-05T02:00:00-05:00",
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.eventbrite.com/e/2003141341676?aff=oddtdtcreator"
+   },
+   "venue": {
+    "name": "Flairmaison Bar and Lounge",
+    "address_1": "326 West 37th Street",
+    "address_2": null,
+    "town": "New York",
+    "country": "United States",
+    "post_code": "10018",
+    "latitude": 40.754486,
+    "longitude": -73.9936112
+   },
+   "_geoloc": {
+    "lat": 40.754486,
+    "lng": -73.9936112
+   },
+   "start_time_i": 1793934000,
+   "end_time_i": 1793955600,
+   "created_time_i": 1792991811,
+   "last_indexed_i": 1792991812,
+   "score": 200,
+   "tags": [],
+   "objectID": "44980284"
+  },
+  {
+   "title": "The Old Souls Blues Experiment and George Palma's Bitter Blues Band",
+   "category_ids": [
+    201,
+    446,
+    17
+   ],
+   "root_category_ids": [
+    458,
+    16,
+    17
+   ],
+   "summary": "Two blues bands, one unforgettable night of electric blues-rock, soulful harmonica, and dance-worthy rhythms.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3555444,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3555444/event_image/George_Palma_s_Bitter_Blues_Band.jpg",
+      "width": 1920,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3555444/event_image/featured_George_Palma_s_Bitter_Blues_Band.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3555444/event_image/list_thumb_George_Palma_s_Bitter_Blues_Band.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3555444/event_image/hero_George_Palma_s_Bitter_Blues_Band.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3555444/event_image/featured_George_Palma_s_Bitter_Blues_Band.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3555444/event_image/list_thumb_George_Palma_s_Bitter_Blues_Band.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3555444/event_image/hero_George_Palma_s_Bitter_Blues_Band.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3876967-0"
+   },
+   "artists": "",
+   "keywords": "americana, folk",
+   "prices": {
+    "Advance Purchase": "USD 17.0",
+    "At the Door ": "USD 22.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4298,
+    4344,
+    5268,
+    5293,
+    5515,
+    5516,
+    5563,
+    6297,
+    6457,
+    6581,
+    6630,
+    7790,
+    8316,
+    8317,
+    9038,
+    9430,
+    10758,
+    10787,
+    11129,
+    11150,
+    11223,
+    11359,
+    11415,
+    11425,
+    11440,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11757,
+    11761,
+    11931,
+    12022,
+    12127,
+    12188,
+    12278,
+    12280
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "The California",
+   "category_name": "Local / Community",
+   "source_id_s": "3876967",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4298,
+    4344,
+    5268,
+    5293,
+    5515,
+    5516,
+    5563,
+    6297,
+    6457,
+    6581,
+    6630,
+    7790,
+    8316,
+    8317,
+    9038,
+    9430,
+    10758,
+    10787,
+    11129,
+    11150,
+    11223,
+    11359,
+    11415,
+    11425,
+    11440,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11757,
+    11761,
+    11931,
+    12022,
+    12127,
+    12188,
+    12278,
+    12280,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    201,
+    446,
+    17,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793935800,
+   "category_names_with_ids": [
+    "201|Local / Community",
+    "446|Blues",
+    "17|Nightlife"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2902577,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3876967-the-old-souls-blues-experiment-and-george-palma-s-biter-blues-band",
+   "source_id": 3876967,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Experience a night of live blues featuring The Old Souls Blues Experiment and George Palma\u2019s Bitter Blues Band, performing one after the other. Founded by Remi Moulder, The Old Souls Blues Experiment delivers high-voltage electric blues-rock inspired by legends like B.B. King, Eric Clapton, Stevie Ray Vaughan, and Joe Bonamassa. This dynamic collective of young musicians blends the raw energy of modern blues-rock with the timeless grit of the masters.\n\nThen, George Palma\u2019s Bitter Blues Band brings the dance floor to life with harmonica-driven blues, jump blues, and classic West Coast swing. With soulful sounds, infectious rhythms, and plenty of danceable grooves, both bands celebrate the enduring spirit of the blues.\n\nDoors Open:  6:30 PM | Show Starts: 7:30 PM\n$17 advance. At the door $22\n*The price includes a $2 ticketing fee per ticket to cover costs of 3rd party ticket service and credit card fees",
+   "main_category_path": [
+    458,
+    201
+   ],
+   "category_path_ids": [
+    458,
+    201,
+    16,
+    446,
+    17
+   ],
+   "city_country": "Santa Rosa, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T19:30:00-08:00",
+   "end_time": "2026-11-05T22:00:00-08:00",
+   "door_time": "2026-11-05T18:30:00-08:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.caltheatre.com/event-details/the-old-souls-blues-experiment-and-george-palmas-biter-blues-band"
+   },
+   "venue": {
+    "name": "The California Theatre of Santa Rosa",
+    "address_1": "528 7th Street",
+    "address_2": null,
+    "town": "Santa Rosa",
+    "country": "United States",
+    "post_code": "95401",
+    "latitude": 38.4423289,
+    "longitude": -122.7161522
+   },
+   "_geoloc": {
+    "lat": 38.4423289,
+    "lng": -122.7161522
+   },
+   "start_time_i": 1793935800,
+   "end_time_i": 1793944800,
+   "created_time_i": 1792091069,
+   "last_indexed_i": 1793228402,
+   "score": 200,
+   "tags": [],
+   "objectID": "44864072"
+  },
+  {
+   "title": "SOB's Presents: Young Miko: Late Checkout Tour After Party",
+   "category_ids": [
+    17
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Young Miko Concert After Party!",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3538744,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538744/event_image/YOUNG_MIKO_FINAL_x.jpg",
+      "width": 750,
+      "height": 938
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538744/event_image/featured_YOUNG_MIKO_FINAL_x.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538744/event_image/list_thumb_YOUNG_MIKO_FINAL_x.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538744/event_image/hero_YOUNG_MIKO_FINAL_x.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538744/event_image/featured_YOUNG_MIKO_FINAL_x.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538744/event_image/list_thumb_YOUNG_MIKO_FINAL_x.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538744/event_image/hero_YOUNG_MIKO_FINAL_x.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3883612-0",
+    "Website": "https://go.evvnt.com/3883612-2"
+   },
+   "artists": "",
+   "keywords": "youngmiko, nightlife, sobs",
+   "prices": {
+    "General Admission": "USD 25.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "SOB's",
+   "category_name": "Nightlife",
+   "source_id_s": "3883612",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793935800,
+   "category_names_with_ids": [
+    "17|Nightlife"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2907420,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3883612-sob-s-presents-young-miko-late-checkout-tour-after-party",
+   "source_id": 3883612,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The Late Checkout Tour is coming to Barclay\u2019s Center \u2026 and we\u2019re throwing the wildest after in NYC. Right off the 1 train on Houston and Varick St.\n\nPlaying Young Miko, reggaeton, latin trap, perreo, and more from Bad Bunny, Karol G, Feid, Jhayco, etc all night!\n\nSounds by:\n\nNanita\n\nCarlushii\n\nFree entry all night if you bring your concert ticketstub.\n\nNo concert ticket? No problema. For everyone else, entry is free with RSVP from 10:30-11pm (free entry not guaranteed, subject to venue capacity).\n\nPurchase tickets online for priority entry + guaranteed admission!\n\nThis is an unofficial afterparty organized by fans, for fans. This event is not affiliated with or endorsed by Young Miko or her team.",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17
+   ],
+   "city_country": "New York, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T22:30:00-05:00",
+   "end_time": "2026-11-06T02:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://kyd.to/GzWudCX7",
+    "Website": "https://sobs.com/events/young-miko-late-checkout-tour-after-party/"
+   },
+   "venue": {
+    "name": "Sounds Of Brazil",
+    "address_1": "204 Varick Street",
+    "address_2": null,
+    "town": "New York",
+    "country": "United States",
+    "post_code": "10014",
+    "latitude": 40.728453,
+    "longitude": -74.0051298
+   },
+   "_geoloc": {
+    "lat": 40.728453,
+    "lng": -74.0051298
+   },
+   "start_time_i": 1793935800,
+   "end_time_i": 1793948400,
+   "created_time_i": 1792533687,
+   "last_indexed_i": 1792533688,
+   "score": 200,
+   "tags": [],
+   "objectID": "44902884"
+  },
+  {
+   "title": "Thursday Comedy Workout - Thu Nov 5 7:30pm",
+   "category_ids": [
+    3,
+    215,
+    631
+   ],
+   "root_category_ids": [
+    28,
+    17,
+    1
+   ],
+   "summary": "Comedy Oakland is 2016-2025 winner of \"Best Comedy Night\"! Featuring best comedians from Bay Area & beyond. No drink minimums. No hidden fees.",
+   "description_html": null,
+   "hashtag": "comedyoakland",
+   "images": [
+    {
+     "id": 3524940,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524940/event_image/Aurora_Singh_at_Comedy_Oakland.jpg",
+      "width": 1440,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524940/event_image/featured_Aurora_Singh_at_Comedy_Oakland.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524940/event_image/list_thumb_Aurora_Singh_at_Comedy_Oakland.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524940/event_image/hero_Aurora_Singh_at_Comedy_Oakland.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524940/event_image/featured_Aurora_Singh_at_Comedy_Oakland.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524940/event_image/list_thumb_Aurora_Singh_at_Comedy_Oakland.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524940/event_image/hero_Aurora_Singh_at_Comedy_Oakland.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3868853-0",
+    "Instagram": "https://go.evvnt.com/3868853-2",
+    "Facebook": "https://go.evvnt.com/3868853-3",
+    "Website": "https://go.evvnt.com/3868853-4"
+   },
+   "artists": "",
+   "keywords": "comedy, standup, standupcomedy, livecomedy, comedyshow, #comedyclub, comedians, funny, comedynight, humor, laugh, standupcomedian, comedylife",
+   "prices": {
+    "General Admission": "USD 25.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4298,
+    4344,
+    4955,
+    5268,
+    5293,
+    5415,
+    5417,
+    5563,
+    6074,
+    6239,
+    6361,
+    6581,
+    6630,
+    6745,
+    7790,
+    8316,
+    9038,
+    10675,
+    10758,
+    10787,
+    10983,
+    11129,
+    11150,
+    11359,
+    11415,
+    11440,
+    11500,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12127,
+    12188,
+    12278,
+    12279,
+    12352
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Comedy Oakland",
+   "category_name": "Comedy",
+   "source_id_s": "3868853",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4298,
+    4344,
+    4955,
+    5268,
+    5293,
+    5415,
+    5417,
+    5563,
+    6074,
+    6239,
+    6361,
+    6581,
+    6630,
+    6745,
+    7790,
+    8316,
+    9038,
+    10675,
+    10758,
+    10787,
+    10983,
+    11129,
+    11150,
+    11359,
+    11415,
+    11440,
+    11500,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12127,
+    12188,
+    12278,
+    12279,
+    12352,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    215,
+    631,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793935800,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "215|Other",
+    "631|Shows"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2897713,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3868853-thursday-comedy-workout-thu-nov-5-7-30pm",
+   "source_id": 3868853,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Comedy Oakland, 2016-2025 winner of \"Best Comedy Night\" in East Bay Express Reader's Poll features funny, diverse, industry pros alongside up-and-coming comedians. Our comedians have featured on TV, Radio, Comedy Festivals, Late Night Talk Shows, won competitions, and have performed on every habitable continent! \n\nUnlike comedy clubs, there are no drink minimums at our shows, but food and drinks are served. There are hidden fees, no tolls to pay and free street parking is available around the block. A comedian owned, comedian run show, we've been featured in SF Chronicle, ABC7, KPFA 94.1FM, SF Examiner, and East Bay Express.\n\nCome and experience live standup comedy at its finest, we've been delivering the laughs since May 2009!",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    17,
+    215,
+    1,
+    631
+   ],
+   "city_country": "Oakland, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T19:30:00-08:00",
+   "end_time": "2026-11-05T21:00:00-08:00",
+   "door_time": "2026-11-05T19:00:00-08:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.eventbrite.com/e/2002400894980?aff=aff0evvnt",
+    "Instagram": "http://instagram.com/comedyoakland",
+    "Facebook": "https://www.facebook.com/comedyoakland/",
+    "Website": "https://www.ComedyOakland.com"
+   },
+   "venue": {
+    "name": "Quinn's Lighthouse",
+    "address_1": "1951 Embarcadero",
+    "address_2": null,
+    "town": "Oakland",
+    "country": "United States",
+    "post_code": "94606",
+    "latitude": 37.7813472,
+    "longitude": -122.2438222
+   },
+   "_geoloc": {
+    "lat": 37.7813472,
+    "lng": -122.2438222
+   },
+   "start_time_i": 1793935800,
+   "end_time_i": 1793941200,
+   "created_time_i": 1791763006,
+   "last_indexed_i": 1793238421,
+   "score": 200,
+   "tags": [],
+   "objectID": "44827460"
+  },
+  {
+   "title": "COUNTRY NIGHT",
+   "category_ids": [
+    17,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Get ready to kick up your boots and dance the night away at the hottest Country Night on Maui!",
+   "description_html": null,
+   "hashtag": "MAUI",
+   "images": [
+    {
+     "id": 3540676,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540676/event_image/IMG_8114.jpg",
+      "width": 1024,
+      "height": 1024
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540676/event_image/featured_IMG_8114.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540676/event_image/list_thumb_IMG_8114.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540676/event_image/hero_IMG_8114.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540676/event_image/featured_IMG_8114.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540676/event_image/list_thumb_IMG_8114.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540676/event_image/hero_IMG_8114.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3885295-0",
+    "Instagram": "https://go.evvnt.com/3885295-2",
+    "Facebook": "https://go.evvnt.com/3885295-3"
+   },
+   "artists": "",
+   "keywords": "linedancing, mauinightlife, mauinightclub, mauinights, countrymusic, daplaygroundmaui",
+   "prices": {
+    "General Admission": "USD 10.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Da Playground Maui",
+   "category_name": "Nightlife",
+   "source_id_s": "3885295",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793937600,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2908875,
+   "source_broadcast_url": null,
+   "source_id": 3885295,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "On Nov 5th, we're transforming the dance floor into the Wild West filled with good beats by DJ Mashup Mike, line dancing instruction with the lovely ladies of Bootscoot in Maui, and all the country vibes you crave. Whether you\u2019re a two-step pro or just love a good time, this is the ultimate night to let loose, make new friends, and soak in the good times!\n\nSo dust off your cowboy hat, grab your boots, and join us for a night packed with laughter, music, and unforgettable memories. This is the country bash you don\u2019t want to miss\u2014where the dance floor\u2019s always packed and the fun never stops! ",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Wailuku, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T18:00:00-10:00",
+   "end_time": "2026-11-06T00:00:00-10:00",
+   "door_time": "2026-11-05T18:00:00-10:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.daplaygroundmaui.com/products/country-night-16",
+    "Instagram": "https://www.instagram.com/daplaygroundmaui/",
+    "Facebook": "https://www.facebook.com/daplaygroundmaui/"
+   },
+   "venue": {
+    "name": "da Playground Maui",
+    "address_1": "300 Maalaea Road",
+    "address_2": null,
+    "town": "Wailuku",
+    "country": "United States",
+    "post_code": "96793",
+    "latitude": 20.7919193,
+    "longitude": -156.5134143
+   },
+   "_geoloc": {
+    "lat": 20.7919193,
+    "lng": -156.5134143
+   },
+   "start_time_i": 1793937600,
+   "end_time_i": 1793959200,
+   "created_time_i": 1792628260,
+   "last_indexed_i": 1792628260,
+   "score": 200,
+   "tags": [],
+   "objectID": "44915233"
+  },
+  {
+   "title": "Desi Comedy Fest SoCal Tour \u2013 Ontario Improv \u2013 Nov 5 | Live Stand-Up Comedy",
+   "category_ids": [
+    3,
+    17,
+    631
+   ],
+   "root_category_ids": [
+    28,
+    17,
+    1
+   ],
+   "summary": "Big laughs, diverse voices, hilarious perspectives! America's largest South Asian comedy festival brings some of the funniest comedians to Ontario for an unforgettable night of stand-up comedy.",
+   "description_html": null,
+   "hashtag": "desicomedyfest",
+   "images": [
+    {
+     "id": 3554058,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554058/event_image/DCF_Ontario_Poster_4x5.jpg",
+      "width": 864,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554058/event_image/featured_DCF_Ontario_Poster_4x5.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554058/event_image/list_thumb_DCF_Ontario_Poster_4x5.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554058/event_image/hero_DCF_Ontario_Poster_4x5.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554058/event_image/featured_DCF_Ontario_Poster_4x5.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554058/event_image/list_thumb_DCF_Ontario_Poster_4x5.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554058/event_image/hero_DCF_Ontario_Poster_4x5.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3896527-0",
+    "Facebook": "https://go.evvnt.com/3896527-2",
+    "Instagram": "https://go.evvnt.com/3896527-3",
+    "YouTube": "https://go.evvnt.com/3896527-4",
+    "Website": "https://go.evvnt.com/3896527-5"
+   },
+   "artists": "Samson Koletkar, Abhay Nadkarni, Ahmed Bharoocha, Rajiv Satyal, Pallavi Gunalan, DJ Sandhu",
+   "keywords": "desicomedyfest, ontariocomedy, ontarioimprov, stand-upcomedy, livecomedy, southasiancomedy, indiancomedy, comedyfestival, inlandempireevents, thingstodoinontario, asianamericancomedy, datenight, liveentertainment",
+   "prices": {
+    "General Admission": "USD 25.0",
+    "VIP": "USD 50.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    5268,
+    5293,
+    5563,
+    6581,
+    6630,
+    7790,
+    8324,
+    8364,
+    8404,
+    8689,
+    9038,
+    10758,
+    10787,
+    10836,
+    11150,
+    11359,
+    11415,
+    11440,
+    11499,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    11939,
+    11940,
+    11941,
+    11942,
+    11943,
+    11944,
+    12012,
+    12022,
+    12078,
+    12084,
+    12127,
+    12188,
+    12278,
+    12279,
+    12331,
+    12423
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Desi Comedy Fest",
+   "category_name": "Comedy",
+   "source_id_s": "3896527",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    5268,
+    5293,
+    5563,
+    6581,
+    6630,
+    7790,
+    8324,
+    8364,
+    8404,
+    8689,
+    9038,
+    10758,
+    10787,
+    10836,
+    11150,
+    11359,
+    11415,
+    11440,
+    11499,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    11939,
+    11940,
+    11941,
+    11942,
+    11943,
+    11944,
+    12012,
+    12022,
+    12078,
+    12084,
+    12127,
+    12188,
+    12278,
+    12279,
+    12331,
+    12423,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    17,
+    631,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793937600,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "17|Nightlife",
+    "631|Shows"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2914548,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3896527-desi-comedy-fest-socal-tour-ontario-improv-nov-5-live-stand-up-comedy",
+   "source_id": 3896527,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "# Desi Comedy Fest SoCal Tour \u2013 Ontario Improv\n\n**America's largest South Asian comedy festival comes to Ontario!**\n\nGet ready for an unforgettable night of stand-up comedy as Desi Comedy Fest brings 6 hilarious comedians to Ontario Improv! From sharp cultural observations to outrageous personal stories, this lineup delivers diverse perspectives, unique comedic styles, and plenty of laughs.\n\n## MEET THE COMEDIANS\n\n**AHMED BHAROOCHA**\n\nAhmed Bharoocha is a stand-up comedian, actor, and writer known for his sharp social commentary, absurd observations, and high-energy storytelling. Half Irish Catholic and half Pakistani-Indian-Burmese-Muslim, Ahmed draws from his multicultural background and offbeat perspective on life. He has appeared on Conan, The Late Show with Stephen Colbert, and Comedy Central, where he starred in his own half-hour special.\n\n**RAJIV SATYAL**\n\nRajiv Satyal is a Los Angeles-based Indian-American comedian whose smart, clean comedy blends cultural observations, personal stories, and sharp social commentary. Originally from Cincinnati, Rajiv holds the distinction of being the only person to perform stand-up comedy on all 7 continents. He has opened for Dave Chappelle, Russell Peters, Sebastian Maniscalco, Jo Koy, and Tim Allen, and has been featured by Netflix, Amazon, NPR, and The New York Times.\n\n**PALLAVI GUNALAN**\n\nPallavi Gunalan is a stand-up comedian, writer, actor, and former biomedical engineer whose comedy explores family, relationships, culture, and everyday absurdities. She has written for Lovett or Leave It, appeared on Dropout, and performed at SF Sketchfest and the New York Comedy Festival. Pallavi has opened for Jay Leno, Arsenio Hall, Maria Bamford, and Bassem Youssef. She also produces Facial Recognition Comedy, a nationally touring showcase of Middle Eastern, North African, and South Asian women.\n\n**DJ SANDHU**\n\nDJ Sandhu is a Sacramento-based comedian whose razor-sharp wit, absurd observations, and unmistakable stage presence have made him a favorite with audiences across North America. He has performed at the Edinburgh Fringe Festival and the World Series of Comedy, and shared the stage with Russell Peters, Theo Von, Sinbad, and Tommy Davidson. Born to Punjabi parents, DJ turns cultural identity, travel mishaps, and everyday absurdities into unforgettable laughs.\n\n**SAMSON KOLETKAR**\n\nSamson Koletkar, aka Mahatma Moses, is the world's only Indian Jewish stand-up comedian. His comedy blends his Indian upbringing, Jewish roots, and American life with wit, warmth, and a refreshingly clean style. He has performed across the U.S., Canada, and India, and has been featured on NPR, NBC, CBS, NDTV, and The Times of India. Samson is the co-founder of Desi Comedy Fest and founder of Comedy Oakland, voted Best Comedy Night by East Bay Express from 2016\u20132025.\n\n**ABHAY NADKARNI**\n\nAbhay Nadkarni is a third-culture comedian born in Delhi, raised in Doha and Bangalore, and now navigating American absurdity with a global perspective. Featured as a New Face at Montreal's prestigious Just For Laughs festival, Abhay has also performed at the Melbourne Comedy Festival. With over 100,000 online followers, his comedy combines silly jokes with sharp observations. His debut comedy special, Brown Jesus, is streaming on Amazon Prime. Abhay is the co-founder of Desi Comedy Fest.\n\n## ABOUT DESI COMEDY FEST\n\nFounded in 2014 by comedians Samson Koletkar and Abhay Nadkarni, Desi Comedy Fest is America's largest South Asian comedy festival.\n\nWhat began as a San Francisco Bay Area comedy festival has grown into a nationally touring celebration of South Asian comedic talent, entertaining audiences in New York, Boston, Washington DC, Chicago, Texas, and beyond.\n\nThe festival showcases comedians from diverse backgrounds, bringing audiences together through humor that explores family, relationships, marriage, immigration, cultural identity, and the universal absurdities of everyday life.\n\n**You don't have to be South Asian to get the jokes. You just have to love great comedy!**\n\n**All performances are in English.**\n\nWhether you're planning a date night, an evening with friends, or looking for live entertainment in the Inland Empire, Desi Comedy Fest brings together an exceptional lineup of comedians for a night filled with laughter.\n\n**One stage. 6 comedians. Countless laughs.**\n\nVisit DesiComedyFest.com for tickets and more information.",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    17,
+    1,
+    631
+   ],
+   "city_country": "Ontario, United States",
+   "start_date": "2026-11-05",
+   "start_time": "2026-11-05T20:00:00-08:00",
+   "end_time": "2026-11-05T21:30:00-08:00",
+   "door_time": "2026-11-05T19:00:00-08:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.ticketweb.com/event/desi-comedy-fest-ontario-improv-tickets/14938933",
+    "Facebook": "https://facebook.com/desicomedyfest",
+    "Instagram": "https://instagram.com/desicomedyfest",
+    "YouTube": "https://www.youtube.com/@desicomedyfestofficial",
+    "Website": "https://www.desicomedyfest.com/"
+   },
+   "venue": {
+    "name": "Ontario Improv",
+    "address_1": "4555 Mills Circle",
+    "address_2": null,
+    "town": "Ontario",
+    "country": "United States",
+    "post_code": "91764",
+    "latitude": 34.0741969,
+    "longitude": -117.5518404
+   },
+   "_geoloc": {
+    "lat": 34.0741969,
+    "lng": -117.5518404
+   },
+   "start_time_i": 1793937600,
+   "end_time_i": 1793943000,
+   "created_time_i": 1793164118,
+   "last_indexed_i": 1793615378,
+   "score": 200,
+   "tags": [],
+   "objectID": "45015125"
+  },
+  {
+   "title": "Colchester Comedy Club Live \u2013 James Redmond, Patrick Monahan, Nathan Caton & Jessie Nixon",
+   "category_ids": [
+    3,
+    214,
+    215
+   ],
+   "root_category_ids": [
+    28,
+    16,
+    17
+   ],
+   "summary": "Huge live stand-up comedy at Mercury Theatre Colchester on Friday 6 November 2026, starring James Redmond, Patrick Monahan, Nathan Caton & Jessie Nixon. Four top comedians, one unforgettable night in ",
+   "description_html": null,
+   "hashtag": "ColchesterComedyClub",
+   "images": [
+    {
+     "id": 3314060,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3314060/event_image/James_Redmond_the_comedy_club_2026.jpg",
+      "width": 608,
+      "height": 916
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3314060/event_image/featured_James_Redmond_the_comedy_club_2026.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3314060/event_image/list_thumb_James_Redmond_the_comedy_club_2026.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3314060/event_image/hero_James_Redmond_the_comedy_club_2026.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3314060/event_image/featured_James_Redmond_the_comedy_club_2026.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3314060/event_image/list_thumb_James_Redmond_the_comedy_club_2026.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3314060/event_image/hero_James_Redmond_the_comedy_club_2026.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3479968-0",
+    "Tickets": "https://go.evvnt.com/3479968-2"
+   },
+   "artists": "James Redmond, Jessie Nixon, Patrick Monahan, Nathan Caton ",
+   "keywords": "colchestercomedyclub, colchestercomedy, comedynightcolchester, standupcomedycolchester, livecomedycolchester, thingstodoincolchester, whatsoncolchester, colchesterevents, mercurytheatrecolchester, comedyatmercurytheatre, essexcomedynight, colchesternightlife, liveentertainmentcolchester, jamesredmond, nathancaton",
+   "prices": {
+    "From": "GBP 21.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    21,
+    23,
+    27,
+    30,
+    45,
+    269,
+    1120,
+    1163,
+    1198,
+    1374,
+    2250,
+    2874,
+    4808,
+    4809,
+    4955,
+    5024,
+    5148,
+    5196,
+    5293,
+    6581,
+    7684,
+    7790,
+    9038,
+    9630,
+    9631,
+    9632,
+    9930,
+    9931,
+    9935,
+    9999,
+    10000,
+    10001,
+    10143,
+    10667,
+    10731,
+    10933,
+    11415,
+    11440,
+    11513,
+    11641,
+    11710,
+    12132,
+    12133,
+    12188,
+    12259
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "The Comedy Club",
+   "category_name": "Comedy",
+   "source_id_s": "3479968",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    21,
+    23,
+    27,
+    30,
+    45,
+    269,
+    1120,
+    1163,
+    1198,
+    1374,
+    2250,
+    2874,
+    4808,
+    4809,
+    4955,
+    5024,
+    5148,
+    5196,
+    5293,
+    6581,
+    7684,
+    7790,
+    9038,
+    9630,
+    9631,
+    9632,
+    9930,
+    9931,
+    9935,
+    9999,
+    10000,
+    10001,
+    10143,
+    10667,
+    10731,
+    10933,
+    11415,
+    11440,
+    11513,
+    11641,
+    11710,
+    12132,
+    12133,
+    12188,
+    12259,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    214,
+    215,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793993400,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "214|Gig",
+    "215|Other"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2643250,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3479968-comedy-club-live-top-tv-comedians-at-mercury-theatre-colchester-essex-7th-november-explosive",
+   "source_id": 3479968,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Colchester Comedy Club returns to Mercury Theatre, Colchester, Essex on Friday 6 November 2026 for a huge night of live stand-up comedy starring James Redmond, Patrick Monahan, Nathan Caton and Jessie Nixon.\n\nFour outstanding comedians come together for one brilliant Friday night of comedy, combining established TV names, award-winning performers and exciting comedy talent at one of Colchester's best-known entertainment venues.\n\nJames Redmond\n\nJames Redmond is a comedian, actor and presenter known to audiences from television and live comedy stages across the UK. With sharp storytelling, confident delivery and effortless charm, James brings a polished and hugely entertaining presence to the stage.\n\nPatrick Monahan\n\nPatrick Monahan is one of the UK\u2019s most popular feel-good comedians and winner of ITV\u2019s Show Me the Funny. Famous for his high-energy performances, brilliant audience interaction and warm, hilarious storytelling, Patrick is a guaranteed crowd favourite.\n\nNathan Caton\n\nNathan Caton is a British stand-up comedian, writer, actor and broadcaster with a reputation for sharp observations, clever punchlines and superb live delivery. He has become a regular favourite across the UK comedy circuit and brings intelligent, fast-moving comedy to every show.\n\nJessie Nixon\n\nJessie Nixon is an exciting stand-up comedian, writer and performer with a fresh comic voice and fearless stage presence. One of the rising names in British comedy, Jessie adds sharp wit, attitude and originality to this fantastic Colchester line-up.\n\nLooking for what's on in Colchester this November? Whether you're planning a date night, birthday celebration, night out with friends or simply searching for great live comedy in Essex, Colchester Comedy Club at Mercury Theatre brings four outstanding comedians together for one huge Friday night of stand-up.\n\nWhy book this Colchester comedy night?\n\n\u2022 Four professional comedians in one show\n\u2022 Live stand-up comedy at Mercury Theatre Colchester\n\u2022 TV names, award-winning acts and rising comedy talent\n\u2022 Perfect for couples, groups, birthdays and nights out\n\u2022 A brilliant Friday night out in Colchester\n\u2022 Live entertainment in the heart of Essex\n\nEvent Information\n\nVenue: Mercury Theatre\nAddress: Balkerne Gate, Colchester, Essex, CO1 1PT\nDate: Friday 6th November 2026\nDoors Open: 6:00pm\nShow Starts: 7:30pm\nTickets: From \u00a321\nAge Guidance: 18+\n\nBook early for Colchester Comedy Club Live at Mercury Theatre on Friday 6 November 2026 and enjoy an outstanding night of live stand-up comedy in Colchester with James Redmond, Patrick Monahan, Nathan Caton and Jessie Nixon.",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    16,
+    214,
+    17,
+    215
+   ],
+   "city_country": "Colchester, United Kingdom",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T19:30:00+00:00",
+   "end_time": "2026-11-06T21:45:00+00:00",
+   "door_time": "2026-11-06T18:30:00+00:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://thecomedyclub.co.uk/comedy-venues/colchester-comedy-club",
+    "Tickets": "https://www.mercurytheatre.co.uk/event/comedy-club-on-the-road-nov-2026/#book"
+   },
+   "venue": {
+    "name": "Mercury Theatre",
+    "address_1": "Balkerne Gate",
+    "address_2": null,
+    "town": "Colchester",
+    "country": "United Kingdom",
+    "post_code": "CO1 1PT",
+    "latitude": 51.8892989,
+    "longitude": 0.8944374
+   },
+   "_geoloc": {
+    "lat": 51.8892989,
+    "lng": 0.8944374
+   },
+   "start_time_i": 1793993400,
+   "end_time_i": 1794001500,
+   "created_time_i": 1770731714,
+   "last_indexed_i": 1793582632,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "41786543"
+  },
+  {
+   "title": "Friday Comedy Club London | Covent Garden, November 2026",
+   "category_ids": [
+    3,
+    215,
+    186
+   ],
+   "root_category_ids": [
+    28,
+    17,
+    9
+   ],
+   "summary": "Award-winning international comedy club in London, with live stand up shows in the heart of Covent Garden.",
+   "description_html": null,
+   "hashtag": "comedylondon",
+   "images": [
+    {
+     "id": 3518849,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3518849/event_image/Comedy_Carnival_Neon__1x1_.jpg",
+      "width": 1080,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3518849/event_image/featured_Comedy_Carnival_Neon__1x1_.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3518849/event_image/list_thumb_Comedy_Carnival_Neon__1x1_.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3518849/event_image/hero_Comedy_Carnival_Neon__1x1_.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3518849/event_image/featured_Comedy_Carnival_Neon__1x1_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3518849/event_image/list_thumb_Comedy_Carnival_Neon__1x1_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3518849/event_image/hero_Comedy_Carnival_Neon__1x1_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3863433-0",
+    "Website": "https://go.evvnt.com/3863433-2",
+    "Instagram": "https://go.evvnt.com/3863433-3",
+    "Facebook": "https://go.evvnt.com/3863433-4"
+   },
+   "artists": "Sara Barron, Matt Brigg, Travis Jay, Phil Dinsdale",
+   "keywords": "stand_up_comedy_club, london_comedy_club, comedy_night_london, comedy_show_london, friday_night_comedy, covent_garden_comedy_club, comedy_covent_garden, stand_up_comedy_london, comedy_club_london, friday_comedy_show, comedy_carnival_covent_garden, happy_hour, late_bar",
+   "prices": {
+    "Seated Ticket": "GBP 18.0",
+    "Student Ticket": "GBP 12.0",
+    "C\u00f4te Brasserie Show & Dinner": "GBP 60.0",
+    "Monmouth Kitchen Show & Dinner": "GBP 54.0",
+    "Flesh & Buns Show & Dinner": "GBP 68.0",
+    "Pizza Express Show & Dinner": "GBP 40.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    21,
+    23,
+    27,
+    30,
+    45,
+    269,
+    1120,
+    1130,
+    1272,
+    1374,
+    1951,
+    2418,
+    2874,
+    4076,
+    4907,
+    4955,
+    5148,
+    5196,
+    5293,
+    6235,
+    6581,
+    7249,
+    7684,
+    7790,
+    9038,
+    9703,
+    10184,
+    10731,
+    11006,
+    11415,
+    11440,
+    11498,
+    11513,
+    11641,
+    11710,
+    12188,
+    12210,
+    12279
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Comedy Carnival",
+   "category_name": "Comedy",
+   "source_id_s": "3863433",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    21,
+    23,
+    27,
+    30,
+    45,
+    269,
+    1120,
+    1130,
+    1272,
+    1374,
+    1951,
+    2418,
+    2874,
+    4076,
+    4907,
+    4955,
+    5148,
+    5196,
+    5293,
+    6235,
+    6581,
+    7249,
+    7684,
+    7790,
+    9038,
+    9703,
+    10184,
+    10731,
+    11006,
+    11415,
+    11440,
+    11498,
+    11513,
+    11641,
+    11710,
+    12188,
+    12210,
+    12279,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    215,
+    186,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793997000,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "215|Other",
+    "186|Other"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2893139,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3863433-friday-comedy-club-london-covent-garden-november-2026",
+   "source_id": 3863433,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "London\u2019s top international stand up comedy club in Covent Garden. See award-winning comedians from Britain and around the world for a hilarious Friday night in the heart of the West End.\n\nComedy Carnival is London\u2019s top international comedy club, featuring award-winning comedians from across the globe. An acclaimed live comedy experience with TV favourites and Edinburgh Comedy Award nominees, each show delivers world-class stand up comedy with an unapologetic edge.\n\nLocated in the heart of Covent Garden in central London\u2019s West End, with happy hour and a late bar.\n\n\u201cEntertainment you can count on.\" TIME OUT LONDON",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    17,
+    215,
+    9,
+    186
+   ],
+   "city_country": "London, United Kingdom",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T20:30:00+00:00",
+   "end_time": "2026-11-06T22:30:00+00:00",
+   "door_time": "2026-11-06T19:30:00+00:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.universe.com/events/friday-comedy-club-london-covent-garden-tickets-09W15J",
+    "Website": "https://comedycarnival.co.uk/events/",
+    "Instagram": "https://www.instagram.com/comedy.carnival/",
+    "Facebook": "https://www.facebook.com/ComedyCarnival"
+   },
+   "venue": {
+    "name": "Comedy Carnival Covent Garden",
+    "address_1": "42 Earlham Street",
+    "address_2": null,
+    "town": "London",
+    "country": "United Kingdom",
+    "post_code": "WC2H 9LA",
+    "latitude": 51.5121345,
+    "longitude": -0.1274471
+   },
+   "_geoloc": {
+    "lat": 51.5121345,
+    "lng": -0.1274471
+   },
+   "start_time_i": 1793997000,
+   "end_time_i": 1794004200,
+   "created_time_i": 1791366667,
+   "last_indexed_i": 1793581913,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "44773952"
+  },
+  {
+   "title": "Sillies on South Beach Comedy Show",
+   "category_ids": [
+    3,
+    665,
+    17
+   ],
+   "root_category_ids": [
+    28,
+    17
+   ],
+   "summary": "A Classic Comedy Show experience in the heart of South Beach! \nLocated at the wonderful South Beach Brewing Company! \nFridays at 8PM!",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3485413,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485413/event_image/SBBC_768X768.png.png",
+      "width": 768,
+      "height": 768
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485413/event_image/featured_SBBC_768X768.png.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485413/event_image/list_thumb_SBBC_768X768.png.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485413/event_image/hero_SBBC_768X768.png.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485413/event_image/featured_SBBC_768X768.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485413/event_image/list_thumb_SBBC_768X768.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485413/event_image/hero_SBBC_768X768.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3827240-0"
+   },
+   "artists": "",
+   "keywords": "southbeach, miami, miamibeach, friday, fridaynight, comedy, comedyshow, comedyclub, miamicomedy, miamicomedyshow, show, event, trendy, trending, attraction, singles, datenight, nightlife",
+   "prices": {
+    "General Admission": "USD 5.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Dade County Comedy",
+   "category_name": "Comedy",
+   "source_id_s": "3827240",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    665,
+    17,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794013200,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "665|Live",
+    "17|Nightlife"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2867634,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3827240-sillies-on-south-beach-comedy-show",
+   "source_id": 3827240,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "A classic Comedy Show in the heart of South Beach!\nLocated at the wonderful South Beach Brewing Company (@SouthBeachBrew)!\nFridays at 8PM!\n$5 Entry!\nVIP seating available!\n\nHosted by comedian Raul Hernandez (@FunnyRaul)\n\nEnjoy the classic comedy club experience right near the beach! The best attraction on Miami Beach!\n#SouthBeach #MiamiComedyShow #FridayNight #Friday #ComedyShow #SouthBeachComedyShow #SouthBeachBrewingCompany #Comedy #MiamiNightlife #Datenight #singles #Dateideas #Miamisingles #singlesnightmiami #southbeachevents #SBBC #datenightmiami #thingstodoinmiami #stufftodoinmiami #miamicomedyclub #miamievents #datenightmiami #miamidatenight #singlesmiami #dadecountycomedy #miamilaughs #miamistandup #liveentertainmentmiami #fridaycomedyshow #Miamidating #Miamisocial #Miamilaughs #comedyshownearme #comedyclubnearme #miamisocial #funinmiami #comedyclub #fridayevents #Comedyclubmiami #miamiliveentertainment #liveentertainment #comedyshowthisweek #comedyclubinmiami #southbeachnightlife #miamiattractions #attractions #attractionsinmiami #trendinginmiami #miamitrending #trendymiami\nA trendy event on South Beach",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    23,
+    665,
+    17
+   ],
+   "city_country": "Miami Beach, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T20:00:00-05:00",
+   "end_time": "2026-11-06T22:00:00-05:00",
+   "door_time": "2026-09-18T19:30:00-04:00",
+   "last_entry_time": "2026-09-18T21:30:00-04:00",
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://SilliesonSouthBeachComedy.eventbrite.com?aff=aff0evvnt"
+   },
+   "venue": {
+    "name": "South Beach Brewing Company Taproom & Restaurant",
+    "address_1": "210 11th Street",
+    "address_2": null,
+    "town": "Miami Beach",
+    "country": "United States",
+    "post_code": "33139",
+    "latitude": 25.7817183,
+    "longitude": -80.1319172
+   },
+   "_geoloc": {
+    "lat": 25.7817183,
+    "lng": -80.1319172
+   },
+   "start_time_i": 1794013200,
+   "end_time_i": 1794020400,
+   "created_time_i": 1789446470,
+   "last_indexed_i": 1793580342,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "44478510"
+  },
+  {
+   "title": "FREE Guestlist \u2013 Scorpion Bar Boston \u2013 Weekly Access \u2013 Seaport, Boston",
+   "category_ids": [
+    17,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for weekly guestlist access at Scorpion Bar Boston with Bassline Boston. FREE entry before 11 PM.",
+   "description_html": null,
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115257,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/93b786e0-dc8a-11ee-bd12-d18486f7d449.jpg",
+      "width": 1618,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/featured_93b786e0-dc8a-11ee-bd12-d18486f7d449.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/list_thumb_93b786e0-dc8a-11ee-bd12-d18486f7d449.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/hero_93b786e0-dc8a-11ee-bd12-d18486f7d449.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/featured_93b786e0-dc8a-11ee-bd12-d18486f7d449.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/list_thumb_93b786e0-dc8a-11ee-bd12-d18486f7d449.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115257/event_image/hero_93b786e0-dc8a-11ee-bd12-d18486f7d449.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3395477-0",
+    "Website": "https://go.evvnt.com/3395477-2"
+   },
+   "artists": "",
+   "keywords": "free, guestlist, seaport, scorpionbar, nightlife, bar, club, drinks, music, dance, edm, house",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "Nightlife",
+   "source_id_s": "3395477",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794018600,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593868,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3395477-free-guestlist-scorpion-bar-boston-weekly-access-seaport-boston",
+   "source_id": 3395477,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Bassline Boston provides weekly guestlist access to Scorpion Bar Boston in the Seaport District, Wednesday through Saturday nights. Enjoy energetic DJ sets and Seaport nightlife vibes.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here [THIS IS NOT YOUR TICKET] \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T21:30:00-05:00",
+   "end_time": "2026-11-06T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "Scorpion Boston",
+    "address_1": "58 Seaport Boulevard",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02210",
+    "latitude": 42.3530398,
+    "longitude": -71.0475667
+   },
+   "_geoloc": {
+    "lat": 42.3530398,
+    "lng": -71.0475667
+   },
+   "start_time_i": 1794018600,
+   "end_time_i": 1794024000,
+   "created_time_i": 1766016685,
+   "last_indexed_i": 1793579419,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "41413415"
+  },
+  {
+   "title": "FREE Guestlist - Empire Boston | Downtown Seaport \u2013 Weekly Access",
+   "category_ids": [
+    17,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for weekly guestlist access at Empire Boston with Bassline Boston. FREE entry before 11 PM.\n",
+   "description_html": null,
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115256,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/Screenshot_2025-12-17_at_4.22.06_PM.png",
+      "width": 859,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/featured_Screenshot_2025-12-17_at_4.22.06_PM.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/list_thumb_Screenshot_2025-12-17_at_4.22.06_PM.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/hero_Screenshot_2025-12-17_at_4.22.06_PM.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/featured_Screenshot_2025-12-17_at_4.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/list_thumb_Screenshot_2025-12-17_at_4.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115256/event_image/hero_Screenshot_2025-12-17_at_4.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3395313-0",
+    "Website": "https://go.evvnt.com/3395313-2"
+   },
+   "artists": "",
+   "keywords": "edm, free, guestlist, boston, seaport, nightlife, clubbing, music, dance, entertainment",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "Nightlife",
+   "source_id_s": "3395313",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794018600,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593867,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3395313-free-guestlist-empire-boston-downtown-seaport-weekly-access",
+   "source_id": 3395313,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Bassline Boston provides weekly guestlist access to Empire Boston, located in the Seaport District. Guestlist is available Wednesday through Saturday nights, offering a vibrant nightlife experience with rotating DJs.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T21:30:00-05:00",
+   "end_time": "2026-11-06T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "Empire",
+    "address_1": "1 Marina Park Drive",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02210",
+    "latitude": 42.3528656,
+    "longitude": -71.045336
+   },
+   "_geoloc": {
+    "lat": 42.3528656,
+    "lng": -71.045336
+   },
+   "start_time_i": 1794018600,
+   "end_time_i": 1794024000,
+   "created_time_i": 1766015963,
+   "last_indexed_i": 1793580699,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "41412119"
+  },
+  {
+   "title": "FREE Nightclub Guestlist \u2013 bsmnt Boston | Weekly Access",
+   "category_ids": [
+    17,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for weekly guestlist access at bsmnt with Bassline Boston. Enjoy house and tech house music in Downtown Boston. FREE entry before 11 PM.\n",
+   "description_html": null,
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115251,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/images-6.jpeg",
+      "width": 275,
+      "height": 183
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/featured_images-6.jpeg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/list_thumb_images-6.jpeg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/hero_images-6.jpeg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/featured_images-6.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/list_thumb_images-6.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115251/event_image/hero_images-6.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3395097-0",
+    "Website": "https://go.evvnt.com/3395097-2"
+   },
+   "artists": "",
+   "keywords": "bsmnt, edm, free, guestlist, downtownboston, boston, techhouse, house, raves, basslineboston",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "Nightlife",
+   "source_id_s": "3395097",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794018600,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593847,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3395097-free-nightclub-guestlist-bsmnt-boston-weekly-access",
+   "source_id": 3395097,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Bassline Boston provides weekly guestlist access to bsmnt, Downtown Boston\u2019s hotspot for house and tech house music. Guestlist is available Wednesday through Saturday nights.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here [THIS IS NOT YOUR TICKET] \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.\n",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T21:30:00-05:00",
+   "end_time": "2026-11-06T23:00:00-05:00",
+   "door_time": "2025-12-18T21:30:00-05:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "BSMNT",
+    "address_1": "100 Stuart Street",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02116",
+    "latitude": 42.3508419,
+    "longitude": -71.0656551
+   },
+   "_geoloc": {
+    "lat": 42.3508419,
+    "lng": -71.0656551
+   },
+   "start_time_i": 1794018600,
+   "end_time_i": 1794024000,
+   "created_time_i": 1766015141,
+   "last_indexed_i": 1793579413,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "41411840"
+  },
+  {
+   "title": "FREE Guestlist \u2013 M\u00e9moire at Encore Boston Harbor \u2013 Weekly Access",
+   "category_ids": [
+    17,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for weekly guestlist access at M\u00e9moire, the club inside Encore Boston Casino, with Bassline Boston. ",
+   "description_html": null,
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115263,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115263/event_image/bd15d650-8a7f-11f0-ba01-5bb912f8f5e2.jpg",
+      "width": 1200,
+      "height": 771
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115263/event_image/featured_bd15d650-8a7f-11f0-ba01-5bb912f8f5e2.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115263/event_image/list_thumb_bd15d650-8a7f-11f0-ba01-5bb912f8f5e2.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115263/event_image/hero_bd15d650-8a7f-11f0-ba01-5bb912f8f5e2.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115263/event_image/featured_bd15d650-8a7f-11f0-ba01-5bb912f8f5e2.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115263/event_image/list_thumb_bd15d650-8a7f-11f0-ba01-5bb912f8f5e2.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115263/event_image/hero_bd15d650-8a7f-11f0-ba01-5bb912f8f5e2.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3395599-0",
+    "Website": "https://go.evvnt.com/3395599-2"
+   },
+   "artists": "",
+   "keywords": "edm, free, guestlist, encore, memoire, nightlife, boston",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "Nightlife",
+   "source_id_s": "3395599",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794018600,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593871,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3395599-free-guestlist-memoire-at-encore-boston-harbor-weekly-access",
+   "source_id": 3395599,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Bassline Boston provides weekly guestlist access to M\u00e9moire, the premier nightclub inside Encore Boston Harbor. Guestlist is available on select Friday and Saturday nights, featuring rotating DJs and upscale nightlife energy.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here [THIS IS NOT YOUR TICKET] \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Everett, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T21:30:00-05:00",
+   "end_time": "2026-11-06T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "M\u00e9moire Boston",
+    "address_1": "1 Broadway",
+    "address_2": null,
+    "town": "Everett",
+    "country": "United States",
+    "post_code": "02149",
+    "latitude": 42.3954293,
+    "longitude": -71.0681533
+   },
+   "_geoloc": {
+    "lat": 42.3954293,
+    "lng": -71.0681533
+   },
+   "start_time_i": 1794018600,
+   "end_time_i": 1794024000,
+   "created_time_i": 1766017617,
+   "last_indexed_i": 1793580703,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "41413660"
+  },
+  {
+   "title": "FREE Guestlist \u2013 Scorpion Bar Foxwoods \u2013 Weekly Access",
+   "category_ids": [
+    17,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for weekly guestlist access at Scorpion Bar Foxboro with Bassline Boston. FREE entry before 11 PM.",
+   "description_html": null,
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115270,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115270/event_image/07f87886-bd5a-1ceb-ee0b895f7cdc.jpg",
+      "width": 1200,
+      "height": 800
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115270/event_image/featured_07f87886-bd5a-1ceb-ee0b895f7cdc.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115270/event_image/list_thumb_07f87886-bd5a-1ceb-ee0b895f7cdc.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115270/event_image/hero_07f87886-bd5a-1ceb-ee0b895f7cdc.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115270/event_image/featured_07f87886-bd5a-1ceb-ee0b895f7cdc.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115270/event_image/list_thumb_07f87886-bd5a-1ceb-ee0b895f7cdc.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115270/event_image/hero_07f87886-bd5a-1ceb-ee0b895f7cdc.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3395710-0"
+   },
+   "artists": "",
+   "keywords": "edm, dance, nightclub, nightlife, club, bar, foxboro, patriotsplace",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "Nightlife",
+   "source_id_s": "3395710",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794018600,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593878,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3395710-free-guestlist-scorpion-bar-foxwoods-weekly-access",
+   "source_id": 3395710,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Looking for free nightclub entry at Foxboro? Bassline Boston provides guestlist access to Scorpion Bar Foxboro on select weekend nights.\n\nScorpion Bar Foxboro offers an energetic nightlife experience in Foxboro, with rotating DJs and club-focused programming. Availability varies week to week.\n\n\u26a0\ufe0f Guestlist access is not guaranteed and is subject to capacity and venue policies.\n\nView current guestlist availability here:\nhttps://forms.gle/uh1kqWpKgsfXVj5F9\n\nGuestlist opportunities provided by Bassline Boston.",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Foxborough, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T21:30:00-05:00",
+   "end_time": "2026-11-06T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9"
+   },
+   "venue": {
+    "name": "Scorpion Bar Patriot Place",
+    "address_1": "253 Patriot Place",
+    "address_2": null,
+    "town": "Foxborough",
+    "country": "United States",
+    "post_code": "02035",
+    "latitude": 42.0922683,
+    "longitude": -71.2674157
+   },
+   "_geoloc": {
+    "lat": 42.0922683,
+    "lng": -71.2674157
+   },
+   "start_time_i": 1794018600,
+   "end_time_i": 1794024000,
+   "created_time_i": 1766018492,
+   "last_indexed_i": 1793580705,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "41413845"
+  },
+  {
+   "title": "FREE Nightclub Guestlist \u2013 The Grand Boston | Weekly Access",
+   "category_ids": [
+    581,
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Sign up for The Grand\u2019s weekly guestlist with Bassline Boston! FREE entry before 11 PM.",
+   "description_html": null,
+   "hashtag": "basslineboston",
+   "images": [
+    {
+     "id": 3115227,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/tg5.jpg",
+      "width": 1200,
+      "height": 800
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/featured_tg5.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/list_thumb_tg5.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/hero_tg5.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/featured_tg5.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/list_thumb_tg5.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3115227/event_image/hero_tg5.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3394914-0",
+    "Website": "https://go.evvnt.com/3394914-2"
+   },
+   "artists": "",
+   "keywords": "thegrand, guestlist, free, nightlife, dance, music, basslineboston, edm",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bassline Boston",
+   "category_name": "House",
+   "source_id_s": "3394914",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    581,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794018600,
+   "category_names_with_ids": [
+    "581|House",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2593844,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3394914-free-nightclub-guestlist-the-grand-boston-weekly-access",
+   "source_id": 3394914,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Looking for free entry at The Grand Boston? Bassline Boston provides weekly guestlist access on select nights, Wednesday through Saturday.\n\n\ud83c\udf9f Tickets: Guestlist Entry Signup Here \u2192 https://forms.gle/uh1kqWpKgsfXVj5F9\n\nInstructions:\nSign up for the guestlist now: https://forms.gle/uh1kqWpKgsfXVj5F9\nFREE entry before 11 PM for those on the guestlist.",
+   "main_category_path": [
+    17,
+    581
+   ],
+   "category_path_ids": [
+    17,
+    581,
+    217
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T21:30:00-05:00",
+   "end_time": "2026-11-06T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://forms.gle/uh1kqWpKgsfXVj5F9",
+    "Website": "https://basslineboston.com"
+   },
+   "venue": {
+    "name": "The Grand Boston",
+    "address_1": "58 Seaport Boulevard",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02210",
+    "latitude": 42.3531349,
+    "longitude": -71.0474416
+   },
+   "_geoloc": {
+    "lat": 42.3531349,
+    "lng": -71.0474416
+   },
+   "start_time_i": 1794018600,
+   "end_time_i": 1794024000,
+   "created_time_i": 1766013889,
+   "last_indexed_i": 1793580697,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "41411549"
+  },
+  {
+   "title": "An Evening with a Mentalist: Jay Alexander's Mind Tricks Live",
+   "category_ids": [
+    3,
+    217,
+    42
+   ],
+   "root_category_ids": [
+    28,
+    17,
+    1
+   ],
+   "summary": "Escape the ordinary and step into the San Francisco Magic Theater, where Mentalist Jay Alexander guides you through an evening of wonder. You\u2019ll laugh, gasp, and leave with a story you\u2019ll tell forever",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3505051,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3505051/event_image/Evvnt800x450Card.HIGHESTbanner.jpg",
+      "width": 800,
+      "height": 450
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3505051/event_image/featured_Evvnt800x450Card.HIGHESTbanner.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3505051/event_image/list_thumb_Evvnt800x450Card.HIGHESTbanner.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3505051/event_image/hero_Evvnt800x450Card.HIGHESTbanner.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3505051/event_image/featured_Evvnt800x450Card.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3505051/event_image/list_thumb_Evvnt800x450Card.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3505051/event_image/hero_Evvnt800x450Card.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3848469-0",
+    "Website": "https://go.evvnt.com/3848469-2",
+    "Vimeo": "https://go.evvnt.com/3848469-3"
+   },
+   "artists": "",
+   "keywords": "comedy, magic, magician, mentalist, cabaret, family, datenight, sanfrancisco",
+   "prices": {
+    "General Admission": "USD 55.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    38,
+    47,
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4298,
+    4344,
+    4955,
+    5268,
+    5293,
+    5415,
+    5563,
+    6074,
+    6239,
+    6361,
+    6581,
+    6630,
+    6745,
+    6934,
+    6941,
+    7790,
+    8316,
+    8968,
+    9038,
+    9842,
+    10675,
+    10725,
+    10758,
+    10787,
+    10983,
+    11129,
+    11150,
+    11223,
+    11359,
+    11415,
+    11440,
+    11500,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12188,
+    12278,
+    12279,
+    12352
+   ],
+   "featured_publisher_ids": [
+    5293,
+    6361
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "San Francisco Magic Theater",
+   "category_name": "Comedy",
+   "source_id_s": "3848469",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ],
+    "6361": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    38,
+    47,
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4298,
+    4344,
+    4955,
+    5268,
+    5293,
+    5415,
+    5563,
+    6074,
+    6239,
+    6361,
+    6581,
+    6630,
+    6745,
+    6934,
+    6941,
+    7790,
+    8316,
+    8968,
+    9038,
+    9842,
+    10675,
+    10725,
+    10758,
+    10787,
+    10983,
+    11129,
+    11150,
+    11223,
+    11359,
+    11415,
+    11440,
+    11500,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12188,
+    12278,
+    12279,
+    12352,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    217,
+    42,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794018600,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "217|Nightclub",
+    "42|Attractions & Days Out"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2882484,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3848469-an-evening-with-a-mentalist-jay-alexander-s-mind-tricks-live",
+   "source_id": 3848469,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "At the San Francisco Magic Theater, we don\u2019t give you a \u201cshow.\u201d We hand you an experience... a carefully engineered collision of impossible mentalism, laugh-out-loud comedy, and illusions that punch through the wall of your reality.\n\n\ud83d\udcf8 What You\u2019ll Do \nStep off the streets of SF and into our historic Moroccan-inspired speakeasy, you will enjoy handcrafted cocktails, Moroccan appetizers, and live close-up magic.\n\nThen enter our jewel-box theater for Jay Alexander\u2019s mind-twisting mix of magic, psychology, and lie detection that will leave you amazed and laughing.\n\n\ud83c\udfc6 Why It\u2019s Legit\n\u2022 Mentalist Jay Alexander... the performer who\u2019s astonished Bono, made John Cleese grin like a schoolboy, and been trusted by The Rolling Stones and Robin Williams.\n\u2022 5-star rating from 1.5K+ Google reviews - one of SF\u2019s top-rated events \n\u2022 Seen on MTV, TEDx, Good Morning America, and the Today Show\n\n\ud83d\udca1 Best For\n\u2022 A memorable date night, impressing visitors, or an elevated/unique evening out with friends or family.\n\nThis is not just entertainment. This is the resurrection of your sense of wonder\u2014set inside a 45-seat speakeasy with a Moroccan flair.\n\nFind out why this is the highest-rated show in the city and leave with a story to tell.\n\n\ud83c\udf9f Pick your date and reserve your seats today!\n\n\u2605\u2605\u2605\u2605\u2605Yelp (1600 Reviews)\n\n\u2605\u2605\u2605\u2605\u2605\u202fTripAdvisor (over 1,530 reviews) #1 of 327 Nightlife in San Francisco\n\n\u2605\u2605\u2605\u2605\u2605\u202fGoogle (over 1,400 reviews)\n",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    17,
+    217,
+    1,
+    42
+   ],
+   "city_country": "San Francisco, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T18:30:00-08:00",
+   "end_time": "2026-11-08T20:00:00-08:00",
+   "door_time": "2026-11-06T17:30:00-08:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.SanFranciscoMagicTheater.com/?utm_source=EVVNT",
+    "Website": "https://www.SanFranciscoMagicTheater.com/?utm_source=EVVNT",
+    "Vimeo": "https://vimeo.com/1111044547"
+   },
+   "venue": {
+    "name": "San Francisco Magic Theater (w/Jay Alexander) at the Marrakech",
+    "address_1": "419 O'Farrell Street",
+    "address_2": null,
+    "town": "San Francisco",
+    "country": "United States",
+    "post_code": "94102",
+    "latitude": 37.7858032,
+    "longitude": -122.4118112
+   },
+   "_geoloc": {
+    "lat": 37.7858032,
+    "lng": -122.4118112
+   },
+   "start_time_i": 1794018600,
+   "end_time_i": 1794196800,
+   "created_time_i": 1790607039,
+   "last_indexed_i": 1793630625,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "44659755"
+  },
+  {
+   "title": "TORONTO DIWALI PARTY 2026 @ ORIA NIGHTCLUB - Biggest Bollywood Mega Party!",
+   "category_ids": [
+    217
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Toronto's biggest Bollywood Diwali party at Oria Nightclub, 19+, with the city's top DJs. Friday 6 November, 10pm-3am. Tickets from CAD 15.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3561192,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3561192/event_image/toronto-diwali-banner.png",
+      "width": 1456,
+      "height": 834
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3561192/event_image/featured_toronto-diwali-banner.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3561192/event_image/list_thumb_toronto-diwali-banner.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3561192/event_image/hero_toronto-diwali-banner.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3561192/event_image/featured_toronto-diwali-banner.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3561192/event_image/list_thumb_toronto-diwali-banner.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3561192/event_image/hero_toronto-diwali-banner.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3904667-0",
+    "Website": "https://go.evvnt.com/3904667-2"
+   },
+   "artists": "",
+   "keywords": "diwali, bollywood, toronto, nightclub, party",
+   "prices": {
+    "General Admission": "CAD 15.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "CA",
+    "name": "Canada",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Events Guide",
+   "category_name": "Nightclub",
+   "source_id_s": "3904667",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794020400,
+   "category_names_with_ids": [
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2920305,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3904667-toronto-diwali-party-2026-oria-nightclub-biggest-bollywood-mega-party",
+   "source_id": 3904667,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Toronto's biggest Diwali mega party comes to Oria Nightclub on Friday, November 6th.\n\n1,000+ people at one of Toronto's leading nightclubs, featuring Toronto's top DJs playing the best Bollywood and party hits all night long. Everyone is welcome.\n\nDrink specials and bottle service available.\n\nAdvance tickets are strongly recommended for guaranteed entry - the organiser advises that prices increase as the date approaches.\n\nDate: Friday, November 6, 2026\nTime: 10:00 PM - 3:00 AM\nVenue: Oria Nightclub (Oria on King), 220 King Street West, Toronto\nAdmission: 19+\nTickets: Early Bird CAD 15, Advance CAD 20, Regular CAD 25\nInfo and reservations: call or text (647) 309-6634",
+   "main_category_path": [
+    17,
+    217
+   ],
+   "category_path_ids": [
+    17,
+    217
+   ],
+   "city_country": "Toronto, Canada",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T22:00:00-05:00",
+   "end_time": "2026-11-07T03:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://all.events/go/80003029635373?utm_source=aedistribution&utm_medium=evvnt&utm_campaign=paid-ads",
+    "Website": "https://all.events/go/80003029635373?utm_source=aedistribution&utm_medium=evvnt&utm_campaign=paid-ads"
+   },
+   "venue": {
+    "name": "Oria on King",
+    "address_1": "220 King Street West",
+    "address_2": null,
+    "town": "Toronto",
+    "country": "Canada",
+    "post_code": "M5V 3M2",
+    "latitude": 43.6472911,
+    "longitude": -79.3870476
+   },
+   "_geoloc": {
+    "lat": 43.6472911,
+    "lng": -79.3870476
+   },
+   "start_time_i": 1794020400,
+   "end_time_i": 1794038400,
+   "created_time_i": 1793700056,
+   "last_indexed_i": 1793701810,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "45090798"
+  },
+  {
+   "title": "Desi Comedy Fest SoCal Tour \u2013 Hollywood Improv \u2013 Nov 6 | 7:30 PM",
+   "category_ids": [
+    3,
+    17,
+    631
+   ],
+   "root_category_ids": [
+    28,
+    17,
+    1
+   ],
+   "summary": "Big laughs, diverse voices, hilarious perspectives! America's largest South Asian comedy festival brings some of the funniest comedians to Hollywood for an unforgettable night of stand-up comedy.",
+   "description_html": null,
+   "hashtag": "desicomedyfest",
+   "images": [
+    {
+     "id": 3554061,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554061/event_image/DCF_Hollywood_Poster_4x5.jpg",
+      "width": 864,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554061/event_image/featured_DCF_Hollywood_Poster_4x5.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554061/event_image/list_thumb_DCF_Hollywood_Poster_4x5.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554061/event_image/hero_DCF_Hollywood_Poster_4x5.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554061/event_image/featured_DCF_Hollywood_Poster_4x5.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554061/event_image/list_thumb_DCF_Hollywood_Poster_4x5.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554061/event_image/hero_DCF_Hollywood_Poster_4x5.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3896530-0",
+    "Facebook": "https://go.evvnt.com/3896530-2",
+    "Instagram": "https://go.evvnt.com/3896530-3",
+    "YouTube": "https://go.evvnt.com/3896530-4",
+    "Website": "https://go.evvnt.com/3896530-5"
+   },
+   "artists": "Samson Koletkar, Abhay Nadkarni, Kiran Deol, Feraz Ozel, Zahra Ali, Shilpa Das",
+   "keywords": "desicomedyfest, stand-upcomedy, livecomedy, southasiancomedy, indiancomedy, comedyfestival, asianamericancomedy, datenight, liveentertainment, hollywoodcomedy, hollywoodimprov, losangelescomedy, pakistanicomedy, losangelesevents, hollywoodevents, thingstodoinlosangeles",
+   "prices": {
+    "General Admission": "USD 25.0",
+    "VIP": "USD 40.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4955,
+    5268,
+    5293,
+    5563,
+    6581,
+    6630,
+    6790,
+    7790,
+    8364,
+    8404,
+    9038,
+    9342,
+    9837,
+    10064,
+    10758,
+    10787,
+    10805,
+    10885,
+    11030,
+    11066,
+    11067,
+    11150,
+    11359,
+    11415,
+    11440,
+    11499,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11759,
+    11931,
+    12012,
+    12022,
+    12078,
+    12084,
+    12127,
+    12188,
+    12265,
+    12278,
+    12279,
+    12331,
+    12423
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Desi Comedy Fest",
+   "category_name": "Comedy",
+   "source_id_s": "3896530",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4955,
+    5268,
+    5293,
+    5563,
+    6581,
+    6630,
+    6790,
+    7790,
+    8364,
+    8404,
+    9038,
+    9342,
+    9837,
+    10064,
+    10758,
+    10787,
+    10805,
+    10885,
+    11030,
+    11066,
+    11067,
+    11150,
+    11359,
+    11415,
+    11440,
+    11499,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11759,
+    11931,
+    12012,
+    12022,
+    12078,
+    12084,
+    12127,
+    12188,
+    12265,
+    12278,
+    12279,
+    12331,
+    12423,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    17,
+    631,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794022200,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "17|Nightlife",
+    "631|Shows"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2914551,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3896530-desi-comedy-fest-socal-tour-hollywood-improv-nov-6-7-30-pm",
+   "source_id": 3896530,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "# Desi Comedy Fest SoCal Tour \u2013 Hollywood Improv\n\n**America's largest South Asian comedy festival comes to Hollywood!**\n\nGet ready for an unforgettable night of stand-up comedy as Desi Comedy Fest brings 6 hilarious comedians to Hollywood Improv! From sharp cultural observations to outrageous personal stories, this lineup delivers diverse perspectives, unique comedic styles, and plenty of laughs.\n\n## MEET THE COMEDIANS\n\n**KIRAN DEOL**\n\nKiran Deol is an Indian-American stand-up comedian, actor, writer, and filmmaker whose comedy combines sharp observations, personal storytelling, and a distinctly South Asian-American perspective. Her debut comedy special, Joysuck, is streaming on Amazon Prime. She has appeared in Sunnyside, Modern Family, The Mindy Project, New Girl, and Freakier Friday. An Emmy-nominated and Oscar-shortlisted filmmaker, Kiran has performed at the New York Comedy Festival, SF Sketchfest, Edinburgh Fringe Festival, and the Kennedy Center.\n\n**FERAZ OZEL**\n\nFeraz Ozel is an Afghani-Pakistani-American comedian, actor, and television writer whose energetic stand-up combines cultural observations, social commentary, and personal storytelling. He has appeared on Conan, 2 Broke Girls, Comics Unleashed, and Hulu's Coming to the Stage, with over 30 million views of his comedy clips online. His writing credits include ABC's Shifting Gears, American Housewife, and Hulu's Deli Boys. His comedy album Chillennial reached the Billboard Top 10.\n\n**ZAHRA ALI**\n\nZahra Ali is a Pakistani-American comedian, writer, and actress who has performed stand-up around the world. Born in New York, raised in New Jersey, and now based in Los Angeles, Zahra brings a sharp, playful perspective to culture, relationships, politics, and identity. She has appeared on NBC and Amazon Prime and was featured in Best of Roast Battle at The Comedy Store. She is also an executive producer and performer with Facial Recognition Comedy, a nationally touring showcase highlighting Middle Eastern, North African, and South Asian women.\n\n**SHILPA DAS**\n\nShilpa Das is a Los Angeles-based comedian, writer, actor, and producer whose talents span stand-up, improv, sketch, and musical comedy. A longtime performer at the Upright Citizens Brigade Theatre, Shilpa has been a writer and actor with UCB's Quick & Funny Musicals since 2018. She is the founder and producer of South Asian AF, Los Angeles' largest South Asian comedy variety show. Shilpa has performed at The Comedy Store, Laugh Factory, Flappers, and other prominent Los Angeles comedy venues.\n\n**SAMSON KOLETKAR**\n\nSamson Koletkar, aka Mahatma Moses, is the world's only Indian Jewish stand-up comedian. His comedy blends his Indian upbringing, Jewish roots, and American life with wit, warmth, and a refreshingly clean style. He has performed across the U.S., Canada, and India, and has been featured on NPR, NBC, CBS, NDTV, and The Times of India. Samson is the co-founder of Desi Comedy Fest and founder of Comedy Oakland, voted Best Comedy Night by East Bay Express from 2016\u20132025.\n\n**ABHAY NADKARNI**\n\nAbhay Nadkarni is a third-culture comedian born in Delhi, raised in Doha and Bangalore, and now navigating American absurdity with a global perspective. Featured as a New Face at Montreal's prestigious Just For Laughs festival, Abhay has also performed at the Melbourne Comedy Festival. With over 100,000 online followers, his comedy combines silly jokes with sharp observations. His debut comedy special, Brown Jesus, is streaming on Amazon Prime. Abhay is the co-founder of Desi Comedy Fest.\n\n## ABOUT DESI COMEDY FEST\n\nFounded in 2014 by comedians Samson Koletkar and Abhay Nadkarni, Desi Comedy Fest is America's largest South Asian comedy festival.\n\nWhat began as a San Francisco Bay Area comedy festival has grown into a nationally touring celebration of South Asian comedic talent, entertaining audiences in New York, Boston, Washington DC, Chicago, Texas, and beyond.\n\nThe festival showcases comedians from diverse backgrounds, bringing audiences together through humor that explores family, relationships, marriage, immigration, cultural identity, and the universal absurdities of everyday life.\n\n**You don't have to be South Asian to get the jokes. You just have to love great comedy!**\n\n**All performances are in English.**\n\nWhether you're planning a date night, an evening with friends, or looking for live entertainment in Hollywood and Los Angeles, Desi Comedy Fest brings together an exceptional lineup of comedians for a night filled with laughter.\n\n**One stage. 6 comedians. Countless laughs.**",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    17,
+    1,
+    631
+   ],
+   "city_country": "Los Angeles, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T19:30:00-08:00",
+   "end_time": "2026-11-06T21:00:00-08:00",
+   "door_time": "2026-11-06T18:30:00-08:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.ticketweb.com/event/desi-comedy-fest-hollywood-improv-the-lab-tickets/14975743",
+    "Facebook": "https://facebook.com/desicomedyfest",
+    "Instagram": "https://instagram.com/desicomedyfest",
+    "YouTube": "https://www.youtube.com/@desicomedyfestofficial",
+    "Website": "https://www.desicomedyfest.com/"
+   },
+   "venue": {
+    "name": "Hollywood Improv",
+    "address_1": "8162 Melrose Avenue",
+    "address_2": null,
+    "town": "Los Angeles",
+    "country": "United States",
+    "post_code": "90046",
+    "latitude": 34.0834674,
+    "longitude": -118.367408
+   },
+   "_geoloc": {
+    "lat": 34.0834674,
+    "lng": -118.367408
+   },
+   "start_time_i": 1794022200,
+   "end_time_i": 1794027600,
+   "created_time_i": 1793164468,
+   "last_indexed_i": 1793582517,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "45015126"
+  },
+  {
+   "title": "Friday Night Funnies - Fri Nov 6 7:30pm",
+   "category_ids": [
+    3,
+    215,
+    631
+   ],
+   "root_category_ids": [
+    28,
+    17,
+    1
+   ],
+   "summary": "Comedy Oakland is 2016-2025 winner of \"Best Comedy Night\"! Featuring best comedians from Bay Area & beyond. No drink minimums. No hidden fees.",
+   "description_html": null,
+   "hashtag": "comedyoakland",
+   "images": [
+    {
+     "id": 3524944,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524944/event_image/Aurora_Singh_at_Comedy_Oakland.jpg",
+      "width": 1440,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524944/event_image/featured_Aurora_Singh_at_Comedy_Oakland.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524944/event_image/list_thumb_Aurora_Singh_at_Comedy_Oakland.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524944/event_image/hero_Aurora_Singh_at_Comedy_Oakland.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524944/event_image/featured_Aurora_Singh_at_Comedy_Oakland.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524944/event_image/list_thumb_Aurora_Singh_at_Comedy_Oakland.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3524944/event_image/hero_Aurora_Singh_at_Comedy_Oakland.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3868857-0",
+    "Instagram": "https://go.evvnt.com/3868857-2",
+    "Facebook": "https://go.evvnt.com/3868857-3",
+    "Website": "https://go.evvnt.com/3868857-4"
+   },
+   "artists": "",
+   "keywords": "comedy, standup, standupcomedy, livecomedy, comedyshow, #comedyclub, comedians, funny, comedynight, humor, laugh, standupcomedian, comedylife",
+   "prices": {
+    "General Admission": "USD 25.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4298,
+    4344,
+    4955,
+    5268,
+    5293,
+    5415,
+    5417,
+    5563,
+    6074,
+    6239,
+    6361,
+    6581,
+    6630,
+    6745,
+    7790,
+    8316,
+    9038,
+    10675,
+    10758,
+    10787,
+    10983,
+    11129,
+    11150,
+    11359,
+    11415,
+    11440,
+    11500,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12127,
+    12188,
+    12278,
+    12279,
+    12352
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Comedy Oakland",
+   "category_name": "Comedy",
+   "source_id_s": "3868857",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4298,
+    4344,
+    4955,
+    5268,
+    5293,
+    5415,
+    5417,
+    5563,
+    6074,
+    6239,
+    6361,
+    6581,
+    6630,
+    6745,
+    7790,
+    8316,
+    9038,
+    10675,
+    10758,
+    10787,
+    10983,
+    11129,
+    11150,
+    11359,
+    11415,
+    11440,
+    11500,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12127,
+    12188,
+    12278,
+    12279,
+    12352,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    215,
+    631,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794022200,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "215|Other",
+    "631|Shows"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2897717,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3868857-friday-night-funnies-fri-nov-6-7-30pm",
+   "source_id": 3868857,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Comedy Oakland, 2016-2025 winner of \"Best Comedy Night\" in East Bay Express Reader's Poll features funny, diverse, industry pros alongside up-and-coming comedians. Our comedians have featured on TV, Radio, Comedy Festivals, Late Night Talk Shows, won competitions, and have performed on every habitable continent! \n\nUnlike comedy clubs, there are no drink minimums at our shows, but food and drinks are served. There are hidden fees, no tolls to pay and free street parking is available around the block. A comedian owned, comedian run show, we've been featured in SF Chronicle, ABC7, KPFA 94.1FM, SF Examiner, and East Bay Express.\n\nCome and experience live standup comedy at its finest, we've been delivering the laughs since May 2009!",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    17,
+    215,
+    1,
+    631
+   ],
+   "city_country": "Oakland, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T19:30:00-08:00",
+   "end_time": "2026-11-06T21:00:00-08:00",
+   "door_time": "2026-11-06T19:00:00-08:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.eventbrite.com/e/2002401704401?aff=aff0evvnt",
+    "Instagram": "http://instagram.com/comedyoakland",
+    "Facebook": "https://www.facebook.com/comedyoakland/",
+    "Website": "https://www.ComedyOakland.com"
+   },
+   "venue": {
+    "name": "Quinn's Lighthouse",
+    "address_1": "1951 Embarcadero",
+    "address_2": null,
+    "town": "Oakland",
+    "country": "United States",
+    "post_code": "94606",
+    "latitude": 37.7813472,
+    "longitude": -122.2438222
+   },
+   "_geoloc": {
+    "lat": 37.7813472,
+    "lng": -122.2438222
+   },
+   "start_time_i": 1794022200,
+   "end_time_i": 1794027600,
+   "created_time_i": 1791763213,
+   "last_indexed_i": 1793581969,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "44827465"
+  },
+  {
+   "title": "Salsa & Bachata Dance Fridays Salsa Dancing, Bachata Dancing at Dance Fridays, Dance Lessons",
+   "category_ids": [
+    30,
+    131,
+    217
+   ],
+   "root_category_ids": [
+    28,
+    2,
+    17
+   ],
+   "summary": "This Friday, Early Bird  - THE BEST OF SAN FRANCISCO DANCE LESSONS, MUSIC, AND DANCE CLUB DANCING,\nYou're invited to our Epic Salsa and Bachata and Cumbia Bash Dance Party",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 2669560,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/2669560/event_image/dancefridays-crowdshot2.jpg",
+      "width": 1024,
+      "height": 711
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/2669560/event_image/featured_dancefridays-crowdshot2.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/2669560/event_image/list_thumb_dancefridays-crowdshot2.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/2669560/event_image/hero_dancefridays-crowdshot2.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/2669560/event_image/featured_dancefridays-crowdshot2.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/2669560/event_image/list_thumb_dancefridays-crowdshot2.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/2669560/event_image/hero_dancefridays-crowdshot2.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3461598-0"
+   },
+   "artists": "",
+   "keywords": "salsa, bachata, salsadance, bachatadance, salsadancing, bachatadancing, dance, dancing, salsaclub, bachataclub, ngihtclub, danceclub, nightlife, music, bachata.music, salsamusic, dancelessons, danceclasses, music, livemusic, bachataclass, bachatalesson, bachataclasses, bachatalessons, salsaclass, salsaclasses, salsalesson, salsalessons",
+   "prices": {
+    "Customer Appreciation - General Admission": "USD 16.74",
+    "Early Bird - 2 For 1 General Admission Tickets": "USD 27.24",
+    "Early Bird - General Admission": "USD 21.99",
+    "General Admission - At the Door": "USD 27.24"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Dance Frdiays",
+   "category_name": "Performing Arts",
+   "source_id_s": "3461598",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    30,
+    131,
+    217,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794023100,
+   "category_names_with_ids": [
+    "30|Performing Arts",
+    "131|Latin / Salsa",
+    "217|Nightclub"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2247653,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3461598-salsa-bachata-dance-fridays-salsa-dancing-bachata-dancing-at-dance-fridays-dance-lessons",
+   "source_id": 3461598,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Dance Club San Francisco\nSalsa Dance | Bachata Dance | Dance Lessons\n\nTHIS Friday -\u00a0THE BEST OF SAN FRANCISCO DANCE LESSONS, MUSIC, AND DANCE CLUB DANCING\nTICKETS,\u00a0https://www.dancefridays.fun/schedule-tickets\n\nCome and Join us for an Amazing Dance night with 2 Rooms of SALSA DANCING, BACHATA DANCE, and Yes, DANCE LESSONS for ALL at 8p, Every Friday\n.\nhttps://www.dancefridays.info\u00a0(Get on the VIP List for Future Events)\n\nLearn to Dance at 8p, both SALSA & BACHATA with Beginning Dance Lessons - no partner or experience required!\nAn evening with salsa and bachata music for all, Salsa dancing plus a dedicated Bachata room too and fantastic beginning dance lessons for everyone!\n\nSan Francisco's Hottest Salsa and Bachata Night at a REAL NightClub / Dance Club!\n\nBeginning BACHATA dance at 8p followed by Beginning SALSA dance at 8:45. Dancing starts at 9:45p.\n\nNEW - In Addition to all our beginning lessons, we now offer Intermediate Bachata Lessons at 9p (Back Room).\n\nYes, you can learn salsa right there, and bachata too! The classes are fun and social, and then you can celebrate with salsa and the best bachata DJs at the San Francisco Bay Area's #1 dance night, Dance Fridays.\n\nTICKETS,\u00a0https://www.dancefridays.fun/schedule-tickets\n$15 / $20 IN ADVANCE - $25 AT THE DOOR (Always Available) Please visit this event page for changes, and updates, as we expect them to happen regularly.\n\nEVERY FRIDAY NIGHT - THE BEST OF SAN FRANCISCO DANCE LESSONS, MUSIC, AND DANCING\nAlways a FUN Dance Fridays - Come and join us for a night of amazing dancing!\n\nhttps://linktr.ee/dancefridays\u00a0(Get on the VIP List for Future Events)\n\nPlease visit this event page for changes, and updates, as we expect them to happen regularly.\n\n**\u00a0Please note: Tickets are\u00a0NOT refundable or transferrable\u00a0(please, do not ask).\u00a0Ticket's can never be held from one concert to another\u00a0(one date to another date). You cannot bring water, cans, alcohol, food - this is an operating nightclub. 21+ With ID Only.\n\nDance Club Details:\nWe have a full bar, vending machines, coat check, and an amazing dance floor!\nWe are amazing and unique San Francisco dance venue with:\n- FUN Beginning (and also intermediate) dance Lessons EVERY Friday Night!\n- Massive Hardwood Dance Floors - Incredible Sound and Lighting\n- High Ceilings and Outdoor patio\n- Centrally located with Plenty of FREE parking\n- Full Bar, Coat Check, and massive. :)\n- Up to 3 separate Rooms of Dancing (Please check schedule)\n- Tons of Friendly, Fun, and Fantastic people to dance with.\n- Massive amount of free parking. (While we\u00a0do not\u00a0have the problems that plague the rest of San Francisco, please leave no valuables in your car - this is still San Francisco).\n- And yes, Big Live Salsa bands now once a month too!\nGrab tickets NOW as the early bird tickets will sell out very quickly.\n\nTICKETS,\u00a0TICKETS,\u00a0https://www.dancefridays.fun/schedule-tickets\n\nNOTE: All Tickets (even at the door) are sold via credit card.\u00a0There are always tickets available at the door. Come out and Dance!\n\nCOVID: Please note, we strictly follow all Federal, State, and local guidelines.\n\n#salsa #bachata #dance #dancing #nightclub #nightlife #bayareasalsa #livemusic #music #salsanight #bachatanight #salsadancing #salsadance #danceclub #bachatadance #bachatadancing #dancelessons #salsaclass #singles #socialdancing #bachateros #salseros #lessons #classes #salsaclasses #salsaclasses #bachatalesson #bachataclass #sanfrancisco #bayarea\n",
+   "main_category_path": [
+    28,
+    30
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    2,
+    128,
+    129,
+    131,
+    17,
+    217
+   ],
+   "city_country": "San Francisco, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T19:45:00-08:00",
+   "end_time": "2026-11-06T23:59:00-08:00",
+   "door_time": "2025-03-07T19:45:00-08:00",
+   "last_entry_time": "2025-03-07T00:00:00-08:00",
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.dancefridays.fun/schedule-tickets"
+   },
+   "venue": {
+    "name": "Dance Fridays",
+    "address_1": "550 Barneveld",
+    "address_2": null,
+    "town": "San Francisco",
+    "country": "United States",
+    "post_code": "94124",
+    "latitude": 37.7398932,
+    "longitude": -122.404774
+   },
+   "_geoloc": {
+    "lat": 37.7398932,
+    "lng": -122.404774
+   },
+   "start_time_i": 1794023100,
+   "end_time_i": 1794038340,
+   "created_time_i": 1769665679,
+   "last_indexed_i": 1793580979,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "41705554"
+  },
+  {
+   "title": "Reggaeton World at Ibiza Nightclub | Latin Music Party in Salt Lake City, UT \u2013 November 6, 2026",
+   "category_ids": [
+    17
+   ],
+   "root_category_ids": [
+    17
+   ],
+   "summary": "Experience Reggaeton World at Ibiza Nightclub in Salt Lake City on November 6, 2026. Enjoy an unforgettable night of reggaeton, Latin music, and nonstop dancing. Book your tickets now!",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3559555,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559555/event_image/092cef_6c083975066e41e4982ce30f497efed7_mv2.jpg",
+      "width": 864,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559555/event_image/featured_092cef_6c083975066e41e4982ce30f497efed7_mv2.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559555/event_image/list_thumb_092cef_6c083975066e41e4982ce30f497efed7_mv2.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559555/event_image/hero_092cef_6c083975066e41e4982ce30f497efed7_mv2.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559555/event_image/featured_092cef_6c083975066e41e4982ce30f497efed7_mv2.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559555/event_image/list_thumb_092cef_6c083975066e41e4982ce30f497efed7_mv2.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559555/event_image/hero_092cef_6c083975066e41e4982ce30f497efed7_mv2.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3902656-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {
+    "General Admission": "USD 30.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "IBIZA SLC Ultra lounge- Nightclub & Bar",
+   "category_name": "Nightlife",
+   "source_id_s": "3902656",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1794024000,
+   "category_names_with_ids": [
+    "17|Nightlife"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2918981,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3902656-reggaeton-world-at-ibiza-nightclub-latin-music-party-in-salt-lake-city-ut-november-6-2026",
+   "source_id": 3902656,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Salt Lake City, get ready for a night of nonstop Latin rhythms and electrifying energy! Reggaeton World is bringing its signature party experience to Ibiza Nightclub for the first time. Enjoy an unforgettable night filled with reggaeton beats, high-energy music, vibrant vibes, and nonstop dancing.\nGather your friends and get ready to experience the sounds of reggaeton and Latin music in an exciting nightlife atmosphere. Whether you're a longtime fan or simply love the rhythm, this is your chance to be part of an unforgettable night in Salt Lake City!\nEvent Details\nEvent: Reggaeton World at Ibiza Nightclub\nDate: Friday, November 6, 2026\nTime: 9:00 PM \u2013 2:00 AM\nVenue: Ibiza SLC Ultra Lounge\nAddress: 180 West 400 South, Salt Lake City, UT 84101\nAge Requirement: 21+\nParking: Free parking available\nDuration: 5 hours\nRefund Policy: No refunds\nGet your tickets early and bring your crew for a night of incredible music, energetic dancing, and Latin party vibes.\nDon't miss the first Reggaeton World experience at Ibiza SLC. See you on the dance floor!\n",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17
+   ],
+   "city_country": "Salt Lake City, United States",
+   "start_date": "2026-11-06",
+   "start_time": "2026-11-06T21:00:00-07:00",
+   "end_time": "2026-11-07T02:00:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.ibizaslc.com/upcoming-events"
+   },
+   "venue": {
+    "name": "IBIZA SLC Ultra lounge",
+    "address_1": "180 West 400 South",
+    "address_2": null,
+    "town": "Salt Lake City",
+    "country": "United States",
+    "post_code": "84101",
+    "latitude": 40.7609096,
+    "longitude": -111.8962985
+   },
+   "_geoloc": {
+    "lat": 40.7609096,
+    "lng": -111.8962985
+   },
+   "start_time_i": 1794024000,
+   "end_time_i": 1794042000,
+   "created_time_i": 1793608529,
+   "last_indexed_i": 1793611801,
+   "score": 200,
+   "tags": [
+    "this_weekend"
+   ],
+   "objectID": "45070462"
+  }
+ ]
+}

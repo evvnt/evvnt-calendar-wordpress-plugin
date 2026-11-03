@@ -30,6 +30,8 @@ class Evvnt_Calendar_Settings {
 			'publisher_id'     => '',
 			'partner_name'     => '',
 			'submission_label' => 'Promote your event',
+			'render_mode'      => 'js', // 'js' (discovery app in the browser) or 'server'.
+			'calendar_page_id' => 0,    // Page holding the calendar; enables path URLs in server mode.
 		);
 	}
 

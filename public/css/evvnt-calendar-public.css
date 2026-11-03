@@ -1,0 +1,239 @@
+/* Evvnt Calendar: server-rendered views. Inherits the theme's fonts and colours. */
+.evvnt-cal {
+	--evvnt-cal-primary: #e8384f;
+	--evvnt-cal-primary-text: #fff;
+	--evvnt-cal-border: rgba(0, 0, 0, 0.12);
+	--evvnt-cal-muted: rgba(0, 0, 0, 0.62);
+	--evvnt-cal-radius: 8px;
+	--evvnt-cal-gap: 1.25rem;
+	margin: 1.5rem 0;
+}
+
+.evvnt-cal *,
+.evvnt-cal *::before,
+.evvnt-cal *::after {
+	box-sizing: border-box;
+}
+
+.evvnt-cal a {
+	color: inherit;
+}
+
+.evvnt-cal ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.evvnt-cal__button {
+	display: inline-block;
+	padding: 0.6em 1.1em;
+	border-radius: var(--evvnt-cal-radius);
+	background: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text) !important;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.evvnt-cal__button:hover,
+.evvnt-cal__button:focus-visible {
+	filter: brightness(0.92);
+}
+
+.evvnt-cal__toolbar {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 1rem;
+}
+
+.evvnt-cal__nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: var(--evvnt-cal-gap);
+}
+
+.evvnt-cal__nav a {
+	display: inline-block;
+	padding: 0.35em 0.85em;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+.evvnt-cal__nav a[aria-current="page"] {
+	background: var(--evvnt-cal-primary);
+	border-color: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text);
+}
+
+.evvnt-cal__heading {
+	margin: 0 0 0.75rem;
+	font-size: 1.35em;
+}
+
+.evvnt-cal__page {
+	color: var(--evvnt-cal-muted);
+	font-weight: 400;
+	font-size: 0.8em;
+}
+
+.evvnt-cal__section {
+	margin-bottom: calc(var(--evvnt-cal-gap) * 1.5);
+}
+
+.evvnt-cal__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+	gap: var(--evvnt-cal-gap);
+}
+
+.evvnt-cal__list {
+	display: grid;
+	gap: var(--evvnt-cal-gap);
+}
+
+.evvnt-cal__card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: var(--evvnt-cal-radius);
+}
+
+.evvnt-cal__list .evvnt-cal__card {
+	flex-direction: row;
+}
+
+.evvnt-cal__card-image {
+	display: block;
+	flex: 0 0 auto;
+	aspect-ratio: 16 / 9;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.evvnt-cal__list .evvnt-cal__card-image {
+	width: min(38%, 220px);
+}
+
+.evvnt-cal__card-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.evvnt-cal__card-body {
+	padding: 0.85rem 1rem;
+	min-width: 0;
+}
+
+.evvnt-cal__card-title {
+	margin: 0 0 0.4rem;
+	font-size: 1.05em;
+	line-height: 1.3;
+}
+
+.evvnt-cal__card-title a {
+	text-decoration: none;
+}
+
+.evvnt-cal__card-title a:hover,
+.evvnt-cal__card-title a:focus-visible {
+	text-decoration: underline;
+}
+
+.evvnt-cal__meta {
+	color: var(--evvnt-cal-muted);
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+.evvnt-cal__pagination {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: var(--evvnt-cal-gap);
+}
+
+.evvnt-cal__pagination [rel="next"] {
+	margin-left: auto;
+}
+
+.evvnt-cal__notice {
+	padding: 0.75rem 1rem;
+	border-left: 4px solid var(--evvnt-cal-primary);
+	background: rgba(0, 0, 0, 0.04);
+}
+
+.evvnt-cal__powered {
+	color: var(--evvnt-cal-muted);
+	font-size: 0.8em;
+	text-align: right;
+}
+
+/* Detail view */
+.evvnt-cal__hero {
+	margin: 0 0 1rem;
+}
+
+.evvnt-cal__hero img {
+	display: block;
+	width: 100%;
+	max-height: 480px;
+	object-fit: cover;
+	border-radius: var(--evvnt-cal-radius);
+}
+
+.evvnt-cal__title {
+	margin: 0 0 0.5rem;
+}
+
+.evvnt-cal__summary {
+	font-size: 1.1em;
+}
+
+.evvnt-cal__facts {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 0.4rem 1rem;
+	margin: 1rem 0;
+}
+
+.evvnt-cal__facts dt {
+	font-weight: 600;
+}
+
+.evvnt-cal__facts dd {
+	margin: 0;
+}
+
+.evvnt-cal__description {
+	margin: 1.25rem 0;
+}
+
+.evvnt-cal__dates li {
+	padding: 0.25rem 0;
+	border-bottom: 1px solid var(--evvnt-cal-border);
+}
+
+@media (max-width: 600px) {
+	.evvnt-cal__list .evvnt-cal__card {
+		flex-direction: column;
+	}
+
+	.evvnt-cal__list .evvnt-cal__card-image {
+		width: 100%;
+	}
+
+	.evvnt-cal__facts {
+		grid-template-columns: 1fr;
+	}
+
+	.evvnt-cal__facts dd {
+		margin-bottom: 0.5rem;
+	}
+}

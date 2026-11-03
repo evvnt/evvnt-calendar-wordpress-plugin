@@ -1,0 +1,5887 @@
+{
+ "rawEvents": [
+  {
+   "title": "Vinyl Night",
+   "category_ids": [
+    37
+   ],
+   "root_category_ids": [
+    28
+   ],
+   "summary": "BYO Vinyl Night at Crooked Run Fermentation!",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3151830,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3151830/event_image/0A5DD4B8-EE88-4846-B23D-F6BE5B1F0983_1_105_c.jpg",
+      "width": 768,
+      "height": 1024
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3151830/event_image/featured_0A5DD4B8-EE88-4846-B23D-F6BE5B1F0983_1_105_c.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3151830/event_image/list_thumb_0A5DD4B8-EE88-4846-B23D-F6BE5B1F0983_1_105_c.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3151830/event_image/hero_0A5DD4B8-EE88-4846-B23D-F6BE5B1F0983_1_105_c.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3151830/event_image/featured_0A5DD4B8-EE88-4846-B23D-F6BE5B1F0983_1_105_c.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3151830/event_image/list_thumb_0A5DD4B8-EE88-4846-B23D-F6BE5B1F0983_1_105_c.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3151830/event_image/hero_0A5DD4B8-EE88-4846-B23D-F6BE5B1F0983_1_105_c.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3449262-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Crooked Run Fermentation",
+   "category_name": "Music",
+   "source_id_s": "3449262",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    37,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793743200,
+   "category_names_with_ids": [
+    "37|Music"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2622672,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3449262-vinyl-night",
+   "source_id": 3449262,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Bring your favorite record or records over to Crooked Run and subject the whole bar to listening to your taste in music!",
+   "main_category_path": [
+    28,
+    30,
+    37
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    37
+   ],
+   "city_country": "Leesburg, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T17:00:00-05:00",
+   "end_time": "2026-11-03T22:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://crookedrunfermentation.com/leesburg-virginia/"
+   },
+   "venue": {
+    "name": "Crooked Run Fermentation",
+    "address_1": "205 Harrison Street Southeast",
+    "address_2": null,
+    "town": "Leesburg",
+    "country": "United States",
+    "post_code": "20175",
+    "latitude": 39.112355,
+    "longitude": -77.563107
+   },
+   "_geoloc": {
+    "lat": 39.112355,
+    "lng": -77.563107
+   },
+   "start_time_i": 1793743200,
+   "end_time_i": 1793761200,
+   "created_time_i": 1769030562,
+   "last_indexed_i": 1769030563,
+   "score": 200,
+   "objectID": "41654203"
+  },
+  {
+   "title": "Alzheimer Association's In-Person Caregiver Support Group.",
+   "category_ids": [
+    462
+   ],
+   "root_category_ids": [
+    458
+   ],
+   "summary": "The Alzheimer Association is here to help raise awareness about Alzheimer's and related dementia.\n",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3217176,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3217176/event_image/AA_LOGO_with_800_200x200.png",
+      "width": 200,
+      "height": 200
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3217176/event_image/featured_AA_LOGO_with_800_200x200.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3217176/event_image/list_thumb_AA_LOGO_with_800_200x200.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3217176/event_image/hero_AA_LOGO_with_800_200x200.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3217176/event_image/featured_AA_LOGO_with_800_200x200.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3217176/event_image/list_thumb_AA_LOGO_with_800_200x200.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3217176/event_image/hero_AA_LOGO_with_800_200x200.webp"
+     }
+    }
+   ],
+   "links": {
+    "Virtual": "https://go.evvnt.com/3523458-0"
+   },
+   "artists": "",
+   "keywords": "alzheimer'sassociation",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Alzheimer's Association",
+   "category_name": "Support Groups",
+   "source_id_s": "3523458",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    462,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793744100,
+   "category_names_with_ids": [
+    "462|Support Groups"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2672216,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3523458-alzheimer-association-s-in-person-caregiver-support-group",
+   "source_id": 3523458,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Support groups create a safe, confidential, supportive environment or community and a chance for participants to develop informal mutual support and social relationships. They also educate and inform participants about dementia and help participants develop methods and skills to solve problems.\n\nSchedule:  First Tuesday of every month.\nTime:  5:15 PM - 6:15 PM \nStart Date:  4.7.26\nUntil:  6.1.27\n\nHatchery \n42881 Lake Babcock Drive, Suite 200\nBabcock Ranch\nFL \n33908\n\nRegistration:\n \nTo register please call the Alzheimer Association's 24/7 Helpline at:  800.272.3900.\n\n \n\n\n \n\n\n \n\n",
+   "main_category_path": [
+    458,
+    201,
+    462
+   ],
+   "category_path_ids": [
+    458,
+    201,
+    462
+   ],
+   "city_country": "Charlotte County, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T17:15:00-05:00",
+   "end_time": "2026-11-03T18:15:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Virtual": "http://www.alz.org/crf"
+   },
+   "venue": {
+    "name": "The Hatchery",
+    "address_1": "200 Babcock Ranch Road",
+    "address_2": null,
+    "town": "Charlotte County",
+    "country": "United States",
+    "post_code": "33982",
+    "latitude": 26.7832419,
+    "longitude": -81.7471762
+   },
+   "_geoloc": {
+    "lat": 26.7832419,
+    "lng": -81.7471762
+   },
+   "start_time_i": 1793744100,
+   "end_time_i": 1793747700,
+   "created_time_i": 1772893097,
+   "last_indexed_i": 1772893098,
+   "score": 200,
+   "objectID": "41987883"
+  },
+  {
+   "title": "Faculty Recital Series: A Nation in Song, Emily Riggs, Soprano & David Ballena, Piano",
+   "category_ids": [
+    30
+   ],
+   "root_category_ids": [
+    28
+   ],
+   "summary": "Music faculty Emily Riggs and David Ballena present a recital of American art songs that showcase the nation\u2019s rich musical heritage across generations and styles.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3502685,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3502685/event_image/shutterstock_1906926739.jpg",
+      "width": 1620,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3502685/event_image/featured_shutterstock_1906926739.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3502685/event_image/list_thumb_shutterstock_1906926739.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3502685/event_image/hero_shutterstock_1906926739.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3502685/event_image/featured_shutterstock_1906926739.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3502685/event_image/list_thumb_shutterstock_1906926739.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3502685/event_image/hero_shutterstock_1906926739.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3845881-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Fine Arts Instructional Center",
+   "category_name": "Performing Arts",
+   "source_id_s": "3845881",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    30,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793745000,
+   "category_names_with_ids": [
+    "30|Performing Arts"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2880684,
+   "source_broadcast_url": null,
+   "source_id": 3845881,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Music faculty Emily Riggs and David Ballena present a recital of American art song featuring works by Margaret Bonds, Aaron Copland, Jake Heggie, Charles Ives, and Undine Smith Moore. Spanning generations and musical styles, this program highlights the diversity and depth of America\u2019s vocal repertoire, offering a vivid portrait of the nation through its rich tradition of song.",
+   "main_category_path": [
+    28,
+    30
+   ],
+   "category_path_ids": [
+    28,
+    30
+   ],
+   "city_country": "Windham, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T17:30:00-05:00",
+   "end_time": "2026-11-03T19:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://www.easternct.edu/registrar/facilities/fineartinstructionalcenter.html"
+   },
+   "venue": {
+    "name": "Fine Arts Instructional Center (FAIC)",
+    "address_1": "306 High Street",
+    "address_2": null,
+    "town": "Windham",
+    "country": "United States",
+    "post_code": "06226",
+    "latitude": 41.7219259,
+    "longitude": -72.2168167
+   },
+   "_geoloc": {
+    "lat": 41.7219259,
+    "lng": -72.2168167
+   },
+   "start_time_i": 1793745000,
+   "end_time_i": 1793750400,
+   "created_time_i": 1790357768,
+   "last_indexed_i": 1790357769,
+   "score": 200,
+   "tags": [],
+   "objectID": "44628457"
+  },
+  {
+   "title": "Duke Football Radio Show and Tailgate Dinner at the Washington Duke Inn & Golf Club",
+   "category_ids": [
+    22
+   ],
+   "root_category_ids": [
+    22
+   ],
+   "summary": "The Duke Football Radio Show is returning to the AAA Four Diamond Washington Duke Inn & Golf Club, and you are invited to experience it live!",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3457322,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3457322/event_image/Screenshot__2441_.png",
+      "width": 1112,
+      "height": 562
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3457322/event_image/featured_Screenshot__2441_.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3457322/event_image/list_thumb_Screenshot__2441_.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3457322/event_image/hero_Screenshot__2441_.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3457322/event_image/featured_Screenshot__2441_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3457322/event_image/list_thumb_Screenshot__2441_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3457322/event_image/hero_Screenshot__2441_.webp"
+     }
+    }
+   ],
+   "links": {},
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": null,
+   "category_name": "Sports / Leisure",
+   "source_id_s": "3796959",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    22,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793745000,
+   "category_names_with_ids": [
+    "22|Sports / Leisure"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2846552,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3796959-duke-football-radio-show-and-tailgate-dinner-at-the-washington-duke-inn-golf-club",
+   "source_id": 3796959,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The Duke Football Radio Show is returning to the AAA Four Diamond Washington Duke Inn & Golf Club, and you are invited to experience it live! From September 1 through the end of November, join Head Coach Manny Diaz and the legendary voice of Duke Football, David Shumate, for an exciting night of football talk, fan camaraderie and Blue Devil spirit right in the heart of campus. \n\n \n\nStart your evening at Vista Restaurant with a delicious tailgate spread served from 5:30\u20137 p.m. Enjoy favorites including savory beef brisket, pulled pork, Szechuan chicken wings and the Inn\u2019s iconic shrimp and corn chowder before settling in for the show. \n\n \n\nThen, get ready for the live broadcast, featuring fresh insights, spirited conversation and a behind-the-scenes look at Duke Football you will not want to miss. \n\n \n\nAnd there is even more in store for fans who join us in person! Each week, guests will have the opportunity to win exciting prizes, including an overnight stay with breakfast for two at the Inn. \n\n \nUpcoming shows run from 7-8 p.m. on the following dates: \n\n \nTuesday, September 1 \nTuesday, September 8 \nTuesday, September 15 \nTuesday, September 22 \nTuesday, October 6 \nTuesday, October 13 \nWednesday, October 21 \nTuesday, October 27 \nTuesday, November 3 \nWednesday, November 11 \nWednesday, November 18 \nTuesday, November 24\t \n\n \n\nAll shows are open to the public and free to attend, and the tailgate menu and beverage items are available for purchase. \n\n \n\nThe show, a production of the Blue Devil Sports Network from LEARFIELD, is broadcast locally on WRAL News+ (96.5 FM in Durham and 99.3 FM in Raleigh) and The Buzz (620 AM and 1550 AM). It is also available on Blue Devil Sports Network affiliates across the state and the Varsity Network mobile app. In addition, fans can watch the show on Facebook Live via the Duke Football Facebook page. A replay of the broadcast will be available the following day for those that subscribe to The Duke Football Podcast Network platform.   \n\n \n\nFor more information, follow Duke Football on Instagram (@dukefootball) and Facebook (https://www.facebook.com/DukeFOOTBALL/) and follow the Inn on Instagram (@washingtondukeinn) and Facebook (https://www.facebook.com/WashingtonDukeInn).",
+   "main_category_path": [
+    22
+   ],
+   "category_path_ids": [
+    22
+   ],
+   "city_country": "Durham, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T17:30:00-05:00",
+   "end_time": "2026-11-03T20:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {},
+   "venue": {
+    "name": "Washington Duke Inn & Golf Club",
+    "address_1": "3001 Cameron Boulevard",
+    "address_2": null,
+    "town": "Durham",
+    "country": "United States",
+    "post_code": "27705",
+    "latitude": 35.9928204,
+    "longitude": -78.9474455
+   },
+   "_geoloc": {
+    "lat": 35.9928204,
+    "lng": -78.9474455
+   },
+   "start_time_i": 1793745000,
+   "end_time_i": 1793754000,
+   "created_time_i": 1787758456,
+   "last_indexed_i": 1787758456,
+   "score": 200,
+   "tags": [],
+   "objectID": "44243730"
+  },
+  {
+   "title": "RSVP through Sweatpals: Nike Trials x Battle Cancer at Jungla | $30.00/each",
+   "category_ids": [
+    146
+   ],
+   "root_category_ids": [
+    2
+   ],
+   "summary": "Test out Nike shoes and take on a fun Battle Cancer-inspired workout at Jungla! Train, compete, and connect with the fitness community. \ud83d\udcaa",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3559700,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559700/event_image/Screenshot_2026-11-02_at_9.33.24_pm.png",
+      "width": 865,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559700/event_image/featured_Screenshot_2026-11-02_at_9.33.24_pm.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559700/event_image/list_thumb_Screenshot_2026-11-02_at_9.33.24_pm.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559700/event_image/hero_Screenshot_2026-11-02_at_9.33.24_pm.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559700/event_image/featured_Screenshot_2026-11-02_at_9.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559700/event_image/list_thumb_Screenshot_2026-11-02_at_9.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559700/event_image/hero_Screenshot_2026-11-02_at_9.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3902803-0"
+   },
+   "artists": "",
+   "keywords": "nike, fitness, wellness, movement, nike, battlecancer, trial, competition, community",
+   "prices": {
+    "RSVP through Sweatpals": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Sweatpals",
+   "category_name": "Sports, Health & Fitness",
+   "source_id_s": "3902803",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    146,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793746800,
+   "category_names_with_ids": [
+    "146|Sports, Health & Fitness"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2919095,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3902803-rsvp-through-sweatpals-nike-trials-x-battle-cancer-at-jungla-30-00-each",
+   "source_id": 3902803,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Important \u2013 Please read before RSVPing\nThis is a PAID event. EVVNT is used for discovery only.\n\nEach ticket is $30.00 and must be secured via the official RSVP link below. EVVNT RSVPs or tickets will not be accepted at check-in.\n\nSECURE YOUR SPOT HERE: https://jvklqpnsjkvbsdlnzywi.supabase.co/functions/v1/track-click?id=f812f7ad-ff52-4b87-99ba-79a842a88429\n\nEvent updates\nEvent details on EVVNT may not always reflect the most up-to-date information.\nAny important updates or changes will be shared through the official event page and community updates.\n\nEvent details\nCome train with us, test out a pair of Nike shoes, and put them to work in a fun Battle Cancer inspired workout.\n\nLace up, move with the community, and experience the energy of competition together.\n\n\nDiscover more fitness & wellness events like this near you. Explore upcoming experiences through Sweatpals.\n",
+   "main_category_path": [
+    2,
+    139,
+    146
+   ],
+   "category_path_ids": [
+    2,
+    139,
+    146
+   ],
+   "city_country": "Medley, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:00:00-05:00",
+   "end_time": "2026-11-03T19:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://jvklqpnsjkvbsdlnzywi.supabase.co/functions/v1/track-click?id=f812f7ad-ff52-4b87-99ba-79a842a88429"
+   },
+   "venue": {
+    "name": "Jungla Training Gym",
+    "address_1": "7265 Northwest 74th Street",
+    "address_2": null,
+    "town": "Medley",
+    "country": "United States",
+    "post_code": "33166",
+    "latitude": 25.8414654,
+    "longitude": -80.3152651
+   },
+   "_geoloc": {
+    "lat": 25.8414654,
+    "lng": -80.3152651
+   },
+   "start_time_i": 1793746800,
+   "end_time_i": 1793750400,
+   "created_time_i": 1793627328,
+   "last_indexed_i": 1793627328,
+   "score": 200,
+   "tags": [],
+   "objectID": "45071046"
+  },
+  {
+   "title": "SOB's Presents: Election Night Watch Party: The Revolution Will Be Televised",
+   "category_ids": [
+    208
+   ],
+   "root_category_ids": [
+    196
+   ],
+   "summary": "A stage for the world. A space for New York.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3556860,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3556860/event_image/election_night__1_.jpg",
+      "width": 864,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3556860/event_image/featured_election_night__1_.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3556860/event_image/list_thumb_election_night__1_.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3556860/event_image/hero_election_night__1_.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3556860/event_image/featured_election_night__1_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3556860/event_image/list_thumb_election_night__1_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3556860/event_image/hero_election_night__1_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3899750-0",
+    "Website": "https://go.evvnt.com/3899750-2"
+   },
+   "artists": "",
+   "keywords": "election, midterms, watchparty, electionnight, sobs",
+   "prices": {
+    "Free": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "SOB's",
+   "category_name": "Politics",
+   "source_id_s": "3899750",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    208,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793746800,
+   "category_names_with_ids": [
+    "208|Politics"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2916810,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3899750-sob-s-presents-election-night-watch-party-the-revolution-will-be-televised",
+   "source_id": 3899750,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Join us for a FREE midterm election watch party, bringing New Yorkers together around live election coverage and a shared stake in what comes next. The Revolution Will Be Televised.\n\nWith food, drinks, live hosts, and a FREE SHOT for anyone with an \u201cI Voted\u201d sticker. \n\nAs questions of belonging, freedom, and our country\u2019s future take center stage, we\u2019re asking: What does it mean to be a New Yorker? How do we show up for our neighbors? What kind of future do we want to share? \n\nOur answer begins with opening our doors. \n\nSince 1982, the world has walked through our room. Artists have brought their languages, rhythms, histories, and struggles to the stage. Our commitment to the SOB\u2019s community extends beyond the music. \n\nCome with friends. Come on your own. Bring your questions, your hopes, and your belief that this city belongs to all of us.\n\n",
+   "main_category_path": [
+    196,
+    208
+   ],
+   "category_path_ids": [
+    196,
+    208
+   ],
+   "city_country": "New York, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:00:00-05:00",
+   "end_time": "2026-11-03T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://kyd.to/J5f1sUkM",
+    "Website": "https://sobs.com/events/election-night-watch-party-the-revolution-will-be-televised/"
+   },
+   "venue": {
+    "name": "Sounds Of Brazil",
+    "address_1": "204 Varick Street",
+    "address_2": null,
+    "town": "New York",
+    "country": "United States",
+    "post_code": "10014",
+    "latitude": 40.728453,
+    "longitude": -74.0051298
+   },
+   "_geoloc": {
+    "lat": 40.728453,
+    "lng": -74.0051298
+   },
+   "start_time_i": 1793746800,
+   "end_time_i": 1793764800,
+   "created_time_i": 1793311619,
+   "last_indexed_i": 1793311619,
+   "score": 200,
+   "tags": [],
+   "objectID": "45040091"
+  },
+  {
+   "title": "Renaissance Med Spa 3rd Anniversary Event",
+   "category_ids": [
+    8
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "Don\u2019t forget to RSVP at the link below  \ud83c\udf89\nhttps://renaissancemedspaco.com/anniversary-event",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3554273,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554273/event_image/6abf1ee884932298740a5729.png",
+      "width": 1080,
+      "height": 402
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554273/event_image/featured_6abf1ee884932298740a5729.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554273/event_image/list_thumb_6abf1ee884932298740a5729.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554273/event_image/hero_6abf1ee884932298740a5729.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554273/event_image/featured_6abf1ee884932298740a5729.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554273/event_image/list_thumb_6abf1ee884932298740a5729.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3554273/event_image/hero_6abf1ee884932298740a5729.webp"
+     }
+    }
+   ],
+   "links": {
+    "Booking": "https://go.evvnt.com/3896711-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Renaissance Med Spa ",
+   "category_name": "Health and Fitness",
+   "source_id_s": "3896711",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    8,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793746800,
+   "category_names_with_ids": [
+    "8|Health and Fitness"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2914698,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3896711-renaissance-med-spa-3rd-anniversary-event",
+   "source_id": 3896711,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Join us for an exclusive Anniversary + Holiday Open House filled with HUGE event-only savings, food + drinks, treatment education, luxe raffles, amazing giveaways, and so much more! RSVP for FREE below\nhttps://renaissancemedspaco.com/anniversary-event",
+   "main_category_path": [
+    4,
+    12,
+    8
+   ],
+   "category_path_ids": [
+    4,
+    12,
+    8
+   ],
+   "city_country": "Colorado Springs, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T16:00:00-07:00",
+   "end_time": "2026-11-03T19:00:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Booking": "https://renaissancemedspaco.com/anniversary-event"
+   },
+   "venue": {
+    "name": "Renaissance Med Spa",
+    "address_1": "5014 El Camino Drive",
+    "address_2": null,
+    "town": "Colorado Springs",
+    "country": "United States",
+    "post_code": "80918",
+    "latitude": 38.9029703,
+    "longitude": -104.7703286
+   },
+   "_geoloc": {
+    "lat": 38.9029703,
+    "lng": -104.7703286
+   },
+   "start_time_i": 1793746800,
+   "end_time_i": 1793757600,
+   "created_time_i": 1793192681,
+   "last_indexed_i": 1793192681,
+   "score": 200,
+   "tags": [],
+   "objectID": "45018103"
+  },
+  {
+   "title": "Cr\u00eapes & Company",
+   "category_ids": [
+    9
+   ],
+   "root_category_ids": [
+    9
+   ],
+   "summary": "*** Limit 9 seats per class ***Each class includes hands-on instruction and a full meal. We will have a complimentary red and white wine as well as non-alcoholic beverages.\u00a0--MENUProsciutto wrapped...",
+   "description_html": "<p><strong>*** Limit 9 seats per class ***</strong></p><p>Each class includes hands-on instruction and a full meal. We will have a complimentary red and white wine as well as non-alcoholic beverages.\u00a0</p><p>--</p><p>MENU</p><p>Prosciutto wrapped Asparagus</p><p>Goat Cheese &amp; Fig Crostini</p><p><strong>Savory Crepes:</strong>\u00a0Ham, Gruyere, Chicken, Basil Pesto, Mozzarella</p><p>Raspberry Salad with Raspberry Dressing</p><p><strong>Sweet Crepes:</strong>\u00a0Banana &amp; Nutella, Berries and Chocolate,\u00a0Whipped Cream</p>",
+   "hashtag": null,
+   "images": [
+    {
+     "id": 3429980,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/1fdf8e39-1684-4e07-852e-9352d522931c.jpg/1fdf8e39-1684-4e07-852e-9352d522931c.jpg",
+      "width": 1051,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/1fdf8e39-1684-4e07-852e-9352d522931c.jpg/1fdf8e39-1684-4e07-852e-9352d522931c_featured.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/1fdf8e39-1684-4e07-852e-9352d522931c.jpg/1fdf8e39-1684-4e07-852e-9352d522931c_list_thumb.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/1fdf8e39-1684-4e07-852e-9352d522931c.jpg/1fdf8e39-1684-4e07-852e-9352d522931c_hero.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/1fdf8e39-1684-4e07-852e-9352d522931c.jpg/featured_1fdf8e39-1684-4e07-852e-9352d522931c.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/1fdf8e39-1684-4e07-852e-9352d522931c.jpg/list_thumb_1fdf8e39-1684-4e07-852e-9352d522931c.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/1fdf8e39-1684-4e07-852e-9352d522931c.jpg/hero_1fdf8e39-1684-4e07-852e-9352d522931c.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3763745-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {
+    "General Admission": "USD 64.58"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Reto's Kitchen",
+   "category_name": "Food / Drink",
+   "source_id_s": "3763745",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    9,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793746800,
+   "category_names_with_ids": [
+    "9|Food / Drink"
+   ],
+   "has_evvnt_ticketing?": true,
+   "event_parent_id": 2824032,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3763745-crepes-company",
+   "source_id": 3763745,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "*** Limit 9 seats per class ***Each class includes hands-on instruction and a full meal. We will have a complimentary red and white wine as well as non-alcoholic beverages.\u00a0--MENUProsciutto wrapped AsparagusGoat Cheese &amp; Fig CrostiniSavory Crepes:\u00a0Ham, Gruyere, Chicken, Basil Pesto, MozzarellaRaspberry Salad with Raspberry DressingSweet Crepes:\u00a0Banana &amp; Nutella, Berries and Chocolate,\u00a0Whipped Cream",
+   "main_category_path": [
+    9
+   ],
+   "category_path_ids": [
+    9
+   ],
+   "city_country": "Greensboro, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:00:00-05:00",
+   "end_time": "2026-11-03T20:30:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://ticketmetriad.com/events/crpes-company-236962"
+   },
+   "venue": {
+    "name": "Reto's Kitchen",
+    "address_1": "600 South Elam",
+    "address_2": null,
+    "town": "Greensboro",
+    "country": "United States",
+    "post_code": "27403",
+    "latitude": 36.0684712,
+    "longitude": -79.8283049
+   },
+   "_geoloc": {
+    "lat": 36.0684712,
+    "lng": -79.8283049
+   },
+   "start_time_i": 1793746800,
+   "end_time_i": 1793755800,
+   "created_time_i": 1785895822,
+   "last_indexed_i": 1785895822,
+   "score": 200,
+   "tags": [],
+   "objectID": "44004400"
+  },
+  {
+   "title": "Godzilla Minus Zero - Godzilla Day IMAX Early Access",
+   "category_ids": [
+    7
+   ],
+   "root_category_ids": [
+    28
+   ],
+   "summary": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3520054,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520054/event_image/GMZ_IMAX_WEB_IG_EN_GKIDS_27x39-5_01A.png",
+      "width": 864,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520054/event_image/featured_GMZ_IMAX_WEB_IG_EN_GKIDS_27x39-5_01A.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520054/event_image/list_thumb_GMZ_IMAX_WEB_IG_EN_GKIDS_27x39-5_01A.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520054/event_image/hero_GMZ_IMAX_WEB_IG_EN_GKIDS_27x39-5_01A.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520054/event_image/featured_GMZ_IMAX_WEB_IG_EN_GKIDS_27x39-5_01A.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520054/event_image/list_thumb_GMZ_IMAX_WEB_IG_EN_GKIDS_27x39-5_01A.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520054/event_image/hero_GMZ_IMAX_WEB_IG_EN_GKIDS_27x39-5_01A.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3864438-0"
+   },
+   "artists": "",
+   "keywords": "imax, godzilla, japanese, subtitles, movie, tennessee, chattanooga, aquarium",
+   "prices": {
+    "General Admission": "USD 15.0",
+    "Member": "USD 13.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Tennessee Aquarium IMAX 3D Theater",
+   "category_name": "Film / Cinema",
+   "source_id_s": "3864438",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    7,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793747700,
+   "category_names_with_ids": [
+    "7|Film / Cinema"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2894003,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3864438-godzilla-minus-zero-godzilla-day-imax-early-access",
+   "source_id": 3864438,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "November 3 | Godzilla Day IMAX Early Access\n2 Hours 15 Minutes | R | 2D\n\nJust as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant.\n\nThere is no third time. Everything ends here.\n\nGodzilla Minus Zero is part of the Filmed For IMAX\u00ae program.\n\nLanguage: Japanese | Subtitles: English\n\nPlease note: This film is rated R for some violent content and bloody images\nChildren under 6 are not permitted to attend R-rated movies. Those Under 17 can only attend if accompanied by a parent or legal guardian who is at least 21 years old and has a valid ID. This policy aligns with the Motion Picture Association of America\u2019s rating system.\n\nMembers/Deluxe Members/River Society: Please log in to your member account to access your discounted member tickets.",
+   "main_category_path": [
+    28,
+    39,
+    7
+   ],
+   "category_path_ids": [
+    28,
+    39,
+    7
+   ],
+   "city_country": "Chattanooga, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:15:00-05:00",
+   "end_time": "2026-11-03T20:30:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://tickets.tnaqua.org/events/01a11344-68fc-1cc4-d03e-24e67660e10f"
+   },
+   "venue": {
+    "name": "Tennessee Aquarium IMAX Theater",
+    "address_1": "201 Chestnut Street",
+    "address_2": null,
+    "town": "Chattanooga",
+    "country": "United States",
+    "post_code": "37402",
+    "latitude": 35.0544542,
+    "longitude": -85.3122596
+   },
+   "_geoloc": {
+    "lat": 35.0544542,
+    "lng": -85.3122596
+   },
+   "start_time_i": 1793747700,
+   "end_time_i": 1793755800,
+   "created_time_i": 1791399555,
+   "last_indexed_i": 1791399556,
+   "score": 200,
+   "tags": [],
+   "objectID": "44777464"
+  },
+  {
+   "title": "Taco Tuesday Buffet Cruise Aboard the Barbara-Lee Rivership in Sanford, Florida",
+   "category_ids": [
+    188,
+    363
+   ],
+   "root_category_ids": [
+    9,
+    22
+   ],
+   "summary": "Turn your Tuesday into a fiesta aboard the Barbara Lee Rivership in Sanford, Florida! Cruise beautiful Lake Monroe at sunset while enjoying an all-you-can-enjoy Mexican-inspired taco buffet! ",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3460457,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3460457/event_image/TacoTuesdayPromoSquare.png",
+      "width": 1080,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3460457/event_image/featured_TacoTuesdayPromoSquare.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3460457/event_image/list_thumb_TacoTuesdayPromoSquare.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3460457/event_image/hero_TacoTuesdayPromoSquare.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3460457/event_image/featured_TacoTuesdayPromoSquare.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3460457/event_image/list_thumb_TacoTuesdayPromoSquare.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3460457/event_image/hero_TacoTuesdayPromoSquare.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3800406-0"
+   },
+   "artists": "",
+   "keywords": "stjohnrsivershipco, buffetcruise, tacotuesday, mexicanbuffet",
+   "prices": {
+    "General Admission - Adult (13+)": "USD 48.0",
+    "Children (4-12) Admission": "USD 30.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "St Johns Rivership Co",
+   "category_name": "Restaurants",
+   "source_id_s": "3800406",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    188,
+    363,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793748600,
+   "category_names_with_ids": [
+    "188|Restaurants",
+    "363|Sailing"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2849053,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3800406-taco-tuesday-buffet-cruise-aboard-the-barbara-lee-rivership-in-sanford-florida",
+   "source_id": 3800406,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Turn an ordinary Tuesday into a fiesta on the water! Join us aboard the beautiful Barbara Lee for a delicious Taco Tuesday Buffet Cruise featuring an incredible all-you-can-enjoy Mexican-inspired buffet, handcrafted margaritas, and breathtaking sunset views as we cruise across beautiful Lake Monroe.\n\nDeparting from the Historic Downtown Sanford Marina, this fun-filled evening is the perfect way to celebrate with family, friends, coworkers, or that special someone. Whether you're planning a casual date night, a family outing, or simply looking for something different to do in Central Florida, Taco Tuesday aboard the Barbara Lee is a delicious experience you won't want to miss!\n\nCruise Details\nBoarding: 6:00 PM\nCruising: 6:30 PM \u2013 8:00 PM\n\nTicket Prices\n\n\ud83c\udf2e Adults: $48\n\ud83c\udf2e Children: $30\nYour ticket includes a reserved table in our enclosed, climate-controlled dining room. (Individual ticketed guests may be seated with other individual guests.)\n\nTaco Tuesday Buffet\nEnjoy a mouthwatering buffet featuring:\n\nChips & Dip\nBuild-Your-Own Tacos\nSeasoned Beef\nChicken\nEnchiladas\nChicken\nBeef\nVegan Cheese\nEmpanadas\nBeef\nChicken\nPizza\nTortilla Soup\nRefried Beans\nDirty Mexican Rice\nTres Leches Cake for Dessert\nDietary Options\n\ud83e\udd6c Vegan Available\n\ud83e\udd57 Vegetarian Available\n\ud83c\udf3e Gluten-Free Options Available\n\nDon't Miss Our Signature Sunset Margarita!\n\nComplete your evening with our refreshing Sunset Margarita, handcrafted with:\n\nMango Pur\u00e9e\nSour Mix\nFresh Lime Juice\nTequila\nTriple Sec\nSplash of Soda\nDash of Grenadine\nAvailable in:\n\n\ud83c\udf79 Souvenir Glass \u2013 $18.99\n\ud83c\udf79 Regular Glass \u2013 $10.99\nA full cash bar is also available with beer, wine, cocktails, and non-alcoholic beverages.\n\nA full cash bar is also available with beer, wine, cocktails, and non-alcoholic beverages. -Cruise the Beautiful St. Johns River\nRelax aboard the Barbara Lee as we cruise the scenic waters of Lake Monroe, enjoying Florida's beautiful evening skies, peaceful river views, and a festive atmosphere. Whether you're here for the tacos, margaritas, or simply a relaxing evening on the water, this cruise offers the perfect midweek escape.\n\nReservations\nTickets are available online at RivershipTix.com or by calling our office at 321-441-3030.\n\nIf tickets appear unavailable online, please call our office to verify availability.\n\nCome hungry, bring your friends, and enjoy an unforgettable Taco Tuesday Buffet Cruise Aboard the Barbara Lee\u2014where great food, refreshing margaritas, and beautiful waterfront views come together for one amazing evening!",
+   "main_category_path": [
+    9,
+    188
+   ],
+   "category_path_ids": [
+    9,
+    188,
+    22,
+    363
+   ],
+   "city_country": "Sanford, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:30:00-05:00",
+   "end_time": "2026-11-03T20:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.stjohnsrivershipco.com/cruises-fares/tacotuesday/?date=09/01/2026&timeId=21078146&departure=0&destination=0"
+   },
+   "venue": {
+    "name": "St Johns Rivership Company",
+    "address_1": "433 North Palmetto Avenue",
+    "address_2": null,
+    "town": "Sanford",
+    "country": "United States",
+    "post_code": "32771",
+    "latitude": 28.8153794,
+    "longitude": -81.2656263
+   },
+   "_geoloc": {
+    "lat": 28.8153794,
+    "lng": -81.2656263
+   },
+   "start_time_i": 1793748600,
+   "end_time_i": 1793754000,
+   "created_time_i": 1787922209,
+   "last_indexed_i": 1787922209,
+   "score": 200,
+   "tags": [],
+   "objectID": "44267917"
+  },
+  {
+   "title": "RPO Around the Town Election Night Special (Greece, November 2026)",
+   "category_ids": [
+    16,
+    450,
+    37
+   ],
+   "root_category_ids": [
+    16,
+    28
+   ],
+   "summary": "It\u2019s election night RPO style! An all-American program and you get to vote for the finale. ",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3534325,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3534325/event_image/RPO_2627_PR_CALENDAR_1920x1080_NOVEMBER_2.png",
+      "width": 1920,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3534325/event_image/featured_RPO_2627_PR_CALENDAR_1920x1080_NOVEMBER_2.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3534325/event_image/list_thumb_RPO_2627_PR_CALENDAR_1920x1080_NOVEMBER_2.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3534325/event_image/hero_RPO_2627_PR_CALENDAR_1920x1080_NOVEMBER_2.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3534325/event_image/featured_RPO_2627_PR_CALENDAR_1920x1080_NOVEMBER_2.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3534325/event_image/list_thumb_RPO_2627_PR_CALENDAR_1920x1080_NOVEMBER_2.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3534325/event_image/hero_RPO_2627_PR_CALENDAR_1920x1080_NOVEMBER_2.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3878509-0"
+   },
+   "artists": "Rochester Philharmonic Orchestra, Jake Taniguchi",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Rochester Philharmonic Orchestra",
+   "category_name": "Live Music",
+   "source_id_s": "3878509",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    16,
+    450,
+    37,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "16|Live Music",
+    "450|Classical",
+    "37|Music"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2903907,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3878509-rpo-around-the-town-election-night-special-greece-november-2026",
+   "source_id": 3878509,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "It\u2019s election night RPO style! An all-American program and you get to vote for the finale. No recounts, no waiting for the networks to call it. The winning piece closes the night and you\u2019ll know the results before you leave!\n\nThis event is FREE and tickets are not required.",
+   "main_category_path": [
+    16
+   ],
+   "category_path_ids": [
+    16,
+    450,
+    28,
+    30,
+    37
+   ],
+   "city_country": "Rochester, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-05:00",
+   "end_time": "2026-11-03T20:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://rpo.org/event/free-around-the-town-concert-greece-pac/"
+   },
+   "venue": {
+    "name": "Greece Central Performing Arts Center",
+    "address_1": "800 Long Pond Road",
+    "address_2": null,
+    "town": "Rochester",
+    "country": "United States",
+    "post_code": "14612",
+    "latitude": 43.245,
+    "longitude": -77.6930556
+   },
+   "_geoloc": {
+    "lat": 43.245,
+    "lng": -77.6930556
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793754000,
+   "created_time_i": 1792180496,
+   "last_indexed_i": 1792180498,
+   "score": 200,
+   "tags": [],
+   "objectID": "44872367"
+  },
+  {
+   "title": "Fifth Community Town Hall Meeting to Provide Information on Measure C",
+   "category_ids": [
+    201
+   ],
+   "root_category_ids": [
+    458
+   ],
+   "summary": "The City of Santa Maria will host its fifth and final community town hall meeting to provide residents with information about Measure C, a proposed half-cent sales tax measure on the Nov 3, ballot. ",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3540333,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540333/event_image/Untitled_design_-_2026-10-21T130627.025.jpg",
+      "width": 1475,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540333/event_image/featured_Untitled_design_-_2026-10-21T130627.025.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540333/event_image/list_thumb_Untitled_design_-_2026-10-21T130627.025.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540333/event_image/hero_Untitled_design_-_2026-10-21T130627.025.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540333/event_image/featured_Untitled_design_-_2026-10-21T130627.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540333/event_image/list_thumb_Untitled_design_-_2026-10-21T130627.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3540333/event_image/hero_Untitled_design_-_2026-10-21T130627.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3884983-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5316
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": null,
+   "category_name": "Local / Community",
+   "source_id_s": "3884983",
+   "publisher_editable": true,
+   "publisher_flags": {
+    "5316": [
+     "blacklisted",
+     "preferred_for_print"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5316,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    201,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "201|Local / Community"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2908595,
+   "source_broadcast_url": "http://www.santamariatimes.com/events/?_evDiscoveryPath=/event/3884983-fifth-community-town-hall-meeting-to-provide-information-on-measure-c",
+   "source_id": 3884983,
+   "blacklisted_publisher_ids": [
+    5316
+   ],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The City of Santa Maria will host its fifth and final community town hall meeting to provide residents with information about Measure C, a proposed half-cent sales tax measure on the November 3, 2026, ballot. City representatives provide information about the proposed measure and its potential implications for the community, followed by a question-and-answer session to give residents an opportunity to ask questions and share their concerns.\n\n \n\nThe meeting will be held on Thursday, October 29, 2026, from 4:00 p.m. to 5:00 p.m. at the Elwin Mussell Senior Center, located at 510 East Park Street. Spanish interpretation services will be available.\n\n \n\nResidents can learn more about Measure C by visiting the City\u2019s website at: https://www.cityofsantamaria.org/services/departments/city-clerk-records/elections/measure-c2026.\n\n \n\nAdditional information is available in the City\u2019s recent State of the City presentation that took place on October 13, 2026. A recording of the presentation is available at:\n\nhttps://www.youtube.com/watch?v=39YhSVPwxRw.",
+   "main_category_path": [
+    458,
+    201
+   ],
+   "category_path_ids": [
+    458,
+    201
+   ],
+   "city_country": "Santa Maria, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T16:00:00-08:00",
+   "end_time": "2026-11-03T17:00:00-08:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://www.cityofsantamaria.org/services/departments/city-clerk-records/elections/measure-c2026"
+   },
+   "venue": {
+    "name": "Mussell Senior Center",
+    "address_1": "510 East Park Avenue",
+    "address_2": null,
+    "town": "Santa Maria",
+    "country": "United States",
+    "post_code": "93454",
+    "latitude": 34.943381,
+    "longitude": -120.428257
+   },
+   "_geoloc": {
+    "lat": 34.943381,
+    "lng": -120.428257
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793754000,
+   "created_time_i": 1792613234,
+   "last_indexed_i": 1793292608,
+   "score": 200,
+   "tags": [],
+   "objectID": "44913486"
+  },
+  {
+   "title": "Wills, Trusts & Nursing Home Asset Protection",
+   "category_ids": [
+    61
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "ESTATE PLANNING WORKSHOP",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3559467,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559467/event_image/2513e02a4b32486695b0c350c581923c.jpg",
+      "width": 200,
+      "height": 300
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559467/event_image/featured_2513e02a4b32486695b0c350c581923c.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559467/event_image/list_thumb_2513e02a4b32486695b0c350c581923c.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559467/event_image/hero_2513e02a4b32486695b0c350c581923c.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559467/event_image/featured_2513e02a4b32486695b0c350c581923c.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559467/event_image/list_thumb_2513e02a4b32486695b0c350c581923c.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559467/event_image/hero_2513e02a4b32486695b0c350c581923c.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3902549-0"
+   },
+   "artists": "",
+   "keywords": "estateplanning, assetprotection, willsandlivingtrust, willsandtrust, freeseminar",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "The Edwards Law Firm",
+   "category_name": "Legal",
+   "source_id_s": "3902549",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    61,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "61|Legal"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2918909,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3902549-wills-trusts-nursing-home-asset-protection",
+   "source_id": 3902549,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "If you own a home or have assets worth at least $200,000; you owe it to yourself and your family to get the facts on living trusts as a part of an estate plan. If you think you are protected by a simple Will, think again. In many cases a Will guarantees your estate will go through probate, which means your family will not be able to take possession of your estate for many months or even years!\n\nPlus a living trust may protect your assets if you become incapacitated during your lifetime by avoiding guardianship. This means your estate may be managed as you see fit, not as a court-appointed guardian sees fit",
+   "main_category_path": [
+    4,
+    48,
+    61
+   ],
+   "category_path_ids": [
+    4,
+    48,
+    61
+   ],
+   "city_country": "Jacksonville, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-05:00",
+   "end_time": "2026-11-03T21:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://edwardslawfirm.com/seminars/"
+   },
+   "venue": {
+    "name": "Courtyard by Marriott Jacksonville I-295/East Beltway",
+    "address_1": "9815 Lantern Street",
+    "address_2": null,
+    "town": "Jacksonville",
+    "country": "United States",
+    "post_code": "32225",
+    "latitude": 30.3398499,
+    "longitude": -81.5456973
+   },
+   "_geoloc": {
+    "lat": 30.3398499,
+    "lng": -81.5456973
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793757600,
+   "created_time_i": 1793591173,
+   "last_indexed_i": 1793591174,
+   "score": 200,
+   "tags": [],
+   "objectID": "45070311"
+  },
+  {
+   "title": "4th International Conference on Engineering, Management and Social Sciences",
+   "category_ids": [
+    101
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "Integrating Engineering, Management, and Social Sciences for a Sustainable Future.",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3233477,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3233477/event_image/4th_ICEMSS_Poster.png",
+      "width": 763,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3233477/event_image/featured_4th_ICEMSS_Poster.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3233477/event_image/list_thumb_4th_ICEMSS_Poster.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3233477/event_image/hero_4th_ICEMSS_Poster.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3233477/event_image/featured_4th_ICEMSS_Poster.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3233477/event_image/list_thumb_4th_ICEMSS_Poster.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3233477/event_image/hero_4th_ICEMSS_Poster.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3541554-0",
+    "Website": "https://go.evvnt.com/3541554-2"
+   },
+   "artists": "",
+   "keywords": "engineering, management, socialsciences",
+   "prices": {
+    "General Admission": "USD 199.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "JP",
+    "name": "Japan",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Zep Research",
+   "category_name": "Engineering",
+   "source_id_s": "3541554",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    101,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "101|Engineering"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2684736,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3541554-4th-international-conference-on-engineering-management-and-social-sciences",
+   "source_id": 3541554,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The 4th International Conference on Engineering, Management, and Social Sciences (ICEMSS) aims to establish a collaborative platform for exploring new dimensions of research. ICEMSS is dedicated to facilitating discussions on the challenges involved in the practical application of cutting-edge knowledge in the fields of Management, Engineering, and Social Sciences.",
+   "main_category_path": [
+    4,
+    95,
+    101
+   ],
+   "category_path_ids": [
+    4,
+    95,
+    101
+   ],
+   "city_country": "Tokyo, Japan",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T09:00:00+09:00",
+   "end_time": "2026-11-04T18:00:00+09:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://icemss.in/registration",
+    "Website": "https://icemss.in/"
+   },
+   "venue": {
+    "name": "Tokyo",
+    "address_1": "Tokyo",
+    "address_2": null,
+    "town": "Tokyo",
+    "country": "Japan",
+    "post_code": null,
+    "latitude": 35.6764225,
+    "longitude": 139.650027
+   },
+   "_geoloc": {
+    "lat": 35.6764225,
+    "lng": 139.650027
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793782800,
+   "created_time_i": 1773915321,
+   "last_indexed_i": 1773915322,
+   "score": 200,
+   "objectID": "42049716"
+  },
+  {
+   "title": "4th International Conference on Engineering, Management and Social Sciences",
+   "category_ids": [
+    95
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "Integrating Engineering, Management, and Social Sciences for a Sustainable Future.",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3244973,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3244973/event_image/4th_ICEMSS_Poster__1_.png",
+      "width": 763,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3244973/event_image/featured_4th_ICEMSS_Poster__1_.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3244973/event_image/list_thumb_4th_ICEMSS_Poster__1_.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3244973/event_image/hero_4th_ICEMSS_Poster__1_.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3244973/event_image/featured_4th_ICEMSS_Poster__1_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3244973/event_image/list_thumb_4th_ICEMSS_Poster__1_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3244973/event_image/hero_4th_ICEMSS_Poster__1_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3554460-0",
+    "Website": "https://go.evvnt.com/3554460-2"
+   },
+   "artists": "",
+   "keywords": "engineering, management, socialsciences, innovation",
+   "prices": {
+    "General Admission": "USD 199.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "JP",
+    "name": "Japan",
+    "region": "Asia",
+    "subregion": "Eastern Asia"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Zep Research",
+   "category_name": "Engineering & Technology",
+   "source_id_s": "3554460",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    95,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "95|Engineering & Technology"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2693793,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3554460-4th-international-conference-on-engineering-management-and-social-sciences",
+   "source_id": 3554460,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The 4th International Conference on Engineering, Management, and Social Sciences (ICEMSS) aims to establish a collaborative platform for exploring new dimensions of research. ICEMSS is dedicated to facilitating discussions on the challenges involved in the practical application of cutting-edge knowledge in the fields of Management, Engineering, and Social Sciences.",
+   "main_category_path": [
+    4,
+    95
+   ],
+   "category_path_ids": [
+    4,
+    95
+   ],
+   "city_country": "Tokyo, Japan",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T09:00:00+09:00",
+   "end_time": "2026-11-05T18:00:00+09:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://icemss.in/registration",
+    "Website": "https://icemss.in/"
+   },
+   "venue": {
+    "name": "Tokyo",
+    "address_1": "Tokyo",
+    "address_2": null,
+    "town": "Tokyo",
+    "country": "Japan",
+    "post_code": null,
+    "latitude": 35.6764225,
+    "longitude": 139.650027
+   },
+   "_geoloc": {
+    "lat": 35.6764225,
+    "lng": 139.650027
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793869200,
+   "created_time_i": 1774603952,
+   "last_indexed_i": 1774603953,
+   "score": 200,
+   "objectID": "42106786"
+  },
+  {
+   "title": "Building Safety Through Predictability and Rituals",
+   "category_ids": [
+    14
+   ],
+   "root_category_ids": [
+    14
+   ],
+   "summary": "Children thrive when they know what to expect!",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3538613,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538613/event_image/Nov._3.png",
+      "width": 1080,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538613/event_image/featured_Nov._3.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538613/event_image/list_thumb_Nov._3.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538613/event_image/hero_Nov._3.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538613/event_image/featured_Nov.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538613/event_image/list_thumb_Nov.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3538613/event_image/hero_Nov.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3883504-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Jefferson Ready Start Network",
+   "category_name": "Kids / Family",
+   "source_id_s": "3883504",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    14,
+    "non_backfill"
+   ],
+   "online_only": true,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "14|Kids / Family"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2907320,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3883504-building-safety-through-predictability-and-rituals",
+   "source_id": 3883504,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Join Jefferson Ready Start Network for a free virtual parent training focused on how predictable routines and family rituals can help children feel safe, secure and connected. Parents and caregivers will explore practical strategies for creating consistency at home and supporting children's emotional well-being.\n",
+   "main_category_path": [
+    14
+   ],
+   "category_path_ids": [
+    14
+   ],
+   "city_country": "New Orleans, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:00:00-06:00",
+   "end_time": "2026-11-03T20:00:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://docs.google.com/forms/d/e/1FAIpQLSe3D-GOx0oZJSmdQYeuMveKqBLLw6vDM54XwNcFHMuD4YZoig/viewform"
+   },
+   "venue": {
+    "name": "New Orleans",
+    "address_1": "New Orleans",
+    "address_2": null,
+    "town": "New Orleans",
+    "country": "United States",
+    "post_code": null,
+    "latitude": 29.9508941,
+    "longitude": -90.0758356
+   },
+   "_geoloc": {
+    "lat": 29.9508941,
+    "lng": -90.0758356
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793757600,
+   "created_time_i": 1792529043,
+   "last_indexed_i": 1792529044,
+   "score": 200,
+   "tags": [],
+   "objectID": "44902772"
+  },
+  {
+   "title": "Newcomer Orientation",
+   "category_ids": [
+    223
+   ],
+   "root_category_ids": [
+    458
+   ],
+   "summary": " Learn about meditation and the Bozeman Dharma Center. ",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3205349,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3205349/event_image/snowy_buddha_beside_BDC_sign.jpg",
+      "width": 1586,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3205349/event_image/featured_snowy_buddha_beside_BDC_sign.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3205349/event_image/list_thumb_snowy_buddha_beside_BDC_sign.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3205349/event_image/hero_snowy_buddha_beside_BDC_sign.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3205349/event_image/featured_snowy_buddha_beside_BDC_sign.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3205349/event_image/list_thumb_snowy_buddha_beside_BDC_sign.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3205349/event_image/hero_snowy_buddha_beside_BDC_sign.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3510135-0"
+   },
+   "artists": "",
+   "keywords": "meditation, buddhism, mindfulness",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bozeman Dharma Center",
+   "category_name": "Meditation & Yoga",
+   "source_id_s": "3510135",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    223,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "223|Meditation & Yoga"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2662950,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3510135-newcomer-orientation",
+   "source_id": 3510135,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Have questions about meditation, mindfulness, Buddhism or the Bozeman Dharma Center? Come to this free orientation held the first Tuesday of every month.  No registration necessary. In person.",
+   "main_category_path": [
+    458,
+    221,
+    223
+   ],
+   "category_path_ids": [
+    458,
+    221,
+    223
+   ],
+   "city_country": "Bozeman, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T17:00:00-07:00",
+   "end_time": "2026-11-03T18:00:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "http://bozemandharmacenter.org"
+   },
+   "venue": {
+    "name": "Bozeman Dharma Center",
+    "address_1": "3810 Valley Commons Drive",
+    "address_2": null,
+    "town": "Bozeman",
+    "country": "United States",
+    "post_code": "59718",
+    "latitude": 45.6718362,
+    "longitude": -111.0892253
+   },
+   "_geoloc": {
+    "lat": 45.6718362,
+    "lng": -111.0892253
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793754000,
+   "created_time_i": 1772216087,
+   "last_indexed_i": 1772216088,
+   "score": 200,
+   "objectID": "41920717"
+  },
+  {
+   "title": "Polish Papercutting Christmas Cards Workshop",
+   "category_ids": [
+    141
+   ],
+   "root_category_ids": [
+    2
+   ],
+   "summary": "Create three unique holiday cards while learning Wycinanki, the traditional Polish art of decorative paper cutting. ",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3481441,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481441/event_image/polish_paper_xmas_cards.jpg",
+      "width": 1261,
+      "height": 597
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481441/event_image/featured_polish_paper_xmas_cards.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481441/event_image/list_thumb_polish_paper_xmas_cards.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481441/event_image/hero_polish_paper_xmas_cards.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481441/event_image/featured_polish_paper_xmas_cards.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481441/event_image/list_thumb_polish_paper_xmas_cards.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481441/event_image/hero_polish_paper_xmas_cards.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3823076-0",
+    "Website": "https://go.evvnt.com/3823076-2"
+   },
+   "artists": "",
+   "keywords": "papercrafts",
+   "prices": {
+    "class fee": "USD 55.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Racine Art Museum Association, Inc.",
+   "category_name": "Arts & Crafts",
+   "source_id_s": "3823076",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    141,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "141|Arts & Crafts"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2864661,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3823076-polish-papercutting-christmas-cards-workshop",
+   "source_id": 3823076,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "All patterns and materials are provided, making this a fun and accessible introduction to this beautiful folk art technique. Celebrate the holiday season by exploring a new creative tradition, designing handmade cards to share with loved ones, and learning a craft that can be enjoyed and practiced at home.\n\nOnline registration closes three business days before class begins. You may also call 262-636-9177 to check for class availability, and to register, Monday through Saturday, 10:00 am to 4:00 pm. Classes meet at RAM - Wustum, 2519 Northwestern Avenue, Racine.\n$44 RAM members; $55 non-members\n",
+   "main_category_path": [
+    2,
+    139,
+    141
+   ],
+   "category_path_ids": [
+    2,
+    139,
+    141
+   ],
+   "city_country": "Racine, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:00:00-06:00",
+   "end_time": "2026-11-03T20:30:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.ramart.org/event/polish-papercutting-christmas-cards/",
+    "Website": "https://www.ramart.org/upcoming-classes"
+   },
+   "venue": {
+    "name": "Racine Art Museum Wustum",
+    "address_1": "2519 Northwestern Avenue",
+    "address_2": null,
+    "town": "Racine",
+    "country": "United States",
+    "post_code": "53404",
+    "latitude": 42.7414848,
+    "longitude": -87.8125611
+   },
+   "_geoloc": {
+    "lat": 42.7414848,
+    "lng": -87.8125611
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793759400,
+   "created_time_i": 1789146948,
+   "last_indexed_i": 1789146949,
+   "score": 200,
+   "tags": [],
+   "objectID": "44446552"
+  },
+  {
+   "title": "Alpha",
+   "category_ids": [
+    221
+   ],
+   "root_category_ids": [
+    458
+   ],
+   "summary": "Alpha is a space to explore life\u2019s big questions and the Christian faith in a friendly, open, and informal environment.\n",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3439440,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3439440/event_image/alpha.jpg",
+      "width": 720,
+      "height": 405
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3439440/event_image/featured_alpha.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3439440/event_image/list_thumb_alpha.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3439440/event_image/hero_alpha.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3439440/event_image/featured_alpha.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3439440/event_image/list_thumb_alpha.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3439440/event_image/hero_alpha.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3776669-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Life Vineyard Church",
+   "category_name": "Religion & Spirituality",
+   "source_id_s": "3776669",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    221,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "221|Religion & Spirituality"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2832776,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3776669-alpha",
+   "source_id": 3776669,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Alpha is a space to explore life\u2019s big questions and the Christian faith in a friendly, open, and informal environment.\nWe gather once a week to share a meal, watch a short video, connect with others, and have honest conversations about life and faith.\nNo question is out of bounds, and you can discuss as much or as little as you wish.\nThere is no cost to attend. Dinner and childcare are provided free of charge, with trained, background-checked volunteers caring for your children.\nAlpha begins September 8th at 6pm",
+   "main_category_path": [
+    458,
+    221
+   ],
+   "category_path_ids": [
+    458,
+    221
+   ],
+   "city_country": "Mahomet, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:00:00-06:00",
+   "end_time": "2026-11-03T20:15:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://lifevineyard.org/alpha/"
+   },
+   "venue": {
+    "name": "702 County Rd 200 E",
+    "address_1": "702 County Road 200 East",
+    "address_2": null,
+    "town": "Mahomet",
+    "country": "United States",
+    "post_code": "61853",
+    "latitude": 40.2023967,
+    "longitude": -88.4257068
+   },
+   "_geoloc": {
+    "lat": 40.2023967,
+    "lng": -88.4257068
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793758500,
+   "created_time_i": 1786554197,
+   "last_indexed_i": 1786554198,
+   "score": 200,
+   "tags": [],
+   "objectID": "44086434"
+  },
+  {
+   "title": "Let's Hang On - #1 Frankie Valli Tribute Show",
+   "category_ids": [
+    640
+   ],
+   "root_category_ids": [
+    16
+   ],
+   "summary": "Heron Creek Foundation presents Let's Hang On: Frankie Valli's greatest hits. Exceptional vocals with a live band ( no prerecorded backing tracks)",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3481731,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481731/event_image/Let_s_Hang_On__1__Original_Photo_Take_One_Card.png",
+      "width": 480,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481731/event_image/featured_Let_s_Hang_On__1__Original_Photo_Take_One_Card.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481731/event_image/list_thumb_Let_s_Hang_On__1__Original_Photo_Take_One_Card.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481731/event_image/hero_Let_s_Hang_On__1__Original_Photo_Take_One_Card.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481731/event_image/featured_Let_s_Hang_On__1__Original_Photo_Take_One_Card.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481731/event_image/list_thumb_Let_s_Hang_On__1__Original_Photo_Take_One_Card.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3481731/event_image/hero_Let_s_Hang_On__1__Original_Photo_Take_One_Card.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3823331-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {
+    "Orchestra Seats (plus fees up to $3.75)": "USD 46.0",
+    "Balcony ( plus fees up to $3.75)": "USD 36.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    9428,
+    9424,
+    9425,
+    7929
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2765,
+    2809,
+    2874,
+    3698,
+    4955,
+    5293,
+    5563,
+    5907,
+    6283,
+    6581,
+    6630,
+    7790,
+    7791,
+    7929,
+    7959,
+    9038,
+    9146,
+    9424,
+    9425,
+    9428,
+    10449,
+    10758,
+    10787,
+    11150,
+    11280,
+    11359,
+    11415,
+    11440,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11913,
+    11931,
+    12022,
+    12111,
+    12117,
+    12121,
+    12123,
+    12125,
+    12188,
+    12210,
+    12278,
+    12334,
+    12335
+   ],
+   "featured_publisher_ids": [
+    7929,
+    9424,
+    9425,
+    9428
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Heron Creek Community Foundation",
+   "category_name": "Concert",
+   "source_id_s": "3823331",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "7929": [
+     "featured"
+    ],
+    "9424": [
+     "featured"
+    ],
+    "9425": [
+     "featured"
+    ],
+    "9428": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    9428,
+    9424,
+    9425,
+    7929,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2765,
+    2809,
+    2874,
+    3698,
+    4955,
+    5293,
+    5563,
+    5907,
+    6283,
+    6581,
+    6630,
+    7790,
+    7791,
+    7929,
+    7959,
+    9038,
+    9146,
+    9424,
+    9425,
+    9428,
+    10449,
+    10758,
+    10787,
+    11150,
+    11280,
+    11359,
+    11415,
+    11440,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11913,
+    11931,
+    12022,
+    12111,
+    12117,
+    12121,
+    12123,
+    12125,
+    12188,
+    12210,
+    12278,
+    12334,
+    12335,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    640,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "640|Concert"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2864887,
+   "source_broadcast_url": "https://www.yoursun.com/westvillagessun/local-events/?_evDiscoveryPath=/event/3823331-let-s-hang-on-1-frankie-valli-tribute-show",
+   "source_id": 3823331,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "This concert will feature your favorite Frankie Valli hits such as Sherry, Big Girls Don't Cry, Walk Like a Man, Can't Take My Eyes Off of You, Oh, What a Night, and Who Loves You. The show recreates Frankie Valli's legendary catalog with 4 male vocalists, 2 female vocalists, and a full live backing band. Lead and ensemble harmonies are historic and rich, backed by live instrumentation, with cast members arranged as an ensemble to maintain strict four-part harmonies and synchronized stage choreography. This concert will bring back those great memories. ",
+   "main_category_path": [
+    16,
+    640
+   ],
+   "category_path_ids": [
+    16,
+    640
+   ],
+   "city_country": "North Port, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-05:00",
+   "end_time": "2026-11-03T21:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "http://www.heroncreekfoundation.org"
+   },
+   "venue": {
+    "name": "North Port Performing Arts Center",
+    "address_1": "6400 West Price Boulevard",
+    "address_2": null,
+    "town": "North Port",
+    "country": "United States",
+    "post_code": "34291",
+    "latitude": 27.0738476,
+    "longitude": -82.2251599
+   },
+   "_geoloc": {
+    "lat": 27.0738476,
+    "lng": -82.2251599
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793757600,
+   "created_time_i": 1789153984,
+   "last_indexed_i": 1792658070,
+   "score": 200,
+   "tags": [],
+   "objectID": "44447862"
+  },
+  {
+   "title": "AJ McLean (Backstreet Boys) Live at Royale Boston",
+   "category_ids": [
+    640,
+    448,
+    37
+   ],
+   "root_category_ids": [
+    16,
+    28
+   ],
+   "summary": "Catch Backstreet Boys legend AJ McLean live tonight at Royale Boston on The Better Man Tour! Use promo code AJ27 on DICE for $20 off tickets.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3562202,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3562202/event_image/ROYALE-AJ1080X1440.jpg",
+      "width": 810,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3562202/event_image/featured_ROYALE-AJ1080X1440.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3562202/event_image/list_thumb_ROYALE-AJ1080X1440.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3562202/event_image/hero_ROYALE-AJ1080X1440.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3562202/event_image/featured_ROYALE-AJ1080X1440.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3562202/event_image/list_thumb_ROYALE-AJ1080X1440.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3562202/event_image/hero_ROYALE-AJ1080X1440.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3906064-0"
+   },
+   "artists": "",
+   "keywords": "backstreetboys, ajmclean, royale, bsb",
+   "prices": {
+    "General Admission - AJ27 for $20 OFF": "USD 75.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Big Night Live",
+   "category_name": "Concert",
+   "source_id_s": "3906064",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    640,
+    448,
+    37,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "640|Concert",
+    "448|Pop",
+    "37|Music"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2921159,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3906064-aj-mclean-backstreet-boys-live-at-royale-boston",
+   "source_id": 3906064,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Tonight in Boston: Backstreet Boys icon AJ McLean takes the stage live at Royale Boston for an intimate headline performance on The Better Man Tour (Alexander James).\n\nExperience a night of powerful live vocals, solo hits, soul/pop originals, and timeless throwbacks from one of the most recognizable voices in pop music history. Located right in Boston's historic Theater District, this is a rare chance to see a multi-platinum pop legend up close in a club music hall setting.\n\nTICKETING & PROMO CODE:\n\u2022 Get $20 OFF your ticket on DICE: Enter promo code AJ27 at checkout.\n\u2022 Direct Ticket Link: https://link.dice.fm/T6e3758458de\n\nEVENT DETAILS:\n\u2022 Date: Tonight \u2014 Tuesday, November 3, 2026\n\u2022 Venue: Royale Boston (279 Tremont St, Boston, MA 02116)\n\u2022 Doors Open: 7:00 PM\n\u2022 Age Requirement: Check DICE listing for age restriction policies (Valid government ID required)\n\u2022 Advance tickets available online via DICE; door entry subject to availability.\n",
+   "main_category_path": [
+    16,
+    640
+   ],
+   "category_path_ids": [
+    16,
+    640,
+    448,
+    28,
+    30,
+    37
+   ],
+   "city_country": "Boston, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-05:00",
+   "end_time": "2026-11-03T23:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://link.dice.fm/T6e3758458de"
+   },
+   "venue": {
+    "name": "Royale",
+    "address_1": "279 Tremont Street",
+    "address_2": null,
+    "town": "Boston",
+    "country": "United States",
+    "post_code": "02116",
+    "latitude": 42.3499921,
+    "longitude": -71.0655563
+   },
+   "_geoloc": {
+    "lat": 42.3499921,
+    "lng": -71.0655563
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793764800,
+   "created_time_i": 1793737876,
+   "last_indexed_i": 1793737876,
+   "score": 200,
+   "tags": [],
+   "objectID": "45096530"
+  },
+  {
+   "title": "Tuesday Night Life Drawing Long Pose",
+   "category_ids": [
+    458
+   ],
+   "root_category_ids": [
+    458
+   ],
+   "summary": "OCAG Tuesday Night Long Pose\n\nUndraped Figure Drawing Session\n\n7:00 \u2013 9:00 PM\n\n$20 for members\n\n$25 for non members\n\nAdults 18 and up are welcome",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3304301,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3304301/event_image/OCAGPrimary_Color_Logo_2x-100.jpg",
+      "width": 349,
+      "height": 192
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3304301/event_image/featured_OCAGPrimary_Color_Logo_2x-100.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3304301/event_image/list_thumb_OCAGPrimary_Color_Logo_2x-100.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3304301/event_image/hero_OCAGPrimary_Color_Logo_2x-100.jpg"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3621932-0",
+    "Website": "https://go.evvnt.com/3621932-2"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {
+    "General Admission": "USD 25.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Ocean County Artists Guild",
+   "category_name": "Community",
+   "source_id_s": "3621932",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    458,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "458|Community"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2737078,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3621932-tuesday-night-life-drawing-long-pose",
+   "source_id": 3621932,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "OCAG Tuesday Night Long Pose\n\nUndraped Figure Drawing Session\n\n7:00 \u2013 9:00 PM\n\n$20 for members\n\n$25 for non members\n\nAdults 18 and up are welcome",
+   "main_category_path": [
+    458
+   ],
+   "category_path_ids": [
+    458
+   ],
+   "city_country": "Island Heights, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-05:00",
+   "end_time": "2026-11-03T21:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.ocartistsguild.org/event/tuesday-night-figure-drawing-long-pose-29/",
+    "Website": "https://www.ocartistsguild.org/event/tuesday-night-figure-drawing-long-pose-29/"
+   },
+   "venue": {
+    "name": "Ocean County Artists Guild",
+    "address_1": "22 Chestnut Avenue",
+    "address_2": null,
+    "town": "Island Heights",
+    "country": "United States",
+    "post_code": "08732",
+    "latitude": 39.9421803,
+    "longitude": -74.1534302
+   },
+   "_geoloc": {
+    "lat": 39.9421803,
+    "lng": -74.1534302
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793757600,
+   "created_time_i": 1778005856,
+   "last_indexed_i": 1778005857,
+   "score": 200,
+   "tags": [],
+   "objectID": "42922499"
+  },
+  {
+   "title": "CINDERELLA by The United European Ballet Company",
+   "category_ids": [
+    35,
+    23,
+    311
+   ],
+   "root_category_ids": [
+    28
+   ],
+   "summary": "Performed by The United European Ballet company, the show brings together an international cast of dancers from across Europe and Ukraine. This is a bright, joyful, Broadway-style family show. ",
+   "description_html": null,
+   "hashtag": "CinderellaBallet",
+   "images": [
+    {
+     "id": 3371110,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3371110/event_image/3000_x_1687__CINDERELLA_Data.jpg",
+      "width": 1920,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3371110/event_image/featured_3000_x_1687__CINDERELLA_Data.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3371110/event_image/list_thumb_3000_x_1687__CINDERELLA_Data.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3371110/event_image/hero_3000_x_1687__CINDERELLA_Data.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3371110/event_image/featured_3000_x_1687__CINDERELLA_Data.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3371110/event_image/list_thumb_3000_x_1687__CINDERELLA_Data.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3371110/event_image/hero_3000_x_1687__CINDERELLA_Data.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3691967-0",
+    "YouTube": "https://go.evvnt.com/3691967-2",
+    "Facebook": "https://go.evvnt.com/3691967-3",
+    "Instagram": "https://go.evvnt.com/3691967-4",
+    "Website": "https://go.evvnt.com/3691967-5"
+   },
+   "artists": "Classical Arts Entertainment , The United European Ballet Company ",
+   "keywords": "ballet, dance, cinderella, classicalarts, unitedeuropeanballet, entertainment, ballettickets, event, gift",
+   "prices": {
+    "General Admission": "USD 63.0",
+    "VIP Package available. Please see full details and instructions on our website.": "USD 165.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2089,
+    2765,
+    2809,
+    2874,
+    3698,
+    5072,
+    5268,
+    5293,
+    5563,
+    6229,
+    6581,
+    6606,
+    6610,
+    6630,
+    6933,
+    7057,
+    7681,
+    7790,
+    7898,
+    8167,
+    8415,
+    8508,
+    8711,
+    8728,
+    8846,
+    9038,
+    9311,
+    10315,
+    10417,
+    10656,
+    10758,
+    10787,
+    11150,
+    11359,
+    11415,
+    11440,
+    11491,
+    11512,
+    11517,
+    11641,
+    11709,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12082,
+    12127,
+    12132,
+    12133,
+    12135,
+    12188,
+    12210,
+    12278
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Classical Arts Entertainment",
+   "category_name": "Ballet",
+   "source_id_s": "3691967",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2089,
+    2765,
+    2809,
+    2874,
+    3698,
+    5072,
+    5268,
+    5293,
+    5563,
+    6229,
+    6581,
+    6606,
+    6610,
+    6630,
+    6933,
+    7057,
+    7681,
+    7790,
+    7898,
+    8167,
+    8415,
+    8508,
+    8711,
+    8728,
+    8846,
+    9038,
+    9311,
+    10315,
+    10417,
+    10656,
+    10758,
+    10787,
+    11150,
+    11359,
+    11415,
+    11440,
+    11491,
+    11512,
+    11517,
+    11641,
+    11709,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12082,
+    12127,
+    12132,
+    12133,
+    12135,
+    12188,
+    12210,
+    12278,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    35,
+    23,
+    311,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "35|Ballet",
+    "23|Theatre",
+    "311|Dance"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2782072,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3691967-cinderella-by-the-united-european-ballet-company",
+   "source_id": 3691967,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "\u2728 Cinderella by The United European Ballet Company\n\n\ud83d\uddd3November 3, 2026 | 7:00 PM\n\ud83d\udccdRialto Square Theatre\n\nStep into a world of magic, romance, and transformation. Cinderella comes to life in a breathtaking ballet filled with elegance, emotion, and theatrical brilliance.\nFollow the journey of a kind-hearted young woman whose belief in love changes her destiny \u2014 from hardship to a royal ball and a dream come true.\n\ud83d\udcab Music by Sergei Prokofiev\n\ud83d\udcab Stunning costumes & expressive choreography\n\ud83d\udcab International cast of world-class dancers\nSeats are limited \u2014 and selling fast.\n\ud83d\udc49 Bring your family. Bring someone you love.\n\ud83d\udc49 Don\u2019t miss one of the most beautiful shows of the season.\n\n\n",
+   "main_category_path": [
+    28,
+    30,
+    35
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    35,
+    23,
+    311
+   ],
+   "city_country": "Joliet, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-05:00",
+   "end_time": "2026-11-03T21:00:00-05:00",
+   "door_time": "2026-11-03T18:00:00-05:00",
+   "last_entry_time": "2026-11-03T20:00:00-05:00",
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.ticketmaster.com/event/070064B5CF71691F",
+    "YouTube": "https://youtu.be/jmfWwraERNY",
+    "Facebook": "https://www.facebook.com/ClassicalArtsEntertainment/",
+    "Instagram": "https://www.instagram.com/i.love.to.dance.program?igsh=c3NsajE3ZnRod3J6&utm_source=qr",
+    "Website": "https://www.ticketmaster.com/event/070064B5CF71691F"
+   },
+   "venue": {
+    "name": "Rialto Square Theatre",
+    "address_1": "102 N Chicago St",
+    "address_2": null,
+    "town": "Joliet",
+    "country": "United States",
+    "post_code": "60432",
+    "latitude": 33.9249743,
+    "longitude": -84.3805696
+   },
+   "_geoloc": {
+    "lat": 33.9249743,
+    "lng": -84.3805696
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793757600,
+   "created_time_i": 1781801139,
+   "last_indexed_i": 1783934751,
+   "score": 200,
+   "tags": [],
+   "objectID": "43481260"
+  },
+  {
+   "title": "Intro to Tapestry Weaving: 2 Tuesdays, Nov 3 & 10, 6-8:30 pm",
+   "category_ids": [
+    141
+   ],
+   "root_category_ids": [
+    2
+   ],
+   "summary": "Not only will you learn how to weave in this 2-night workshop, you'll create your own loom. Prepare to have fun!",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3478240,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3478240/event_image/intro_weaving_2026.jpg",
+      "width": 1620,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3478240/event_image/featured_intro_weaving_2026.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3478240/event_image/list_thumb_intro_weaving_2026.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3478240/event_image/hero_intro_weaving_2026.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3478240/event_image/featured_intro_weaving_2026.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3478240/event_image/list_thumb_intro_weaving_2026.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3478240/event_image/hero_intro_weaving_2026.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3819769-0",
+    "Website": "https://go.evvnt.com/3819769-2"
+   },
+   "artists": "",
+   "keywords": "fiberartsworkshop",
+   "prices": {
+    "class fee": "USD 70.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Racine Art Museum Association, Inc.",
+   "category_name": "Arts & Crafts",
+   "source_id_s": "3819769",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    141,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "141|Arts & Crafts"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2862358,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3819769-intro-to-tapestry-weaving-2-tuesdays-nov-3-10-6-8-30-pm",
+   "source_id": 3819769,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Learn how to build your own looms, and the basics of tapestry weaving. Explore shape, color and texture to make your own woven art. \n\nOnline registration closes three business days before class begins. You may also call 262-636-9177 to check for class availability, and to register, Monday through Saturday, 10:00 am to 4:00 pm. Classes meet at RAM - Wustum, 2519 Northwestern Avenue, Racine.\n$56 RAM members; $70 non-members\n",
+   "main_category_path": [
+    2,
+    139,
+    141
+   ],
+   "category_path_ids": [
+    2,
+    139,
+    141
+   ],
+   "city_country": "Racine, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:00:00-06:00",
+   "end_time": "2026-11-10T20:30:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.ramart.org/event/intro-to-tapestry-weaving/",
+    "Website": "https://www.ramart.org/upcoming-classes"
+   },
+   "venue": {
+    "name": "Racine Art Museum Wustum",
+    "address_1": "2519 Northwestern Avenue",
+    "address_2": null,
+    "town": "Racine",
+    "country": "United States",
+    "post_code": "53404",
+    "latitude": 42.7414848,
+    "longitude": -87.8125611
+   },
+   "_geoloc": {
+    "lat": 42.7414848,
+    "lng": -87.8125611
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1794364200,
+   "created_time_i": 1788985697,
+   "last_indexed_i": 1788985697,
+   "score": 200,
+   "tags": [],
+   "objectID": "44427940"
+  },
+  {
+   "title": "STA Organ Series: Organ Dialogues",
+   "category_ids": [
+    16
+   ],
+   "root_category_ids": [
+    16
+   ],
+   "summary": "Experience a special musical collaboration with organist Hae Won Jang and guest artist Adrian Sanchez, baritone, as they come together for an inspiring performance of organ and voice.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3512065,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3512065/event_image/STA._Organ_Series._Organ_Dialogues.png",
+      "width": 864,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3512065/event_image/featured_STA._Organ_Series._Organ_Dialogues.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3512065/event_image/list_thumb_STA._Organ_Series._Organ_Dialogues.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3512065/event_image/hero_STA._Organ_Series._Organ_Dialogues.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3512065/event_image/featured_STA.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3512065/event_image/list_thumb_STA.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3512065/event_image/hero_STA.webp"
+     }
+    }
+   ],
+   "links": {},
+   "artists": "",
+   "keywords": "livemusic,, organmusic, organconcert, vocalconcert, organ&voice, guestartist, musicalcollaboration, communityevent, freeconcert",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Cecelia Heffron",
+   "category_name": "Live Music",
+   "source_id_s": "3855640",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    16,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "16|Live Music"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2887945,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3855640-sta-organ-series-organ-dialogues",
+   "source_id": 3855640,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Experience a special musical collaboration with organist Hae Won Jang and guest artist Adrian Sanchez, baritone, as they come together for an inspiring performance of organ and voice. Dr. Hae Won Jang, who holds a Doctorate in Music, is an accomplished and extraordinary organist whose artistry brings depth and expression to every performance.\n\nThis special event is open to the public and free of charge. All are warmly invited to enjoy this memorable evening of music.",
+   "main_category_path": [
+    16
+   ],
+   "category_path_ids": [
+    16
+   ],
+   "city_country": "East Lansing, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-05:00",
+   "end_time": "2026-11-03T20:30:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {},
+   "venue": {
+    "name": "955 Alton Rd",
+    "address_1": "955 Alton Road",
+    "address_2": null,
+    "town": "East Lansing",
+    "country": "United States",
+    "post_code": "48823",
+    "latitude": 42.7440238,
+    "longitude": -84.474291
+   },
+   "_geoloc": {
+    "lat": 42.7440238,
+    "lng": -84.474291
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793755800,
+   "created_time_i": 1790948606,
+   "last_indexed_i": 1790948606,
+   "score": 200,
+   "tags": [],
+   "objectID": "44718321"
+  },
+  {
+   "title": "LIGHTS OFF WALKING CLUB",
+   "category_ids": [
+    447
+   ],
+   "root_category_ids": [
+    22
+   ],
+   "summary": "No flashlights - just the night.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3513058,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513058/event_image/night_hike.jpg",
+      "width": 864,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513058/event_image/featured_night_hike.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513058/event_image/list_thumb_night_hike.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513058/event_image/hero_night_hike.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513058/event_image/featured_night_hike.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513058/event_image/list_thumb_night_hike.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513058/event_image/hero_night_hike.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3856623-0"
+   },
+   "artists": "",
+   "keywords": "night, hike",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Elkhart County Parks",
+   "category_name": "Trekking",
+   "source_id_s": "3856623",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    447,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "447|Trekking"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2888764,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3856623-lights-off-walking-club",
+   "source_id": 3856623,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": " A new outdoor group, Lights Off Walking Club, is inviting nature lovers to experience the outdoors in a whole new way.\n \nThe club will meet every Tuesday evening in October and November at a different park for a peaceful night hike. Participants will leave their flashlights behind \nand enjoy the dark, quiet atmosphere of nature after sunset. \n\nMark your calendars: \nNovember 3 \u2013 Boot Lake Nature Preserve (7:00-8:00pm) \nNovember 10 \u2013 River Preserve County Park (7:00-8:00pm) \nNovember 17 \u2013 Lieber Nature Preserve (7:00-8:00pm) \nNovember 24 \u2013 River Preserve County Park (7:00-8:00pm) \n\nThe walks are designed to slow things down, tune into the sounds of the night, and experience familiar natural spaces from a different perspective.  No preregistration required.\n \nNo flashlights. Just the night, the trail, and the sounds of nature. \n\nFor more information and a schedule of walks go to www.elkhartcountyparks.org ",
+   "main_category_path": [
+    22,
+    447
+   ],
+   "category_path_ids": [
+    22,
+    447
+   ],
+   "city_country": "Elkhart, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-05:00",
+   "end_time": "2026-11-03T20:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "http://elkhartcountyparks.org"
+   },
+   "venue": {
+    "name": "Boot Lake Nature Preserve",
+    "address_1": "51430 County Road 3",
+    "address_2": null,
+    "town": "Elkhart",
+    "country": "United States",
+    "post_code": "46514",
+    "latitude": 41.746966,
+    "longitude": -86.0116196
+   },
+   "_geoloc": {
+    "lat": 41.746966,
+    "lng": -86.0116196
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793754000,
+   "created_time_i": 1790976973,
+   "last_indexed_i": 1790976973,
+   "score": 200,
+   "tags": [],
+   "objectID": "44731332"
+  },
+  {
+   "title": "The Friendship Band's Friendsgiving",
+   "category_ids": [
+    640
+   ],
+   "root_category_ids": [
+    16
+   ],
+   "summary": "Join the Friendship Band and Mind Left Body at the Iron Horse for a night of Grateful Dead tunes and Friendship Band favorites. ",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3531016,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3531016/event_image/friendsgiving_smaller.png",
+      "width": 700,
+      "height": 700
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3531016/event_image/featured_friendsgiving_smaller.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3531016/event_image/list_thumb_friendsgiving_smaller.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3531016/event_image/hero_friendsgiving_smaller.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3531016/event_image/featured_friendsgiving_smaller.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3531016/event_image/list_thumb_friendsgiving_smaller.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3531016/event_image/hero_friendsgiving_smaller.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3875123-0",
+    "Website": "https://go.evvnt.com/3875123-2"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {
+    "General Admission": "USD 36.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "ServiceNet",
+   "category_name": "Concert",
+   "source_id_s": "3875123",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    640,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "640|Concert"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2901204,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3875123-the-friendship-band-s-friendsgiving",
+   "source_id": 3875123,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Grab your dancing bears, Friendsgiving is back! Join the Friendship Band and Mind Left Body at the Iron Horse for a night of Grateful Dead tunes and Friendship Band favorites. Your ticket does double duty: a great time for you, and support for the performing arts programs at Whole Children\u2122 and Milestones.",
+   "main_category_path": [
+    16,
+    640
+   ],
+   "category_path_ids": [
+    16,
+    640
+   ],
+   "city_country": "Northampton, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-05:00",
+   "end_time": "2026-11-03T21:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://theparlorroom.my.salesforce-sites.com/ticket/#/events/a0SV500000Cvra9MAB",
+    "Website": "https://wholechildren.servicenet.org/events/"
+   },
+   "venue": {
+    "name": "The Iron Horse",
+    "address_1": "18 Center Street",
+    "address_2": null,
+    "town": "Northampton",
+    "country": "United States",
+    "post_code": "01060",
+    "latitude": 42.3189865,
+    "longitude": -72.6315831
+   },
+   "_geoloc": {
+    "lat": 42.3189865,
+    "lng": -72.6315831
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793757600,
+   "created_time_i": 1792003316,
+   "last_indexed_i": 1792003316,
+   "score": 200,
+   "tags": [],
+   "objectID": "44850292"
+  },
+  {
+   "title": "Dark Nights: Trivia Tuesdays",
+   "category_ids": [
+    481
+   ],
+   "root_category_ids": [
+    458
+   ],
+   "summary": "Dark Nights are back in the Black Box Bar & Lounge!",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3407848,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3407848/event_image/TV_Slides__3_.png",
+      "width": 1920,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3407848/event_image/featured_TV_Slides__3_.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3407848/event_image/list_thumb_TV_Slides__3_.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3407848/event_image/hero_TV_Slides__3_.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3407848/event_image/featured_TV_Slides__3_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3407848/event_image/list_thumb_TV_Slides__3_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3407848/event_image/hero_TV_Slides__3_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3741021-0"
+   },
+   "artists": "",
+   "keywords": "trivia, games",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "The Grand Oshkosh",
+   "category_name": "Quiz/Trivia Night",
+   "source_id_s": "3741021",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    481,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793750400,
+   "category_names_with_ids": [
+    "481|Quiz/Trivia Night"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2808858,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3741021-dark-nights-trivia-tuesdays",
+   "source_id": 3741021,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Doors Open: 5:30 p.m. | Trivia starts: 6:00 p.m.\nFirst Place Team: $25 Gift Certificate\nSecond Place Team: $10 Gift Card to The Grand Lounge\nEach Round's Winner: Free Drink Token\n \nNo ticket required. First Come, First Served. 18+\nNo food or beverage carry-ins allowed. \n \nAll Dates: September 1, October 6, November 3, December 1, January 5, February 2, March 2, April 6, May 4.\n\nLearn more about The Grand at UW-Oshkosh: ",
+   "main_category_path": [
+    458,
+    481
+   ],
+   "category_path_ids": [
+    458,
+    481
+   ],
+   "city_country": "Oshkosh, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:00:00-06:00",
+   "end_time": "2026-11-03T21:00:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://thegrandoshkosh.org/events/2026-2027-events/grand-presented/dark-nights-trivia-tuesdays"
+   },
+   "venue": {
+    "name": "1020 Algoma Blvd",
+    "address_1": "1020 Algoma Boulevard",
+    "address_2": null,
+    "town": "Oshkosh",
+    "country": "United States",
+    "post_code": "54901",
+    "latitude": 44.0288652,
+    "longitude": -88.5532572
+   },
+   "_geoloc": {
+    "lat": 44.0288652,
+    "lng": -88.5532572
+   },
+   "start_time_i": 1793750400,
+   "end_time_i": 1793761200,
+   "created_time_i": 1784239453,
+   "last_indexed_i": 1784239454,
+   "score": 200,
+   "tags": [],
+   "objectID": "43803626"
+  },
+  {
+   "title": "Wills, Trusts, and Nursing Home Asset Protection",
+   "category_ids": [
+    61
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "Wills, Trusts, and Nursing Home Asset Protection",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3559537,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559537/event_image/mcgee.jpg",
+      "width": 864,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559537/event_image/featured_mcgee.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559537/event_image/list_thumb_mcgee.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559537/event_image/hero_mcgee.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559537/event_image/featured_mcgee.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559537/event_image/list_thumb_mcgee.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559537/event_image/hero_mcgee.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3902607-0"
+   },
+   "artists": "",
+   "keywords": "estateplanning, assetprotection, willsandlivingtrust, willsandtrust, freeseminar",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "McGee Law Firm",
+   "category_name": "Legal",
+   "source_id_s": "3902607",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    61,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793752200,
+   "category_names_with_ids": [
+    "61|Legal"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2918967,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3902607-wills-trusts-and-nursing-home-asset-protection",
+   "source_id": 3902607,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Join Brandon McGee for an education event! Learn how to use simple legal strategies to help make your wishes known, keep peace in the family, and ensure that life is as easy as possible for your loved ones, no matter what happens.\n\nWho Should Attend This Seminar?\n\nIf you don\u2019t currently have a plan in place to protect your family and assets\u2026 or if it\u2019s been at least three years since you\u2019ve last looked at your old estate plan.\n\nDuring the workshop, you will learn how to avoid common mistakes in estate planning as well as:\n\n \u25b7 The advantages and disadvantages of Wills and Living Trusts \n\n \u25b7 How to plan before you need Long-Term Care or Medicaid qualification to help pay for nursing home expenses, which are over $7,000 per month locally.\n\n\u00a0\u25b7How to preserve your estate for your kids if your surviving spouse gets remarried \n\n\u00a0\u25b7How Probate works and more importantly, how you can avoid Probate altogether! \n\n\u00a0\u25b7How to protect your beneficiaries from losing their inheritance to creditors, divorce, government claims,and lawsuits. \n\n\u00a0\u25b7How to distribute your estate to the people you choose, and when you choose.\n\n\u00a0\u25b7How to address the various need of each of you beneficiaries now, and how to adjust to their changing needs after you die.\n\n\u00a0\u25b7How to avoid a publicly humiliating and expensive guardianship proceeding, if you become incapacitated or disabled.\n\n\u00a0\u25b7And much more\u2026",
+   "main_category_path": [
+    4,
+    48,
+    61
+   ],
+   "category_path_ids": [
+    4,
+    48,
+    61
+   ],
+   "city_country": "Fort Worth, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:30:00-06:00",
+   "end_time": "2026-11-03T19:30:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://mcgeelawdfw.com/seminars/"
+   },
+   "venue": {
+    "name": "Holiday Inn Express & Suites Lake Worth NW Loop 820 by IHG",
+    "address_1": "3541 Northwest Loop 820",
+    "address_2": null,
+    "town": "Fort Worth",
+    "country": "United States",
+    "post_code": "76106",
+    "latitude": 32.8139842,
+    "longitude": -97.4095034
+   },
+   "_geoloc": {
+    "lat": 32.8139842,
+    "lng": -97.4095034
+   },
+   "start_time_i": 1793752200,
+   "end_time_i": 1793755800,
+   "created_time_i": 1793603106,
+   "last_indexed_i": 1793603107,
+   "score": 200,
+   "tags": [],
+   "objectID": "45070416"
+  },
+  {
+   "title": "Shreveport, LA Martial Arts Program (Aikido)",
+   "category_ids": [
+    22
+   ],
+   "root_category_ids": [
+    22
+   ],
+   "summary": "A welcoming Aikido program for ages 16+, focused on practical self-defense, balance, and stress reduction. No experience or uniform required. Try a free introductory class.",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3149935,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3149935/event_image/Suitable_for_all_Skill_Levels_20251210_150434_0000.png",
+      "width": 864,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3149935/event_image/featured_Suitable_for_all_Skill_Levels_20251210_150434_0000.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3149935/event_image/list_thumb_Suitable_for_all_Skill_Levels_20251210_150434_0000.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3149935/event_image/hero_Suitable_for_all_Skill_Levels_20251210_150434_0000.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3149935/event_image/featured_Suitable_for_all_Skill_Levels_20251210_150434_0000.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3149935/event_image/list_thumb_Suitable_for_all_Skill_Levels_20251210_150434_0000.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3149935/event_image/hero_Suitable_for_all_Skill_Levels_20251210_150434_0000.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3446913-0"
+   },
+   "artists": "",
+   "keywords": "martialarts, aikido, selfdefense, shreveport, freetrial",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Shrevepoort Aikido Acacademy",
+   "category_name": "Sports / Leisure",
+   "source_id_s": "3446913",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    22,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793752200,
+   "category_names_with_ids": [
+    "22|Sports / Leisure"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2621309,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3446913-shreveport-la-martial-arts-program-aikido",
+   "source_id": 3446913,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Martial Arts for Real Life: Aikido in Shreveport\n\nOur martial arts program offers a welcoming, adult-focused introduction to Aikido, a modern Japanese martial art centered on balance, connection, and effective self-defense. Designed for students ages 16 and up, this program emphasizes personal growth, physical conditioning, and practical movement skills in a supportive, non-competitive environment.\n\nAikido is often described as a martial art of harmony and control rather than brute force. Instead of meeting force with force, students learn how to blend with an opponent\u2019s motion, redirect energy, and resolve conflict with efficiency and composure. Training focuses on throws, joint locks, pins, safe falling techniques, and situational awareness, skills that translate directly to confidence, coordination, and calm under pressure in everyday life.\n\nThis program is ideal for complete beginners as well as those with experience in other martial arts. No uniform, special gear, or prior training is required to start. Students are encouraged to attend a free introductory class to experience the practice firsthand, ask questions, and see whether the training environment is a good fit for their goals.\n\nClasses are taught in a structured and approachable format, blending traditional martial arts principles with modern understanding of movement, injury prevention, and adult learning. Each session includes a warm-up, fundamental techniques, partner practice, and cool-down. Emphasis is placed on safety, mutual respect, and steady progress rather than competition or rank-chasing.\n\nOne of the defining features of this program is its inclusive, community-driven atmosphere. Students train cooperatively, supporting one another\u2019s learning regardless of age, background, or fitness level. Aikido does not rely on strength, speed, or athleticism, making it accessible to a wide range of body types and experience levels. Progress comes through consistency, awareness, and refinement rather than aggression.\n\nBeyond physical technique, students often find that training improves posture, balance, flexibility, stress management, and focus. Many practitioners report benefits that extend well beyond the mat, including increased confidence, better emotional regulation, and a greater sense of presence in daily life.\n\nThis program places strong emphasis on respect, accountability, and personal responsibility. Instruction is grounded in traditional martial arts etiquette while remaining practical and relevant to modern students. The goal is not only to teach techniques, but to foster resilience, discipline, and a mindset capable of handling conflict calmly and effectively.\n\nMonthly enrollment options are available, with no long-term contracts required. Training is offered year-round, and students may join at any time. Periodic skill assessments and optional testing provide structure for those who wish to pursue formal rank, while remaining entirely optional for those training purely for fitness, self-defense, or personal development.\n\nWhether you are looking to improve physical conditioning, learn practical self-defense skills, reduce stress, or explore a traditional martial art in a welcoming environment, this program offers a clear and accessible path forward.\n\nNew students are encouraged to reach out to schedule a free class, observe a session, or ask questions.",
+   "main_category_path": [
+    22
+   ],
+   "category_path_ids": [
+    22
+   ],
+   "city_country": "Shreveport, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:30:00-06:00",
+   "end_time": "2026-11-03T20:00:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "http://www.shreveportaikido.com"
+   },
+   "venue": {
+    "name": "9401 Village Green Dr",
+    "address_1": "9401 Village Green Drive",
+    "address_2": null,
+    "town": "Shreveport",
+    "country": "United States",
+    "post_code": "71115",
+    "latitude": 32.4186625,
+    "longitude": -93.706793
+   },
+   "_geoloc": {
+    "lat": 32.4186625,
+    "lng": -93.706793
+   },
+   "start_time_i": 1793752200,
+   "end_time_i": 1793757600,
+   "created_time_i": 1768942442,
+   "last_indexed_i": 1768942443,
+   "score": 200,
+   "objectID": "41647037"
+  }
+ ],
+ "rawFacets": [],
+ "rawFeaturedEvents": [
+  {
+   "title": "New AHI Online Course on the Gilded Age and Progressivism",
+   "category_ids": [
+    628
+   ],
+   "root_category_ids": [
+    458
+   ],
+   "summary": "AHI's new online (via Zoom) on the Gilded Age and Progressivism led by Dr. David Frisk begins September 7. Reserve your spot by contacting  dfrisk@theahi.org or 202-999-5751.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3467464,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3467464/event_image/AHI_logo.jpg",
+      "width": 800,
+      "height": 800
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3467464/event_image/featured_AHI_logo.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3467464/event_image/list_thumb_AHI_logo.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3467464/event_image/hero_AHI_logo.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3467464/event_image/featured_AHI_logo.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3467464/event_image/list_thumb_AHI_logo.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3467464/event_image/hero_AHI_logo.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3807724-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    90,
+    1023,
+    1120,
+    1374,
+    2809,
+    2874,
+    2994,
+    3698,
+    5293,
+    5563,
+    6581,
+    6630,
+    7681,
+    7790,
+    8211,
+    8818,
+    9038,
+    10758,
+    10787,
+    10884,
+    11150,
+    11206,
+    11359,
+    11415,
+    11425,
+    11440,
+    11512,
+    11517,
+    11634,
+    11641,
+    11729,
+    11738,
+    11766,
+    11931,
+    11961,
+    12022,
+    12025,
+    12104,
+    12127,
+    12132,
+    12133,
+    12135,
+    12188,
+    12210,
+    12278
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "The Alexander Hamilton Institute for the Study of Western Civilization",
+   "category_name": "Education",
+   "source_id_s": "3807724",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    90,
+    1023,
+    1120,
+    1374,
+    2809,
+    2874,
+    2994,
+    3698,
+    5293,
+    5563,
+    6581,
+    6630,
+    7681,
+    7790,
+    8211,
+    8818,
+    9038,
+    10758,
+    10787,
+    10884,
+    11150,
+    11206,
+    11359,
+    11415,
+    11425,
+    11440,
+    11512,
+    11517,
+    11634,
+    11641,
+    11729,
+    11738,
+    11766,
+    11931,
+    11961,
+    12022,
+    12025,
+    12104,
+    12127,
+    12132,
+    12133,
+    12135,
+    12188,
+    12210,
+    12278,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    628,
+    "non_backfill"
+   ],
+   "online_only": true,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1789426800,
+   "category_names_with_ids": [
+    "628|Education"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2853874,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3807724-new-ahi-online-course-on-the-gilded-age-and-progressivism",
+   "source_id": 3807724,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "AHI is pleased to announce a new online course for the fall of 2026. \u201cAmerica from 1868 to 1914: Prosperity, Progress, and Conflict.\u201d Instructor: David Frisk, Ph.D.\u2014AHI Resident Fellow. This course is free and open to the public. Advanced registration is required and AHI will reimburse participants upon the completion of a course should they be unable to afford required course reading. This online class will meet on Mondays via Zoom (link to be provided upon registration) from 7:00 p.m. to 9:00 p.m., September 14 through December 7. To sign up, or for more information, please contact Dr. Frisk at: dfrisk@theahi.org or (202) 999-5751. \n\nThe late 19th century is often called the Gilded Age, a fascinating time of dramatic economic growth, impressive new wealth, industrialization, new social diversity, corruption, deep discontent, and upheaval both quiet and raucous. It was followed by a shorter but intense period of political and social reform\u2014the Progressive Era. In these eras, best studied together because one grew out of the other, modern America was born. The main readings will be two highly acclaimed books by professional historians: American Colossus: The Triumph of Capitalism, 1865-1900 by H. W. Brands and The Search for Order, 1877-1920 by Robert H. Wiebe. The total assigned reading will be 25 to 30 pages per week. Each class session has a lecture-plus-discussion format, with time for discussion. There is a 10-minute break. Additional readings\u2014mostly optional, but in several cases assigned\u2014will be e-mailed to the class and will include such topics as:  Major business leaders, clashing economic visions, political machines, the Republican and Democratic parties of the time, growing immigration, labor strife and radical movements, fear of the many great changes brewing in America, new concepts in politics and government, reforms often stemming from the Progressive movement, and Theodore Roosevelt. In addition to three recent courses on the American Revolution, Dr. Frisk\u2019s past AHI classes have examined subjects including Thomas Jefferson, Alexander Hamilton, The Federalist, other aspects of American constitutional history, Democracy in America by Alexis de Tocqueville, the Civil War, presidential power, the history and evolution of American political parties, the development of the idea of liberty, and conservative political philosophy. Dr. Frisk holds a Ph.D. in political science from Claremont Graduate University (2009), where he specialized in American politics and political philosophy. He is the author of the widely acclaimed\u202fIf Not Us, Who? William Rusher, National Review, and the Conservative Movement (ISI Books, 2012) and is writing an intellectual biography of the legendary political scientist Willmoore Kendall.",
+   "main_category_path": [
+    458,
+    628
+   ],
+   "category_path_ids": [
+    458,
+    628
+   ],
+   "city_country": "New York, United States",
+   "start_date": "2026-09-14",
+   "start_time": "2026-09-14T19:00:00-04:00",
+   "end_time": "2026-12-07T21:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://theahi.org/ahi-announces-two-new-courses-for-the-fall-of-2026/"
+   },
+   "venue": {
+    "name": "New York",
+    "address_1": "New York",
+    "address_2": null,
+    "town": "New York",
+    "country": "United States",
+    "post_code": "10007",
+    "latitude": 40.7127753,
+    "longitude": -74.0059728
+   },
+   "_geoloc": {
+    "lat": 40.7127753,
+    "lng": -74.0059728
+   },
+   "start_time_i": 1789426800,
+   "end_time_i": 1796695200,
+   "created_time_i": 1788351608,
+   "last_indexed_i": 1788355405,
+   "score": 200,
+   "tags": [],
+   "objectID": "44358683"
+  },
+  {
+   "title": "Bright Nights at Four Mile",
+   "category_ids": [
+    17,
+    14
+   ],
+   "root_category_ids": [
+    17,
+    14
+   ],
+   "summary": "Bright Nights at Four Mile returns with a magical menagerie of brightly colored lanterns.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3521669,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3521669/event_image/0B5A7469__1_.jpg",
+      "width": 1620,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3521669/event_image/featured_0B5A7469__1_.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3521669/event_image/list_thumb_0B5A7469__1_.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3521669/event_image/hero_0B5A7469__1_.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3521669/event_image/featured_0B5A7469__1_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3521669/event_image/list_thumb_0B5A7469__1_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3521669/event_image/hero_0B5A7469__1_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3865992-0"
+   },
+   "artists": "",
+   "keywords": "lights, lanterns, adult, family, drinks, foodtrucks, nightlife",
+   "prices": {
+    "Adult": "USD 28.0",
+    "Youth (3-12)": "USD 21.0",
+    "Time and Space Traveler Game + Adult Admission": "USD 37.0",
+    "Time and Space Traveler Game + Youth (3-12) Admission": "USD 30.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    3820,
+    4949,
+    4951,
+    4957,
+    4975,
+    5268,
+    5293,
+    5563,
+    6234,
+    6581,
+    6630,
+    6672,
+    7468,
+    7790,
+    8719,
+    8725,
+    8727,
+    8746,
+    8747,
+    8750,
+    8974,
+    9038,
+    9197,
+    9299,
+    9757,
+    10758,
+    10787,
+    10994,
+    11150,
+    11359,
+    11415,
+    11440,
+    11497,
+    11512,
+    11517,
+    11641,
+    11729,
+    11738,
+    11768,
+    11931,
+    12022,
+    12127,
+    12188,
+    12210,
+    12278
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Four Mile Historic Park",
+   "category_name": "Nightlife",
+   "source_id_s": "3865992",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    3820,
+    4949,
+    4951,
+    4957,
+    4975,
+    5268,
+    5293,
+    5563,
+    6234,
+    6581,
+    6630,
+    6672,
+    7468,
+    7790,
+    8719,
+    8725,
+    8727,
+    8746,
+    8747,
+    8750,
+    8974,
+    9038,
+    9197,
+    9299,
+    9757,
+    10758,
+    10787,
+    10994,
+    11150,
+    11359,
+    11415,
+    11440,
+    11497,
+    11512,
+    11517,
+    11641,
+    11729,
+    11738,
+    11768,
+    11931,
+    12022,
+    12127,
+    12188,
+    12210,
+    12278,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    17,
+    14,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1791507600,
+   "category_names_with_ids": [
+    "17|Nightlife",
+    "14|Kids / Family"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2895264,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3865992-bright-nights-at-four-mile",
+   "source_id": 3865992,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "This year travels through space and time; shrink down to the size of a Four Mile honeybee to explore life as an insect and walk alongside a giant mantis or through a field of oversized wildflowers. Cross the globe to discover African animals and dive deep into the ocean to spend time with sharks. Delight in the same natural world that inspired Victorian literary classics!\n\nBright Nights at Four Mile Pricing\n$28 Adult, $30 walk-up\n$21 Youth, $23 walk-up\n$27 Senior/Military (only available on site)\n$20 Adult members, $15 Youth members",
+   "main_category_path": [
+    17
+   ],
+   "category_path_ids": [
+    17,
+    14
+   ],
+   "city_country": "Denver, United States",
+   "start_date": "2026-10-08",
+   "start_time": "2026-10-08T19:00:00-06:00",
+   "end_time": "2026-11-08T23:00:00-07:00",
+   "door_time": "2026-10-08T19:00:00-06:00",
+   "last_entry_time": "2026-10-08T22:30:00-06:00",
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.fourmilepark.org/events/bright-nights/"
+   },
+   "venue": {
+    "name": "715 S Forest St",
+    "address_1": "715 South Forest Street",
+    "address_2": null,
+    "town": "Denver",
+    "country": "United States",
+    "post_code": "80246",
+    "latitude": 39.7029723,
+    "longitude": -104.9274052
+   },
+   "_geoloc": {
+    "lat": 39.7029723,
+    "lng": -104.9274052
+   },
+   "start_time_i": 1791507600,
+   "end_time_i": 1794204000,
+   "created_time_i": 1791481479,
+   "last_indexed_i": 1792645921,
+   "score": 200,
+   "tags": [],
+   "objectID": "44786225"
+  },
+  {
+   "title": "2025 Electrophysiology Online Board Review",
+   "category_ids": [
+    86
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "This enduring program is designed for cardiologists, electrophysiologists, cardiovascular fellows, electrophysiology fellows, and all practitioners involved in the care of complex arrhythmia patients.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3085192,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3085192/event_image/MC133A-Mayo-Electrophysiology-Course_600x400.jpg",
+      "width": 599,
+      "height": 400
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3085192/event_image/featured_MC133A-Mayo-Electrophysiology-Course_600x400.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3085192/event_image/list_thumb_MC133A-Mayo-Electrophysiology-Course_600x400.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3085192/event_image/hero_MC133A-Mayo-Electrophysiology-Course_600x400.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3085192/event_image/featured_MC133A-Mayo-Electrophysiology-Course_600x400.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3085192/event_image/list_thumb_MC133A-Mayo-Electrophysiology-Course_600x400.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3085192/event_image/hero_MC133A-Mayo-Electrophysiology-Course_600x400.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3357886-0"
+   },
+   "artists": "",
+   "keywords": "mayoclinic, cardiovascularmedicine, cvcme, atrialfibrillation, syncope, epboards, electrophysiology",
+   "prices": {
+    "General Admission": "USD 1025.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    80,
+    154,
+    1175,
+    1374,
+    1774,
+    2809,
+    2874,
+    3698,
+    4442,
+    4672,
+    5123,
+    5293,
+    5386,
+    5563,
+    5569,
+    6581,
+    6630,
+    7090,
+    7681,
+    7790,
+    9038,
+    10008,
+    10018,
+    10058,
+    10128,
+    10158,
+    10205,
+    10337,
+    10758,
+    10787,
+    11137,
+    11359,
+    11440,
+    11512,
+    11517,
+    11641,
+    11738,
+    11931,
+    12022,
+    12077
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Mayo Clinic",
+   "category_name": "CME (Continuing Medical Education)",
+   "source_id_s": "3357886",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    80,
+    154,
+    1175,
+    1374,
+    1774,
+    2809,
+    2874,
+    3698,
+    4442,
+    4672,
+    5123,
+    5293,
+    5386,
+    5563,
+    5569,
+    6581,
+    6630,
+    7090,
+    7681,
+    7790,
+    9038,
+    10008,
+    10018,
+    10058,
+    10128,
+    10158,
+    10205,
+    10337,
+    10758,
+    10787,
+    11137,
+    11359,
+    11440,
+    11512,
+    11517,
+    11641,
+    11738,
+    11931,
+    12022,
+    12077,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    86,
+    "non_backfill"
+   ],
+   "online_only": true,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1763557200,
+   "category_names_with_ids": [
+    "86|CME (Continuing Medical Education)"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2570324,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3357886-2025-electrophysiology-online-board-review",
+   "source_id": 3357886,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The 2025 Electrophysiology Online Board Review offers concise, expert-led updates across the full EP spectrum and personalized learning tools for fellows, board candidates, and practicing electrophysiologists. Learners can access targeted assessments, on-demand lectures, guideline reviews, and board pearls. This year\u2019s edition features an expanded and updated assessment question bank to support more effective board preparation.",
+   "main_category_path": [
+    4,
+    84,
+    86
+   ],
+   "category_path_ids": [
+    4,
+    84,
+    86
+   ],
+   "city_country": "Rochester, United States",
+   "start_date": "2025-11-19",
+   "start_time": "2025-11-19T07:00:00-06:00",
+   "end_time": "2026-11-19T16:30:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://cveducation.mayo.edu/store/2025-electrophysiology-online-board-review"
+   },
+   "venue": {
+    "name": "Rochester",
+    "address_1": "Rochester",
+    "address_2": null,
+    "town": "Rochester",
+    "country": "United States",
+    "post_code": "55904",
+    "latitude": 44.0193287,
+    "longitude": -92.4588327
+   },
+   "_geoloc": {
+    "lat": 44.0193287,
+    "lng": -92.4588327
+   },
+   "start_time_i": 1763557200,
+   "end_time_i": 1795127400,
+   "created_time_i": 1763582100,
+   "last_indexed_i": 1784701852,
+   "score": 200,
+   "tags": [],
+   "objectID": "41044714"
+  },
+  {
+   "title": "Paint & Pour Parties in Ypsilanti for Adults, Teens and Kids",
+   "category_ids": [
+    145
+   ],
+   "root_category_ids": [
+    2
+   ],
+   "summary": "Interactive & FUN Paint & Sip Parties at our BYOB Studio in Downtown Ypsilanti. No Experience Required! ",
+   "description_html": null,
+   "hashtag": "tipsyypsi",
+   "images": [
+    {
+     "id": 3391858,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3391858/event_image/Evvnt_Generic_Landscape.png",
+      "width": 1000,
+      "height": 648
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3391858/event_image/featured_Evvnt_Generic_Landscape.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3391858/event_image/list_thumb_Evvnt_Generic_Landscape.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3391858/event_image/hero_Evvnt_Generic_Landscape.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3391858/event_image/featured_Evvnt_Generic_Landscape.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3391858/event_image/list_thumb_Evvnt_Generic_Landscape.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3391858/event_image/hero_Evvnt_Generic_Landscape.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3715992-1",
+    "Website": "https://go.evvnt.com/3715992-2",
+    "Facebook": "https://go.evvnt.com/3715992-3",
+    "Instagram": "https://go.evvnt.com/3715992-4"
+   },
+   "artists": "Tipsy Ypsi Artist Entertainers!",
+   "keywords": "paint&sip, paintandpour, paintandsip, paint&pour, datenight, girl'snight, birthday, anniversary, thingstodo, dateideas",
+   "prices": {
+    "Adult Ticket (ages 18+)": "USD 35.0",
+    "Teen Ticket (ages 13+)": "USD 30.0",
+    "Child Ticket (ages 5+)": "USD 25.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    5268,
+    5293,
+    5563,
+    6630,
+    7790,
+    7809,
+    7854,
+    8419,
+    8426,
+    8433,
+    8440,
+    8531,
+    8843,
+    9038,
+    9363,
+    9924,
+    10463,
+    10758,
+    10787,
+    11150,
+    11274,
+    11276,
+    11359,
+    11415,
+    11425,
+    11440,
+    11512,
+    11517,
+    11641,
+    11729,
+    11738,
+    11931,
+    11988,
+    12022,
+    12188,
+    12210,
+    12278
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Tipsy Ypsi Paint & Pour",
+   "category_name": "Painting",
+   "source_id_s": "3715992",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    5268,
+    5293,
+    5563,
+    6630,
+    7790,
+    7809,
+    7854,
+    8419,
+    8426,
+    8433,
+    8440,
+    8531,
+    8843,
+    9038,
+    9363,
+    9924,
+    10463,
+    10758,
+    10787,
+    11150,
+    11274,
+    11276,
+    11359,
+    11415,
+    11425,
+    11440,
+    11512,
+    11517,
+    11641,
+    11729,
+    11738,
+    11931,
+    11988,
+    12022,
+    12188,
+    12210,
+    12278,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    145,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1783724400,
+   "category_names_with_ids": [
+    "145|Painting"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2797115,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3715992-paint-pour-parties-in-ypsilanti-for-adults-teens-and-kids",
+   "source_id": 3715992,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Tipsy Ypsi offers public events throughout the week and private events anytime. With over a 14 years of Paint & Pour Party experience, we\u2019ve developed a creative night on the town that combines art and entertainment! Grab a drink and a brush and follow along as we walk you, step-by-step, through the evening\u2019s featured painting.\n\nEvents run for approximately 2-3 hours with FREQUENT sip breaks. You will leave with a painting that is uniquely yours, and you\u2019ll be amazed at the art you can bring to life.\n\nWe are NOT a franchise/chain, we do things Detroit style. Support your local artists!",
+   "main_category_path": [
+    2,
+    139,
+    145
+   ],
+   "category_path_ids": [
+    2,
+    139,
+    145
+   ],
+   "city_country": "Ypsilanti, United States",
+   "start_date": "2026-07-10",
+   "start_time": "2026-07-10T19:00:00-04:00",
+   "end_time": "2028-12-31T21:00:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://tipsyypsi.com/events/",
+    "Website": "https://tipsyypsi.com/",
+    "Facebook": "https://www.facebook.com/tipsyypsi",
+    "Instagram": "https://www.instagram.com/tipsyypsi"
+   },
+   "venue": {
+    "name": "Tipsy Ypsi - Paint and Pour",
+    "address_1": "5 South Washington Street",
+    "address_2": null,
+    "town": "Ypsilanti",
+    "country": "United States",
+    "post_code": "48197",
+    "latitude": 42.2406181,
+    "longitude": -83.6144096
+   },
+   "_geoloc": {
+    "lat": 42.2406181,
+    "lng": -83.6144096
+   },
+   "start_time_i": 1783724400,
+   "end_time_i": 1861927200,
+   "created_time_i": 1783661090,
+   "last_indexed_i": 1792033631,
+   "score": 200,
+   "tags": [],
+   "objectID": "43735457"
+  },
+  {
+   "title": "London, From The Margins at Rich Mix",
+   "category_ids": [
+    16,
+    37,
+    212
+   ],
+   "root_category_ids": [
+    16,
+    28,
+    6
+   ],
+   "summary": "Jammz and Rohan Rakhit present Asian Underground, Jazz, Grime and Club Culture over five weekends, celebrating the scenes, sounds and voices rooted in East London's underground culture",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3485647,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485647/event_image/Jammz__Rohan_Rakhit__Shay_Rafati_Rich_Mix_London__From_The_Margins_2026_Photo_Credit_Blair_Wason__blairs_cornershop_986.jpg",
+      "width": 1521,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485647/event_image/featured_Jammz__Rohan_Rakhit__Shay_Rafati_Rich_Mix_London__From_The_Margins_2026_Photo_Credit_Blair_Wason__blairs_cornershop_986.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485647/event_image/list_thumb_Jammz__Rohan_Rakhit__Shay_Rafati_Rich_Mix_London__From_The_Margins_2026_Photo_Credit_Blair_Wason__blairs_cornershop_986.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485647/event_image/hero_Jammz__Rohan_Rakhit__Shay_Rafati_Rich_Mix_London__From_The_Margins_2026_Photo_Credit_Blair_Wason__blairs_cornershop_986.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485647/event_image/featured_Jammz__Rohan_Rakhit__Shay_Rafati_Rich_Mix_London__From_The_Margins_2026_Photo_Credit_Blair_Wason__blairs_cornershop_986.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485647/event_image/list_thumb_Jammz__Rohan_Rakhit__Shay_Rafati_Rich_Mix_London__From_The_Margins_2026_Photo_Credit_Blair_Wason__blairs_cornershop_986.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3485647/event_image/hero_Jammz__Rohan_Rakhit__Shay_Rafati_Rich_Mix_London__From_The_Margins_2026_Photo_Credit_Blair_Wason__blairs_cornershop_986.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3827419-0",
+    "Website": "https://go.evvnt.com/3827419-2"
+   },
+   "artists": "",
+   "keywords": "jazz, grime, clubs, eastlondon, clubculture, southasian, asian, music, live, events, talks, film",
+   "prices": {
+    "General Admission": "GBP 7.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    21,
+    23,
+    27,
+    269,
+    1120,
+    1130,
+    1272,
+    1374,
+    1951,
+    2417,
+    2418,
+    2834,
+    2874,
+    4076,
+    4900,
+    4908,
+    4911,
+    4914,
+    4955,
+    5148,
+    5196,
+    5293,
+    6235,
+    6581,
+    7249,
+    7684,
+    7790,
+    9038,
+    9703,
+    9704,
+    10184,
+    10731,
+    11006,
+    11415,
+    11440,
+    11498,
+    11513,
+    11641,
+    11710,
+    12132,
+    12133,
+    12188,
+    12210
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Rich Mix",
+   "category_name": "Live Music",
+   "source_id_s": "3827419",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    21,
+    23,
+    27,
+    269,
+    1120,
+    1130,
+    1272,
+    1374,
+    1951,
+    2417,
+    2418,
+    2834,
+    2874,
+    4076,
+    4900,
+    4908,
+    4911,
+    4914,
+    4955,
+    5148,
+    5196,
+    5293,
+    6235,
+    6581,
+    7249,
+    7684,
+    7790,
+    9038,
+    9703,
+    9704,
+    10184,
+    10731,
+    11006,
+    11415,
+    11440,
+    11498,
+    11513,
+    11641,
+    11710,
+    12132,
+    12133,
+    12188,
+    12210,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    16,
+    37,
+    212,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1791048600,
+   "category_names_with_ids": [
+    "16|Live Music",
+    "37|Music",
+    "212|Live Music"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2867780,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3827419-london-from-the-margins-at-rich-mix",
+   "source_id": 3827419,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "London, From The Margins at Rich Mix is conducted and connected by Hackney-born multiplatform storyteller Jammz and DJ, broadcaster and DAYTIMERS cultural programmer Rohan Rakhit with Rich Mix creative lead Shay Rafati. It brings together the music and subcultures that have defined East London and continue to shape activism and identity in the community today. Four genre-inspired weekends, each rooted in a scene with a rich history and artistic talent in this part of London - Asian Underground, Jazz, Grime and Club Culture - lead into a celebratory two-day birthday weekender finale. \n\nArtists and collaborators include: Brownswood Recordings, Chamber 45, Charlie Dark, Farook JOI, G33, Grandmixxer, Nadine Noor, Orii Community, Pratibha Parmar, Scratcha, and Tomorrow's Warriors.\n\nAcross the season, Rich Mix is creating a pop-up, in-person radio station, \u2018Streetside Radio\u2019, broadcasting live from the venue on event days. Partnering with some of the city's most important community radio stations, Voices, Sister Midnight FM, Mode and Reprezent, bespoke programmes celebrating the conversations and themes of each event will be curated. \n\nHere to Stay: Asian Underground \nDate: Sat 3 Oct 2026\nTimes: 6.30pm \u2013 2am\n\nNew Ground: UK Jazz \nDate: Sat 10 Oct 2026\nTimes: 6.30pm \u2013 11.30pm\n \nBrick by Brick: Grime \nDate: Sat 14 Nov 2026\nTimes: 6.30pm \u2013 12.30am\n \nAfter Dark: Club Culture\nDate: Sat 28 Nov 2026\nTimes: 6.30pm \u2013 2.30am\n\nBirthday Weekender \nDate: 11 and 12 December 2026\nTimes: 6.30pm \u2013 2.30am\n\nArtists and collaborators: \nAmena Zaman\nAngelina Venus\nChamber45\nCharlie Dark\nDAYTIMERS\nFarook JOI\nG33\nGirls of Grime (Shakira Walters)\nJesse Bernard\nJulie Begum\nJuubi\nKaylee Kay\nLioness\nMak 10\nN3\nNasha XP\nORII Community\nScratcha DVA\nShivz / BEAM\nSonia Mehta\nSophie Farrell (Sister Midnight)\nTomorrow's Warriors\nTorz\nTravaughn / Travs Presents\n",
+   "main_category_path": [
+    16
+   ],
+   "category_path_ids": [
+    16,
+    28,
+    30,
+    37,
+    6,
+    212
+   ],
+   "city_country": "London, United Kingdom",
+   "start_date": "2026-10-03",
+   "start_time": "2026-10-03T18:30:00+01:00",
+   "end_time": "2026-12-12T00:30:00+00:00",
+   "door_time": "2026-10-03T18:30:00+01:00",
+   "last_entry_time": "2026-10-03T22:00:00+01:00",
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://richmix.org.uk/london-from-the-margins/",
+    "Website": "https://richmix.org.uk/london-from-the-margins/"
+   },
+   "venue": {
+    "name": "Rich Mix",
+    "address_1": "35-47 Bethnal Green Road",
+    "address_2": null,
+    "town": "London",
+    "country": "United Kingdom",
+    "post_code": "E1 6LA",
+    "latitude": 51.5243955,
+    "longitude": -0.0731968
+   },
+   "_geoloc": {
+    "lat": 51.5243955,
+    "lng": -0.0731968
+   },
+   "start_time_i": 1791048600,
+   "end_time_i": 1797035400,
+   "created_time_i": 1789467369,
+   "last_indexed_i": 1791163835,
+   "score": 200,
+   "tags": [],
+   "objectID": "44480068"
+  },
+  {
+   "title": "2025 Adult Congenital Heart Disease Online Board Review",
+   "category_ids": [
+    86
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "This online product is designed for physicians, residents, fellows, nurse practitioners, physician assistants, and other clinicians involved in the care of adults with congenital heart disease.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3228642,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3228642/event_image/MC133A-Mayo-Adult-Congenital-Heart-Disease-Course_600x600_-_ZOOM.jpg",
+      "width": 600,
+      "height": 600
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3228642/event_image/featured_MC133A-Mayo-Adult-Congenital-Heart-Disease-Course_600x600_-_ZOOM.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3228642/event_image/list_thumb_MC133A-Mayo-Adult-Congenital-Heart-Disease-Course_600x600_-_ZOOM.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3228642/event_image/hero_MC133A-Mayo-Adult-Congenital-Heart-Disease-Course_600x600_-_ZOOM.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3228642/event_image/featured_MC133A-Mayo-Adult-Congenital-Heart-Disease-Course_600x600_-_ZOOM.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3228642/event_image/list_thumb_MC133A-Mayo-Adult-Congenital-Heart-Disease-Course_600x600_-_ZOOM.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3228642/event_image/hero_MC133A-Mayo-Adult-Congenital-Heart-Disease-Course_600x600_-_ZOOM.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3535736-0"
+   },
+   "artists": "",
+   "keywords": "cvcme, cardiovascularmedicine, mayoclinic, adultcongenitalheartdisease, achd, geneticsinachd, hemodynamics",
+   "prices": {
+    "Purchasing Price": "USD 595.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    80,
+    154,
+    1120,
+    1175,
+    1374,
+    1774,
+    2034,
+    2809,
+    2874,
+    3698,
+    4442,
+    4672,
+    5123,
+    5293,
+    5386,
+    5563,
+    6581,
+    6630,
+    7090,
+    7681,
+    7790,
+    9038,
+    10008,
+    10018,
+    10058,
+    10128,
+    10158,
+    10205,
+    10337,
+    10758,
+    10787,
+    11137,
+    11150,
+    11359,
+    11415,
+    11425,
+    11440,
+    11512,
+    11517,
+    11641,
+    11729,
+    11738,
+    11931,
+    12022,
+    12132,
+    12133,
+    12188
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Mayo Clinic",
+   "category_name": "CME (Continuing Medical Education)",
+   "source_id_s": "3535736",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    80,
+    154,
+    1120,
+    1175,
+    1374,
+    1774,
+    2034,
+    2809,
+    2874,
+    3698,
+    4442,
+    4672,
+    5123,
+    5293,
+    5386,
+    5563,
+    6581,
+    6630,
+    7090,
+    7681,
+    7790,
+    9038,
+    10008,
+    10018,
+    10058,
+    10128,
+    10158,
+    10205,
+    10337,
+    10758,
+    10787,
+    11137,
+    11150,
+    11359,
+    11415,
+    11425,
+    11440,
+    11512,
+    11517,
+    11641,
+    11729,
+    11738,
+    11931,
+    12022,
+    12132,
+    12133,
+    12188,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    86,
+    "non_backfill"
+   ],
+   "online_only": true,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1773662400,
+   "category_names_with_ids": [
+    "86|CME (Continuing Medical Education)"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2680979,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3535736-2025-adult-congenital-heart-disease-online-board-review",
+   "source_id": 3535736,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "This comprehensive online course reviews all major topics included in the ABIM Adult Congenital Heart Disease (ACHD) blueprint through a personalized learning experience. Start with a pre-assessment to identify your strengths and knowledge gaps, then follow targeted study recommendations that focus on areas needing reinforcement.\n\nAvailable anytime, this enduring course provides a flexible, adaptive learning curriculum designed to fit your schedule. Learners can access prerecorded video lectures, streaming audio presentations, learning objectives, journal references, clinical guidelines, and key board takeaways.\n\nAdditional features include downloadable PowerPoint slides with note-taking capability, pre- and post-tests to track progress, and curated resources to support effective exam preparation and clinical practice.",
+   "main_category_path": [
+    4,
+    84,
+    86
+   ],
+   "category_path_ids": [
+    4,
+    84,
+    86
+   ],
+   "city_country": "Rochester, United States",
+   "start_date": "2026-03-16",
+   "start_time": "2026-03-16T07:00:00-05:00",
+   "end_time": "2027-08-27T16:30:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://cveducation.mayo.edu/store/2025-adult-congenital-heart-disease-online-board-review"
+   },
+   "venue": {
+    "name": "Rochester",
+    "address_1": "Rochester",
+    "address_2": null,
+    "town": "Rochester",
+    "country": "United States",
+    "post_code": "55904",
+    "latitude": 44.0193287,
+    "longitude": -92.4588327
+   },
+   "_geoloc": {
+    "lat": 44.0193287,
+    "lng": -92.4588327
+   },
+   "start_time_i": 1773662400,
+   "end_time_i": 1819402200,
+   "created_time_i": 1773680681,
+   "last_indexed_i": 1785388416,
+   "score": 200,
+   "tags": [],
+   "objectID": "42031952"
+  }
+ ],
+ "rawEditorsPickEvents": []
+}
