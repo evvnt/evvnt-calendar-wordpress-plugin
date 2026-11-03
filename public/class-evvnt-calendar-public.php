@@ -3,104 +3,117 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       http://example.com
- * @since      1.0.0
+ * Renders the Evvnt discovery embed for the [evvnt] shortcode and the widget.
  *
  * @package    Evvnt_Calendar
  * @subpackage Evvnt_Calendar/public
  */
 
-/**
- * The public-facing functionality of the plugin.
- *
- * Defines the plugin name, version, and two examples hooks for how to
- * enqueue the public-facing stylesheet and JavaScript.
- *
- * @package    Evvnt_Calendar
- * @subpackage Evvnt_Calendar/public
- * @author     Your Name <email@example.com>
- */
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 class Evvnt_Calendar_Public {
+
+	const SCRIPT_HANDLE = 'evvnt-discovery';
+	const SCRIPT_URL    = 'https://discovery.evvnt.com/prd/evvnt_discovery_plugin-latest.min.js';
 
 	private $plugin_name;
 	private $version;
 
-	/**
-	 * Initialize the class and set its properties.
-	 *
-	 * @since    1.0.0
-	 * @param      string    $plugin_name       The name of the plugin.
-	 * @param      string    $version    The version of this plugin.
-	 */
 	public function __construct( $plugin_name, $version ) {
-
 		$this->plugin_name = $plugin_name;
-		$this->version = $version;
+		$this->version     = $version;
 	}
 
 	public function register_shortcode() {
-	   add_shortcode('evvnt', array($this, 'build_shortcode'));
-	}
-
-	public function build_shortcode($atts) {
-	  $defaults = array(
-     'detail_page_enabled' => '1',
-     'config_type'         => 'calendar',
-     'virtual'             => '0',
-     'map'                 => '0',
-     'seo_optimize'        => '0',
-     'category_id'         => ''
-    );
-	  extract(wp_parse_args($atts, $defaults));
-	  ob_start();
-    include plugin_dir_path(dirname(__FILE__)) . 'public/partials/evvnt-calendar-public-display.php';
-    return ob_get_clean();
+		add_shortcode( 'evvnt', array( $this, 'build_shortcode' ) );
 	}
 
 	/**
-	 * Register the stylesheets for the public-facing side of the site.
+	 * Default display options shared by the shortcode and the widget.
 	 *
-	 * @since    1.0.0
+	 * @return array
 	 */
-	public function enqueue_styles() {
+	public static function display_defaults() {
+		return array(
+			'detail_page_enabled' => '1',
+			'config_type'         => 'calendar',
+			'virtual'             => '0',
+			'map'                 => '0',
+			'seo_optimize'        => '0', // Accepted for backwards compatibility; the discovery loader ignores it.
+			'category_id'         => '',
+		);
+	}
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Evvnt_Calendar_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Evvnt_Calendar_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/evvnt-calendar-public.css', array(), $this->version, 'all' );
-
+	public function build_shortcode( $atts ) {
+		$atts = shortcode_atts( self::display_defaults(), $atts, 'evvnt' );
+		return self::render_embed( $atts );
 	}
 
 	/**
-	 * Register the JavaScript for the public-facing side of the site.
+	 * Render the discovery embed for one shortcode or widget instance.
 	 *
-	 * @since    1.0.0
+	 * Every value that reaches the inline script is type-cast and JSON-encoded,
+	 * so shortcode attributes and settings cannot inject script.
+	 *
+	 * @param array $atts Raw display options (strings from a shortcode or widget instance).
+	 * @return string HTML.
 	 */
-	public function enqueue_scripts() {
+	public static function render_embed( $atts ) {
+		$atts         = wp_parse_args( is_array( $atts ) ? $atts : array(), self::display_defaults() );
+		$publisher_id = Evvnt_Calendar_Settings::publisher_id();
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Evvnt_Calendar_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Evvnt_Calendar_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
+		if ( ! $publisher_id ) {
+			if ( current_user_can( 'manage_options' ) ) {
+				return '<p class="evvnt-calendar-unconfigured">' . esc_html__( 'Evvnt Calendar is not configured. Add your Publisher ID under Settings → Evvnt Calendar Settings.', 'evvnt-calendar' ) . '</p>';
+			}
+			return '';
+		}
 
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/evvnt-calendar-public.js', array( 'jquery' ), $this->version, false );
+		$element_id = wp_unique_id( 'evvnt-calendar-' );
 
+		$discovery = array(
+			'element'             => '#' . $element_id,
+			'detail_page_enabled' => self::to_bool( $atts['detail_page_enabled'] ),
+			'widget'              => 'widget' === $atts['config_type'],
+			'virtual'             => self::to_bool( $atts['virtual'] ),
+			'map'                 => self::to_bool( $atts['map'] ),
+		);
+
+		$category_id = absint( $atts['category_id'] );
+		if ( $category_id ) {
+			$discovery['category_id'] = $category_id;
+		}
+
+		$settings = Evvnt_Calendar_Settings::get();
+		$config   = array(
+			'publisher_id' => $publisher_id,
+			'discovery'    => $discovery,
+			'submission'   => array(
+				'partner_name' => (string) $settings['partner_name'],
+				'text'         => (string) $settings['submission_label'],
+			),
+		);
+
+		wp_enqueue_script( self::SCRIPT_HANDLE, self::SCRIPT_URL, array(), null, true );
+		wp_add_inline_script(
+			self::SCRIPT_HANDLE,
+			'window.evvnt_require&&evvnt_require("evvnt/discovery_plugin").init(' . wp_json_encode( $config, JSON_HEX_TAG | JSON_HEX_AMP ) . ');'
+		);
+
+		// The <noscript> fallback also keeps the markup non-empty, which the block-based
+		// widget editor requires before it shows a preview. The discovery app renders
+		// into a shadow root, so this content is never displayed alongside the calendar.
+		return '<div id="' . esc_attr( $element_id ) . '" class="evvnt-calendar"><noscript>'
+			. esc_html__( 'Please enable JavaScript to view the events calendar.', 'evvnt-calendar' )
+			. '</noscript></div>';
 	}
 
+	/**
+	 * Interpret '1', 'true', 1 and true as on; everything else as off.
+	 */
+	private static function to_bool( $value ) {
+		return true === $value || 1 === $value || '1' === $value || 'true' === strtolower( (string) $value );
+	}
 }
