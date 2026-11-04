@@ -102,10 +102,16 @@ class Evvnt_Calendar_Public {
 	}
 
 	private static function normalize_server_atts( array $atts ) {
+		$layout = isset( $atts['layout'] ) && in_array( $atts['layout'], array( 'list', 'rows' ), true ) ? $atts['layout'] : '';
+		if ( '' === $layout ) {
+			$settings = Evvnt_Calendar_Settings::get();
+			$layout   = 'rows' === $settings['calendar_layout'] ? 'rows' : 'list';
+		}
 		return array(
 			'detail_page_enabled' => self::to_bool( $atts['detail_page_enabled'] ),
 			'virtual'             => self::to_bool( $atts['virtual'] ),
 			'category_id'         => absint( $atts['category_id'] ),
+			'layout'              => $layout,
 		);
 	}
 
@@ -156,6 +162,7 @@ class Evvnt_Calendar_Public {
 				exit;
 			}
 			$canonical = Evvnt_Calendar_Route::event_url( $base, $this->event->slug() );
+			add_filter( 'body_class', array( $this, 'event_body_class' ) );
 			Evvnt_Calendar_Router::enforce_canonical_path( $canonical );
 			$seo->for_event( $this->event, $canonical );
 			return;
@@ -192,17 +199,107 @@ class Evvnt_Calendar_Public {
 
 		Evvnt_Calendar_Router::enforce_canonical_path( Evvnt_Calendar_Route::calendar_url( $base, $category ? $category['slug'] : '', $this->route->page ) );
 
+		if ( $this->route->subcategory_id || '' !== $this->route->search || '' !== $this->route->from_date ) {
+			// Sub-category filters and search results are navigation aids: keep them out of search indexes.
+			$seo->noindex_only();
+		}
+
 		if ( 'category' === $this->route->type && $atts['category_id'] ) {
 			// A pinned calendar has no root-category navigation; consolidate on the page itself.
 			$seo->for_listing( '', Evvnt_Calendar_Route::calendar_url( $base, '', $this->route->page ) );
-		} elseif ( $category || $this->route->page > 1 ) {
+		} elseif ( $category || $this->route->page > 1 || '' !== $this->route->search || '' !== $this->route->from_date ) {
 			$title = $category ? $category['name'] : get_the_title( $post );
+			if ( '' !== $this->route->from_date ) {
+				$title = $this->renderer()->dates_label( $this->route->from_date, $this->route->to_date );
+			}
+			if ( '' !== $this->route->search ) {
+				/* translators: %s: search text. */
+				$title = sprintf( __( 'Search: %s', 'evvnt-calendar' ), $this->route->search );
+			}
 			if ( $this->route->page > 1 ) {
 				/* translators: 1: listing title, 2: page number. */
 				$title = sprintf( __( '%1$s – Page %2$d', 'evvnt-calendar' ), $title, $this->route->page );
 			}
 			$seo->for_listing( $title, Evvnt_Calendar_Route::calendar_url( $base, $category ? $category['slug'] : '', $this->route->page ) );
 		}
+	}
+
+	/**
+	 * REST endpoint for search suggestions: GET /wp-json/evvnt-calendar/v1/suggest?q=…&base=…
+	 * Public and read-only; returns matching categories and up to 5 events. Hooked on rest_api_init.
+	 */
+	public function register_rest_routes() {
+		if ( ! self::server_mode() ) {
+			return;
+		}
+		register_rest_route(
+			'evvnt-calendar/v1',
+			'/suggest',
+			array(
+				'methods'             => 'GET',
+				'permission_callback' => '__return_true',
+				'args'                => array(
+					'q'    => array(
+						'type'     => 'string',
+						'required' => true,
+					),
+					'base'     => array( 'type' => 'string' ),
+					'category' => array( 'type' => 'integer' ),
+					'virtual'  => array( 'type' => 'boolean' ),
+				),
+				'callback'            => array( $this, 'rest_suggest' ),
+			)
+		);
+	}
+
+	public function rest_suggest( WP_REST_Request $request ) {
+		// Public endpoint: at most 60 lookups per minute per visitor, so it cannot be used to
+		// hammer the Evvnt API or fill the cache.
+		$ip    = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : '';
+		$limit = 'evvnt_calendar_rl_' . md5( $ip . '|' . gmdate( 'YmdHi' ) );
+		$count = (int) get_transient( $limit );
+		if ( $count >= (int) apply_filters( 'evvnt_calendar_suggest_rate_limit', 60 ) ) {
+			return new WP_Error( 'evvnt_calendar_rate_limited', 'Too many requests.', array( 'status' => 429 ) );
+		}
+		set_transient( $limit, $count + 1, 2 * MINUTE_IN_SECONDS );
+
+		$term = Evvnt_Calendar_Route::clean_search( (string) $request->get_param( 'q' ) );
+		if ( ( function_exists( 'mb_strlen' ) ? mb_strlen( $term ) : strlen( $term ) ) < 2 ) {
+			return rest_ensure_response( array( 'categories' => array(), 'events' => array(), 'all_url' => '' ) );
+		}
+		// Links are built on the calendar page the request came from, if it is on this site;
+		// otherwise on the configured Calendar page, else the home page.
+		$base   = (string) $request->get_param( 'base' );
+		$config = Evvnt_Calendar_Router::config();
+		$home   = wp_parse_url( home_url(), PHP_URL_HOST );
+		if ( '' === $base || wp_parse_url( $base, PHP_URL_HOST ) !== $home || ! wp_http_validate_url( $base ) ) {
+			$settings = Evvnt_Calendar_Settings::get();
+			$base     = $settings['calendar_page_id'] ? get_permalink( $settings['calendar_page_id'] ) : home_url( '/' );
+		}
+		$atts     = array(
+			'category_id' => absint( $request->get_param( 'category' ) ),
+			'virtual'     => (bool) $request->get_param( 'virtual' ),
+		);
+		$response = rest_ensure_response( $this->renderer()->suggestions( $term, $base, $atts ) );
+		$response->header( 'Cache-Control', 'public, max-age=120' );
+		return $response;
+	}
+
+	/**
+	 * Marks event pages so the stylesheet can give the hero the full page width and hide the
+	 * page's own title (the event title is the page heading). Hooked on body_class.
+	 */
+	public function event_body_class( $classes ) {
+		$classes[] = 'evvnt-cal-event-page';
+		/**
+		 * Whether to hide the theme's page title on event pages (default true).
+		 *
+		 * @param bool $hide Hide the page title.
+		 */
+		if ( apply_filters( 'evvnt_calendar_hide_page_title', true ) ) {
+			$classes[] = 'evvnt-cal-hide-page-title';
+		}
+		return $classes;
 	}
 
 	/**
@@ -293,7 +390,13 @@ class Evvnt_Calendar_Public {
 			return $renderer->template( 'event-not-found', array( 'back_url' => Evvnt_Calendar_Route::calendar_url( $base ) ) );
 		}
 		if ( $this->event ) {
-			return $renderer->render_detail( $this->event, $base );
+			$html = $renderer->render_detail( $this->event, $base );
+			if ( ! $this->resolved && false !== strpos( $html, 'evvnt-cal__hero' ) ) {
+				// Rendered too late for the body class that clips the full-bleed hero's 100vw
+				// (which includes the scrollbar); clip here so the page cannot scroll sideways.
+				$html = '<style>body{overflow-x:clip}</style>' . $html;
+			}
+			return $html;
 		}
 
 		return $renderer->render_calendar( $this->route, self::normalize_server_atts( $atts ), $base );
@@ -327,6 +430,7 @@ class Evvnt_Calendar_Public {
 			'map'                 => '0',
 			'seo_optimize'        => '0', // Accepted for backwards compatibility; the discovery loader ignores it.
 			'category_id'         => '',
+			'layout'              => '',  // Server mode: 'list' or 'rows' overrides the Calendar layout setting.
 		);
 	}
 

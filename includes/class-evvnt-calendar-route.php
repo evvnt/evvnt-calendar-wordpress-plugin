@@ -25,6 +25,10 @@ class Evvnt_Calendar_Route {
 	const PAGE_VAR   = 'evPage';
 	const LEGACY_VAR = '_ev_id';
 	const MAX_PAGE   = 100;
+	const SUB_VAR    = 'subcategory';
+	const SEARCH_VAR = 'searchTerm';
+	const FROM_VAR   = 'fromDate';
+	const TO_VAR     = 'toDate';
 
 	/** @var string calendar|category|event|not_found */
 	public $type = 'calendar';
@@ -37,6 +41,21 @@ class Evvnt_Calendar_Route {
 
 	/** @var string Category slug, for category routes. */
 	public $category_slug = '';
+
+	/** @var int Sub-category filter (?subcategory=id|name, as the discovery JS), or 0. */
+	public $subcategory_id = 0;
+
+	/** @var string Sub-category name from the same parameter, for headings. */
+	public $subcategory_name = '';
+
+	/** @var string Date range start (Y-m-d, ?fromDate= as the discovery JS), or ''. */
+	public $from_date = '';
+
+	/** @var string Date range end (Y-m-d, ?toDate=), or ''. */
+	public $to_date = '';
+
+	/** @var string Search text (?searchTerm=, or ?query= as the discovery JS also accepts), or ''. */
+	public $search = '';
 
 	/** @var int 1-based page number. */
 	public $page = 1;
@@ -63,6 +82,11 @@ class Evvnt_Calendar_Route {
 				}
 				if ( $page && '' === $event ) {
 					$query[ self::PAGE_VAR ] = $page;
+				}
+				foreach ( array( self::SUB_VAR, self::SEARCH_VAR, 'query', self::FROM_VAR, self::TO_VAR ) as $passthrough ) {
+					if ( '' === $event && isset( $_GET[ $passthrough ] ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- read-only routing.
+						$query[ $passthrough ] = wp_unslash( $_GET[ $passthrough ] ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- validated in from_query().
+					}
 				}
 				return self::from_query( $query );
 			}
@@ -91,6 +115,34 @@ class Evvnt_Calendar_Route {
 
 		if ( isset( $query[ self::PAGE_VAR ] ) && is_scalar( $query[ self::PAGE_VAR ] ) ) {
 			$route->page = min( self::MAX_PAGE, max( 1, (int) $query[ self::PAGE_VAR ] ) );
+		}
+
+		$from = isset( $query[ self::FROM_VAR ] ) && is_scalar( $query[ self::FROM_VAR ] ) ? self::clean_date( (string) $query[ self::FROM_VAR ] ) : '';
+		$to   = isset( $query[ self::TO_VAR ] ) && is_scalar( $query[ self::TO_VAR ] ) ? self::clean_date( (string) $query[ self::TO_VAR ] ) : '';
+		if ( '' !== $from && '' === $to ) {
+			$to = $from;
+		}
+		// A range of 0-31 days only: keeps listings meaningful and the cache bounded.
+		if ( '' !== $from && $to >= $from && ( strtotime( $to ) - strtotime( $from ) ) <= 31 * DAY_IN_SECONDS ) {
+			$route->from_date = $from;
+			$route->to_date   = $to;
+		}
+
+		foreach ( array( self::SEARCH_VAR, 'query' ) as $search_var ) {
+			if ( isset( $query[ $search_var ] ) && is_scalar( $query[ $search_var ] ) ) {
+				$route->search = self::clean_search( (string) $query[ $search_var ] );
+				break;
+			}
+		}
+
+		if ( isset( $query[ self::SUB_VAR ] ) && is_scalar( $query[ self::SUB_VAR ] ) ) {
+			// "id|name", or several joined with "^" by the discovery JS (the first is used).
+			$first = explode( '^', (string) $query[ self::SUB_VAR ] )[0];
+			$parts = explode( '|', $first, 2 );
+			if ( ctype_digit( $parts[0] ) && (int) $parts[0] > 0 ) {
+				$route->subcategory_id   = (int) $parts[0];
+				$route->subcategory_name = isset( $parts[1] ) ? mb_substr( sanitize_text_field( $parts[1] ), 0, 100 ) : '';
+			}
 		}
 
 		$path = ( isset( $query[ self::PATH_VAR ] ) && is_scalar( $query[ self::PATH_VAR ] ) ) ? (string) $query[ self::PATH_VAR ] : '';
@@ -154,6 +206,45 @@ class Evvnt_Calendar_Route {
 			$args[ self::PAGE_VAR ] = (int) $page;
 		}
 		return self::build( $base, $args );
+	}
+
+	/**
+	 * A valid calendar date as Y-m-d, or ''.
+	 */
+	public static function clean_date( $value ) {
+		return ( preg_match( '/^(\d{4})-(\d{2})-(\d{2})$/', $value, $m ) && checkdate( (int) $m[2], (int) $m[3], (int) $m[1] ) ) ? $value : '';
+	}
+
+	/**
+	 * Calendar URL for a date range (?fromDate=…&toDate=…, page N).
+	 */
+	public static function dates_url( $base, $from, $to, $page = 1 ) {
+		$url = self::calendar_url( $base, '', $page );
+		return $url . ( false === strpos( $url, '?' ) ? '?' : '&' ) . self::FROM_VAR . '=' . rawurlencode( $from ) . '&' . self::TO_VAR . '=' . rawurlencode( $to );
+	}
+
+	/**
+	 * Normalise search text: plain text, single spaces, at most 100 characters.
+	 */
+	public static function clean_search( $text ) {
+		$text = trim( preg_replace( '/\s+/u', ' ', sanitize_text_field( $text ) ) );
+		return function_exists( 'mb_substr' ) ? mb_substr( $text, 0, 100 ) : substr( $text, 0, 100 );
+	}
+
+	/**
+	 * Search results URL on the calendar page (?searchTerm=…, page N).
+	 */
+	public static function search_url( $base, $search, $page = 1 ) {
+		$url = self::calendar_url( $base, '', $page );
+		return $url . ( false === strpos( $url, '?' ) ? '?' : '&' ) . self::SEARCH_VAR . '=' . rawurlencode( $search );
+	}
+
+	/**
+	 * Calendar URL filtered to a sub-category (?subcategory=id|name on top of calendar_url()).
+	 */
+	public static function subcategory_url( $base, $category_slug, $sub_id, $sub_name, $page = 1 ) {
+		$url = self::calendar_url( $base, $category_slug, $page );
+		return $url . ( false === strpos( $url, '?' ) ? '?' : '&' ) . self::SUB_VAR . '=' . (int) $sub_id . '%7C' . rawurlencode( $sub_name );
 	}
 
 	/**

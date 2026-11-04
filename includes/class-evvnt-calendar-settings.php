@@ -32,6 +32,8 @@ class Evvnt_Calendar_Settings {
 			'submission_label' => 'Promote your event',
 			'render_mode'      => 'js', // 'js' (discovery app in the browser) or 'server'.
 			'calendar_page_id' => 0,    // Page holding the calendar; enables path URLs in server mode.
+			'calendar_layout'  => 'list', // Server mode home view: 'list' (featured + list) or 'rows' (category rows).
+			'calendar_width'   => 'wide', // 'wide' (theme's wide width) or 'content' (the content column).
 		);
 	}
 

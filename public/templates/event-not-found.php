@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<div class="evvnt-cal evvnt-cal--not-found">
+<div class="<?php echo esc_attr( $args['renderer']->root_class( 'not-found' ) ); ?>">
 	<p class="evvnt-cal__notice"><?php esc_html_e( 'Sorry, that event could not be found. It may have been removed.', 'evvnt-calendar' ); ?></p>
 	<p class="evvnt-cal__back"><a href="<?php echo esc_url( $args['back_url'] ); ?>"><?php esc_html_e( '← All events', 'evvnt-calendar' ); ?></a></p>
 </div>

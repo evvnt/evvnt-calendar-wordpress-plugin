@@ -90,10 +90,27 @@ class Evvnt_Calendar_Admin {
 				: $defaults['submission_label'],
 			'render_mode'      => ( isset( $input['render_mode'] ) && 'server' === $input['render_mode'] ) ? 'server' : 'js',
 			'calendar_page_id' => ( isset( $input['calendar_page_id'] ) && 'page' === get_post_type( absint( $input['calendar_page_id'] ) ) ) ? absint( $input['calendar_page_id'] ) : 0,
+			'calendar_layout'  => ( isset( $input['calendar_layout'] ) && 'rows' === $input['calendar_layout'] ) ? 'rows' : 'list',
+			'calendar_width'   => ( isset( $input['calendar_width'] ) && 'content' === $input['calendar_width'] ) ? 'content' : 'wide',
 		);
 
 		// Settings may change the publisher or rendering; drop cached API responses.
 		Evvnt_Calendar_Cache::flush();
+
+		if ( $clean['calendar_page_id'] ) {
+			$page = get_post( $clean['calendar_page_id'] );
+			if ( $page && ! has_shortcode( $page->post_content, 'evvnt' ) ) {
+				$this->add_error_once(
+					'evvnt_calendar_page_without_shortcode',
+					sprintf(
+						/* translators: %s: page title. */
+						__( 'The Calendar page "%s" does not contain the [evvnt] shortcode, so calendar and event links will not use clean URLs. Choose the page that shows the calendar.', 'evvnt-calendar' ),
+						get_the_title( $page )
+					),
+					'warning'
+				);
+			}
+		}
 
 		$client = new Evvnt_Calendar_Publisher_Client( $clean['api_key'], $clean['api_secret_key'], $clean['publisher_id'] );
 
@@ -129,13 +146,13 @@ class Evvnt_Calendar_Admin {
 		return is_scalar( $value ) ? trim( preg_replace( '/[\x00-\x1F\x7F]/', '', (string) $value ) ) : '';
 	}
 
-	private function add_error_once( $code, $message ) {
+	private function add_error_once( $code, $message, $type = 'error' ) {
 		foreach ( get_settings_errors( $this->option_name ) as $error ) {
 			if ( $error['code'] === $code ) {
 				return;
 			}
 		}
-		add_settings_error( $this->option_name, $code, $message, 'error' );
+		add_settings_error( $this->option_name, $code, $message, $type );
 	}
 
 	public function add_meta_boxes() {
@@ -253,6 +270,27 @@ class Evvnt_Calendar_Admin {
 							<label><input type="radio" name="<?php echo esc_attr( $name ); ?>[render_mode]" value="server" <?php checked( 'server', $options['render_mode'] ); ?>> <?php esc_html_e( 'On the server (beta): event pages are crawlable and work without JavaScript', 'evvnt-calendar' ); ?></label>
 						</fieldset>
 						<p><span class="description"><?php esc_html_e( 'Server rendering applies to [evvnt] shortcodes in calendar mode. Widgets keep using the discovery app for now.', 'evvnt-calendar' ); ?></span></p>
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<th scope="row"><?php esc_html_e( 'Calendar layout', 'evvnt-calendar' ); ?></th>
+					<td>
+						<fieldset>
+							<label><input type="radio" name="<?php echo esc_attr( $name ); ?>[calendar_layout]" value="list" <?php checked( 'rows' !== $options['calendar_layout'] ); ?>> <?php esc_html_e( 'Featured + list: featured events at the top, all other events listed below', 'evvnt-calendar' ); ?></label><br>
+							<label><input type="radio" name="<?php echo esc_attr( $name ); ?>[calendar_layout]" value="rows" <?php checked( 'rows', $options['calendar_layout'] ); ?>> <?php esc_html_e( 'Category rows: a horizontally scrolling row of featured events per category (categories with at least 5), each with "See all"', 'evvnt-calendar' ); ?></label>
+						</fieldset>
+						<p><span class="description"><?php esc_html_e( 'Server rendering only. Category pages always use the list. A shortcode can override this with layout="list" or layout="rows".', 'evvnt-calendar' ); ?></span></p>
+					</td>
+				</tr>
+
+				<tr valign="top">
+					<th scope="row"><?php esc_html_e( 'Calendar width', 'evvnt-calendar' ); ?></th>
+					<td>
+						<fieldset>
+							<label><input type="radio" name="<?php echo esc_attr( $name ); ?>[calendar_width]" value="wide" <?php checked( 'content' !== $options['calendar_width'] ); ?>> <?php esc_html_e( "Theme's wide width (recommended)", 'evvnt-calendar' ); ?></label><br>
+							<label><input type="radio" name="<?php echo esc_attr( $name ); ?>[calendar_width]" value="content" <?php checked( 'content', $options['calendar_width'] ); ?>> <?php esc_html_e( 'Content column: choose this if your calendar page has a sidebar (the wide calendar would overlap it)', 'evvnt-calendar' ); ?></label>
+						</fieldset>
 					</td>
 				</tr>
 

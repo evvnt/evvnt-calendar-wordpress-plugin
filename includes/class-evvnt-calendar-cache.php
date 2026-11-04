@@ -39,8 +39,12 @@ class Evvnt_Calendar_Cache {
 	 * @param callable $fetch    Returns array data or WP_Error (error data may hold 'status').
 	 * @return array|WP_Error
 	 */
-	public function remember( $source, $soft_ttl, callable $fetch ) {
-		$key = self::PREFIX . (int) get_option( self::GEN_OPTION, 1 ) . '_' . md5( $source );
+	public function remember( $source, $soft_ttl, callable $fetch, array $options = array() ) {
+		// Options: 'hard_ttl' (seconds the entry is kept; default a day) and 'backoff'
+		// (whether a failure may pause all API calls; default true).
+		$hard_ttl = isset( $options['hard_ttl'] ) ? (int) $options['hard_ttl'] : self::HARD_TTL;
+		$backoff  = ! isset( $options['backoff'] ) || $options['backoff'];
+		$key      = $this->key( $source );
 
 		if ( array_key_exists( $key, $this->memo ) ) {
 			return $this->memo[ $key ];
@@ -69,7 +73,7 @@ class Evvnt_Calendar_Cache {
 
 		if ( is_wp_error( $data ) ) {
 			$status = self::error_status( $data );
-			if ( 0 === $status || 429 === $status || $status >= 500 ) {
+			if ( $backoff && ( 0 === $status || 429 === $status || $status >= 500 ) ) {
 				set_transient( self::BACKOFF_KEY, 1, self::BACKOFF_TTL );
 			}
 			if ( in_array( $status, array( 400, 404, 410 ), true ) ) {
@@ -96,9 +100,51 @@ class Evvnt_Calendar_Cache {
 				'data' => $data,
 				'at'   => time(),
 			),
+			$hard_ttl
+		);
+		return $this->memo[ $key ] = $data;
+	}
+
+	/**
+	 * Store a fresh response for $source and return it.
+	 *
+	 * @param string $source Cache identity (the request URL).
+	 * @param array  $data   Response data.
+	 * @return array
+	 */
+	public function put( $source, $data ) {
+		$key = $this->key( $source );
+		set_transient(
+			$key,
+			array(
+				'data' => $data,
+				'at'   => time(),
+			),
 			self::HARD_TTL
 		);
 		return $this->memo[ $key ] = $data;
+	}
+
+	/**
+	 * Whether a fresh (younger than $soft_ttl) copy of $source is cached.
+	 */
+	public function is_fresh( $source, $soft_ttl ) {
+		$key = $this->key( $source );
+		if ( array_key_exists( $key, $this->memo ) ) {
+			return true;
+		}
+		$hit = get_transient( $key );
+		if ( ! is_array( $hit ) || ! isset( $hit['at'] ) ) {
+			return false;
+		}
+		if ( isset( $hit['missing'] ) ) {
+			return ( time() - (int) $hit['at'] ) < self::MISSING_TTL; // Recently "not found": don't ask again yet.
+		}
+		return array_key_exists( 'data', $hit ) && ( time() - (int) $hit['at'] ) < $soft_ttl;
+	}
+
+	private function key( $source ) {
+		return self::PREFIX . (int) get_option( self::GEN_OPTION, 1 ) . '_' . md5( $source );
 	}
 
 	/**

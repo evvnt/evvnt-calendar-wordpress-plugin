@@ -56,6 +56,30 @@ class Evvnt_Calendar_Event {
 
 	/* ---------- identity and URLs ---------- */
 
+	public function object_id() {
+		return (string) $this->get( 'objectID', '' );
+	}
+
+	/**
+	 * Root category of the event (first entry of main_category_path), or 0.
+	 */
+	public function main_category_id() {
+		$path = $this->get( 'main_category_path', array() );
+		return ( is_array( $path ) && ! empty( $path[0] ) ) ? absint( $path[0] ) : 0;
+	}
+
+	/**
+	 * Selection weight for recommendations, as FeaturedEventChooser in the discovery JS:
+	 * events promoted for a shorter window are picked more often, so each gets a similar
+	 * share of impressions. Promotion is capped at 365 days and floored at one day.
+	 */
+	public function promotion_weight() {
+		$year     = 365 * DAY_IN_SECONDS;
+		$promoted = min( (int) $this->get( 'end_time_i', 0 ) - (int) $this->get( 'created_time_i', 0 ), $year );
+		$promoted = max( $promoted, DAY_IN_SECONDS );
+		return (int) floor( ( $year * 3 ) / $promoted );
+	}
+
 	public function main_source() {
 		$sources = $this->get( 'sources' );
 		return ( is_array( $sources ) && isset( $sources[0] ) ) ? (string) $sources[0] : 'evvnt';
@@ -95,8 +119,49 @@ class Evvnt_Calendar_Event {
 		return trim( (string) $this->get( 'description', '' ) );
 	}
 
+	/**
+	 * Plain description with a leading copy of the summary removed (fullDescriptionWithoutSummary).
+	 */
+	public function description_without_summary() {
+		$text    = $this->description();
+		$summary = $this->summary();
+		if ( '' !== $summary && 0 === strpos( $text, $summary ) ) {
+			return trim( substr( $text, strlen( $summary ) ) );
+		}
+		return $text;
+	}
+
+	/**
+	 * Google static map for the venue, from the detail response (signedStaticMapUrl), or ''.
+	 */
+	public function static_map_url() {
+		$url = isset( $this->extra['signedStaticMapUrl'] ) && is_string( $this->extra['signedStaticMapUrl'] ) ? $this->extra['signedStaticMapUrl'] : '';
+		if ( ! preg_match( '#^https://maps\.googleapis\.com/#', $url ) ) {
+			return '';
+		}
+		return $url; // Used exactly as given: the signature covers the whole URL, padding included.
+	}
+
 	public function description_html() {
 		return (string) $this->get( 'description_html', '' );
+	}
+
+	/**
+	 * Whether the summary says something the description doesn't. Evvnt summaries are often
+	 * just the start of the description, truncated with "...", which would repeat it.
+	 */
+	public function summary_adds_information() {
+		$normalize = function ( $text ) {
+			$text = html_entity_decode( wp_strip_all_tags( (string) $text ), ENT_QUOTES, 'UTF-8' );
+			$text = preg_replace( '/(\.{3}|…)\s*$/u', '', trim( $text ) );
+			return strtolower( preg_replace( '/[^\p{L}\p{N}]+/u', '', $text ) );
+		};
+		$summary = $normalize( $this->summary() );
+		if ( '' === $summary ) {
+			return false;
+		}
+		$body = $normalize( '' !== trim( wp_strip_all_tags( $this->description_html() ) ) ? $this->description_html() : $this->description() );
+		return '' === $body || 0 !== strpos( $body, $summary );
 	}
 
 	/**
@@ -118,6 +183,23 @@ class Evvnt_Calendar_Event {
 	public function artists() {
 		$artists = trim( (string) $this->get( 'artists', '' ) );
 		return '' === $artists ? array() : preg_split( '/,\s+/', $artists );
+	}
+
+	/**
+	 * Categories as array( 'id' => int, 'name' => string ), from category_names_with_ids.
+	 */
+	public function categories() {
+		$list = array();
+		foreach ( (array) $this->get( 'category_names_with_ids', array() ) as $pair ) {
+			$parts = explode( '|', (string) $pair, 2 );
+			if ( isset( $parts[1] ) && ctype_digit( $parts[0] ) && '' !== $parts[1] ) {
+				$list[ (int) $parts[0] ] = array(
+					'id'   => (int) $parts[0],
+					'name' => $parts[1],
+				);
+			}
+		}
+		return array_values( $list );
 	}
 
 	public function category_names() {
@@ -183,6 +265,45 @@ class Evvnt_Calendar_Event {
 		$end         = $this->end();
 		$start_label = $start->format( 'Y' ) !== $end->format( 'Y' ) ? $this->format( $start, 'M j, Y' ) : $this->format( $start, 'M j' );
 		return $start_label . ' - ' . $this->format( $end, 'M j, Y' );
+	}
+
+	/**
+	 * Long date for the detail hero: "Saturday, November 28, 2026", or "Jul 25 – Nov 28, 2026"
+	 * for multi-day events.
+	 */
+	public function date_label() {
+		$start = $this->start();
+		if ( ! $start ) {
+			return '';
+		}
+		if ( ! $this->is_multi_day() ) {
+			return $this->format( $start, 'l, F j, Y' );
+		}
+		$end = $this->end();
+		return ( $start->format( 'Y' ) !== $end->format( 'Y' ) ? $this->format( $start, 'M j, Y' ) : $this->format( $start, 'M j' ) )
+			. ' – ' . $this->format( $end, 'M j, Y' );
+	}
+
+	/**
+	 * Time range for the detail hero: "5:00 PM – 8:00 PM EST" (zone shown when it has a name),
+	 * "Starts 4:30 PM" for multi-day events, or '' when unknown.
+	 */
+	public function time_label() {
+		$start = $this->start();
+		if ( ! $start ) {
+			return '';
+		}
+		$zone = $this->format( $start, 'T' );
+		$zone = preg_match( '/^[A-Z]{2,5}$/', $zone ) ? ' ' . $zone : '';
+		if ( $this->is_multi_day() ) {
+			/* translators: %s: start time. */
+			return sprintf( __( 'Starts %s', 'evvnt-calendar' ), $this->format( $start, 'g:i A' ) . $zone );
+		}
+		$end = $this->has_end_time() ? $this->end() : null;
+		if ( $end && $end->getTimestamp() > $start->getTimestamp() ) {
+			return $this->format( $start, 'g:i A' ) . ' – ' . $this->format( $end, 'g:i A' ) . $zone;
+		}
+		return $this->format( $start, 'g:i A' ) . $zone;
 	}
 
 	/**
@@ -510,6 +631,64 @@ class Evvnt_Calendar_Event {
 			return $tickets;
 		}
 		return $links ? reset( $links ) : '';
+	}
+
+	/**
+	 * Ticket button for the standard layout, as EventDetailButton in the discovery JS:
+	 * label and (for third-party sources) the source's brand colour.
+	 *
+	 * @return array( 'label' => string, 'color' => string|null )
+	 */
+	public function cta() {
+		$brands = array(
+			'ticketmaster'   => '#009cde',
+			'eventbrite'     => '#ff7300',
+			'ticketweb'      => '#7e4299',
+			'universe'       => '#3A66E5',
+			'active_network' => '#e8a21b',
+			'axs'            => '#0054A1',
+			'enmotive'       => '#ff6c0e',
+			'bandsintown'    => '#00B4B5',
+			'goldstar'       => '#FEC214',
+			'run_sign_up'    => '#ef509c',
+			'ticket_sign_up' => '#fbad1d',
+			'event_vesta'    => '#A91CB4',
+			'ticket_fairy'   => '#ffac4e',
+			'race_entry'     => '#0385d4',
+			'meetup'         => '#F65858',
+		);
+		$sub   = (string) $this->get( 'sub_brand', '' );
+		$brand = in_array( $sub, array( 'ticketweb', 'universe' ), true ) ? $sub : $this->main_source();
+		if ( in_array( $brand, array( 'evvnt', 'geotix' ), true ) ) {
+			return array(
+				'label' => $this->tickets_link() ? __( 'Get Tickets', 'evvnt-calendar' ) : __( 'More Details', 'evvnt-calendar' ),
+				'color' => null,
+			);
+		}
+		return array(
+			'label' => 'active_network' === $brand ? __( 'Register', 'evvnt-calendar' ) : __( 'Get tickets', 'evvnt-calendar' ),
+			'color' => isset( $brands[ $brand ] ) ? $brands[ $brand ] : null,
+		);
+	}
+
+	/**
+	 * main_link() with the attribution the discovery JS adds to evvnt-sourced events
+	 * (utm_source = this site's domain, utm_medium = referral, publisher_id).
+	 */
+	public function cta_url() {
+		$url = $this->main_link();
+		if ( '' === $url || ! in_array( $this->main_source(), array( 'evvnt', 'geotix' ), true ) ) {
+			return $url;
+		}
+		$host = preg_replace( '/^www\./', '', (string) wp_parse_url( home_url(), PHP_URL_HOST ) );
+		return add_query_arg(
+			array(
+				'utm_source'   => rawurlencode( $host ),
+				'utm_medium'   => 'referral',
+				'publisher_id' => isset( $this->publisher['id'] ) ? (int) $this->publisher['id'] : null,
+			),
+			$url
+		);
 	}
 
 	public function is_affiliate_link() {

@@ -181,6 +181,7 @@ class Evvnt_Calendar {
 		$plugin_public = new Evvnt_Calendar_Public($this->get_plugin_name(), $this->get_version());
 		$this->loader->add_action( 'init', $plugin_public, 'register_shortcode' );
 		$this->loader->add_action( 'template_redirect', $plugin_public, 'resolve' );
+		$this->loader->add_action( 'rest_api_init', $plugin_public, 'register_rest_routes' );
 		$this->loader->add_filter( 'evvnt_calendar_canonical_event_segment', $plugin_public, 'canonical_event_segment' );
 
 		$router = new Evvnt_Calendar_Router();

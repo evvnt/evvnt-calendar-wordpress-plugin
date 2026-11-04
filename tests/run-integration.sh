@@ -58,7 +58,7 @@ curl -s -c $J -b $J -o /dev/null --data-urlencode "log=$U" --data-urlencode "pwd
 
 echo "== settings page"
 check "fresh settings page renders" "$(curl -s -c $J -b $J -o /dev/null -w '%{http_code}' "$PAGE")" 200
-check "settings page lists 7 fields" "$(curl -s -c $J -b $J "$PAGE" | grep -c "name=\"$OPT\[")" 7
+check "settings page lists 11 fields" "$(curl -s -c $J -b $J "$PAGE" | grep -c "name=\"$OPT\[")" 11
 R=$(post_settings --data-urlencode "$OPT[api_key]=fake" --data-urlencode "$OPT[api_secret_key]=fake" --data-urlencode "$OPT[publisher_id]=12" | notices)
 check "first save validates creds (one error)" "$R" "Settings saved, but Evvnt could not authenticate these credentials. Please check the API Key, API Secret Key and Publisher ID."
 post_settings --data-urlencode "$OPT[api_key]=key\"><script>alert(1)</script>" --data-urlencode "$OPT[api_secret_key]=ab%2fCD<x9" \
@@ -114,7 +114,7 @@ E="$B/events/"
 status() { curl -s -o /dev/null -w '%{http_code}' "$1"; }
 redirect() { curl -s -o /dev/null -w '%{http_code} %{redirect_url}' "$1"; }
 LIST=$(curl -s "$E")
-check "calendar renders server-side" "$(echo "$LIST" | grep -c 'class="evvnt-cal evvnt-cal--calendar"')" 1
+check "calendar renders server-side (wide by default)" "$(echo "$LIST" | grep -c 'class="evvnt-cal evvnt-cal--calendar evvnt-cal--wide"')" 1
 check "only the sidebar widget is a JS embed" "$(echo "$LIST" | grep -o 'class="evvnt-calendar"' | wc -l | tr -d ' ')" 1
 check "calendar lists events" "$(echo "$LIST" | grep -o 'class="evvnt-cal__card"' | wc -l | tr -d ' ')" 30
 check "calendar links to page 2" "$(echo "$LIST" | grep -c 'rel="next" href="http://localhost:9400/events/?evPage=2"')" 1
@@ -137,6 +137,14 @@ CAT=$(echo "$LIST" | grep -o 'href="http://localhost:9400/events/?_evDiscoveryPa
 check "category page 200" "$(status "$CAT")" 200
 check "category page canonical is itself" "$(curl -s "$CAT" | grep -o '<link rel="canonical" href="[^"]*"')" "<link rel=\"canonical\" href=\"$CAT\""
 check "page 2 200" "$(status "$E?evPage=2")" 200
+SR=$(curl -s "$E?searchTerm=music")
+check "search results page 200" "$(status "$E?searchTerm=music")" 200
+check "search results heading" "$(echo "$SR" | grep -c 'Results for “music”')" 1
+check "search results noindex" "$(echo "$SR" | grep -c "name='robots' content='noindex")" 1
+check "search box on the calendar" "$(echo "$LIST" | grep -c 'class="evvnt-cal__search"')" 1
+SG=$(curl -s "$B/wp-json/evvnt-calendar/v1/suggest?q=music&base=$E")
+check "suggest endpoint returns categories and events" "$(echo "$SG" | python3 -I -c 'import json,sys;d=json.load(sys.stdin);print(int(bool(d["categories"]) and bool(d["events"]) and d["all_url"].endswith("searchTerm=music")))')" 1
+check "suggest ignores 1-character queries" "$(curl -s "$B/wp-json/evvnt-calendar/v1/suggest?q=m")" '{"categories":[],"events":[],"all_url":""}'
 check "page 2 links back" "$(curl -s "$E?evPage=2" | grep -c 'rel="prev" href="http://localhost:9400/events/"')" 1
 echo "== path URLs (live API, publisher $PUBLISHER)"
 CAL_ID=$(wpphp "echo get_page_by_path('events')->ID;")
@@ -152,6 +160,15 @@ check "query-string event link -> 301 path (keeps utm)" "$(redirect "$B/events/?
 check "query-string link with old slug -> one 301 to canonical" "$(redirect "$B/?_evDiscoveryPath=/event/$PID-old-slug")" "301 $PEV"
 check "legacy _ev_id -> one 301 to canonical" "$(redirect "$B/?_ev_id=$PID")" "301 $PEV"
 check "wrong slug on path -> 301" "$(redirect "$B/event/$PID-old-slug/")" "301 $PEV"
+wpphp "update_option('$OPT', array_merge(get_option('$OPT'), array('calendar_layout'=>'rows')));"
+R=$(curl -s "$B/events/")
+check "rows layout: rows rendered" "$([ "$(echo "$R" | grep -o 'class="evvnt-cal__row"' | wc -l | tr -d ' ')" -ge 5 ] && echo yes)" yes
+check "rows layout: See all is a category path" "$(echo "$R" | grep -c 'class="evvnt-cal__row-more" href="http://localhost:9400/events/category/[a-z0-9-]*/"' | awk '{print ($1>=5)?"yes":"no"}')" yes
+check "rows layout: scroll script present" "$(echo "$R" | grep -c 'id="evvnt-calendar-rows-js-after"')" 1
+check "rows layout: category page keeps the list" "$(curl -s "$B/events/category/nightlife/" | grep -c 'evvnt-cal--rows')" 0
+wpphp "update_option('$OPT', array_merge(get_option('$OPT'), array('calendar_layout'=>'list','calendar_width'=>'content')));"
+check "content width option drops the wide class" "$(curl -s "$B/events/" | grep -c 'evvnt-cal--wide')" 0
+wpphp "update_option('$OPT', array_merge(get_option('$OPT'), array('calendar_width'=>'wide')));"
 check "missing trailing slash -> 301" "$(redirect "${PEV%/}")" "301 $PEV"
 check "query-string category + page -> 301 path" "$(redirect "$B/events/?_evDiscoveryPath=/nightlife&evPage=3")" "301 $B/events/category/nightlife/page/3/"
 check "evPage on the calendar page -> 301 path" "$(redirect "$B/events/?evPage=2")" "301 $B/events/page/2/"

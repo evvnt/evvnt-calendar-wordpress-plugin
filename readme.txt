@@ -30,6 +30,12 @@ By default the calendar is drawn in the browser by Evvnt's discovery app. Under 
 = 0.1.0 =
 * New (beta): optional server-side rendering of the calendar and event pages, with category tabs, pagination, SEO head tags and Event JSON-LD. Existing event links keep working; legacy and outdated links redirect.
 * With pretty permalinks and a Calendar page selected, event and category pages get clean URLs (/event/123-name/, /events/category/music/); older query-string links redirect to them.
+* Calendar layout setting: featured + list, or category rows (horizontally scrolling rows of each category's featured events, with "View more"; categories with fewer than 5 featured events are left out).
+* "This Weekend" row (Thursday to Sunday) in the category rows layout, with a date-range listing (?fromDate=&toDate=).
+* Search bar with live suggestions matching categories and events, and a search results page.
+* Event lists show 2–3 events per row on larger screens.
+* Calendar width setting: the theme's wide width (default) or the content column.
+* Event pages: full-width hero for featured events; standard layout like the discovery plugin for others; shared "About" and "Where It's Happening" panel with map, share buttons and clickable categories; recommended events.
 * Themes can override the calendar templates in {theme}/evvnt-calendar/.
 = 0.0.2 =
 * Security: shortcode and widget options are now type-checked and JSON-encoded before reaching the page, fixing a script-injection issue in the [evvnt] shortcode.

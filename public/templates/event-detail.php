@@ -1,14 +1,18 @@
 <?php
 /**
- * Event detail view.
+ * Standard event detail view (non-featured events), with the discovery plugin's event page
+ * header: title, summary, date/place/price and the ticket button beside the image. The
+ * body below is the shared event-body.php. Featured events use event-detail-featured.php.
  *
  * Override by copying to {your-theme}/evvnt-calendar/event-detail.php.
  *
  * @var array $args {
- *     @type Evvnt_Calendar_Event $event
- *     @type string               $back_url
- *     @type string               $submit_url
- *     @type string               $submit_label
+ *     @type Evvnt_Calendar_Event    $event
+ *     @type string                  $url          Canonical URL of this event page.
+ *     @type string                  $back_url
+ *     @type string                  $base         Calendar page URL.
+ *     @type Evvnt_Calendar_Event[]  $recommended  Other events to suggest.
+ *     @type Evvnt_Calendar_Renderer $renderer
  * }
  *
  * @package Evvnt_Calendar
@@ -19,99 +23,57 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $evvnt_event   = $args['event'];
+$evvnt_icon    = array( 'Evvnt_Calendar_Renderer', 'icon' );
 $evvnt_image   = $evvnt_event->hero_image_url();
-$evvnt_link    = $evvnt_event->main_link();
+$evvnt_link    = $evvnt_event->cta_url();
+$evvnt_cta     = $evvnt_event->cta();
 $evvnt_rel     = $evvnt_event->is_affiliate_link() ? 'sponsored noopener' : 'noopener';
 $evvnt_price   = $evvnt_event->price_range();
-$evvnt_html    = $evvnt_event->description_html();
-$evvnt_text    = $evvnt_event->description();
-$evvnt_dates   = $evvnt_event->upcoming_dates();
-$evvnt_address = $evvnt_event->address_lines();
-$evvnt_map     = $evvnt_event->is_virtual() ? '' : $evvnt_event->map_url();
+$evvnt_where   = $evvnt_event->location_summary();
+$evvnt_expired = $evvnt_event->is_expired();
 ?>
-<div class="evvnt-cal evvnt-cal--detail">
-	<p class="evvnt-cal__back"><a href="<?php echo esc_url( $args['back_url'] ); ?>"><?php esc_html_e( '← All events', 'evvnt-calendar' ); ?></a></p>
+<div class="<?php echo esc_attr( $args['renderer']->root_class( 'detail' ) ); ?> evvnt-cal--standard">
+	<div class="evvnt-cal__std">
+		<a class="evvnt-cal__back evvnt-cal__back--std" href="<?php echo esc_url( $args['back_url'] ); ?>"><?php echo $evvnt_icon( 'back' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><?php esc_html_e( 'All events', 'evvnt-calendar' ); ?></a>
 
-	<article class="evvnt-cal__event">
-		<?php if ( $evvnt_event->is_expired() ) : ?>
-			<p class="evvnt-cal__notice"><?php esc_html_e( 'This event has ended.', 'evvnt-calendar' ); ?></p>
-		<?php endif; ?>
+		<div class="evvnt-cal__std-top">
+			<div class="evvnt-cal__std-main">
+				<?php if ( $evvnt_expired ) : ?>
+					<p class="evvnt-cal__std-badge"><?php esc_html_e( 'This event has ended', 'evvnt-calendar' ); ?></p>
+				<?php endif; ?>
 
-		<?php if ( $evvnt_image ) : ?>
-			<figure class="evvnt-cal__hero"><img src="<?php echo esc_url( $evvnt_image ); ?>" alt="<?php echo esc_attr( $evvnt_event->title() ); ?>" decoding="async"></figure>
-		<?php endif; ?>
+				<h1 class="evvnt-cal__std-title"><?php echo esc_html( $evvnt_event->title() ); ?></h1>
 
-		<h2 class="evvnt-cal__title"><?php echo esc_html( $evvnt_event->title() ); ?></h2>
+				<?php if ( $evvnt_event->summary() ) : ?>
+					<p class="evvnt-cal__std-summary"><?php echo esc_html( $evvnt_event->summary() ); ?></p>
+				<?php endif; ?>
 
-		<?php if ( $evvnt_event->summary() ) : ?>
-			<p class="evvnt-cal__summary"><?php echo esc_html( $evvnt_event->summary() ); ?></p>
-		<?php endif; ?>
-
-		<dl class="evvnt-cal__facts">
-			<?php if ( $evvnt_event->start() ) : ?>
-				<dt><?php esc_html_e( 'When', 'evvnt-calendar' ); ?></dt>
-				<dd><time datetime="<?php echo esc_attr( $evvnt_event->start()->format( DATE_ATOM ) ); ?>"><?php echo esc_html( $evvnt_event->display_date() ); ?></time></dd>
-			<?php endif; ?>
-
-			<?php if ( $evvnt_event->venue_name() || $evvnt_address ) : ?>
-				<dt><?php esc_html_e( 'Where', 'evvnt-calendar' ); ?></dt>
-				<dd>
-					<?php if ( $evvnt_event->venue_name() ) : ?>
-						<strong><?php echo esc_html( $evvnt_event->venue_name() ); ?></strong><br>
+				<ul class="evvnt-cal__std-facts">
+					<?php if ( $evvnt_event->start() ) : ?>
+						<li><?php echo $evvnt_icon( 'calendar', 16 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><time datetime="<?php echo esc_attr( $evvnt_event->start()->format( DATE_ATOM ) ); ?>"><?php echo esc_html( $evvnt_event->display_date() ); ?></time></li>
 					<?php endif; ?>
-					<?php if ( $evvnt_address ) : ?>
-						<?php echo esc_html( implode( ', ', $evvnt_address ) ); ?><br>
+					<?php if ( $evvnt_where ) : ?>
+						<li><?php echo $evvnt_icon( 'pin', 16 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><span><?php echo esc_html( $evvnt_where ); ?></span></li>
 					<?php endif; ?>
-					<?php if ( $evvnt_map ) : ?>
-						<a href="<?php echo esc_url( $evvnt_map ); ?>" rel="nofollow noopener" target="_blank"><?php esc_html_e( 'View map', 'evvnt-calendar' ); ?></a>
+					<?php if ( $evvnt_price ) : ?>
+						<li><?php echo $evvnt_icon( 'ticket', 16 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><span><?php echo esc_html( $evvnt_price ); ?></span></li>
 					<?php endif; ?>
-				</dd>
-			<?php endif; ?>
-
-			<?php if ( $evvnt_price ) : ?>
-				<dt><?php esc_html_e( 'Price', 'evvnt-calendar' ); ?></dt>
-				<dd><?php echo esc_html( $evvnt_price ); ?></dd>
-			<?php endif; ?>
-
-			<?php if ( $evvnt_event->organiser_name() ) : ?>
-				<dt><?php esc_html_e( 'Organizer', 'evvnt-calendar' ); ?></dt>
-				<dd><?php echo esc_html( $evvnt_event->organiser_name() ); ?></dd>
-			<?php endif; ?>
-
-			<?php if ( $evvnt_event->artists() ) : ?>
-				<dt><?php esc_html_e( 'Featuring', 'evvnt-calendar' ); ?></dt>
-				<dd><?php echo esc_html( implode( ', ', $evvnt_event->artists() ) ); ?></dd>
-			<?php endif; ?>
-
-			<?php if ( $evvnt_event->category_names() ) : ?>
-				<dt><?php esc_html_e( 'Category', 'evvnt-calendar' ); ?></dt>
-				<dd><?php echo esc_html( implode( ', ', $evvnt_event->category_names() ) ); ?></dd>
-			<?php endif; ?>
-		</dl>
-
-		<?php if ( $evvnt_link && ! $evvnt_event->is_expired() ) : ?>
-			<p><a class="evvnt-cal__button evvnt-cal__cta" href="<?php echo esc_url( $evvnt_link ); ?>" rel="<?php echo esc_attr( $evvnt_rel ); ?>" target="_blank"><?php echo esc_html( $evvnt_event->tickets_link() ? __( 'Get tickets', 'evvnt-calendar' ) : __( 'More information', 'evvnt-calendar' ) ); ?></a></p>
-		<?php endif; ?>
-
-		<?php if ( '' !== trim( wp_strip_all_tags( $evvnt_html ) ) ) : ?>
-			<div class="evvnt-cal__description"><?php echo wp_kses_post( $evvnt_html ); ?></div>
-		<?php elseif ( '' !== $evvnt_text ) : ?>
-			<div class="evvnt-cal__description"><?php echo wp_kses_post( wpautop( esc_html( $evvnt_text ) ) ); ?></div>
-		<?php endif; ?>
-
-		<?php if ( count( $evvnt_dates ) > 1 ) : ?>
-			<section class="evvnt-cal__dates">
-				<h3><?php esc_html_e( 'Upcoming dates', 'evvnt-calendar' ); ?></h3>
-				<ul>
-					<?php foreach ( $evvnt_dates as $evvnt_date ) : ?>
-						<li><time datetime="<?php echo esc_attr( $evvnt_date['start']->format( DATE_ATOM ) ); ?>"><?php echo esc_html( $evvnt_event->format( $evvnt_date['start'], 'D, M j, Y g:i A' ) ); ?></time></li>
-					<?php endforeach; ?>
 				</ul>
-			</section>
-		<?php endif; ?>
-	</article>
 
-	<?php if ( $args['submit_url'] ) : ?>
-		<p class="evvnt-cal__toolbar"><a class="evvnt-cal__button evvnt-cal__submit" href="<?php echo esc_url( $args['submit_url'] ); ?>" rel="nofollow noopener" target="_blank"><?php echo esc_html( $args['submit_label'] ); ?></a></p>
-	<?php endif; ?>
+				<?php if ( $evvnt_link && ! $evvnt_expired ) : ?>
+					<p class="evvnt-cal__std-cta">
+						<a class="evvnt-cal__button evvnt-cal__button--std" href="<?php echo esc_url( $evvnt_link ); ?>" rel="<?php echo esc_attr( $evvnt_rel ); ?>" target="_blank"<?php echo $evvnt_cta['color'] ? ' style="background-color:' . esc_attr( $evvnt_cta['color'] ) . '"' : ''; ?>><?php echo esc_html( $evvnt_cta['label'] ); ?><?php echo $evvnt_icon( 'arrow', 18 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></a>
+					</p>
+				<?php endif; ?>
+			</div>
+
+			<?php if ( $evvnt_image ) : ?>
+				<figure class="evvnt-cal__std-media">
+					<img src="<?php echo esc_url( $evvnt_image ); ?>" alt="<?php echo esc_attr( $evvnt_event->title() ); ?>" decoding="async" fetchpriority="high">
+				</figure>
+			<?php endif; ?>
+		</div>
+
+		<?php echo $args['renderer']->template( 'event-body', array( 'summary_shown' => true ) + $args ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the template. ?>
+	</div>
 </div>

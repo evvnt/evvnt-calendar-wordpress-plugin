@@ -34,13 +34,13 @@ $evvnt_where = $evvnt_event->location_summary();
 		<h3 class="evvnt-cal__card-title"><a href="<?php echo esc_url( $args['url'] ); ?>"<?php echo $evvnt_attrs; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static string. ?>><?php echo esc_html( $evvnt_event->title() ); ?></a></h3>
 		<ul class="evvnt-cal__meta">
 			<?php if ( $evvnt_event->start() ) : ?>
-				<li class="evvnt-cal__meta-date"><time datetime="<?php echo esc_attr( $evvnt_event->start()->format( DATE_ATOM ) ); ?>"><?php echo esc_html( $evvnt_event->display_date() ); ?></time></li>
+				<li class="evvnt-cal__meta-date"><?php echo Evvnt_Calendar_Renderer::icon( 'calendar', 18 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><time datetime="<?php echo esc_attr( $evvnt_event->start()->format( DATE_ATOM ) ); ?>"><?php echo esc_html( $evvnt_event->display_date() ); ?></time></li>
 			<?php endif; ?>
 			<?php if ( $evvnt_where ) : ?>
-				<li class="evvnt-cal__meta-place"><?php echo esc_html( $evvnt_where ); ?></li>
+				<li class="evvnt-cal__meta-place"><?php echo Evvnt_Calendar_Renderer::icon( 'pin', 18 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><span><?php echo esc_html( $evvnt_where ); ?></span></li>
 			<?php endif; ?>
 			<?php if ( $evvnt_price ) : ?>
-				<li class="evvnt-cal__meta-price"><?php echo esc_html( $evvnt_price ); ?></li>
+				<li class="evvnt-cal__meta-price"><?php echo Evvnt_Calendar_Renderer::icon( 'ticket', 18 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><span><?php echo esc_html( $evvnt_price ); ?></span></li>
 			<?php endif; ?>
 		</ul>
 	</div>

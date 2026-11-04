@@ -83,6 +83,57 @@ class Evvnt_Calendar_Discovery_Client {
 		return $this->get( '/events/' . rawurlencode( $url_id ), array(), HOUR_IN_SECONDS );
 	}
 
+	/**
+	 * Events matching search text (as the discovery JS's search: GET /events?searchTerm=…).
+	 *
+	 * @param string $term Search text.
+	 * @param int    $page Zero-based page.
+	 * @param int    $per  Results per page.
+	 * @param array  $filters Extra filters (e.g. categoryId, virtual).
+	 * @return array|WP_Error { events }
+	 */
+	public function search_events( $term, $page = 0, $per = self::HITS_PER_PAGE, array $filters = array() ) {
+		// Search text is visitor-controlled: lowercase it (fewer near-duplicate cache entries),
+		// keep entries only briefly, and never let a failed search pause the whole calendar.
+		$term = function_exists( 'mb_strtolower' ) ? mb_strtolower( (string) $term ) : strtolower( (string) $term );
+		return $this->get(
+			'/events',
+			array_merge(
+				$filters,
+				array(
+					'searchTerm'             => $term,
+					'multipleEventInstances' => 'true',
+					'hitsPerPage'            => max( 1, min( 50, (int) $per ) ),
+					'page'                   => max( 0, (int) $page ),
+				)
+			),
+			2 * MINUTE_IN_SECONDS,
+			true,
+			array(
+				'hard_ttl' => 5 * MINUTE_IN_SECONDS,
+				'backoff'  => false,
+			)
+		);
+	}
+
+	/**
+	 * Candidate "Recommended Events" for an event: up to 50 events in its main category,
+	 * as the discovery JS requests them (GET /events?categoryId=..&hitsPerPage=50).
+	 *
+	 * @param int $category_id Root category id (main_category_path[0]); 0 for any.
+	 * @return array|WP_Error { events }
+	 */
+	public function recommended_events( $category_id ) {
+		return $this->get(
+			'/events',
+			array(
+				'categoryId'  => absint( $category_id ) ? absint( $category_id ) : null,
+				'hitsPerPage' => 50,
+			),
+			30 * MINUTE_IN_SECONDS
+		);
+	}
+
 	private function list_params( array $filters, $page ) {
 		return array_merge(
 			$filters,
@@ -103,10 +154,27 @@ class Evvnt_Calendar_Discovery_Client {
 	 * @param bool   $with_publisher Whether to add publisher_id to the query.
 	 * @return array|WP_Error
 	 */
-	private function get( $path, array $params, $ttl, $with_publisher = true ) {
+	private function get( $path, array $params, $ttl, $with_publisher = true, array $cache_options = array() ) {
 		if ( ! $this->publisher_id ) {
 			return new WP_Error( 'evvnt_calendar_unconfigured', 'No publisher ID configured.', array( 'status' => 400 ) );
 		}
+		$url       = $this->url( $path, $params, $with_publisher );
+		$transport = $this->transport;
+		return $this->cache->remember(
+			$url,
+			$ttl,
+			function () use ( $url, $transport ) {
+				return $transport ? call_user_func( $transport, $url ) : self::fetch( $url );
+			},
+			$cache_options
+		);
+	}
+
+	/**
+	 * Request URL for an endpoint (publisher_id added, empty values dropped, keys sorted
+	 * so equal queries share a cache entry, as the JS client does).
+	 */
+	private function url( $path, array $params, $with_publisher = true ) {
 		if ( $with_publisher ) {
 			$params['publisher_id'] = $this->publisher_id;
 		}
@@ -116,18 +184,184 @@ class Evvnt_Calendar_Discovery_Client {
 				return null !== $value && '' !== $value && array() !== $value;
 			}
 		);
-		ksort( $params ); // Stable cache keys, as the JS client does.
+		ksort( $params );
+		return self::HOST . $path . ( $params ? '?' . http_build_query( $params, '', '&', PHP_QUERY_RFC3986 ) : '' );
+	}
 
-		$url = self::HOST . $path . ( $params ? '?' . http_build_query( $params, '', '&', PHP_QUERY_RFC3986 ) : '' );
-
-		$transport = $this->transport;
-		return $this->cache->remember(
-			$url,
-			$ttl,
-			function () use ( $url, $transport ) {
-				return $transport ? call_user_func( $transport, $url ) : self::fetch( $url );
+	/**
+	 * Upcoming events for several categories at once (the "category rows" layout).
+	 * Uncached categories are fetched in parallel; each row is cached like a list page.
+	 *
+	 * @param int[] $category_ids Root category ids.
+	 * @param int   $per_row      Events per category.
+	 * @param array $filters      Extra filters (e.g. virtual).
+	 * @return array Map of category id => array of raw events, or WP_Error for that row.
+	 */
+	public function events_by_category( array $category_ids, $per_row = 12, array $filters = array() ) {
+		$queries = array();
+		foreach ( array_unique( array_map( 'absint', $category_ids ) ) as $id ) {
+			if ( $id ) {
+				$queries[ $id ] = array_merge( $filters, array( 'categoryId' => $id ) );
 			}
-		);
+		}
+		return $this->events_batch( $queries, $per_row );
+	}
+
+	/**
+	 * Events starting on each of several days (fromDate = toDate = day), fetched in parallel.
+	 *
+	 * @param string[] $days    Y-m-d dates.
+	 * @param int      $per_day Events per day.
+	 * @param array    $filters Extra filters (e.g. virtual).
+	 * @return array Map of day => array of raw events, or WP_Error for that day.
+	 */
+	public function events_by_day( array $days, $per_day = 6, array $filters = array() ) {
+		$queries = array();
+		foreach ( $days as $day ) {
+			$queries[ $day ] = array_merge(
+				$filters,
+				array(
+					'fromDate' => $day,
+					'toDate'   => $day,
+				)
+			);
+		}
+		return $this->events_batch( $queries, $per_day );
+	}
+
+	/**
+	 * Run several /events queries, fetching uncached ones in parallel. Each result is cached
+	 * like a list page (10 minutes).
+	 *
+	 * @param array $queries Map of key => filters.
+	 * @param int   $per     Events per query.
+	 * @return array Map of key => array of raw events, or WP_Error for that query.
+	 */
+	public function events_batch( array $queries, $per ) {
+		if ( ! $this->publisher_id || ! $queries ) {
+			return array();
+		}
+		$ttl  = 10 * MINUTE_IN_SECONDS;
+		$urls = array();
+		foreach ( $queries as $key => $filters ) {
+			$urls[ $key ] = $this->url(
+				'/events',
+				array_merge(
+					$filters,
+					array(
+						'multipleEventInstances' => 'true',
+						'hitsPerPage'            => (int) $per,
+						'page'                   => 0,
+					)
+				)
+			);
+		}
+
+		$missing = array();
+		foreach ( $urls as $url ) {
+			if ( ! $this->cache->is_fresh( $url, $ttl ) ) {
+				$missing[] = $url;
+			}
+		}
+		$fetched = array();
+		if ( $missing && ! get_transient( Evvnt_Calendar_Cache::BACKOFF_KEY ) ) {
+			if ( $this->transport ) {
+				foreach ( $missing as $url ) {
+					$fetched[ $url ] = call_user_func( $this->transport, $url );
+				}
+			} else {
+				$fetched = self::fetch_many( $missing );
+			}
+		}
+
+		$results   = array();
+		$transport = $this->transport;
+		foreach ( $urls as $key => $url ) {
+			if ( isset( $fetched[ $url ] ) && ! is_wp_error( $fetched[ $url ] ) ) {
+				// Already fetched in parallel: store it directly. Going through remember() would
+				// let a backoff started by another query's failure discard this good response.
+				$data = $this->cache->put( $url, $fetched[ $url ] );
+			} else {
+				$data = $this->cache->remember(
+					$url,
+					$ttl,
+					function () use ( $url, $fetched, $transport ) {
+						if ( isset( $fetched[ $url ] ) ) {
+							return $fetched[ $url ];
+						}
+						return $transport ? call_user_func( $transport, $url ) : self::fetch( $url );
+					}
+				);
+			}
+			$results[ $key ] = ( ! is_wp_error( $data ) && isset( $data['events'] ) && is_array( $data['events'] ) ) ? $data['events'] : $data;
+		}
+		return $results;
+	}
+
+	/**
+	 * Fetch several URLs in parallel with WordPress's bundled Requests library.
+	 * Falls back to sequential wp_safe_remote_get() when an HTTP proxy is configured
+	 * (proxy settings only apply to the WordPress HTTP API).
+	 *
+	 * @param string[] $urls URLs on self::HOST.
+	 * @return array Map of url => array|WP_Error.
+	 */
+	public static function fetch_many( array $urls ) {
+		$results = array();
+		$class   = class_exists( '\WpOrg\Requests\Requests' ) ? '\WpOrg\Requests\Requests' : ( class_exists( 'Requests' ) ? 'Requests' : '' );
+		// The batch bypasses the WordPress HTTP API, so use it only when nothing would change how
+		// WordPress makes requests: proxies, blocked external hosts, or request filters.
+		$policy = defined( 'WP_PROXY_HOST' )
+			|| ( defined( 'WP_HTTP_BLOCK_EXTERNAL' ) && WP_HTTP_BLOCK_EXTERNAL )
+			|| has_filter( 'pre_http_request' )
+			|| has_filter( 'http_request_args' )
+			|| has_filter( 'https_ssl_verify' )
+			|| has_action( 'http_api_curl' );
+		if ( '' === $class || $policy || count( $urls ) < 2 ) {
+			foreach ( $urls as $url ) {
+				$results[ $url ] = self::fetch( $url );
+			}
+			return $results;
+		}
+
+		$requests = array();
+		foreach ( $urls as $url ) {
+			$requests[ $url ] = array(
+				'url'     => $url,
+				'type'    => 'GET',
+				'headers' => array( 'Accept' => 'application/json' ),
+			);
+		}
+		try {
+			$responses = $class::request_multiple(
+				$requests,
+				array(
+					'timeout'   => self::TIMEOUT,
+					'useragent' => 'evvnt-calendar-wordpress/' . ( defined( 'EVVNT_CALENDAR_VERSION' ) ? EVVNT_CALENDAR_VERSION : 'dev' ) . '; ' . home_url( '/' ),
+					'verify'    => ABSPATH . WPINC . '/certificates/ca-bundle.crt',
+				)
+			);
+		} catch ( Exception $e ) {
+			foreach ( $urls as $url ) {
+				$results[ $url ] = self::fetch( $url );
+			}
+			return $results;
+		}
+
+		foreach ( $urls as $url ) {
+			$response = isset( $responses[ $url ] ) ? $responses[ $url ] : null;
+			if ( ! is_object( $response ) || ! isset( $response->status_code ) ) {
+				$results[ $url ] = new WP_Error( 'evvnt_calendar_http', is_object( $response ) && method_exists( $response, 'getMessage' ) ? $response->getMessage() : 'Request failed.', array( 'status' => 0 ) );
+				continue;
+			}
+			if ( 200 !== (int) $response->status_code ) {
+				$results[ $url ] = new WP_Error( 'evvnt_calendar_http', 'Evvnt API returned HTTP ' . (int) $response->status_code, array( 'status' => (int) $response->status_code ) );
+				continue;
+			}
+			$data            = json_decode( $response->body, true );
+			$results[ $url ] = is_array( $data ) ? $data : new WP_Error( 'evvnt_calendar_json', 'Evvnt API returned invalid JSON.', array( 'status' => 0 ) );
+		}
+		return $results;
 	}
 
 	/**

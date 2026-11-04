@@ -11,6 +11,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<div class="evvnt-cal evvnt-cal--unavailable">
+<div class="<?php echo esc_attr( $args['renderer']->root_class( 'unavailable' ) ); ?>">
 	<p class="evvnt-cal__notice"><?php esc_html_e( 'Events are temporarily unavailable. Please try again in a few minutes.', 'evvnt-calendar' ); ?></p>
 </div>

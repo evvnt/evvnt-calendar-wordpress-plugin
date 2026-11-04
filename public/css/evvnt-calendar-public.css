@@ -3,8 +3,17 @@
 	--evvnt-cal-primary: #e8384f;
 	--evvnt-cal-primary-text: #fff;
 	--evvnt-cal-border: rgba(0, 0, 0, 0.12);
+	--evvnt-cal-border: color-mix(in srgb, currentColor 16%, transparent);
 	--evvnt-cal-muted: rgba(0, 0, 0, 0.62);
+	--evvnt-cal-muted: color-mix(in srgb, currentColor 68%, transparent);
+	--evvnt-cal-hero-overlay: rgba(15, 23, 42, 0.8);
+	--evvnt-cal-hero-max: 1200px;
+	/* "Wide" width: the theme's wide size (block themes), else 1200px, within the viewport. */
+	--evvnt-cal-gutter: clamp(1rem, 5vw, 4rem);
+	--evvnt-cal-wide: min(var(--wp--style--global--wide-size, 1200px), calc(100vw - 2 * var(--evvnt-cal-gutter)));
 	--evvnt-cal-radius: 8px;
+	/* Dropdown surface: the block theme's base colour if defined, else white. */
+	--evvnt-cal-surface: var(--wp--preset--color--base, #fff);
 	--evvnt-cal-gap: 1.25rem;
 	margin: 1.5rem 0;
 }
@@ -19,10 +28,46 @@
 	color: inherit;
 }
 
-.evvnt-cal ul {
+/*
+ * Reset theme content styles inside the calendar. Themes often decorate every list item
+ * (custom bullets via ::before, padding) and underline every link in post content; the
+ * doubled class out-ranks typical ".entry-content ul li" selectors.
+ */
+.evvnt-cal.evvnt-cal ul,
+.evvnt-cal.evvnt-cal ol {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.evvnt-cal.evvnt-cal li {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.evvnt-cal.evvnt-cal li::before,
+.evvnt-cal.evvnt-cal li::after {
+	content: none !important;
+	display: none !important;
+}
+
+.evvnt-cal.evvnt-cal li::marker {
+	content: none;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__button,
+.evvnt-cal.evvnt-cal .evvnt-cal__card-title a,
+.evvnt-cal.evvnt-cal .evvnt-cal__nav a,
+.evvnt-cal.evvnt-cal .evvnt-cal__categories a,
+.evvnt-cal.evvnt-cal .evvnt-cal__share-row a,
+.evvnt-cal.evvnt-cal .evvnt-cal__card-image {
+	text-decoration: none;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__card-title a:hover,
+.evvnt-cal.evvnt-cal .evvnt-cal__card-title a:focus-visible {
+	text-decoration: underline;
 }
 
 .evvnt-cal__button {
@@ -90,9 +135,11 @@
 	gap: var(--evvnt-cal-gap);
 }
 
+/* Event list: as many columns as fit (3 at the 1200px wide width, 2 on tablets, 1 on phones). */
 .evvnt-cal__list {
 	display: grid;
-	gap: var(--evvnt-cal-gap);
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+	gap: 1rem;
 }
 
 .evvnt-cal__card {
@@ -132,8 +179,9 @@
 }
 
 .evvnt-cal__card-title {
-	margin: 0 0 0.4rem;
+	margin: 0 0 0.6rem;
 	font-size: 1.05em;
+	font-weight: 700;
 	line-height: 1.3;
 }
 
@@ -147,9 +195,31 @@
 }
 
 .evvnt-cal__meta {
+	display: grid;
+	gap: 0.35rem;
 	color: var(--evvnt-cal-muted);
 	font-size: 0.9em;
-	line-height: 1.5;
+	line-height: 1.4;
+}
+
+.evvnt-cal__meta li {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	min-width: 0;
+}
+
+.evvnt-cal__meta li > span,
+.evvnt-cal__meta li > time {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.evvnt-cal__meta .evvnt-cal__icon {
+	flex: 0 0 auto;
+	width: 18px;
+	height: 18px;
 }
 
 .evvnt-cal__pagination {
@@ -175,65 +245,1058 @@
 	text-align: right;
 }
 
-/* Detail view */
+/* ------------------------------------------------------------------
+ * Event detail: full-width hero with a blurred, enlarged copy of the event
+ * image behind the title, key facts and ticket button.
+ * ------------------------------------------------------------------ */
+
+/* The hero spans the viewport from inside the theme's content column. */
+body.evvnt-cal-event-page {
+	overflow-x: clip;
+}
+
+/* The event title is the page heading; hide the theme's page title. */
+.evvnt-cal-hide-page-title .entry-header,
+.evvnt-cal-hide-page-title .wp-block-post-title {
+	display: none;
+}
+
+.evvnt-cal--detail {
+	margin-top: 0;
+}
+
 .evvnt-cal__hero {
-	margin: 0 0 1rem;
-}
-
-.evvnt-cal__hero img {
-	display: block;
-	width: 100%;
-	max-height: 480px;
-	object-fit: cover;
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
 	border-radius: var(--evvnt-cal-radius);
+	padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1rem, 5vw, 4rem) 1.75rem;
+	background: #0f172a;
+	color: #fff;
 }
 
-.evvnt-cal__title {
-	margin: 0 0 0.5rem;
+.evvnt-cal__hero-backdrop {
+	position: absolute;
+	inset: 0;
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	object-fit: cover;
+	filter: blur(16px);
+	transform: scale(1.1);
+}
+
+.evvnt-cal__hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: var(--evvnt-cal-hero-overlay);
+}
+
+.evvnt-cal__hero a {
+	color: inherit;
+}
+
+.evvnt-cal__hero-inner {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: clamp(2rem, 5vw, 4rem);
+	align-items: center;
+	max-width: var(--evvnt-cal-hero-max);
+	margin: 0 auto;
+}
+
+.evvnt-cal__hero--no-image .evvnt-cal__hero-inner {
+	grid-template-columns: minmax(0, 46rem);
+}
+
+.evvnt-cal__back {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.evvnt-cal__back:hover,
+.evvnt-cal__back:focus-visible {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+.evvnt-cal__back .evvnt-cal__icon {
+	width: 16px;
+	height: 16px;
+}
+
+.evvnt-cal__badge {
+	display: inline-block;
+	margin: 0 0 1rem;
+	padding: 0.3em 0.85em;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.16);
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+.evvnt-cal .evvnt-cal__title {
+	margin: 0 0 1.25rem;
+	color: #fff;
+	font-size: clamp(1.75rem, 1.2rem + 1.8vw, 2.5rem);
+	font-weight: 800;
+	line-height: 1.1;
+	letter-spacing: -0.01em;
+	text-wrap: balance;
+}
+
+.evvnt-cal__facts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 2.5rem;
+	font-weight: 600;
+}
+
+.evvnt-cal__fact {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+	line-height: 1.4;
+}
+
+.evvnt-cal__fact--place {
+	flex-basis: 100%;
+}
+
+.evvnt-cal__fact .evvnt-cal__icon {
+	flex: 0 0 auto;
+	margin-top: 0.05em;
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal__hero .evvnt-cal__fact .evvnt-cal__icon {
+	color: color-mix(in srgb, var(--evvnt-cal-primary) 70%, #fff);
+}
+
+.evvnt-cal__muted {
+	display: block;
+	font-weight: 400;
+	font-size: 0.9em;
+	opacity: 0.8;
+}
+
+.evvnt-cal__cta {
+	margin-top: 1.75rem;
+}
+
+.evvnt-cal .evvnt-cal__button--large {
+	padding: 1rem 2.5rem;
+	font-size: 1.125rem;
+}
+
+.evvnt-cal__price {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin: 0 0 1rem;
+	font-size: 1.05rem;
+	font-weight: 600;
+}
+
+.evvnt-cal__hero .evvnt-cal__price .evvnt-cal__icon {
+	color: color-mix(in srgb, var(--evvnt-cal-primary) 70%, #fff);
+}
+
+.evvnt-cal__hero-media {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+
+/* Natural shape (posters are often portrait), capped in height; never cropped. */
+.evvnt-cal__hero-media img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 360px;
+	border-radius: 12px;
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Recommended events (mirrors the discovery plugin: two-column list cards) */
+.evvnt-cal__recommended {
+	margin: clamp(2.5rem, 5vw, 4rem) 0 0;
+	padding-top: clamp(2rem, 4vw, 3rem);
+	border-top: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal__recommended h2 {
+	margin: 0 0 1.5rem;
+	font-size: 1.35rem;
+	font-weight: 800;
+}
+
+.evvnt-cal__recommended-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
+	gap: 1rem;
+}
+
+.evvnt-cal__recommended-grid .evvnt-cal__card {
+	flex-direction: row;
+	height: 165px;
+}
+
+.evvnt-cal__recommended-grid .evvnt-cal__card-image {
+	width: clamp(100px, 28%, 165px);
+	aspect-ratio: auto;
+}
+
+.evvnt-cal__recommended-grid .evvnt-cal__card-title {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Lists written in event descriptions keep normal bullets. */
+.evvnt-cal.evvnt-cal .evvnt-cal__description ul {
+	list-style: disc;
+	padding-left: 1.5em;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__description ol {
+	list-style: decimal;
+	padding-left: 1.5em;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__description li {
+	list-style: inherit;
+}
+
+/* Below the hero */
+.evvnt-cal__body {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(260px, 20rem);
+	gap: clamp(2rem, 5vw, 4rem);
+	align-items: start;
+	margin: clamp(2rem, 5vw, 4rem) 0 0;
+}
+
+.evvnt-cal__about h2 {
+	margin: 0 0 1rem;
+	font-size: 1.75rem;
+	font-weight: 800;
+	line-height: 1.2;
 }
 
 .evvnt-cal__summary {
 	font-size: 1.1em;
-}
-
-.evvnt-cal__facts {
-	display: grid;
-	grid-template-columns: max-content 1fr;
-	gap: 0.4rem 1rem;
-	margin: 1rem 0;
-}
-
-.evvnt-cal__facts dt {
-	font-weight: 600;
-}
-
-.evvnt-cal__facts dd {
-	margin: 0;
+	font-weight: 500;
 }
 
 .evvnt-cal__description {
-	margin: 1.25rem 0;
+	margin: 0 0 1.5rem;
+	overflow-wrap: anywhere;
+}
+
+.evvnt-cal__description img {
+	max-width: 100%;
+	height: auto;
+}
+
+.evvnt-cal__details {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 0.5rem 1.25rem;
+	margin: 1.5rem 0 0;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal__details dt {
+	font-weight: 600;
+}
+
+.evvnt-cal__details dd {
+	margin: 0;
+	color: var(--evvnt-cal-muted);
+}
+
+.evvnt-cal__side {
+	display: grid;
+	gap: 1.25rem;
+}
+
+.evvnt-cal__panel {
+	padding: 1.75rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: var(--evvnt-cal-radius);
+	box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+.evvnt-cal__panel h2 {
+	margin: 0 0 1.25rem;
+	font-size: 1.25rem;
+	font-weight: 800;
+	line-height: 1.3;
+}
+
+.evvnt-cal__panel .evvnt-cal__fact {
+	margin-bottom: 1.5rem;
+}
+
+.evvnt-cal .evvnt-cal__button--outline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	width: 100%;
+	margin-top: 0.75rem;
+	border: 1px solid var(--evvnt-cal-border);
+	background: transparent;
+	color: inherit !important;
+	font-size: 0.95rem;
+}
+
+.evvnt-cal__button--outline:hover,
+.evvnt-cal__button--outline:focus-visible {
+	filter: none;
+	border-color: currentColor;
+}
+
+.evvnt-cal__button--outline .evvnt-cal__icon {
+	width: 16px;
+	height: 16px;
 }
 
 .evvnt-cal__dates li {
-	padding: 0.25rem 0;
+	padding: 0.5rem 0;
 	border-bottom: 1px solid var(--evvnt-cal-border);
+	font-size: 0.95rem;
+}
+
+.evvnt-cal__dates li:last-child {
+	border-bottom: 0;
+}
+
+.evvnt-cal__promote {
+	margin: 0;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+@media (max-width: 860px) {
+	.evvnt-cal__hero-inner,
+	.evvnt-cal__body {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.evvnt-cal__hero-media {
+		order: -1;
+	}
+
+	.evvnt-cal__hero-media img {
+		max-height: min(300px, 45vh);
+	}
+
+	.evvnt-cal__cta .evvnt-cal__button--large {
+		display: block;
+		text-align: center;
+	}
+
+	.evvnt-cal__details {
+		grid-template-columns: 1fr;
+		gap: 0.15rem;
+	}
+
+	.evvnt-cal__details dd {
+		margin-bottom: 0.6rem;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.evvnt-cal__button,
+	.evvnt-cal__share-row a {
+		transition: filter 0.15s, background-color 0.15s, border-color 0.15s;
+	}
+}
+
+/* ------------------------------------------------------------------
+ * Event detail, standard layout (non-featured events): the discovery
+ * plugin's header; the body below is shared with featured events.
+ * ------------------------------------------------------------------ */
+.evvnt-cal__std {
+	container-type: inline-size;
+	color: inherit;
+}
+
+.evvnt-cal__back--std {
+	margin-bottom: 1.25rem;
+}
+
+.evvnt-cal__std-top {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.evvnt-cal__std-main {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: 1.25rem;
+	min-width: 0;
+}
+
+.evvnt-cal__std-badge {
+	align-self: flex-start;
+	margin: 0;
+	padding: 0.25em 0.75em;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.evvnt-cal .evvnt-cal__std-title {
+	display: -webkit-box;
+	overflow: hidden;
+	margin: 0;
+	font-size: clamp(1.5rem, 1.2rem + 1vw, 1.875rem);
+	font-weight: 700;
+	line-height: 1.3;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.evvnt-cal__std-summary {
+	display: -webkit-box;
+	overflow: hidden;
+	margin: -0.5rem 0 0;
+	font-size: 1rem;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.evvnt-cal__std-facts {
+	display: grid;
+	gap: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.evvnt-cal__std-facts li {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.evvnt-cal__std-facts .evvnt-cal__icon {
+	flex: 0 0 auto;
+	color: var(--evvnt-cal-muted);
+}
+
+.evvnt-cal__std-cta {
+	margin: 0;
+}
+
+.evvnt-cal .evvnt-cal__button--std {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	padding: 0.55rem 0.9rem;
+	box-shadow: 0 1px 3px rgba(15, 23, 42, 0.15);
+	font-size: 0.9rem;
+}
+
+.evvnt-cal__std-media {
+	margin: 0;
+}
+
+.evvnt-cal__std-media img {
+	display: block;
+	width: 100%;
+	height: 13rem;
+	object-fit: contain;
+}
+
+@container (min-width: 640px) {
+	.evvnt-cal__std-media img {
+		height: 24rem;
+	}
+}
+
+@container (min-width: 860px) {
+	.evvnt-cal__std-top {
+		flex-direction: row;
+	}
+
+	.evvnt-cal__std-media {
+		flex: 0 0 24rem;
+		width: 24rem;
+	}
+
+	.evvnt-cal__std-media img {
+		height: 18rem;
+	}
+}
+
+/* Share buttons above the "Where It's Happening" panel (both layouts) */
+.evvnt-cal__share-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.evvnt-cal__share-row > span {
+	margin-right: auto;
+	font-size: 0.95rem;
+	font-weight: 600;
+}
+
+.evvnt-cal__share-row a {
+	display: inline-grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 50%;
+	background: color-mix(in srgb, currentColor 8%, transparent);
+	color: inherit;
+}
+
+.evvnt-cal__share-row a:hover,
+.evvnt-cal__share-row a:focus-visible {
+	background: color-mix(in srgb, currentColor 16%, transparent);
+}
+
+/* Clickable categories in "About This Event" */
+.evvnt-cal__categories {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.evvnt-cal__categories a,
+.evvnt-cal__categories span {
+	display: inline-block;
+	padding: 0.15em 0.75em;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	font-size: 0.85rem;
+	line-height: 1.6;
+	text-decoration: none;
+}
+
+.evvnt-cal__categories a {
+	color: inherit;
+}
+
+.evvnt-cal__categories a:hover,
+.evvnt-cal__categories a:focus-visible {
+	border-color: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary);
+}
+
+/* The standard header sits directly above the shared body. */
+.evvnt-cal--standard .evvnt-cal__body {
+	margin-top: 0;
+	padding-top: 2.5rem;
+	border-top: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal__subcategory {
+	font-weight: 400;
+}
+
+.evvnt-cal__subcategory a {
+	margin-left: 0.25em;
+	text-decoration: none;
+	opacity: 0.6;
+}
+
+.evvnt-cal__subcategory a:hover,
+.evvnt-cal__subcategory a:focus-visible {
+	opacity: 1;
+}
+
+.evvnt-cal__panel-map {
+	display: block;
+	margin: 0 0 1.25rem;
+}
+
+.evvnt-cal__panel-map img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 5 / 4;
+	object-fit: cover;
+	border-radius: calc(var(--evvnt-cal-radius) - 2px);
+}
+
+/* ------------------------------------------------------------------
+ * Width. "Wide" (default) breaks out of the theme's content column to the
+ * theme's wide width, centred; "Content column" stays inside it (for pages
+ * with a sidebar). The featured hero spans the full viewport in wide mode.
+ * ------------------------------------------------------------------ */
+/*
+ * Symmetric margins centre the box on its parent in LTR and RTL alike. !important (with a
+ * doubled class) is needed to beat core's constrained-layout rule, which forces
+ * margin-left/right: auto !important on every block-theme child.
+ */
+.evvnt-cal.evvnt-cal--wide.evvnt-cal--calendar,
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__std,
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__body,
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__recommended,
+.evvnt-cal.evvnt-cal--wide.evvnt-cal--not-found,
+.evvnt-cal.evvnt-cal--wide.evvnt-cal--unavailable {
+	box-sizing: border-box;
+	width: var(--evvnt-cal-wide);
+	max-width: none;
+	margin-left: calc(50% - var(--evvnt-cal-wide) / 2) !important;
+	margin-right: calc(50% - var(--evvnt-cal-wide) / 2) !important;
+}
+
+/* Nested inside an element that is already wide: no further offset. */
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__std .evvnt-cal__body,
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__std .evvnt-cal__recommended {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__hero {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: calc(50% - 50vw) !important;
+	margin-right: calc(50% - 50vw) !important;
+	border-radius: 0;
+}
+
+/* Arrow icons point the reading direction's way. */
+[dir="rtl"] .evvnt-cal__row-controls svg,
+[dir="rtl"] .evvnt-cal__row-more svg,
+[dir="rtl"] .evvnt-cal__row-end svg,
+[dir="rtl"] .evvnt-cal__button--std svg,
+[dir="rtl"] .evvnt-cal__back svg {
+	transform: scaleX(-1);
+}
+
+/* ------------------------------------------------------------------
+ * Category rows layout
+ * ------------------------------------------------------------------ */
+.evvnt-cal__row {
+	margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.evvnt-cal__row-head {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem 1rem;
+	margin-bottom: 0.9rem;
+}
+
+.evvnt-cal__row-head .evvnt-cal__heading {
+	margin: 0;
+	min-width: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-more {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin-left: auto;
+	color: inherit;
+	font-size: 0.9rem;
+	font-weight: 600;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.evvnt-cal__row-more:hover,
+.evvnt-cal__row-more:focus-visible {
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal__row-more .evvnt-cal__icon {
+	width: 16px;
+	height: 16px;
+}
+
+.evvnt-cal__row-controls {
+	display: flex;
+	gap: 0.4rem;
+	margin-left: auto;
+}
+
+.evvnt-cal__row-controls[hidden] {
+	display: none;
+}
+
+.evvnt-cal__row-more + .evvnt-cal__row-controls {
+	margin-left: 0.25rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-controls button {
+	display: inline-grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	margin: 0;
+	padding: 0;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 50%;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+
+.evvnt-cal__row-controls button:hover:not(:disabled),
+.evvnt-cal__row-controls button:focus-visible {
+	border-color: currentColor;
+}
+
+.evvnt-cal__row-controls button:disabled {
+	opacity: 0.35;
+	cursor: default;
+}
+
+.evvnt-cal__row-controls .evvnt-cal__icon {
+	width: 18px;
+	height: 18px;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-track {
+	display: flex;
+	gap: 1rem;
+	padding: 0.25rem 0.1rem 0.9rem;
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x proximity;
+	scroll-padding-inline: 0.1rem;
+	scrollbar-width: thin;
+	-webkit-overflow-scrolling: touch;
+}
+
+.evvnt-cal__row-track:focus-visible {
+	outline: 2px solid var(--evvnt-cal-primary);
+	outline-offset: 2px;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-track > li {
+	flex: 0 0 clamp(220px, 23%, 290px);
+	scroll-snap-align: start;
+}
+
+.evvnt-cal__row-track .evvnt-cal__card {
+	flex-direction: column;
+}
+
+.evvnt-cal__row-track .evvnt-cal__card-image {
+	width: 100%;
+	min-height: 0;
+	overflow: hidden;
+}
+
+/* Tiles always show a 16:9 crop, whatever the poster's shape. */
+.evvnt-cal__row-track .evvnt-cal__card-image img,
+.evvnt-cal__grid .evvnt-cal__card-image img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+.evvnt-cal__row-track .evvnt-cal__card-title {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-track > .evvnt-cal__row-end {
+	flex-basis: clamp(140px, 14%, 180px);
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-end a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	height: 100%;
+	min-height: 10rem;
+	padding: 1rem;
+	border: 1px dashed var(--evvnt-cal-border);
+	border-radius: var(--evvnt-cal-radius);
+	color: inherit;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+}
+
+.evvnt-cal__row-end a:hover,
+.evvnt-cal__row-end a:focus-visible {
+	border-color: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary);
 }
 
 @media (max-width: 600px) {
-	.evvnt-cal__list .evvnt-cal__card {
-		flex-direction: column;
+	.evvnt-cal.evvnt-cal .evvnt-cal__row-track > li {
+		flex-basis: 78%;
 	}
 
-	.evvnt-cal__list .evvnt-cal__card-image {
-		width: 100%;
+	/* Rows are swiped on phones; keep the header for the title and "See all". */
+	.evvnt-cal__row-controls {
+		display: none !important;
+	}
+}
+
+.evvnt-cal .screen-reader-text {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+}
+
+.evvnt-cal__toolbar {
+	align-items: center;
+	gap: 1rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__home {
+	margin: 0 auto 0 0;
+}
+
+.evvnt-cal__home .evvnt-cal__back {
+	margin-bottom: 0;
+	font-weight: 600;
+	opacity: 1;
+}
+
+/* ------------------------------------------------------------------
+ * Search bar and live suggestions
+ * ------------------------------------------------------------------ */
+.evvnt-cal__search {
+	position: relative;
+	margin: 0 0 1.25rem;
+}
+
+.evvnt-cal__search-field {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.35rem 0.35rem 0.35rem 0.9rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	background: color-mix(in srgb, currentColor 3%, transparent);
+}
+
+.evvnt-cal__search-field:focus-within {
+	border-color: var(--evvnt-cal-primary);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--evvnt-cal-primary) 20%, transparent);
+}
+
+.evvnt-cal__search-field > .evvnt-cal__icon {
+	flex: 0 0 auto;
+	color: var(--evvnt-cal-muted);
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__search input[type="search"] {
+	flex: 1;
+	min-width: 0;
+	margin: 0;
+	padding: 0.45rem 0.25rem;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	box-shadow: none;
+	color: inherit;
+	font: inherit;
+	font-size: 1rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__search .evvnt-cal__button {
+	flex: 0 0 auto;
+	margin: 0;
+	border: 0;
+	border-radius: 999px;
+	font: inherit;
+	font-size: 0.95rem;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__suggest {
+	position: absolute;
+	top: calc(100% + 0.4rem);
+	left: 0;
+	right: 0;
+	z-index: 50;
+	max-height: min(70vh, 30rem);
+	overflow-y: auto;
+	padding: 0.4rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: var(--evvnt-cal-radius);
+	background: var(--evvnt-cal-surface, #fff);
+	box-shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.25);
+}
+
+.evvnt-cal__suggest[hidden] {
+	display: none;
+}
+
+.evvnt-cal__suggest-group {
+	padding: 0.5rem 0.6rem 0.25rem;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__suggest-item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.5rem 0.6rem;
+	border-radius: calc(var(--evvnt-cal-radius) - 2px);
+	cursor: pointer;
+}
+
+.evvnt-cal__suggest-item[aria-selected="true"],
+.evvnt-cal__suggest-item:hover {
+	background: color-mix(in srgb, var(--evvnt-cal-primary) 10%, transparent);
+}
+
+.evvnt-cal__suggest-item img,
+.evvnt-cal__suggest-noimg {
+	flex: 0 0 auto;
+	width: 3.5rem;
+	height: 2.25rem;
+	border-radius: 4px;
+	object-fit: cover;
+	background: color-mix(in srgb, currentColor 8%, transparent);
+}
+
+.evvnt-cal__suggest-text {
+	display: grid;
+	min-width: 0;
+}
+
+.evvnt-cal__suggest-title,
+.evvnt-cal__suggest-meta {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.evvnt-cal__suggest-title {
+	font-weight: 600;
+}
+
+.evvnt-cal__suggest-meta {
+	color: var(--evvnt-cal-muted);
+	font-size: 0.85rem;
+}
+
+.evvnt-cal__suggest-cat {
+	display: inline-block;
+	padding: 0.1em 0.75em;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	font-size: 0.9rem;
+}
+
+.evvnt-cal__suggest-item--all {
+	margin-top: 0.25rem;
+	border-top: 1px solid var(--evvnt-cal-border);
+	color: var(--evvnt-cal-primary);
+	font-weight: 600;
+}
+
+.evvnt-cal__suggest-empty {
+	padding: 0.6rem;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.9rem;
+}
+
+.evvnt-cal__search-categories {
+	margin-top: 0.5rem;
+}
+
+.evvnt-cal__search-categories .evvnt-cal__heading {
+	font-size: 1.1em;
+}
+
+@media (forced-colors: active) {
+	.evvnt-cal__search-field:focus-within {
+		outline: 2px solid Highlight;
+		outline-offset: 2px;
 	}
 
-	.evvnt-cal__facts {
-		grid-template-columns: 1fr;
+	.evvnt-cal__suggest-item[aria-selected="true"] {
+		outline: 2px solid Highlight;
 	}
+}
 
-	.evvnt-cal__facts dd {
-		margin-bottom: 0.5rem;
-	}
+.evvnt-cal.evvnt-cal .evvnt-cal__suggest-groupwrap > ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Image-left list cards at a fixed height (as the discovery plugin's 165px list items), so
+ * tall posters are cropped instead of stretching their row.
+ */
+.evvnt-cal.evvnt-cal .evvnt-cal__list .evvnt-cal__card {
+	height: 165px;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__list .evvnt-cal__card-image {
+	position: relative;
+	flex: 0 0 clamp(100px, 36%, 150px);
+	width: clamp(100px, 36%, 150px);
+	height: 100%;
+	aspect-ratio: auto;
+	overflow: hidden;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__list .evvnt-cal__card-image img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	object-fit: cover;
+}
+
+.evvnt-cal__list .evvnt-cal__card-body {
+	overflow: hidden;
+}
+
+.evvnt-cal__list .evvnt-cal__card-title {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Category pages: the category name above its featured events. */
+.evvnt-cal.evvnt-cal .evvnt-cal__category-title {
+	margin: 0.25rem 0 1.25rem;
+	font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.25rem);
+	font-weight: 800;
+	line-height: 1.15;
+}
+
+.evvnt-cal__category-title .evvnt-cal__subcategory {
+	font-size: 0.7em;
 }
