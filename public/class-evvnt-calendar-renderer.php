@@ -21,9 +21,11 @@ class Evvnt_Calendar_Renderer {
 	const MAX_FEATURED   = 6;
 	const ROW_SIZE       = 10; // Events per row before the "View more" tile.
 	const ROW_MIN        = 5; // Category rows need at least this many featured events.
+	const WIDGET_NUMBER  = 4; // Events in the compact widget (the discovery JS widget's default).
 
 	private $client;
 	private $settings;
+	private $tree;
 
 	public function __construct( Evvnt_Calendar_Discovery_Client $client, array $settings ) {
 		$this->client   = $client;
@@ -74,6 +76,44 @@ class Evvnt_Calendar_Renderer {
 	}
 
 	/**
+	 * The publisher's full category tree (roots and every sub-category).
+	 *
+	 * @return Evvnt_Calendar_Category_Tree
+	 */
+	public function category_tree() {
+		if ( null === $this->tree ) {
+			$this->tree = new Evvnt_Calendar_Category_Tree( $this->client, $this->categories(), $this->client->publisher_id() );
+		}
+		return $this->tree;
+	}
+
+	/**
+	 * The sub-category a route's slug path names (with 'trail', its ancestors root first), null
+	 * when it names none, or WP_Error when the category API is failing.
+	 *
+	 * @param Evvnt_Calendar_Route $route Category route with a subcategory_path.
+	 * @return array|null|WP_Error
+	 */
+	public function subcategory( Evvnt_Calendar_Route $route ) {
+		if ( 'category' !== $route->type || '' === $route->subcategory_path ) {
+			return null;
+		}
+		return $this->category_tree()->by_path( $route->category_path() );
+	}
+
+	/**
+	 * URL of any category's page: a root's own page, or a sub-category's page by its slug path.
+	 *
+	 * @param array  $node Category from the tree ( path ).
+	 * @param string $base Calendar page URL.
+	 * @param int    $page 1-based page.
+	 * @return string
+	 */
+	public static function category_url( array $node, $base, $page = 1 ) {
+		return Evvnt_Calendar_Route::calendar_url( $base, $node['path'], $page );
+	}
+
+	/**
 	 * Category matching a slug, or null.
 	 */
 	public function category_by_slug( $slug ) {
@@ -98,6 +138,11 @@ class Evvnt_Calendar_Renderer {
 	public function listing( Evvnt_Calendar_Route $route, array $atts ) {
 		$pinned   = absint( $atts['category_id'] );
 		$selected = ( ! $pinned && 'category' === $route->type ) ? $this->category_by_slug( $route->category_slug ) : null;
+		// A sub-category page (…/category/arts/performing-arts/): its category in the tree.
+		$sub = ( $selected && '' !== $route->subcategory_path ) ? $this->subcategory( $route ) : null;
+		if ( is_wp_error( $sub ) ) {
+			return $sub; // Unknown for now: unavailable, not "not found".
+		}
 
 		$filters = array();
 		if ( $pinned ) {
@@ -105,7 +150,9 @@ class Evvnt_Calendar_Renderer {
 		} elseif ( $selected ) {
 			$filters['categoryId'] = $selected['id'];
 		}
-		if ( $route->subcategory_id ) {
+		if ( $sub ) {
+			$filters['subCategoryIds'] = $sub['id'];
+		} elseif ( $route->subcategory_id ) {
 			$filters['subCategoryIds'] = $route->subcategory_id;
 		}
 		if ( '' !== $route->from_date ) {
@@ -116,9 +163,18 @@ class Evvnt_Calendar_Renderer {
 			$filters['virtual'] = 'true';
 		}
 
+		$search_featured = array();
 		if ( '' !== $route->search ) {
 			$response = $this->client->search_events( $route->search, $route->page - 1, Evvnt_Calendar_Discovery_Client::HITS_PER_PAGE, $filters );
 			$key      = 'events';
+			if ( 1 === $route->page && ! is_wp_error( $response ) ) {
+				// Featured matches head the first page, as featured events do on other listings
+				// (discovery's home_page_events runs the same query with isFeatured). Search returns
+				// each date of a series, so fetch extra and keep one per series, as those listings
+				// do. Optional: a failure here only leaves the section out.
+				$featured        = $this->client->search_events( $route->search, 0, 3 * self::MAX_FEATURED, $filters + array( 'isFeatured' => 'true' ) );
+				$search_featured = ( ! is_wp_error( $featured ) && isset( $featured['events'] ) && is_array( $featured['events'] ) ) ? self::one_per_series( $featured['events'] ) : array();
+			}
 		} elseif ( 1 === $route->page ) {
 			// Also for date ranges: featured events in that range come first, as on other listings.
 			$response = $this->client->home_page_events( $filters );
@@ -135,9 +191,177 @@ class Evvnt_Calendar_Renderer {
 		}
 		return array(
 			'raw'      => $response[ $key ],
-			'featured' => ( 1 === $route->page && '' === $route->search && ! empty( $response['rawFeaturedEvents'] ) && is_array( $response['rawFeaturedEvents'] ) ) ? $response['rawFeaturedEvents'] : array(),
+			'featured' => '' !== $route->search ? $search_featured : ( ( 1 === $route->page && ! empty( $response['rawFeaturedEvents'] ) && is_array( $response['rawFeaturedEvents'] ) ) ? $response['rawFeaturedEvents'] : array() ),
 			'selected' => $selected,
+			'sub'      => $sub,
 		);
+	}
+
+	/**
+	 * The compact widget, as the discovery JS widget (WidgetPortrait) shows it: "Create an Event",
+	 * a search box, four events chosen from the publisher's featured events (weighted, as its
+	 * FeaturedEventChooser) with a promotional ad in one slot when the publisher has one,
+	 * "More Events" and the evvnt credit. Links go to the site's calendar page, or the
+	 * publisher's calendar URL when the site has none.
+	 *
+	 * @param array $atts { detail_page_enabled, virtual, category_id }.
+	 * @return string
+	 */
+	public function render_widget( array $atts ) {
+		$publisher = $this->publisher();
+		$base      = $this->widget_base( $publisher );
+		$detail    = ! empty( $atts['detail_page_enabled'] );
+
+		// One slot is an ad when the publisher has a vertical widget promotion (and room for it).
+		$assets = array();
+		foreach ( isset( $publisher['promotional_assets'] ) ? (array) $publisher['promotional_assets'] : array() as $asset ) {
+			if ( is_array( $asset ) && isset( $asset['asset_unit'], $asset['image_url'] ) && 'vertical_widget' === $asset['asset_unit'] && is_string( $asset['image_url'] ) && 0 === strpos( $asset['image_url'], 'https://' ) ) {
+				$assets[] = $asset;
+			}
+		}
+		$show_ad = self::WIDGET_NUMBER > 2 && $assets;
+		$count   = $show_ad ? self::WIDGET_NUMBER - 1 : self::WIDGET_NUMBER;
+
+		$filters = array_filter(
+			array(
+				'categoryId' => ! empty( $atts['category_id'] ) ? absint( $atts['category_id'] ) : null,
+				'virtual'    => ! empty( $atts['virtual'] ) ? 'true' : null,
+			)
+		);
+		$response    = $this->client->widget_events( $filters );
+		$unavailable = is_wp_error( $response ) || ! isset( $response['rawEvents'] ) || ! is_array( $response['rawEvents'] );
+		$events      = $unavailable ? array() : self::choose_weighted( $this->to_events( self::unique_events( $response['rawEvents'] ), $publisher ), $count );
+
+		$items = array();
+		foreach ( $events as $event ) {
+			$url     = $detail ? Evvnt_Calendar_Route::event_url( $base, $event->slug() ) : $event->main_link();
+			$items[] = array(
+				'type'     => 'event',
+				'event'    => $event,
+				// As the JS widget: every card has an image, Evvnt's placeholder when the event has none.
+				'image'    => $event->card_image_url() ? $event->card_image_url() : plugins_url( 'active_network' === $event->main_source() ? 'images/active_network_placeholder.jpeg' : 'images/placeholder-event-image.jpg', __FILE__ ),
+				'url'      => $url ? $url : Evvnt_Calendar_Route::event_url( $base, $event->slug() ),
+				'external' => ! $detail && $url,
+				'tracking' => Evvnt_Calendar_Tracking::view_attrs( $event, Evvnt_Calendar_Tracking::VIEWED_FROM_LIST ),
+			);
+		}
+		if ( $show_ad && $items ) {
+			// Anywhere but first, as the JS widget places it.
+			$position = count( $items ) > 1 ? wp_rand( 1, count( $items ) - 1 ) : 1;
+			array_splice(
+				$items,
+				$position,
+				0,
+				array(
+					array(
+						'type'  => 'ad',
+						'image' => $assets[ wp_rand( 0, count( $assets ) - 1 ) ]['image_url'],
+						'url'   => $this->promote_url( $publisher, 'widget' ),
+					),
+				)
+			);
+		}
+
+		return $this->template(
+			'widget',
+			array(
+				'items'        => $items,
+				'unavailable'  => $unavailable,
+				'base'         => $base,
+				'atts'         => $atts,
+				'more_url'     => Evvnt_Calendar_Route::calendar_url( $base ),
+				// Live suggestions link into this site's calendar, so only when the widget does too.
+				'suggest'      => wp_parse_url( $base, PHP_URL_HOST ) === wp_parse_url( home_url(), PHP_URL_HOST ),
+				'create_url'   => $this->submit_url( $publisher ),
+				'powered_logo' => plugins_url( 'images/powered_by_evvnt.png', __FILE__ ),
+			)
+		);
+	}
+
+	/**
+	 * Raw events with repeats of the same event (objectID) removed: the widget pool lists a
+	 * featured event both as featured and again among the events that top it up.
+	 *
+	 * @param array $raw Raw events.
+	 * @return array
+	 */
+	public static function unique_events( array $raw ) {
+		$seen = array();
+		$kept = array();
+		foreach ( $raw as $item ) {
+			$id = ( is_array( $item ) && isset( $item['objectID'] ) && is_scalar( $item['objectID'] ) ) ? (string) $item['objectID'] : '';
+			if ( '' !== $id && isset( $seen[ $id ] ) ) {
+				continue;
+			}
+			$seen[ $id ] = true;
+			$kept[]      = $item;
+		}
+		return $kept;
+	}
+
+	/**
+	 * Calendar the widget links into: the site's Calendar page in server mode, else the
+	 * publisher's calendar URL (where the discovery JS widget links), else the home page.
+	 *
+	 * @param array $publisher Publisher settings.
+	 * @return string
+	 */
+	public function widget_base( array $publisher ) {
+		$page_id = isset( $this->settings['calendar_page_id'] ) ? absint( $this->settings['calendar_page_id'] ) : 0;
+		if ( $page_id && 'publish' === get_post_status( $page_id ) ) {
+			return get_permalink( $page_id );
+		}
+		if ( ! empty( $publisher['url'] ) && is_string( $publisher['url'] ) && wp_http_validate_url( $publisher['url'] ) ) {
+			return $publisher['url'];
+		}
+		return home_url( '/' );
+	}
+
+	/**
+	 * Where a promotional ad links: the publisher's own submission form, else Evvnt's with
+	 * utm parameters (the discovery JS's useAddEventUrl).
+	 *
+	 * @param array  $publisher Publisher settings.
+	 * @param string $medium    utm_medium.
+	 * @return string
+	 */
+	public function promote_url( array $publisher, $medium ) {
+		if ( ! empty( $publisher['event_submission_url'] ) && is_string( $publisher['event_submission_url'] ) ) {
+			return $publisher['event_submission_url'];
+		}
+		return add_query_arg(
+			array(
+				'utm_source'   => rawurlencode( (string) $this->client->publisher_id() ),
+				'utm_medium'   => rawurlencode( $medium ),
+				'utm_campaign' => 'promote_asset',
+			),
+			$this->submit_url( $publisher )
+		);
+	}
+
+	/**
+	 * Raw events with only the first date of each series (same event_parent_id) kept.
+	 *
+	 * @param array $raw Raw events.
+	 * @return array
+	 */
+	public static function one_per_series( array $raw ) {
+		$seen = array();
+		$kept = array();
+		foreach ( $raw as $item ) {
+			if ( ! is_array( $item ) ) {
+				continue;
+			}
+			$parent = isset( $item['event_parent_id'] ) && is_scalar( $item['event_parent_id'] ) && '' !== (string) $item['event_parent_id'] ? 'p' . $item['event_parent_id'] : null;
+			if ( null !== $parent && isset( $seen[ $parent ] ) ) {
+				continue;
+			}
+			if ( null !== $parent ) {
+				$seen[ $parent ] = true;
+			}
+			$kept[] = $item;
+		}
+		return $kept;
 	}
 
 	/**
@@ -161,10 +385,11 @@ class Evvnt_Calendar_Renderer {
 		$pinned    = absint( $atts['category_id'] );
 		$rows_mode = isset( $atts['layout'] ) && 'rows' === $atts['layout'] && ! $pinned;
 		$selected  = $listing['selected'];
-		$slug      = $selected ? $selected['slug'] : '';
+		$sub       = isset( $listing['sub'] ) ? $listing['sub'] : null;
+		$slug      = $sub ? $sub['path'] : ( $selected ? $selected['slug'] : '' );
 		$count     = count( $listing['raw'] );
-		$page_url  = function ( $page ) use ( $base, $slug, $route ) {
-			$url = $route->subcategory_id
+		$page_url  = function ( $page ) use ( $base, $slug, $route, $sub ) {
+			$url = ( $route->subcategory_id && ! $sub )
 				? Evvnt_Calendar_Route::subcategory_url( $base, $slug, $route->subcategory_id, $route->subcategory_name, $page )
 				: Evvnt_Calendar_Route::calendar_url( $base, $slug, $page );
 			if ( '' !== $route->search ) {
@@ -187,20 +412,32 @@ class Evvnt_Calendar_Renderer {
 				'home_url'     => ( $rows_mode || '' !== $route->search || '' !== $route->from_date ) ? Evvnt_Calendar_Route::calendar_url( $base ) : '',
 				'dates_label'  => '' !== $route->from_date ? $this->dates_label( $route->from_date, $route->to_date ) : '',
 				'selected'     => $selected,
-				'not_found'    => 'not_found' === $route->type || ( 'category' === $route->type && ! $pinned && ! $selected ),
+				'sub'          => $sub,
+				// Links up the sub-category's ancestors, root first.
+				'breadcrumbs'  => $sub ? array_map(
+					function ( $node ) use ( $base ) {
+						return array(
+							'name' => $node['name'],
+							'url'  => self::category_url( $node, $base ),
+						);
+					},
+					$sub['trail']
+				) : array(),
+				'not_found'    => 'not_found' === $route->type || ( 'category' === $route->type && ! $pinned && ( ! $selected || ( '' !== $route->subcategory_path && ! $sub ) ) ),
 				'page'         => $route->page,
 				'prev_url'     => $route->page > 1 ? $page_url( $route->page - 1 ) : '',
 				'next_url'     => ( $count >= Evvnt_Calendar_Discovery_Client::HITS_PER_PAGE && $route->page < Evvnt_Calendar_Route::MAX_PAGE ) ? $page_url( $route->page + 1 ) : '',
 				'search'       => $route->search,
 				'atts'         => $atts,
 				'search_categories' => ( '' !== $route->search && ! $pinned ) ? $this->category_matches( $route->search, $listing['raw'], $base ) : array(),
-				'subcategory'  => $route->subcategory_id ? ( '' !== $route->subcategory_name ? $route->subcategory_name : __( 'Filtered', 'evvnt-calendar' ) ) : '',
-				'clear_sub'    => $route->subcategory_id ? Evvnt_Calendar_Route::calendar_url( $base, $slug ) : '',
+				'subcategory'  => ( $route->subcategory_id && ! $sub ) ? ( '' !== $route->subcategory_name ? $route->subcategory_name : __( 'Filtered', 'evvnt-calendar' ) ) : '',
+				'clear_sub'    => ( $route->subcategory_id && ! $sub ) ? Evvnt_Calendar_Route::calendar_url( $base, $slug ) : '',
 				'base'         => $base,
 				'detail_pages' => ! empty( $atts['detail_page_enabled'] ),
 				'submit_url'   => $this->submit_url( $publisher ),
 				'submit_label' => $this->settings['submission_label'],
 				'calendar_url' => Evvnt_Calendar_Route::calendar_url( $base ),
+				'categories_url' => $this->categories_url( $base, $atts ),
 			)
 		);
 	}
@@ -288,6 +525,50 @@ class Evvnt_Calendar_Renderer {
 				'submit_url'   => $this->submit_url( $publisher ),
 				'submit_label' => $this->settings['submission_label'],
 				'calendar_url' => Evvnt_Calendar_Route::calendar_url( $base ),
+				'categories_url' => $this->categories_url( $base, $atts ),
+			)
+		);
+	}
+
+	/**
+	 * Link to the list of every category, or '' on a calendar pinned to one category (or a
+	 * publisher with none).
+	 *
+	 * @param string $base Calendar page URL.
+	 * @param array  $atts Normalized shortcode attributes.
+	 * @return string
+	 */
+	public function categories_url( $base, array $atts ) {
+		return ( empty( $atts['category_id'] ) && $this->categories() ) ? Evvnt_Calendar_Route::categories_url( $base ) : '';
+	}
+
+	/**
+	 * The list of every category, A–Z, each with its sub-categories nested below it (A–Z, at
+	 * every depth), each linking to its page. Until the tree is first built in the background,
+	 * the root categories only.
+	 *
+	 * @param string $base Calendar page URL.
+	 * @param array  $atts Normalized shortcode attributes (for the search box's filters).
+	 * @return string
+	 */
+	public function render_categories( $base, array $atts = array() ) {
+		$add_urls   = function ( array $nodes ) use ( &$add_urls, $base ) {
+			foreach ( $nodes as $i => $node ) {
+				$nodes[ $i ]['url']      = self::category_url( $node, $base );
+				$nodes[ $i ]['children'] = $add_urls( $node['children'] );
+			}
+			return $nodes;
+		};
+		$categories = $add_urls( $this->category_tree()->nested() );
+		return $this->template(
+			'categories',
+			array(
+				'categories'   => $categories,
+				'base'         => $base,
+				'atts'         => $atts,
+				'home_url'     => Evvnt_Calendar_Route::calendar_url( $base ),
+				'submit_url'   => $this->submit_url( $this->publisher() ),
+				'submit_label' => $this->settings['submission_label'],
 			)
 		);
 	}
@@ -337,11 +618,46 @@ class Evvnt_Calendar_Renderer {
 				}
 				$found[ 'c' . $category['id'] ] = array(
 					'name' => str_replace( ' / ', ' & ', $category['name'] ),
-					'url'  => Evvnt_Calendar_Route::subcategory_url( $base, $parent ? $parent['slug'] : '', $category['id'], $category['name'] ),
+					'url'  => $this->subcategory_link( $category['id'], $category['name'], $parent ? $parent['slug'] : '', $base ),
 				);
 			}
 		}
+		// Then any other sub-category in the tree with a matching name (once it is built).
+		foreach ( $this->category_tree()->nodes() as $node ) {
+			if ( count( $found ) >= $limit ) {
+				break;
+			}
+			if ( $node['depth'] < 1 || isset( $found[ 'c' . $node['id'] ] ) || ! $matches( $node['name'] ) ) {
+				continue;
+			}
+			foreach ( $found as $existing ) {
+				if ( strtolower( $existing['name'] ) === strtolower( $node['name'] ) ) {
+					continue 2;
+				}
+			}
+			$found[ 'c' . $node['id'] ] = array(
+				'name' => $node['name'],
+				'url'  => self::category_url( $node, $base ),
+			);
+		}
 		return array_slice( array_values( $found ), 0, $limit );
+	}
+
+	/**
+	 * Link to a sub-category: its own page when the tree knows it, else its parent's page
+	 * filtered to it (?subcategory=id|name, as the discovery JS links).
+	 *
+	 * @param int    $id          Sub-category id.
+	 * @param string $name        Its name.
+	 * @param string $parent_slug Root category slug for the filtered fallback ('' for the calendar).
+	 * @param string $base        Calendar page URL.
+	 * @return string
+	 */
+	public function subcategory_link( $id, $name, $parent_slug, $base ) {
+		$node = $this->category_tree()->by_id( $id );
+		return ( $node && $node['depth'] > 0 )
+			? self::category_url( $node, $base )
+			: Evvnt_Calendar_Route::subcategory_url( $base, $parent_slug, $id, $name );
 	}
 
 	/**
@@ -394,7 +710,7 @@ class Evvnt_Calendar_Renderer {
 	 * @param string $current Current search text.
 	 * @return string
 	 */
-	public function search_form( $base, $current = '', array $atts = array() ) {
+	public function search_form( $base, $current = '', array $atts = array(), array $options = array() ) {
 		$action = Evvnt_Calendar_Route::calendar_url( $base );
 		// A GET form drops the action's own query string (e.g. ?page_id= on plain permalinks): keep it as hidden fields.
 		$hidden = array();
@@ -410,8 +726,11 @@ class Evvnt_Calendar_Renderer {
 				'action'  => $action,
 				'hidden'  => array_filter( $hidden, 'is_scalar' ),
 				'value'   => $current,
-				'suggest' => rest_url( 'evvnt-calendar/v1/suggest' ),
+				'suggest' => ( isset( $options['suggest'] ) && ! $options['suggest'] ) ? '' : rest_url( 'evvnt-calendar/v1/suggest' ),
 				'base'    => $base,
+				// The compact widget's box: its own placeholder and look.
+				'placeholder' => isset( $options['placeholder'] ) ? (string) $options['placeholder'] : __( 'Search events and categories', 'evvnt-calendar' ),
+				'variant'     => isset( $options['variant'] ) ? sanitize_html_class( $options['variant'] ) : '',
 				// Suggestions use the same filters as this calendar's results.
 				'filters' => array_filter(
 					array(
@@ -454,7 +773,7 @@ var L=window.evvntCalSearchLabels;
 function chars(s){return Array.from?Array.from(s).length:s.length;}
 document.querySelectorAll(".evvnt-cal__search").forEach(function(form){
 	var input=form.querySelector("input[type=search]"),list=form.querySelector(".evvnt-cal__suggest"),live=form.querySelector(".evvnt-cal__suggest-status");
-	if(!input||!list)return;
+	if(!input||!list||!form.getAttribute("data-suggest"))return;
 	var timer=null,ctrl=null,active=-1,last="",cache={};
 	function esc(s){var d=document.createElement("div");d.textContent=s==null?"":String(s);return d.innerHTML.replace(/"/g,"&quot;");}
 	function safeUrl(u){return /^https?:\/\//i.test(String(u||""))?String(u):"";}
@@ -616,8 +935,17 @@ JS;
 
 	/**
 	 * Render an event detail view.
+	 *
+	 * @param Evvnt_Calendar_Event $event Event.
+	 * @param string               $base  Calendar page URL.
+	 * @param array|null           $query Request query arguments (default $_GET), for the
+	 *                                    Upcoming dates view state.
+	 * @return string
 	 */
-	public function render_detail( Evvnt_Calendar_Event $event, $base ) {
+	public function render_detail( Evvnt_Calendar_Event $event, $base, $query = null ) {
+		if ( null === $query ) {
+			$query = wp_unslash( $_GET ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- read-only view state (evView, evDates), whitelisted below.
+		}
 		/**
 		 * Filters which detail layout an event uses: 'featured' (full-width hero) for events
 		 * the publisher features, 'standard' (as the discovery plugin) for the rest.
@@ -636,14 +964,231 @@ JS;
 				'back_url'     => Evvnt_Calendar_Route::calendar_url( $base ),
 				'submit_url'   => $this->submit_url( $this->publisher() ),
 				'submit_label' => $this->settings['submission_label'],
+				'dates'        => $this->upcoming_dates_view( $event, $base, is_array( $query ) ? $query : array() ),
 			)
 		);
 	}
 
+	/* ---------- upcoming dates of a recurring series ---------- */
+
+	const VIEW_CHIPS    = 'chips';
+	const VIEW_LIST     = 'list';
+	const VIEW_CALENDAR = 'calendar';
+
+	/** Thresholds from the discovery plugin's UpcomingDates (EventDetail/UpcomingDates/index.js). */
+	const MAX_DATES_FOR_CHIPS                 = 3;
+	const MAX_DATES_BEFORE_WINDOWING          = 18;
+	const DATES_IN_WINDOW                     = 12;
+	const DATES_PER_MONTH_TO_OPEN_ON_CALENDAR = 12;
+	const DATES_PER_MONTH_TO_OFFER_CALENDAR   = 4;
+
+	/** Anchor of the Upcoming dates section; links between dates land back on it. */
+	const DATES_ANCHOR = 'evvnt-cal-dates';
+
 	/**
-	 * Up to $limit recommended events for an event, chosen as the discovery JS does:
-	 * same main category, current event excluded, random selection weighted by
-	 * promotion_weight(), then shuffled.
+	 * Which views a series offers, as discovery's chooseViews(): up to 3 dates as chips; up to
+	 * 18 as a list; more as a list windowed to 12 ("Show all N dates"), opening on (or offering)
+	 * a month calendar when the dates are dense or irregular and no day has two.
+	 *
+	 * @param Evvnt_Calendar_Recurrence $recurrence Series.
+	 * @return array { default, toggled (view or null), windowed }
+	 */
+	public static function choose_date_views( Evvnt_Calendar_Recurrence $recurrence ) {
+		$count = count( $recurrence->upcoming_dates() );
+		if ( $count <= self::MAX_DATES_FOR_CHIPS ) {
+			return array( 'default' => self::VIEW_CHIPS, 'toggled' => null, 'windowed' => false ); // phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+		}
+		if ( $count <= self::MAX_DATES_BEFORE_WINDOWING ) {
+			return array( 'default' => self::VIEW_LIST, 'toggled' => null, 'windowed' => false ); // phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+		}
+		$can_calendar = ! $recurrence->has_several_dates_on_one_day();
+		$per_month    = $recurrence->upcoming_dates_per_month();
+		if ( $can_calendar && $per_month >= self::DATES_PER_MONTH_TO_OPEN_ON_CALENDAR ) {
+			return array( 'default' => self::VIEW_CALENDAR, 'toggled' => self::VIEW_LIST, 'windowed' => true ); // phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+		}
+		$offers = $can_calendar && ( $per_month >= self::DATES_PER_MONTH_TO_OFFER_CALENDAR || null === $recurrence->pattern_label() );
+		return array( 'default' => self::VIEW_LIST, 'toggled' => $offers ? self::VIEW_CALENDAR : null, 'windowed' => true ); // phpcs:ignore WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound
+	}
+
+	/**
+	 * Everything the event-dates template needs to show a series' upcoming dates, or null when
+	 * the event is not a recurring series with dates to come.
+	 *
+	 * The view the visitor chose (?evView=list|calendar) and "show all" (?evDates=all) are
+	 * carried in the query string, as in the discovery plugin, so they survive moving between
+	 * dates; each date links to its own event page, back at this section.
+	 *
+	 * @param Evvnt_Calendar_Event $event Event being viewed.
+	 * @param string               $base  Calendar page URL.
+	 * @param array                $query Request query arguments.
+	 * @return array|null
+	 */
+	public function upcoming_dates_view( Evvnt_Calendar_Event $event, $base, array $query ) {
+		if ( ! $event->shows_recurrence() ) {
+			return null;
+		}
+		$recurrence = $event->recurrence();
+		$views      = self::choose_date_views( $recurrence );
+		$chosen     = isset( $query['evView'] ) && is_string( $query['evView'] ) ? $query['evView'] : '';
+		$shown      = in_array( $chosen, array_filter( array( $views['default'], $views['toggled'] ) ), true ) ? $chosen : $views['default'];
+		$link_query = $shown === $views['default'] ? array() : array( 'evView' => $shown );
+		$all        = $views['windowed'] && isset( $query['evDates'] ) && 'all' === $query['evDates'];
+		$upcoming   = $recurrence->upcoming_dates();
+		$viewed     = $event->viewed_date();
+		$next       = $recurrence->next_date();
+
+		$date_query = self::VIEW_LIST === $shown && $all ? $link_query + array( 'evDates' => 'all' ) : $link_query;
+		$link       = function ( $date ) use ( $event, $base, $date_query ) {
+			return self::dates_link( Evvnt_Calendar_Route::event_url( $base, $event->slug( $date['occurrence_id'] ) ), $date_query );
+		};
+		$here       = Evvnt_Calendar_Route::event_url( $base, $event->slug() );
+
+		$items = array();
+		foreach ( ( self::VIEW_LIST === $shown && $views['windowed'] && ! $all ) ? array_slice( $upcoming, 0, self::DATES_IN_WINDOW ) : $upcoming as $date ) {
+			$tone    = Evvnt_Calendar_Recurrence::same( $date, $viewed ) ? 'viewed' : ( Evvnt_Calendar_Recurrence::same( $date, $next ) ? 'next' : 'upcoming' );
+			$items[] = array(
+				'tone'     => $tone,
+				'day'      => $event->format( $date['start'], 'D, M j' ),
+				'time'     => $event->format( $date['start'], 'g:i A' ),
+				'datetime' => $date['start']->format( DATE_ATOM ),
+				'url'      => ( $date['occurrence_id'] && 'viewed' !== $tone ) ? $link( $date ) : '',
+			);
+		}
+
+		$toggle = array();
+		if ( $views['toggled'] ) {
+			foreach ( array( self::VIEW_LIST => __( 'List', 'evvnt-calendar' ), self::VIEW_CALENDAR => __( 'Calendar', 'evvnt-calendar' ) ) as $view => $label ) {
+				$toggle[] = array(
+					'label'   => $label,
+					'pressed' => $view === $shown,
+					// "Show all" survives switching views, as discovery's evDates query does.
+					'url'     => self::dates_link( $here, ( $view === $views['default'] ? array() : array( 'evView' => $view ) ) + ( $all ? array( 'evDates' => 'all' ) : array() ) ),
+				);
+			}
+		}
+
+		return array(
+			'id'           => self::DATES_ANCHOR,
+			'view'         => $shown,
+			'caption'      => self::VIEW_CHIPS === $shown ? __( 'Tap a date to preview it below · full details always on this one page', 'evvnt-calendar' ) : $recurrence->upcoming_dates_summary(),
+			'toggle'       => $toggle,
+			'items'        => self::VIEW_CALENDAR === $shown ? array() : $items,
+			'total'        => count( $upcoming ),
+			'show_all_url' => ( self::VIEW_LIST === $shown && $views['windowed'] && ! $all ) ? self::dates_link( $here, $link_query + array( 'evDates' => 'all' ) ) : '',
+			'months'       => self::VIEW_CALENDAR === $shown ? $this->date_months( $event, $link ) : array(),
+		);
+	}
+
+	/**
+	 * Month grids for the calendar view, from the month of the next date to the month of the
+	 * last; each day with dates links to the first of them that has its own page (not this one).
+	 *
+	 * @param Evvnt_Calendar_Event $event Event being viewed.
+	 * @param callable             $link  URL of a date's page.
+	 * @return array[] { label, key, current, weeks: [ [ { day, date, label, scheduled, next, viewed, url } | null ] ] }
+	 */
+	private function date_months( Evvnt_Calendar_Event $event, callable $link ) {
+		$recurrence  = $event->recurrence();
+		$viewed      = $event->viewed_date();
+		$next        = $recurrence->next_date();
+		$highlighted = $event->highlighted_date();
+		$by_day      = array();
+		foreach ( $recurrence->upcoming_dates() as $date ) {
+			$by_day[ $date['start']->format( 'Y-m-d' ) ][] = $date;
+		}
+
+		$utc        = new DateTimeZone( 'UTC' );
+		$month      = new DateTimeImmutable( $next['start']->format( 'Y-m-01' ), $utc );
+		$last       = new DateTimeImmutable( $recurrence->last_date()['start']->format( 'Y-m-01' ), $utc );
+		$current    = $highlighted ? $highlighted['start']->format( 'Y-m' ) : $month->format( 'Y-m' );
+		$week_start = (int) get_option( 'start_of_week', 0 );
+		$months     = array();
+		for ( $guard = 0; $month <= $last && $guard < 60; $guard++, $month = $month->modify( '+1 month' ) ) {
+			$cells = array_fill( 0, ( (int) $month->format( 'w' ) - $week_start + 7 ) % 7, null );
+			for ( $day = 1, $days = (int) $month->format( 't' ); $day <= $days; $day++ ) {
+				$key   = $month->format( 'Y-m-' ) . sprintf( '%02d', $day );
+				$dates = isset( $by_day[ $key ] ) ? $by_day[ $key ] : array();
+				$cell  = array(
+					'day'       => $day,
+					'date'      => $key,
+					'label'     => wp_date( 'l, F j, Y', ( new DateTimeImmutable( $key, $utc ) )->getTimestamp(), $utc ),
+					'scheduled' => (bool) $dates,
+					'next'      => false,
+					'viewed'    => false,
+					'url'       => '',
+				);
+				foreach ( $dates as $date ) {
+					$cell['next']   = $cell['next'] || Evvnt_Calendar_Recurrence::same( $date, $next );
+					$cell['viewed'] = $cell['viewed'] || Evvnt_Calendar_Recurrence::same( $date, $viewed );
+					if ( '' === $cell['url'] && $date['occurrence_id'] && ! Evvnt_Calendar_Recurrence::same( $date, $viewed ) ) {
+						$cell['url'] = $link( $date );
+					}
+				}
+				$cells[] = $cell;
+			}
+			while ( count( $cells ) % 7 ) {
+				$cells[] = null;
+			}
+			$months[] = array(
+				'key'     => $month->format( 'Y-m' ),
+				'label'   => wp_date( 'F Y', $month->getTimestamp(), $utc ),
+				'current' => $month->format( 'Y-m' ) === $current,
+				'weeks'   => array_chunk( $cells, 7 ),
+			);
+		}
+		if ( $months && ! array_filter( wp_list_pluck( $months, 'current' ) ) ) {
+			$months[0]['current'] = true;
+		}
+		return $months;
+	}
+
+	/** Weekday headings for the calendar view, from the site's first day of the week. */
+	public static function calendar_weekdays() {
+		global $wp_locale;
+		$start = (int) get_option( 'start_of_week', 0 );
+		$names = array();
+		for ( $i = 0; $i < 7; $i++ ) {
+			$day     = ( $start + $i ) % 7;
+			$names[] = array(
+				'short' => $wp_locale ? $wp_locale->get_weekday_abbrev( $wp_locale->get_weekday( $day ) ) : gmdate( 'D', strtotime( "Sunday +{$day} days" ) ),
+				'full'  => $wp_locale ? $wp_locale->get_weekday( $day ) : gmdate( 'l', strtotime( "Sunday +{$day} days" ) ),
+			);
+		}
+		return $names;
+	}
+
+	/** $url with view-state query arguments, landing on the Upcoming dates section. */
+	private static function dates_link( $url, array $args ) {
+		foreach ( $args as $key => $value ) {
+			$url .= ( false === strpos( $url, '?' ) ? '?' : '&' ) . rawurlencode( $key ) . '=' . rawurlencode( $value );
+		}
+		return $url . '#' . self::DATES_ANCHOR;
+	}
+
+	/** Enqueue the month paging script for the calendar view (once per page). */
+	public static function enqueue_dates_script() {
+		if ( wp_script_is( 'evvnt-calendar-dates', 'enqueued' ) ) {
+			return;
+		}
+		wp_register_script( 'evvnt-calendar-dates', false, array(), EVVNT_CALENDAR_VERSION, true );
+		wp_enqueue_script( 'evvnt-calendar-dates' );
+		// Without JavaScript every month is shown, one under another.
+		wp_add_inline_script(
+			'evvnt-calendar-dates',
+			'(function(){document.querySelectorAll(".evvnt-cal__datecal").forEach(function(cal){'
+			. 'var months=[].slice.call(cal.querySelectorAll(".evvnt-cal__datecal-month")),nav=cal.querySelector(".evvnt-cal__datecal-nav");if(!nav||months.length<2)return;'
+			. 'var prev=nav.querySelector("[data-dir=\'-1\']"),next=nav.querySelector("[data-dir=\'1\']"),label=nav.querySelector(".evvnt-cal__datecal-label"),i=Math.max(0,months.findIndex(function(m){return m.hasAttribute("data-current");}));'
+			. 'function show(){months.forEach(function(m,j){m.hidden=j!==i;});label.textContent=months[i].getAttribute("data-label");prev.disabled=i===0;next.disabled=i===months.length-1;}'
+			. 'prev.addEventListener("click",function(){if(i>0){i--;show();}});next.addEventListener("click",function(){if(i<months.length-1){i++;show();}});'
+			. 'nav.hidden=false;cal.classList.add("evvnt-cal__datecal--paged");show();});})();'
+		);
+	}
+
+	/**
+	 * Up to $limit recommended events for an event: the publisher's featured events in the
+	 * same main category, current and past events excluded, chosen at random weighted by
+	 * promotion_weight() and shuffled, as the discovery JS's FeaturedEventChooser does.
+	 * Fewer (or none, hiding the section) when the category has fewer featured events.
 	 *
 	 * @param Evvnt_Calendar_Event $event Event being viewed.
 	 * @param int                  $limit Number of events.
@@ -657,7 +1202,8 @@ JS;
 		$publisher  = $this->publisher();
 		$candidates = array();
 		foreach ( $this->to_events( $response['events'], $publisher ) as $candidate ) {
-			if ( $candidate->object_id() !== $event->object_id() && $candidate->url_id() !== $event->url_id() && ! $candidate->is_expired() ) {
+			// Featured events only (checked here too, in case the API filter is ever ignored).
+			if ( $candidate->is_featured() && $candidate->object_id() !== $event->object_id() && $candidate->url_id() !== $event->url_id() && ! $candidate->is_expired() ) {
 				$candidates[] = $candidate;
 			}
 		}
@@ -717,6 +1263,9 @@ JS;
 			'back'     => '<path d="M19 12H5M12 19l-7-7 7-7"/>',
 			'arrow'    => '<path d="M5 12h14M12 5l7 7-7 7"/>',
 			'search'   => '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+			'repeat'   => '<path d="m17 1 4 4-4 4"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><path d="m7 23-4-4 4-4"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>',
+			'prev'     => '<path d="m15 18-6-6 6-6"/>',
+			'next'     => '<path d="m9 18 6-6-6-6"/>',
 		);
 		if ( ! isset( $paths[ $name ] ) ) {
 			return '';
@@ -743,7 +1292,7 @@ JS;
 			if ( isset( $roots[ $category['id'] ] ) ) {
 				$url = Evvnt_Calendar_Route::calendar_url( $base, $roots[ $category['id'] ]['slug'] );
 			} else {
-				$url = Evvnt_Calendar_Route::subcategory_url( $base, $parent ? $parent['slug'] : '', $category['id'], $category['name'] );
+				$url = $this->subcategory_link( $category['id'], $category['name'], $parent ? $parent['slug'] : '', $base );
 			}
 			$links[] = array(
 				'name' => $name,
@@ -759,8 +1308,20 @@ JS;
 
 	/**
 	 * Card markup for one event (used by the calendar template).
+	 *
+	 * @param Evvnt_Calendar_Event $event        Event.
+	 * @param string               $base         Calendar page URL.
+	 * @param bool                 $detail_pages Whether the card links to the event's page here.
+	 * @param bool                 $featured     Featured styling.
+	 * @param string|null          $viewed_from  Where the view is tracked as seen (an
+	 *                                           Evvnt_Calendar_Tracking::VIEWED_FROM_* value),
+	 *                                           '' to not track it; default "featured" for a
+	 *                                           featured card, else "event_list".
 	 */
-	public function render_card( Evvnt_Calendar_Event $event, $base, $detail_pages, $featured = false ) {
+	public function render_card( Evvnt_Calendar_Event $event, $base, $detail_pages, $featured = false, $viewed_from = null ) {
+		if ( null === $viewed_from ) {
+			$viewed_from = $featured ? Evvnt_Calendar_Tracking::VIEWED_FROM_FEATURED : Evvnt_Calendar_Tracking::VIEWED_FROM_LIST;
+		}
 		$url      = $detail_pages ? Evvnt_Calendar_Route::event_url( $base, $event->slug() ) : $event->main_link();
 		$external = ! $detail_pages;
 		return $this->template(
@@ -770,6 +1331,7 @@ JS;
 				'url'      => $url ? $url : Evvnt_Calendar_Route::event_url( $base, $event->slug() ),
 				'external' => $external && $url,
 				'featured' => $featured,
+				'tracking' => Evvnt_Calendar_Tracking::view_attrs( $event, $viewed_from ),
 			)
 		);
 	}

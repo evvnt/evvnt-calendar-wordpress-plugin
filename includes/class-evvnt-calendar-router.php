@@ -24,6 +24,7 @@ class Evvnt_Calendar_Router {
 	const EVENT_VAR    = 'evvnt_event';
 	const CATEGORY_VAR = 'evvnt_category';
 	const PAGE_VAR     = 'evvnt_page';
+	const VIEW_VAR     = 'evvnt_view';
 	const SIG_OPTION   = 'evvnt_calendar_rules_sig';
 
 	/**
@@ -118,8 +119,9 @@ class Evvnt_Calendar_Router {
 		}
 
 		add_rewrite_tag( '%' . self::EVENT_VAR . '%', '([^/]+)' );
-		add_rewrite_tag( '%' . self::CATEGORY_VAR . '%', '([a-z0-9-]+)' );
+		add_rewrite_tag( '%' . self::CATEGORY_VAR . '%', '([a-z0-9-]+(?:/[a-z0-9-]+){0,6})' );
 		add_rewrite_tag( '%' . self::PAGE_VAR . '%', '([0-9]+)' );
+		add_rewrite_tag( '%' . self::VIEW_VAR . '%', '(' . Evvnt_Calendar_Route::CATEGORIES_PATH . ')' );
 
 		$page = 'index.php?page_id=' . $config['page_id'];
 		// WordPress matches rules against the decoded request path, so decode non-ASCII slugs.
@@ -127,11 +129,13 @@ class Evvnt_Calendar_Router {
 		$event = preg_quote( rawurldecode( $config['event_base'] ), '#' );
 
 		add_rewrite_rule( '^' . $event . '/([^/]+)/?$', $page . '&' . self::EVENT_VAR . '=$matches[1]', 'top' );
-		add_rewrite_rule( '^' . $path . '/category/([a-z0-9-]+)/page/([0-9]+)/?$', $page . '&' . self::CATEGORY_VAR . '=$matches[1]&' . self::PAGE_VAR . '=$matches[2]', 'top' );
-		add_rewrite_rule( '^' . $path . '/category/([a-z0-9-]+)/?$', $page . '&' . self::CATEGORY_VAR . '=$matches[1]', 'top' );
+		// Categories, and sub-categories by their slug path below the root (…/category/arts/comedy/).
+		add_rewrite_rule( '^' . $path . '/category/((?:[a-z0-9-]+/){0,6}?[a-z0-9-]+)/page/([0-9]+)/?$', $page . '&' . self::CATEGORY_VAR . '=$matches[1]&' . self::PAGE_VAR . '=$matches[2]', 'top' );
+		add_rewrite_rule( '^' . $path . '/category/((?:[a-z0-9-]+/){0,6}[a-z0-9-]+)/?$', $page . '&' . self::CATEGORY_VAR . '=$matches[1]', 'top' );
 		add_rewrite_rule( '^' . $path . '/page/([0-9]+)/?$', $page . '&' . self::PAGE_VAR . '=$matches[1]', 'top' );
+		add_rewrite_rule( '^' . $path . '/' . Evvnt_Calendar_Route::CATEGORIES_PATH . '/?$', $page . '&' . self::VIEW_VAR . '=' . Evvnt_Calendar_Route::CATEGORIES_PATH, 'top' );
 
-		$this->maybe_flush( md5( wp_json_encode( $config ) . '|1' ) );
+		$this->maybe_flush( md5( wp_json_encode( $config ) . '|3' ) );
 	}
 
 	/**
@@ -150,7 +154,7 @@ class Evvnt_Calendar_Router {
 	 * Keep WordPress from "correcting" our path URLs back to the page permalink.
 	 */
 	public function redirect_canonical( $redirect_url ) {
-		if ( get_query_var( self::EVENT_VAR ) || get_query_var( self::CATEGORY_VAR ) || get_query_var( self::PAGE_VAR ) ) {
+		if ( get_query_var( self::EVENT_VAR ) || get_query_var( self::CATEGORY_VAR ) || get_query_var( self::PAGE_VAR ) || get_query_var( self::VIEW_VAR ) ) {
 			return false;
 		}
 		return $redirect_url;
@@ -206,7 +210,9 @@ class Evvnt_Calendar_Router {
 			 */
 			$target = Evvnt_Calendar_Route::event_url( '', apply_filters( 'evvnt_calendar_canonical_event_segment', $segment ) );
 		} elseif ( 'category' === $route->type ) {
-			$target = Evvnt_Calendar_Route::calendar_url( '', $route->category_slug, $route->page );
+			$target = Evvnt_Calendar_Route::calendar_url( '', $route->category_path(), $route->page );
+		} elseif ( 'categories' === $route->type ) {
+			$target = Evvnt_Calendar_Route::categories_url( '' );
 		} else {
 			$target = Evvnt_Calendar_Route::calendar_url( '', '', $route->page ); // Calendar, or an unparseable path.
 		}

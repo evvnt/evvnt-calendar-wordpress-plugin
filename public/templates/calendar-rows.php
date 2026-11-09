@@ -14,6 +14,7 @@
  *     @type string                  $submit_url
  *     @type string                  $submit_label
  *     @type string                  $calendar_url
+ *     @type string                  $categories_url Link to the list of every category, or ''.
  *     @type Evvnt_Calendar_Renderer $renderer
  * }
  *
@@ -65,5 +66,10 @@ $evvnt_renderer = $args['renderer'];
 		</section>
 	<?php endforeach; ?>
 
-	<p class="evvnt-cal__powered"><?php esc_html_e( 'Powered by', 'evvnt-calendar' ); ?> <a href="https://evvnt.com/" rel="noopener" target="_blank">evvnt</a></p>
+	<div class="evvnt-cal__footer">
+		<?php if ( ! empty( $args['categories_url'] ) ) : ?>
+			<a class="evvnt-cal__all-categories" href="<?php echo esc_url( $args['categories_url'] ); ?>"><?php esc_html_e( 'Browse all categories', 'evvnt-calendar' ); ?><?php echo Evvnt_Calendar_Renderer::icon( 'arrow', 16 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></a>
+		<?php endif; ?>
+		<p class="evvnt-cal__powered"><?php esc_html_e( 'Powered by', 'evvnt-calendar' ); ?> <a href="https://evvnt.com/" rel="noopener" target="_blank">evvnt</a></p>
+	</div>
 </div>

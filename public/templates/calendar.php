@@ -8,7 +8,9 @@
  *     @type Evvnt_Calendar_Event[]  $events
  *     @type Evvnt_Calendar_Event[]  $featured
  *     @type array[]                 $categories   Each array( id, name, slug ).
- *     @type array|null              $selected     Selected category.
+ *     @type array|null              $selected     Selected (root) category.
+ *     @type array|null              $sub          Sub-category of a sub-category page ( id, name, path ), or null.
+ *     @type array[]                 $breadcrumbs  The sub-category's ancestors, root first ( name, url ).
  *     @type bool                    $not_found    The requested category or path does not exist.
  *     @type int                     $page
  *     @type string                  $prev_url
@@ -18,6 +20,7 @@
  *     @type string                  $submit_url
  *     @type string                  $submit_label
  *     @type string                  $calendar_url
+ *     @type string                  $categories_url Link to the list of every category, or ''.
  *     @type string                  $home_url     Link back to the calendar home (rows layout), or ''.
  *     @type string                  $search       Search text on results pages, or ''.
  *     @type array[]                 $search_categories Categories matching the search ( name, url ).
@@ -76,10 +79,19 @@ $evvnt_selected = $args['selected'];
 	// Category pages: the category's name heads the page, above its featured events.
 	$evvnt_title_bar = $evvnt_selected && empty( $args['search'] ) && empty( $args['dates_label'] );
 	?>
+	<?php if ( $evvnt_title_bar && ! empty( $args['breadcrumbs'] ) ) : ?>
+		<nav class="evvnt-cal__breadcrumbs" aria-label="<?php esc_attr_e( 'Breadcrumb', 'evvnt-calendar' ); ?>">
+			<ol>
+				<?php foreach ( $args['breadcrumbs'] as $evvnt_i => $evvnt_crumb ) : ?>
+					<li><?php echo $evvnt_i ? '<span class="evvnt-cal__crumb-sep" aria-hidden="true">›</span> ' : ''; ?><a href="<?php echo esc_url( $evvnt_crumb['url'] ); ?>"><?php echo esc_html( $evvnt_crumb['name'] ); ?></a></li>
+				<?php endforeach; ?>
+			</ol>
+		</nav>
+	<?php endif; ?>
 	<?php if ( $evvnt_title_bar ) : ?>
 		<h2 class="evvnt-cal__category-title">
 			<?php
-			echo esc_html( $evvnt_selected['name'] );
+			echo esc_html( ! empty( $args['sub'] ) ? $args['sub']['name'] : $evvnt_selected['name'] );
 			if ( ! empty( $args['subcategory'] ) ) {
 				echo ' <span class="evvnt-cal__subcategory">› ' . esc_html( $args['subcategory'] ) . ' <a href="' . esc_url( $args['clear_sub'] ) . '" aria-label="' . esc_attr__( 'Remove this filter', 'evvnt-calendar' ) . '">×</a></span>';
 			}
@@ -149,5 +161,10 @@ $evvnt_selected = $args['selected'];
 		</nav>
 	<?php endif; ?>
 
-	<p class="evvnt-cal__powered"><?php esc_html_e( 'Powered by', 'evvnt-calendar' ); ?> <a href="https://evvnt.com/" rel="noopener" target="_blank">evvnt</a></p>
+	<div class="evvnt-cal__footer">
+		<?php if ( ! empty( $args['categories_url'] ) ) : ?>
+			<a class="evvnt-cal__all-categories" href="<?php echo esc_url( $args['categories_url'] ); ?>"><?php esc_html_e( 'Browse all categories', 'evvnt-calendar' ); ?><?php echo Evvnt_Calendar_Renderer::icon( 'arrow', 16 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></a>
+		<?php endif; ?>
+		<p class="evvnt-cal__powered"><?php esc_html_e( 'Powered by', 'evvnt-calendar' ); ?> <a href="https://evvnt.com/" rel="noopener" target="_blank">evvnt</a></p>
+	</div>
 </div>

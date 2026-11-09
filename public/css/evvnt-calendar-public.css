@@ -6,7 +6,7 @@
 	--evvnt-cal-border: color-mix(in srgb, currentColor 16%, transparent);
 	--evvnt-cal-muted: rgba(0, 0, 0, 0.62);
 	--evvnt-cal-muted: color-mix(in srgb, currentColor 68%, transparent);
-	--evvnt-cal-hero-overlay: rgba(15, 23, 42, 0.8);
+	--evvnt-cal-hero-overlay: rgba(15, 23, 42, 0.6);
 	--evvnt-cal-hero-max: 1200px;
 	/* "Wide" width: the theme's wide size (block themes), else 1200px, within the viewport. */
 	--evvnt-cal-gutter: clamp(1rem, 5vw, 4rem);
@@ -15,6 +15,15 @@
 	/* Dropdown surface: the block theme's base colour if defined, else white. */
 	--evvnt-cal-surface: var(--wp--preset--color--base, #fff);
 	--evvnt-cal-gap: 1.25rem;
+	/* Tints of the primary colour (the discovery plugin's --theme-primary-tint*). */
+	--evvnt-cal-tint: rgba(232, 56, 79, 0.08);
+	--evvnt-cal-tint: color-mix(in srgb, var(--evvnt-cal-primary) 8%, transparent);
+	--evvnt-cal-tint-strong: rgba(232, 56, 79, 0.14);
+	--evvnt-cal-tint-strong: color-mix(in srgb, var(--evvnt-cal-primary) 14%, transparent);
+	--evvnt-cal-tint-border: rgba(232, 56, 79, 0.25);
+	--evvnt-cal-tint-border: color-mix(in srgb, var(--evvnt-cal-primary) 25%, transparent);
+	--evvnt-cal-tint-border-strong: rgba(232, 56, 79, 0.45);
+	--evvnt-cal-tint-border-strong: color-mix(in srgb, var(--evvnt-cal-primary) 45%, transparent);
 	margin: 1.5rem 0;
 }
 
@@ -209,7 +218,7 @@
 	min-width: 0;
 }
 
-.evvnt-cal__meta li > span,
+.evvnt-cal__meta li > span:not(.evvnt-cal__card-series),
 .evvnt-cal__meta li > time {
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -240,9 +249,158 @@
 }
 
 .evvnt-cal__powered {
+	margin-left: auto;
 	color: var(--evvnt-cal-muted);
 	font-size: 0.8em;
 	text-align: right;
+}
+
+/* Bottom of every listing: "Browse all categories" and the evvnt credit. */
+.evvnt-cal__footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.75rem 1.5rem;
+	margin-top: 2rem;
+	padding-top: 1.25rem;
+	border-top: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal__footer .evvnt-cal__powered {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.evvnt-cal .evvnt-cal__all-categories {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	color: var(--evvnt-cal-primary);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__all-categories:hover,
+.evvnt-cal .evvnt-cal__all-categories:focus-visible {
+	text-decoration: underline;
+}
+
+/* The list of every category: one group per root category, sub-categories nested below. */
+.evvnt-cal__category-index {
+	columns: 18rem;
+	column-gap: 1.25rem;
+	margin: 1rem 0 0;
+}
+
+.evvnt-cal__category-group {
+	break-inside: avoid;
+	margin: 0 0 1.25rem;
+	padding: 0.25rem 0 1rem;
+	border-bottom: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal .evvnt-cal__category-group h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1.1rem;
+	line-height: 1.4;
+}
+
+.evvnt-cal .evvnt-cal__category-group h3 a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__category-group h3 a:hover,
+.evvnt-cal .evvnt-cal__category-group h3 a:focus-visible {
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal .evvnt-cal__category-group h3 .evvnt-cal__icon {
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group ul ul {
+	margin: 0.15rem 0 0.25rem;
+	padding: 0 0 0 1rem;
+	border-left: 1px solid var(--evvnt-cal-border);
+	font-size: 0.95em;
+}
+
+[dir="rtl"] .evvnt-cal.evvnt-cal .evvnt-cal__category-group ul ul {
+	padding: 0 1rem 0 0;
+	border-right: 1px solid var(--evvnt-cal-border);
+	border-left: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group li {
+	margin: 0;
+	padding: 0.1rem 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group li::before,
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group li::marker {
+	content: none;
+}
+
+.evvnt-cal .evvnt-cal__category-group li > a {
+	color: var(--evvnt-cal-muted);
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__category-group li > a:hover,
+.evvnt-cal .evvnt-cal__category-group li > a:focus-visible {
+	color: var(--evvnt-cal-primary);
+	text-decoration: underline;
+}
+
+/* Sub-category pages: links up the category's ancestors. */
+.evvnt-cal.evvnt-cal .evvnt-cal__breadcrumbs ol {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem 0.5rem;
+	margin: 0 0 0.25rem;
+	padding: 0;
+	border: 0;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.9rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__breadcrumbs li {
+	margin: 0;
+	padding: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__breadcrumbs li::marker {
+	content: none;
+}
+
+/* The separator is followed by a space in the markup; widen it a little. */
+.evvnt-cal__crumb-sep {
+	margin: 0 0.25rem 0 0;
+}
+
+[dir="rtl"] .evvnt-cal__crumb-sep {
+	margin: 0 0 0 0.25rem;
+}
+
+.evvnt-cal .evvnt-cal__breadcrumbs a {
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__breadcrumbs a:hover,
+.evvnt-cal .evvnt-cal__breadcrumbs a:focus-visible {
+	color: var(--evvnt-cal-primary);
+	text-decoration: underline;
 }
 
 /* ------------------------------------------------------------------
@@ -574,16 +732,6 @@ body.evvnt-cal-event-page {
 	height: 16px;
 }
 
-.evvnt-cal__dates li {
-	padding: 0.5rem 0;
-	border-bottom: 1px solid var(--evvnt-cal-border);
-	font-size: 0.95rem;
-}
-
-.evvnt-cal__dates li:last-child {
-	border-bottom: 0;
-}
-
 .evvnt-cal__promote {
 	margin: 0;
 	font-size: 0.9rem;
@@ -748,17 +896,19 @@ body.evvnt-cal-event-page {
 }
 
 /* Share buttons above the "Where It's Happening" panel (both layouts) */
-.evvnt-cal__share-row {
+/* "Share This Event" heading above the buttons, as the discovery plugin. */
+.evvnt-cal .evvnt-cal__share-title {
+	margin: 0 0 1rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.evvnt-cal__share-buttons {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 0.6rem;
-}
-
-.evvnt-cal__share-row > span {
-	margin-right: auto;
-	font-size: 0.95rem;
-	font-weight: 600;
 }
 
 .evvnt-cal__share-row a {
@@ -851,6 +1001,7 @@ body.evvnt-cal-event-page {
  * margin-left/right: auto !important on every block-theme child.
  */
 .evvnt-cal.evvnt-cal--wide.evvnt-cal--calendar,
+.evvnt-cal.evvnt-cal--wide.evvnt-cal--categories,
 .evvnt-cal.evvnt-cal--wide .evvnt-cal__std,
 .evvnt-cal.evvnt-cal--wide .evvnt-cal__body,
 .evvnt-cal.evvnt-cal--wide .evvnt-cal__recommended,
@@ -879,6 +1030,9 @@ body.evvnt-cal-event-page {
 }
 
 /* Arrow icons point the reading direction's way. */
+[dir="rtl"] .evvnt-cal__all-categories svg,
+[dir="rtl"] .evvnt-cal__category-group h3 svg,
+[dir="rtl"] .evvnt-cal__datecal-nav svg,
 [dir="rtl"] .evvnt-cal__row-controls svg,
 [dir="rtl"] .evvnt-cal__row-more svg,
 [dir="rtl"] .evvnt-cal__row-end svg,
@@ -1093,7 +1247,7 @@ body.evvnt-cal-event-page {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
-	padding: 0.35rem 0.35rem 0.35rem 0.9rem;
+	padding: 0.35rem 1rem 0.35rem 0.9rem;
 	border: 1px solid var(--evvnt-cal-border);
 	border-radius: 999px;
 	background: color-mix(in srgb, currentColor 3%, transparent);
@@ -1121,17 +1275,6 @@ body.evvnt-cal-event-page {
 	color: inherit;
 	font: inherit;
 	font-size: 1rem;
-}
-
-.evvnt-cal.evvnt-cal .evvnt-cal__search .evvnt-cal__button {
-	flex: 0 0 auto;
-	margin: 0;
-	border: 0;
-	border-radius: 999px;
-	font: inherit;
-	font-size: 0.95rem;
-	font-weight: 600;
-	cursor: pointer;
 }
 
 .evvnt-cal.evvnt-cal .evvnt-cal__suggest {
@@ -1299,4 +1442,749 @@ body.evvnt-cal-event-page {
 
 .evvnt-cal__category-title .evvnt-cal__subcategory {
 	font-size: 0.7em;
+}
+
+/* Repeat icon in place of the calendar icon on a card of a recurring series. */
+.evvnt-cal .evvnt-cal__card-series {
+	display: inline-flex;
+	flex: 0 0 auto;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	margin: 0 -1px;
+	border: 1px solid var(--evvnt-cal-tint-border);
+	border-radius: 999px;
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal .evvnt-cal__meta .evvnt-cal__card-series .evvnt-cal__icon {
+	width: 12px;
+	height: 12px;
+	color: inherit;
+}
+
+/* ------------------------------------------------------------------
+ * Recurring series (both detail layouts), as the discovery plugin:
+ * the series pill, "Next: …" / "Repeats …" lines and Upcoming dates.
+ * ------------------------------------------------------------------ */
+.evvnt-cal__series-pill {
+	display: inline-flex;
+	align-self: flex-start;
+	align-items: center;
+	gap: 0.375rem;
+	margin: 0 0 -0.5rem;
+	padding: 0.25rem 0.625rem;
+	border: 1px solid var(--evvnt-cal-tint-border);
+	border-radius: 999px;
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 1.33;
+}
+
+.evvnt-cal__std-facts--series .evvnt-cal__series-next {
+	font-weight: 600;
+}
+
+.evvnt-cal__std-facts--series .evvnt-cal__series-next .evvnt-cal__icon {
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal__std-facts--series .evvnt-cal__series-repeats {
+	color: var(--evvnt-cal-muted);
+	font-weight: 400;
+}
+
+.evvnt-cal__badge--series {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	width: max-content;
+	max-width: 100%;
+}
+
+.evvnt-cal__series {
+	container-type: inline-size;
+	overflow: hidden;
+	margin: 0 0 2rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 12px;
+}
+
+.evvnt-cal--standard .evvnt-cal__series {
+	margin-top: 2rem;
+}
+
+.evvnt-cal--featured .evvnt-cal__series {
+	width: min(100%, var(--evvnt-cal-hero-max));
+	margin: 2rem auto;
+}
+
+.evvnt-cal__series-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	padding: 0.75rem 1rem;
+	border-bottom: 1px solid var(--evvnt-cal-border);
+	background: rgba(0, 0, 0, 0.025);
+	background: color-mix(in srgb, currentColor 3%, transparent);
+}
+
+.evvnt-cal .evvnt-cal__series-title {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.evvnt-cal__series-caption {
+	margin: 0.125rem 0 0;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+	line-height: 1.33;
+}
+
+.evvnt-cal__series-toggle {
+	display: inline-flex;
+	padding: 2px;
+	border-radius: 8px;
+	background: rgba(0, 0, 0, 0.08);
+	background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.evvnt-cal .evvnt-cal__series-toggle a {
+	padding: 0.375rem 0.75rem;
+	border-radius: 6px;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__series-toggle a:hover {
+	color: inherit;
+}
+
+.evvnt-cal .evvnt-cal__series-toggle a[aria-current] {
+	background: var(--evvnt-cal-surface);
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+	color: inherit;
+}
+
+.evvnt-cal__series-body {
+	padding: 1rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 0.75rem;
+	border: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates--chips {
+	display: flex;
+	overflow-x: auto;
+	padding-bottom: 0.25rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates > li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates > li::before,
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates > li::marker {
+	content: none;
+}
+
+.evvnt-cal .evvnt-cal__series-date {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.125rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 8px;
+	background: var(--evvnt-cal-surface);
+	text-decoration: none;
+	transition: background-color 0.15s, border-color 0.15s;
+}
+
+.evvnt-cal__series-dates--chips .evvnt-cal__series-date {
+	flex-shrink: 0;
+	align-items: center;
+	padding: 0.625rem 1.25rem;
+	border-radius: 16px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.evvnt-cal__series-date time {
+	display: contents;
+}
+
+.evvnt-cal__series-day {
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.evvnt-cal__series-time {
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+}
+
+a.evvnt-cal__series-date.is-upcoming:hover,
+a.evvnt-cal__series-date.is-upcoming:focus-visible {
+	border-color: var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-tint);
+}
+
+.evvnt-cal .evvnt-cal__series-date.is-next {
+	border-color: var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal .evvnt-cal__series-date.is-viewed {
+	border-color: var(--evvnt-cal-primary);
+	background: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text);
+}
+
+.evvnt-cal__series-date.is-next .evvnt-cal__series-time,
+.evvnt-cal__series-date.is-viewed .evvnt-cal__series-time {
+	color: inherit;
+	opacity: 0.8;
+}
+
+.evvnt-cal__series-badge {
+	position: absolute;
+	top: -0.625rem;
+	right: 0.75rem;
+	padding: 0.125rem 0.5rem;
+	border-radius: 999px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.025em;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+[dir="rtl"] .evvnt-cal__series-badge {
+	right: auto;
+	left: 0.75rem;
+}
+
+.is-next > .evvnt-cal__series-badge {
+	background: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text);
+}
+
+.is-viewed > .evvnt-cal__series-badge {
+	border: 1px solid var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-surface);
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal__series-more {
+	margin: 1rem 0 0;
+}
+
+.evvnt-cal .evvnt-cal__series-more a {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.375rem 0.75rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__series-more a:hover {
+	border-color: var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+}
+
+/* Month calendar of a dense series; without JavaScript every month is listed. */
+.evvnt-cal__datecal-nav {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-bottom: 0.75rem;
+}
+
+.evvnt-cal__datecal-nav[hidden] {
+	display: none;
+}
+
+.evvnt-cal .evvnt-cal__datecal-nav button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 6px;
+	background: var(--evvnt-cal-surface);
+	color: inherit;
+	cursor: pointer;
+}
+
+.evvnt-cal .evvnt-cal__datecal-nav button:disabled {
+	opacity: 0.4;
+	cursor: default;
+}
+
+.evvnt-cal__datecal-label {
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+.evvnt-cal .evvnt-cal__datecal-caption {
+	margin: 0 0 0.5rem;
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+/* Paged: the month shows in the nav; the heading stays for screen readers (it names the table). */
+.evvnt-cal__datecal--paged .evvnt-cal__datecal-caption {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	white-space: nowrap;
+}
+
+.evvnt-cal__datecal-month + .evvnt-cal__datecal-month {
+	margin-top: 1.5rem;
+}
+
+.evvnt-cal__datecal--paged .evvnt-cal__datecal-month + .evvnt-cal__datecal-month {
+	margin-top: 0;
+}
+
+.evvnt-cal .evvnt-cal__datecal table {
+	width: 100%;
+	margin: 0;
+	border: 0;
+	border-collapse: separate;
+	border-spacing: 0.25rem;
+	table-layout: fixed;
+	font-size: 0.875rem;
+}
+
+.evvnt-cal .evvnt-cal__datecal th {
+	padding: 0.5rem 0;
+	border: 0;
+	background: none;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.evvnt-cal .evvnt-cal__datecal abbr[title] {
+	border: 0;
+	text-decoration: none;
+	cursor: default;
+}
+
+.evvnt-cal .evvnt-cal__datecal td {
+	height: 3.5rem;
+	padding: 0;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	background: none;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	transition: background-color 0.15s, border-color 0.15s;
+}
+
+.evvnt-cal__datecal td > a,
+.evvnt-cal__datecal td > span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__datecal td.is-scheduled {
+	border-color: var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+	font-weight: 700;
+}
+
+.evvnt-cal .evvnt-cal__datecal td.is-scheduled:hover {
+	border-color: var(--evvnt-cal-tint-border-strong);
+	background: var(--evvnt-cal-tint-strong);
+}
+
+.evvnt-cal .evvnt-cal__datecal td.is-next {
+	border-color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal .evvnt-cal__datecal td.is-viewed {
+	border-color: var(--evvnt-cal-primary);
+	background: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text);
+}
+
+@container (min-width: 420px) {
+	.evvnt-cal.evvnt-cal .evvnt-cal__series-dates--list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@container (min-width: 600px) {
+	.evvnt-cal__series-head {
+		padding: 1rem 1.25rem;
+	}
+
+	.evvnt-cal__series-body {
+		padding: 1.25rem;
+	}
+
+	.evvnt-cal.evvnt-cal .evvnt-cal__series-dates--list {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.evvnt-cal .evvnt-cal__datecal td {
+		height: 5.5rem;
+	}
+}
+
+@container (min-width: 800px) {
+	.evvnt-cal.evvnt-cal .evvnt-cal__series-dates--list {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.evvnt-cal .evvnt-cal__series-date,
+	.evvnt-cal .evvnt-cal__datecal td {
+		transition: none;
+	}
+}
+
+/* ------------------------------------------------------------------
+ * Compact widget ([evvnt config_type="widget"] and the WordPress widget),
+ * as the discovery plugin's JS widget (portrait) looks.
+ * ------------------------------------------------------------------ */
+.evvnt-cal.evvnt-cal--widget {
+	container-type: inline-size;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 32rem;
+	margin: 1rem auto;
+}
+
+.evvnt-cal .evvnt-cal__widget-create {
+	display: block;
+	width: 100%;
+	margin: 0 0 0.5rem;
+	padding: 0.5rem;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.25rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Search: a plain rounded box, no button (Enter searches). */
+.evvnt-cal .evvnt-cal__search--widget {
+	margin: 0 0 0.5rem;
+}
+
+.evvnt-cal .evvnt-cal__search--widget .evvnt-cal__search-field {
+	padding: 0 0.75rem;
+	border-color: #d1d5db;
+	border-radius: 12px;
+	background: #fff;
+	color: #111827; /* Dark text on the white box, whatever the theme's text colour. */
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__search--widget input[type="search"] {
+	height: 2.5rem;
+	padding: 0 0.25rem;
+	font-size: 0.875rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__widget-list {
+	display: grid;
+	gap: 1.25rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__widget-list > li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*
+ * Event tiles in the event page's hero style: the image blurred and darkened behind the
+ * tile, the image itself inset on the left, white title (two lines at most), date and place.
+ */
+.evvnt-cal .evvnt-cal__widget-item {
+	position: relative;
+	isolation: isolate;
+	display: flex;
+	align-items: stretch;
+	gap: 0.875rem;
+	min-height: 172.5px; /* 150px + 15%. */
+	padding: 0 0.875rem 0 0;
+	overflow: hidden;
+	border-radius: 12px;
+	background: #0f172a;
+	box-shadow: 0 10px 25px -12px rgba(15, 23, 42, 0.55);
+	color: #fff;
+	text-decoration: none;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evvnt-cal .evvnt-cal__widget-item::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: var(--evvnt-cal-hero-overlay);
+}
+
+.evvnt-cal .evvnt-cal__widget-item .evvnt-cal__widget-backdrop {
+	position: absolute;
+	inset: 0;
+	z-index: -2;
+	width: 100%;
+	max-width: none;
+	height: 100%;
+	margin: 0;
+	object-fit: cover;
+	filter: blur(14px) saturate(1.2);
+	transform: scale(1.2);
+	transition: transform 0.4s ease;
+}
+
+.evvnt-cal .evvnt-cal__widget-item:hover,
+.evvnt-cal .evvnt-cal__widget-item:focus-visible {
+	transform: translateY(-2px);
+	box-shadow: 0 18px 35px -14px rgba(15, 23, 42, 0.65);
+}
+
+.evvnt-cal .evvnt-cal__widget-item:hover .evvnt-cal__widget-backdrop {
+	transform: scale(1.3);
+}
+
+.evvnt-cal .evvnt-cal__widget-item:focus-visible {
+	outline: 3px solid var(--evvnt-cal-primary);
+	outline-offset: 2px;
+}
+
+/* The image itself, whole, filling the tile's left side edge to edge. */
+.evvnt-cal__widget-image {
+	position: relative;
+	/* Half the whole tile: % here is of the tile minus its 0.875rem right padding, so add half of that back. */
+	flex: 0 0 calc(50% + 0.4375rem);
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.25);
+	box-shadow: 8px 0 24px -12px rgba(0, 0, 0, 0.6);
+}
+
+.evvnt-cal .evvnt-cal__widget-image img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	max-width: none;
+	height: 100%;
+	margin: 0;
+	object-fit: contain;
+}
+
+.evvnt-cal__widget-body {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.625rem;
+	min-width: 0;
+	padding: 0.75rem 0;
+}
+
+/* Two lines at most, ending in an ellipsis. */
+.evvnt-cal .evvnt-cal__widget-title {
+	display: -webkit-box;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 1.0625rem;
+	font-weight: 700;
+	line-height: 1.35;
+	text-overflow: ellipsis;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+	overflow-wrap: break-word;
+	hyphens: auto;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.evvnt-cal__widget-meta {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 0.8125rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+}
+
+.evvnt-cal__widget-meta > span {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	min-width: 0;
+}
+
+.evvnt-cal__widget-meta > span > span,
+.evvnt-cal__widget-meta time {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.evvnt-cal .evvnt-cal__widget-meta .evvnt-cal__icon {
+	flex: 0 0 auto;
+	width: 16px;
+	height: 16px;
+	color: var(--evvnt-cal-primary);
+	filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+/* Narrow widgets (sidebars): with the image at half the width, smaller text fits whole words. */
+@container (max-width: 340px) {
+	.evvnt-cal .evvnt-cal__widget-item {
+		gap: 0.75rem;
+		padding-right: 0.75rem;
+	}
+
+	.evvnt-cal__widget-image {
+		flex-basis: calc(50% + 0.375rem); /* Half the tile with the narrower padding. */
+	}
+
+	.evvnt-cal .evvnt-cal__widget-title {
+		font-size: 0.875rem;
+		line-height: 1.3;
+	}
+
+	.evvnt-cal__widget-meta {
+		font-size: 0.75rem;
+		line-height: 1.1rem;
+	}
+
+	.evvnt-cal .evvnt-cal__widget-meta .evvnt-cal__icon {
+		width: 14px;
+		height: 14px;
+	}
+}
+
+[dir="rtl"] .evvnt-cal .evvnt-cal__widget-item {
+	padding: 0 0 0 0.875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.evvnt-cal .evvnt-cal__widget-item,
+	.evvnt-cal .evvnt-cal__widget-item .evvnt-cal__widget-backdrop {
+		transition: none;
+	}
+
+	.evvnt-cal .evvnt-cal__widget-item:hover,
+	.evvnt-cal .evvnt-cal__widget-item:focus-visible,
+	.evvnt-cal .evvnt-cal__widget-item:hover .evvnt-cal__widget-backdrop {
+		transform: none;
+	}
+}
+
+.evvnt-cal__widget-ad a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.25rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.evvnt-cal .evvnt-cal__widget-ad img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.evvnt-cal__widget-empty {
+	margin: 0.5rem 0;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.875rem;
+}
+
+.evvnt-cal__widget-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-top: 0.25rem;
+	padding-top: 0.5rem;
+}
+
+.evvnt-cal .evvnt-cal__widget-more {
+	padding: 0.5rem 2.5rem;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 1.25rem;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__widget-powered {
+	display: block;
+	opacity: 0.6;
+	transition: opacity 0.15s;
+}
+
+.evvnt-cal .evvnt-cal__widget-powered:hover,
+.evvnt-cal .evvnt-cal__widget-powered:focus-visible {
+	opacity: 1;
+}
+
+.evvnt-cal .evvnt-cal__widget-powered img {
+	display: block;
+	width: auto;
+	height: 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.evvnt-cal .evvnt-cal__widget-powered {
+		transition: none;
+	}
 }

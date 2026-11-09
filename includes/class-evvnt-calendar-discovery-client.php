@@ -16,6 +16,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Evvnt_Calendar_Discovery_Client {
 
 	const HOST           = 'https://discovery.evvnt.com/api';
+	/** Evvnt's main API: the category tree (as the discovery plugin's MarketingClient). */
+	const CATEGORIES_HOST = 'https://api.evvnt.com';
+	/** Parallel requests per batch when walking the category tree. */
+	const BATCH_SIZE = 20;
 	const TIMEOUT        = 6;
 	const HITS_PER_PAGE  = 30;
 
@@ -46,6 +50,28 @@ class Evvnt_Calendar_Discovery_Client {
 	 */
 	public function publisher_settings() {
 		return $this->get( '/publisher/' . $this->publisher_id . '/publisher_settings', array(), 12 * HOUR_IN_SECONDS, false );
+	}
+
+	/**
+	 * Events for the compact widget, as the discovery JS widget requests them: the publisher's
+	 * featured events first, topped up with other events, 30 in all (the JS then picks a few).
+	 *
+	 * @param array $filters categoryId, virtual.
+	 * @return array|WP_Error { rawEvents }
+	 */
+	public function widget_events( array $filters ) {
+		return $this->get(
+			'/publisher/' . $this->publisher_id . '/widget_events',
+			array_merge(
+				$filters,
+				array(
+					'multipleEventInstances' => 'true',
+					'hitsPerPage'            => 30,
+					'widgetNumber'           => 30,
+				)
+			),
+			30 * MINUTE_IN_SECONDS // The API itself caches these for 30 minutes.
+		);
 	}
 
 	/**
@@ -117,8 +143,9 @@ class Evvnt_Calendar_Discovery_Client {
 	}
 
 	/**
-	 * Candidate "Recommended Events" for an event: up to 50 events in its main category,
-	 * as the discovery JS requests them (GET /events?categoryId=..&hitsPerPage=50).
+	 * Candidate "Recommended Events" for an event: up to 50 of the publisher's featured events
+	 * in its main category (the discovery JS's query, GET /events?categoryId=..&hitsPerPage=50,
+	 * limited to featured events with isFeatured=true).
 	 *
 	 * @param int $category_id Root category id (main_category_path[0]); 0 for any.
 	 * @return array|WP_Error { events }
@@ -129,6 +156,7 @@ class Evvnt_Calendar_Discovery_Client {
 			array(
 				'categoryId'  => absint( $category_id ) ? absint( $category_id ) : null,
 				'hitsPerPage' => 50,
+				'isFeatured'  => 'true',
 			),
 			30 * MINUTE_IN_SECONDS
 		);
@@ -306,6 +334,58 @@ class Evvnt_Calendar_Discovery_Client {
 	 * @param string[] $urls URLs on self::HOST.
 	 * @return array Map of url => array|WP_Error.
 	 */
+	/**
+	 * Direct sub-categories of several categories (GET api.evvnt.com/categories/{id}, which
+	 * answers [{ id, name }] for one id), fetched in parallel batches and not cached here:
+	 * Evvnt_Calendar_Category_Tree caches the assembled tree.
+	 *
+	 * @param int[] $ids Category ids.
+	 * @return array Each id => array of { id, name } or WP_Error.
+	 */
+	public function category_children( array $ids ) {
+		$urls = array();
+		foreach ( array_unique( array_map( 'absint', $ids ) ) as $id ) {
+			if ( $id ) {
+				$urls[ $id ] = self::CATEGORIES_HOST . '/categories/' . $id;
+			}
+		}
+		$results = array();
+		foreach ( array_chunk( $urls, self::BATCH_SIZE, true ) as $chunk ) {
+			if ( $this->transport ) {
+				$fetched = array();
+				foreach ( $chunk as $url ) {
+					$fetched[ $url ] = call_user_func( $this->transport, $url );
+				}
+			} else {
+				$fetched = self::fetch_many( array_values( $chunk ) );
+			}
+			foreach ( $chunk as $id => $url ) {
+				$results[ $id ] = isset( $fetched[ $url ] ) ? $fetched[ $url ] : new WP_Error( 'evvnt_calendar_http', 'Request failed.', array( 'status' => 0 ) );
+			}
+		}
+		return $results;
+	}
+
+	/**
+	 * Direct sub-categories of one category, cached for a day (resolving one URL before the
+	 * full tree is built).
+	 *
+	 * @param int $id Category id.
+	 * @return array|WP_Error [{ id, name }]
+	 */
+	public function category_children_cached( $id ) {
+		$url       = self::CATEGORIES_HOST . '/categories/' . absint( $id );
+		$transport = $this->transport;
+		return $this->cache->remember(
+			$url,
+			DAY_IN_SECONDS,
+			function () use ( $url, $transport ) {
+				return $transport ? call_user_func( $transport, $url ) : self::fetch( $url );
+			},
+			array( 'backoff' => false )
+		);
+	}
+
 	public static function fetch_many( array $urls ) {
 		$results = array();
 		$class   = class_exists( '\WpOrg\Requests\Requests' ) ? '\WpOrg\Requests\Requests' : ( class_exists( 'Requests' ) ? 'Requests' : '' );

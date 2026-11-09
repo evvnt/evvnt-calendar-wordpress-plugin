@@ -1,8 +1,9 @@
 <?php
 /**
- * Event detail body shared by both detail layouts: "About This Event" (description,
- * featuring, organizer, clickable categories) beside a right-hand column with share
- * buttons, the "Where It's Happening" panel and upcoming dates, then Recommended Events.
+ * Event detail body shared by both detail layouts: the Upcoming dates of a recurring
+ * series, then "About This Event" (description, featuring, organizer, clickable categories)
+ * beside a right-hand column with share buttons and the "Where It's Happening" panel, then
+ * Recommended Events.
  *
  * Override by copying to {your-theme}/evvnt-calendar/event-body.php.
  *
@@ -14,6 +15,7 @@
  *     @type string                  $submit_url
  *     @type string                  $submit_label
  *     @type bool                    $summary_shown Whether the summary is already shown above.
+ *     @type array|null              $dates         Upcoming dates of a recurring series (see event-dates.php).
  *     @type Evvnt_Calendar_Renderer $renderer
  * }
  *
@@ -31,7 +33,6 @@ $evvnt_rel     = $evvnt_event->is_affiliate_link() ? 'sponsored noopener' : 'noo
 $evvnt_cta     = $evvnt_event->tickets_link() ? __( 'Buy Tickets', 'evvnt-calendar' ) : __( 'More Information', 'evvnt-calendar' );
 $evvnt_html    = $evvnt_event->description_html();
 $evvnt_text    = $evvnt_event->description();
-$evvnt_dates   = $evvnt_event->upcoming_dates();
 $evvnt_address = $evvnt_event->address_lines();
 $evvnt_map     = $evvnt_event->is_virtual() ? '' : $evvnt_event->map_url();
 $evvnt_static  = $evvnt_event->is_virtual() ? '' : $evvnt_event->static_map_url();
@@ -43,6 +44,9 @@ $evvnt_summary = empty( $args['summary_shown'] );
 // Every category links to the calendar: its own page, or its parent's filtered to it.
 $evvnt_cat_links = $args['renderer']->category_links( $evvnt_event, $args['base'] );
 ?>
+<?php if ( ! empty( $args['dates'] ) ) : ?>
+	<?php echo $args['renderer']->template( 'event-dates', array( 'dates' => $args['dates'] ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the template. ?>
+<?php endif; ?>
 <div class="evvnt-cal__body">
 	<article class="evvnt-cal__about">
 		<h2><?php esc_html_e( 'About This Event', 'evvnt-calendar' ); ?></h2>
@@ -86,10 +90,12 @@ $evvnt_cat_links = $args['renderer']->category_links( $evvnt_event, $args['base'
 
 	<aside class="evvnt-cal__side">
 		<div class="evvnt-cal__share-row">
-			<span><?php esc_html_e( 'Share this event', 'evvnt-calendar' ); ?></span>
-			<a href="<?php echo esc_url( 'https://www.facebook.com/sharer/sharer.php?u=' . $evvnt_share ); ?>" target="_blank" rel="noopener nofollow" aria-label="<?php esc_attr_e( 'Share on Facebook', 'evvnt-calendar' ); ?>"><svg class="evvnt-cal__icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M14 8V6.5c0-.8.2-1.5 1.5-1.5H17V2h-2.6C11.6 2 11 3.8 11 6v2H9v3h2v11h3V11h2.6l.4-3z"/></svg></a>
-			<a href="<?php echo esc_url( 'https://x.com/intent/post?url=' . $evvnt_share . '&text=' . $evvnt_title ); ?>" target="_blank" rel="noopener nofollow" aria-label="<?php esc_attr_e( 'Share on X', 'evvnt-calendar' ); ?>"><svg class="evvnt-cal__icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.8 2h3.4l-7.4 8.5L22.5 22h-6.8l-5.3-7-6.1 7H.9l7.9-9.1L.5 2h7l4.8 6.4L17.8 2zm-1.2 18h1.9L6.5 3.9H4.5L16.6 20z"/></svg></a>
-			<a href="<?php echo esc_url( 'mailto:?subject=' . $evvnt_title . '&body=' . $evvnt_share ); ?>" aria-label="<?php esc_attr_e( 'Share by email', 'evvnt-calendar' ); ?>"><?php echo $evvnt_icon( 'mail', 16 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></a>
+			<h2 class="evvnt-cal__share-title"><?php esc_html_e( 'Share This Event', 'evvnt-calendar' ); ?></h2>
+			<div class="evvnt-cal__share-buttons">
+				<a href="<?php echo esc_url( 'https://www.facebook.com/sharer/sharer.php?u=' . $evvnt_share ); ?>" target="_blank" rel="noopener nofollow" aria-label="<?php esc_attr_e( 'Share on Facebook', 'evvnt-calendar' ); ?>"><svg class="evvnt-cal__icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false"><path d="M14 8V6.5c0-.8.2-1.5 1.5-1.5H17V2h-2.6C11.6 2 11 3.8 11 6v2H9v3h2v11h3V11h2.6l.4-3z"/></svg></a>
+				<a href="<?php echo esc_url( 'https://x.com/intent/post?url=' . $evvnt_share . '&text=' . $evvnt_title ); ?>" target="_blank" rel="noopener nofollow" aria-label="<?php esc_attr_e( 'Share on X', 'evvnt-calendar' ); ?>"><svg class="evvnt-cal__icon" viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true" focusable="false"><path d="M17.8 2h3.4l-7.4 8.5L22.5 22h-6.8l-5.3-7-6.1 7H.9l7.9-9.1L.5 2h7l4.8 6.4L17.8 2zm-1.2 18h1.9L6.5 3.9H4.5L16.6 20z"/></svg></a>
+				<a href="<?php echo esc_url( 'mailto:?subject=' . $evvnt_title . '&body=' . $evvnt_share ); ?>" aria-label="<?php esc_attr_e( 'Share by email', 'evvnt-calendar' ); ?>"><?php echo $evvnt_icon( 'mail', 16 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?></a>
+			</div>
 		</div>
 
 		<div class="evvnt-cal__panel evvnt-cal__panel--where">
@@ -113,20 +119,9 @@ $evvnt_cat_links = $args['renderer']->category_links( $evvnt_event, $args['base'
 				<a class="evvnt-cal__button evvnt-cal__button--outline" href="<?php echo esc_url( $evvnt_map ); ?>" rel="nofollow noopener" target="_blank"><?php echo $evvnt_icon( 'external' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><?php esc_html_e( 'View on Google Maps', 'evvnt-calendar' ); ?></a>
 			<?php endif; ?>
 			<?php if ( $evvnt_link && ! $evvnt_expired ) : ?>
-				<a class="evvnt-cal__button evvnt-cal__button--outline" href="<?php echo esc_url( $evvnt_link ); ?>" rel="<?php echo esc_attr( $evvnt_rel ); ?>" target="_blank"><?php echo $evvnt_icon( 'ticket' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><?php echo esc_html( $evvnt_cta ); ?></a>
+				<a class="evvnt-cal__button evvnt-cal__button--outline" href="<?php echo esc_url( $evvnt_link ); ?>" rel="<?php echo esc_attr( $evvnt_rel ); ?>" target="_blank"<?php echo Evvnt_Calendar_Tracking::click_attrs( $evvnt_event ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped by Evvnt_Calendar_Tracking. ?>><?php echo $evvnt_icon( 'ticket' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><?php echo esc_html( $evvnt_cta ); ?></a>
 			<?php endif; ?>
 		</div>
-
-		<?php if ( count( $evvnt_dates ) > 1 ) : ?>
-			<div class="evvnt-cal__panel evvnt-cal__dates">
-				<h2><?php esc_html_e( 'Upcoming Dates', 'evvnt-calendar' ); ?></h2>
-				<ul>
-					<?php foreach ( $evvnt_dates as $evvnt_date ) : ?>
-						<li><time datetime="<?php echo esc_attr( $evvnt_date['start']->format( DATE_ATOM ) ); ?>"><?php echo esc_html( $evvnt_event->format( $evvnt_date['start'], 'D, M j, Y · g:i A' ) ); ?></time></li>
-					<?php endforeach; ?>
-				</ul>
-			</div>
-		<?php endif; ?>
 
 		<?php if ( $args['submit_url'] ) : ?>
 			<p class="evvnt-cal__promote"><a href="<?php echo esc_url( $args['submit_url'] ); ?>" rel="nofollow noopener" target="_blank"><?php echo esc_html( $args['submit_label'] ); ?> →</a></p>
@@ -139,7 +134,7 @@ $evvnt_cat_links = $args['renderer']->category_links( $evvnt_event, $args['base'
 		<h2 id="evvnt-cal-recommended-title"><?php esc_html_e( 'Recommended Events', 'evvnt-calendar' ); ?></h2>
 		<ul class="evvnt-cal__recommended-grid">
 			<?php foreach ( $args['recommended'] as $evvnt_other ) : ?>
-				<li><?php echo $args['renderer']->render_card( $evvnt_other, $args['base'], true ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the template. ?></li>
+				<li><?php echo $args['renderer']->render_card( $evvnt_other, $args['base'], true, false, '' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in the template; not tracked as views, as the discovery plugin's recommendations. ?></li>
 			<?php endforeach; ?>
 		</ul>
 	</section>

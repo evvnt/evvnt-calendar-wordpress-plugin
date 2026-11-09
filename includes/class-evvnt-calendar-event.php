@@ -42,6 +42,7 @@ class Evvnt_Calendar_Event {
 	private $data;
 	private $publisher;
 	private $extra;
+	private $recurrence;
 
 	/**
 	 * @param array $data      Raw event (an element of rawEvents/events, or rawEvent).
@@ -100,9 +101,10 @@ class Evvnt_Calendar_Event {
 	 * trailing "-". Links made by the discovery JS (which keeps stray dashes and drops
 	 * accented letters) still resolve and are redirected here.
 	 */
-	public function slug() {
-		$title = trim( preg_replace( '/[^a-z0-9]+/', '-', strtolower( remove_accents( $this->title(), 'en_US' ) ) ), '-' );
-		return '' === $title ? $this->url_id() : $this->url_id() . '-' . $title;
+	public function slug( $url_id = null ) {
+		$url_id = null === $url_id ? $this->url_id() : (string) $url_id;
+		$title  = trim( preg_replace( '/[^a-z0-9]+/', '-', strtolower( remove_accents( $this->title(), 'en_US' ) ) ), '-' );
+		return '' === $title ? $url_id : $url_id . '-' . $title;
 	}
 
 	/* ---------- text ---------- */
@@ -230,6 +232,18 @@ class Evvnt_Calendar_Event {
 		return ! array_intersect( self::NO_END_TIME_SOURCES, (array) $this->get( 'sources', array() ) ) && null !== $this->end();
 	}
 
+	/**
+	 * Compact date without a time, for tight spaces: "Thu, Nov 5, 2026", or a range for
+	 * events over several days ("Nov 5 – Dec 24, 2026").
+	 */
+	public function short_date_label() {
+		$start = $this->start();
+		if ( ! $start ) {
+			return '';
+		}
+		return $this->is_multi_day() ? $this->date_label() : $this->format( $start, 'D, M j, Y' );
+	}
+
 	public function is_multi_day() {
 		return $this->has_end_time() && ( (int) $this->get( 'end_time_i' ) - (int) $this->get( 'start_time_i' ) ) > DAY_IN_SECONDS;
 	}
@@ -306,36 +320,90 @@ class Evvnt_Calendar_Event {
 		return $this->format( $start, 'g:i A' ) . $zone;
 	}
 
+	/* ---------- recurring series ---------- */
+
 	/**
-	 * Upcoming dates of a recurring event (DateTimeImmutable pairs), at most $limit.
+	 * The series this event is one date of (discovery's Event.recurrence).
+	 *
+	 * @param int|null $now Unix time (tests).
+	 * @return Evvnt_Calendar_Recurrence
+	 */
+	public function recurrence( $now = null ) {
+		if ( null !== $now ) {
+			return new Evvnt_Calendar_Recurrence( $this->raw_recurrence(), $this->get( 'indexed_occurrences' ), $now );
+		}
+		if ( ! isset( $this->recurrence ) ) {
+			$this->recurrence = new Evvnt_Calendar_Recurrence( $this->raw_recurrence(), $this->get( 'indexed_occurrences' ) );
+		}
+		return $this->recurrence;
+	}
+
+	/**
+	 * The series' { schedules, dates }: top-level on an event page (GET /events/{urlId}), under
+	 * core_metadata in listings (which have no indexed_occurrences, so no links between dates).
+	 */
+	private function raw_recurrence() {
+		$recurrence = $this->get( 'recurrence' );
+		if ( is_array( $recurrence ) ) {
+			return $recurrence;
+		}
+		$meta = $this->get( 'core_metadata' );
+		return is_array( $meta ) && isset( $meta['recurrence'] ) && is_array( $meta['recurrence'] ) ? $meta['recurrence'] : null;
+	}
+
+	/** The event is one of several published dates. */
+	public function is_recurring() {
+		return count( $this->recurrence()->dates() ) > 1;
+	}
+
+	/** Show the series (badge, "Repeats …" line, Upcoming dates): recurring with dates to come. */
+	public function shows_recurrence() {
+		return $this->is_recurring() && (bool) $this->recurrence()->upcoming_dates();
+	}
+
+	/** @return array|null The series date this event page is (the date its URL id was indexed as). */
+	public function viewed_date() {
+		return $this->recurrence()->find_by_occurrence_id( $this->url_id() );
+	}
+
+	/** @return array|null The date to headline: this page's date while still to come, else the next. */
+	public function highlighted_date() {
+		$viewed = $this->viewed_date();
+		foreach ( $this->recurrence()->upcoming_dates() as $date ) {
+			if ( Evvnt_Calendar_Recurrence::same( $date, $viewed ) ) {
+				return $date;
+			}
+		}
+		return $this->recurrence()->next_date();
+	}
+
+	/**
+	 * Headline date of a series: "Next: Sun, Dec 13, 2026 at 3:00 PM" when it is the next date,
+	 * else (this page's own later date) without "Next: ". Empty when not a series.
+	 */
+	public function series_date_label() {
+		$date = $this->shows_recurrence() ? $this->highlighted_date() : null;
+		if ( ! $date ) {
+			return '';
+		}
+		/* translators: 1: date, e.g. "Sun, Dec 13, 2026", 2: time. */
+		$label = sprintf( __( '%1$s at %2$s', 'evvnt-calendar' ), $this->format( $date['start'], 'D, M j, Y' ), $this->format( $date['start'], 'g:i A' ) );
+		/* translators: %s: date and time of the next occurrence. */
+		return Evvnt_Calendar_Recurrence::same( $date, $this->recurrence()->next_date() ) ? sprintf( __( 'Next: %s', 'evvnt-calendar' ), $label ) : $label;
+	}
+
+	/**
+	 * Upcoming dates of a recurring event ({ start, end } DateTimeImmutable pairs), at most $limit.
+	 * Kept for theme templates written against earlier versions; see recurrence().
 	 */
 	public function upcoming_dates( $limit = 10, $now = null ) {
-		$now        = null === $now ? time() : (int) $now;
-		$recurrence = $this->get( 'recurrence' );
-		$dates      = array();
-		if ( ! is_array( $recurrence ) || empty( $recurrence['dates'] ) || ! is_array( $recurrence['dates'] ) ) {
-			return $dates;
+		$dates = array();
+		foreach ( $this->recurrence( $now )->upcoming_dates() as $date ) {
+			$dates[] = array(
+				'start' => $date['start'],
+				'end'   => $date['end'],
+			);
 		}
-		foreach ( $recurrence['dates'] as $date ) {
-			if ( ! is_array( $date ) ) {
-				continue;
-			}
-			$zone  = $this->zone( isset( $date['timezone'] ) ? $date['timezone'] : null );
-			$start = $this->parse_time( isset( $date['start_time'] ) ? $date['start_time'] : null, $zone );
-			$end   = $this->parse_time( isset( $date['end_time'] ) ? $date['end_time'] : null, $zone );
-			if ( $start && ( $end ? $end->getTimestamp() : $start->getTimestamp() ) >= $now ) {
-				$dates[] = array(
-					'start' => $start,
-					'end'   => $end,
-				);
-			}
-		}
-		usort(
-			$dates,
-			function ( $a, $b ) {
-				return $a['start']->getTimestamp() - $b['start']->getTimestamp();
-			}
-		);
 		return array_slice( $dates, 0, $limit );
 	}
 

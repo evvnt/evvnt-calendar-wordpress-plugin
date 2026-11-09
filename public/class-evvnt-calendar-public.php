@@ -38,9 +38,107 @@ class Evvnt_Calendar_Public {
 	/** @var bool Whether resolve() ran for the current request. */
 	private $resolved = false;
 
+	/** @var self|null The instance hooked into WordPress (the widget class renders through it). */
+	private static $instance = null;
+
 	public function __construct( $plugin_name, $version ) {
 		$this->plugin_name = $plugin_name;
 		$this->version     = $version;
+		self::$instance    = $this;
+	}
+
+	/**
+	 * The instance hooked into WordPress, or a new one.
+	 *
+	 * @return self
+	 */
+	public static function instance() {
+		if ( null === self::$instance ) {
+			self::$instance = new self( 'evvnt-calendar', defined( 'EVVNT_CALENDAR_VERSION' ) ? EVVNT_CALENDAR_VERSION : '0' );
+		}
+		return self::$instance;
+	}
+
+	/**
+	 * Server-rendered compact widget, for a [evvnt config_type="widget"] shortcode or a
+	 * WordPress widget set to the "Widget" configuration type.
+	 *
+	 * @param array $atts Raw display options.
+	 * @return string HTML.
+	 */
+	public static function render_widget( $atts ) {
+		$atts = wp_parse_args( is_array( $atts ) ? $atts : array(), self::display_defaults() );
+		$self = self::instance();
+		if ( ! wp_style_is( self::STYLE_HANDLE, 'enqueued' ) ) {
+			$self->enqueue_styles(); // Not in the head on this page: printed in the footer instead.
+		}
+		Evvnt_Calendar_Tracking::enqueue( $self->renderer()->publisher() );
+		return $self->renderer()->render_widget(
+			array(
+				'detail_page_enabled' => self::to_bool( $atts['detail_page_enabled'] ),
+				'virtual'             => self::to_bool( $atts['virtual'] ),
+				'category_id'         => absint( $atts['category_id'] ),
+			)
+		);
+	}
+
+	/**
+	 * Load the stylesheet in the head on pages that show a server-rendered widget: an active
+	 * WordPress widget of the "Widget" type, or a widget shortcode in the post. Hooked on
+	 * wp_enqueue_scripts.
+	 */
+	public function enqueue_widget_styles() {
+		if ( ! self::server_mode() || wp_style_is( self::STYLE_HANDLE, 'enqueued' ) ) {
+			return;
+		}
+		/**
+		 * Filters whether this page shows a server-rendered widget (so its stylesheet loads in the
+		 * head). For widgets placed where the plugin cannot see them, e.g. page builders.
+		 *
+		 * @param bool $needed Whether a widget was found in a widget area or the post.
+		 */
+		if ( apply_filters( 'evvnt_calendar_page_has_widget', self::page_has_widget() ) ) {
+			$this->enqueue_styles();
+		}
+	}
+
+	/**
+	 * Whether the current page shows a server-rendered widget: a "Widget"-type Evvnt widget,
+	 * or a widget shortcode in a block widget, in an active widget area; or a widget shortcode
+	 * in the post (including synced patterns it uses).
+	 */
+	private static function page_has_widget() {
+		$shortcode = '/\[evvnt\b[^\]]*config_type=["\']?widget/';
+		$evvnt     = (array) get_option( 'widget_evvnt_calendar_widget', array() );
+		$blocks    = (array) get_option( 'widget_block', array() );
+		foreach ( wp_get_sidebars_widgets() as $sidebar => $ids ) {
+			if ( 'wp_inactive_widgets' === $sidebar || ! is_array( $ids ) || ! is_active_sidebar( $sidebar ) ) {
+				continue;
+			}
+			foreach ( $ids as $id ) {
+				if ( preg_match( '/^evvnt_calendar_widget-(\d+)$/', (string) $id, $m ) && isset( $evvnt[ $m[1] ]['config_type'] ) && 'widget' === $evvnt[ $m[1] ]['config_type'] ) {
+					return true;
+				}
+				if ( preg_match( '/^block-(\d+)$/', (string) $id, $m ) && isset( $blocks[ $m[1] ]['content'] ) && preg_match( $shortcode, (string) $blocks[ $m[1] ]['content'] ) ) {
+					return true;
+				}
+			}
+		}
+		$post = is_singular() ? get_queried_object() : null;
+		if ( $post instanceof WP_Post ) {
+			$content = $post->post_content;
+			if ( function_exists( 'parse_blocks' ) && false !== strpos( $content, 'wp:block' ) ) {
+				foreach ( parse_blocks( $content ) as $block ) {
+					if ( 'core/block' === $block['blockName'] && ! empty( $block['attrs']['ref'] ) && 'publish' === get_post_status( (int) $block['attrs']['ref'] ) ) {
+						$content .= "\n" . get_post_field( 'post_content', (int) $block['attrs']['ref'] );
+					}
+				}
+			}
+			if ( false !== strpos( $content, '[evvnt' ) && preg_match( $shortcode, $content ) ) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	public function register_shortcode() {
@@ -174,7 +272,21 @@ class Evvnt_Calendar_Public {
 			return;
 		}
 
+		if ( 'categories' === $this->route->type ) {
+			// The category list: not on a calendar pinned to one category (nor without categories).
+			$url = $renderer->categories_url( $base, $atts );
+			if ( '' === $url ) {
+				status_header( 404 );
+				$seo->noindex_only();
+				return;
+			}
+			Evvnt_Calendar_Router::enforce_canonical_path( $url );
+			$seo->for_listing( __( 'All categories', 'evvnt-calendar' ), $url );
+			return;
+		}
+
 		$category = null;
+		$sub      = null;
 		if ( 'category' === $this->route->type && ! $atts['category_id'] ) {
 			$category = $renderer->category_by_slug( $this->route->category_slug );
 			if ( ! $category && $renderer->categories() ) {
@@ -182,7 +294,34 @@ class Evvnt_Calendar_Public {
 				$seo->noindex_only();
 				return;
 			}
+			if ( $category && '' !== $this->route->subcategory_path ) {
+				$sub = $renderer->subcategory( $this->route );
+				if ( is_wp_error( $sub ) ) {
+					$this->state = 'unavailable';
+					$this->send_unavailable( $seo );
+					return;
+				}
+				if ( ! $sub ) {
+					status_header( 404 );
+					$seo->noindex_only();
+					return;
+				}
+			}
 		}
+
+		// A filtered link (…/arts/?subcategory=39|Visual Arts, as the discovery JS makes) moves
+		// to the sub-category's own page once the tree knows it.
+		if ( $this->route->subcategory_id && ! $sub && ! $atts['category_id'] && '' === $this->route->search && '' === $this->route->from_date ) {
+			$node = $renderer->category_tree()->by_id( $this->route->subcategory_id );
+			if ( $node && $node['depth'] > 0 && ( ! $category || $category['id'] === $node['root'] ) ) {
+				$keep   = array_diff_key( wp_unslash( $_GET ), array_flip( array( Evvnt_Calendar_Route::SUB_VAR, Evvnt_Calendar_Route::PATH_VAR, Evvnt_Calendar_Route::PAGE_VAR, 'page_id', 'p', 'page', 'pagename' ) ) ); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- read-only routing.
+				$target = Evvnt_Calendar_Renderer::category_url( $node, $base, $this->route->page );
+				$keep   = array_filter( $keep, 'is_scalar' );
+				wp_safe_redirect( $keep ? add_query_arg( array_map( 'rawurlencode', $keep ), $target ) : $target, 301 );
+				exit;
+			}
+		}
+		$category_path = $sub ? $sub['path'] : ( $category ? $category['slug'] : '' );
 
 		// Fetch the list now (it is memoised for the shortcode) so an outage can be a 503.
 		$listing = $renderer->listing( $this->route, $atts );
@@ -197,10 +336,11 @@ class Evvnt_Calendar_Public {
 			return;
 		}
 
-		Evvnt_Calendar_Router::enforce_canonical_path( Evvnt_Calendar_Route::calendar_url( $base, $category ? $category['slug'] : '', $this->route->page ) );
+		Evvnt_Calendar_Router::enforce_canonical_path( Evvnt_Calendar_Route::calendar_url( $base, $category_path, $this->route->page ) );
 
-		if ( $this->route->subcategory_id || '' !== $this->route->search || '' !== $this->route->from_date ) {
-			// Sub-category filters and search results are navigation aids: keep them out of search indexes.
+		if ( ( $this->route->subcategory_id && ! $sub ) || '' !== $this->route->search || '' !== $this->route->from_date ) {
+			// Sub-category filters and search results are navigation aids: keep them out of search
+			// indexes. Sub-category pages (…/category/arts/comedy/) are indexed like categories.
 			$seo->noindex_only();
 		}
 
@@ -208,7 +348,7 @@ class Evvnt_Calendar_Public {
 			// A pinned calendar has no root-category navigation; consolidate on the page itself.
 			$seo->for_listing( '', Evvnt_Calendar_Route::calendar_url( $base, '', $this->route->page ) );
 		} elseif ( $category || $this->route->page > 1 || '' !== $this->route->search || '' !== $this->route->from_date ) {
-			$title = $category ? $category['name'] : get_the_title( $post );
+			$title = $sub ? $sub['name'] : ( $category ? $category['name'] : get_the_title( $post ) );
 			if ( '' !== $this->route->from_date ) {
 				$title = $this->renderer()->dates_label( $this->route->from_date, $this->route->to_date );
 			}
@@ -220,7 +360,7 @@ class Evvnt_Calendar_Public {
 				/* translators: 1: listing title, 2: page number. */
 				$title = sprintf( __( '%1$s – Page %2$d', 'evvnt-calendar' ), $title, $this->route->page );
 			}
-			$seo->for_listing( $title, Evvnt_Calendar_Route::calendar_url( $base, $category ? $category['slug'] : '', $this->route->page ) );
+			$seo->for_listing( $title, Evvnt_Calendar_Route::calendar_url( $base, $category_path, $this->route->page ) );
 		}
 	}
 
@@ -344,7 +484,12 @@ class Evvnt_Calendar_Public {
 	}
 
 	public function enqueue_styles() {
-		wp_enqueue_style( self::STYLE_HANDLE, plugin_dir_url( __FILE__ ) . 'css/evvnt-calendar-public.css', array(), $this->version );
+		static $done = false;
+		if ( $done ) {
+			return; // Once per request: the theme colours are added inline only once.
+		}
+		$done = true;
+		wp_enqueue_style( self::STYLE_HANDLE, plugin_dir_url( __FILE__ ) . 'css/evvnt-calendar-public.css', array(), self::asset_version( 'css/evvnt-calendar-public.css', $this->version ) );
 
 		$settings = $this->client()->publisher_settings();
 		$theme    = ( ! is_wp_error( $settings ) && isset( $settings['theme'] ) && is_array( $settings['theme'] ) ) ? $settings['theme'] : array();
@@ -380,12 +525,14 @@ class Evvnt_Calendar_Public {
 			if ( 'event' === $this->route->type ) {
 				$this->load_event();
 			}
-			wp_enqueue_style( self::STYLE_HANDLE, plugin_dir_url( __FILE__ ) . 'css/evvnt-calendar-public.css', array(), $this->version );
+			wp_enqueue_style( self::STYLE_HANDLE, plugin_dir_url( __FILE__ ) . 'css/evvnt-calendar-public.css', array(), self::asset_version( 'css/evvnt-calendar-public.css', $this->version ) );
 		}
 
 		if ( 'unavailable' === $this->state ) {
 			return $renderer->render_unavailable();
 		}
+		// Snowplow analytics, as the discovery JS plugin (page view, event views, ticket clicks).
+		Evvnt_Calendar_Tracking::enqueue( $renderer->publisher() );
 		if ( 'event_missing' === $this->state ) {
 			return $renderer->template( 'event-not-found', array( 'back_url' => Evvnt_Calendar_Route::calendar_url( $base ) ) );
 		}
@@ -399,7 +546,39 @@ class Evvnt_Calendar_Public {
 			return $html;
 		}
 
-		return $renderer->render_calendar( $this->route, self::normalize_server_atts( $atts ), $base );
+		$atts = self::normalize_server_atts( $atts );
+		if ( 'categories' === $this->route->type ) {
+			if ( '' !== $renderer->categories_url( $base, $atts ) ) {
+				return $renderer->render_categories( $base, $atts );
+			}
+			// A calendar pinned to one category has no category list: say so over its events.
+			$not_found       = new Evvnt_Calendar_Route();
+			$not_found->type = 'not_found';
+			return $renderer->render_calendar( $not_found, $atts, $base );
+		}
+		return $renderer->render_calendar( $this->route, $atts, $base );
+	}
+
+	/**
+	 * Rebuild the cached category tree (WP-Cron, scheduled when it goes stale).
+	 */
+	public function refresh_category_tree() {
+		if ( Evvnt_Calendar_Settings::publisher_id() ) {
+			$this->renderer()->category_tree()->refresh();
+		}
+	}
+
+	/**
+	 * Version for an asset URL: the plugin version plus the file's modification time, so
+	 * browsers fetch a stylesheet again whenever it changes, not only on version bumps.
+	 *
+	 * @param string $file    Path below public/.
+	 * @param string $version Plugin version.
+	 * @return string
+	 */
+	private static function asset_version( $file, $version ) {
+		$mtime = @filemtime( plugin_dir_path( __FILE__ ) . $file ); // phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged -- a missing file just falls back to the version.
+		return $mtime ? $version . '.' . $mtime : $version;
 	}
 
 	private function client() {
@@ -436,9 +615,8 @@ class Evvnt_Calendar_Public {
 
 	public function build_shortcode( $atts ) {
 		$atts = shortcode_atts( self::display_defaults(), $atts, 'evvnt' );
-		// The compact "widget" layout is still rendered by the discovery JS in phase 1.
-		if ( self::server_mode() && 'widget' !== $atts['config_type'] ) {
-			return $this->render_server( $atts );
+		if ( self::server_mode() ) {
+			return 'widget' === $atts['config_type'] ? self::render_widget( $atts ) : $this->render_server( $atts );
 		}
 		return self::render_embed( $atts );
 	}

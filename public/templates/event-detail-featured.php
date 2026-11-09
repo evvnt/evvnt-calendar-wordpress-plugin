@@ -31,9 +31,10 @@ $evvnt_price    = $evvnt_event->price_range();
 $evvnt_expired  = $evvnt_event->is_expired();
 $evvnt_cta      = $evvnt_event->tickets_link() ? __( 'Buy Tickets', 'evvnt-calendar' ) : __( 'More Information', 'evvnt-calendar' );
 
-$evvnt_icon = array( 'Evvnt_Calendar_Renderer', 'icon' );
+$evvnt_icon   = array( 'Evvnt_Calendar_Renderer', 'icon' );
+$evvnt_series = $evvnt_event->shows_recurrence();
 ?>
-<div class="<?php echo esc_attr( $args['renderer']->root_class( 'detail' ) ); ?> evvnt-cal--featured">
+<div class="<?php echo esc_attr( $args['renderer']->root_class( 'detail' ) ); ?> evvnt-cal--featured"<?php echo Evvnt_Calendar_Tracking::view_attrs( $evvnt_event, Evvnt_Calendar_Tracking::VIEWED_FROM_PAGE ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped by Evvnt_Calendar_Tracking. ?>>
 	<section class="evvnt-cal__hero<?php echo $evvnt_image ? '' : ' evvnt-cal__hero--no-image'; ?>" aria-labelledby="evvnt-cal-event-title">
 		<?php if ( $evvnt_backdrop ) : ?>
 			<img class="evvnt-cal__hero-backdrop" src="<?php echo esc_url( $evvnt_backdrop ); ?>" alt="" aria-hidden="true" decoding="async">
@@ -45,11 +46,23 @@ $evvnt_icon = array( 'Evvnt_Calendar_Renderer', 'icon' );
 				<?php if ( $evvnt_expired ) : ?>
 					<p class="evvnt-cal__badge"><?php esc_html_e( 'This event has ended', 'evvnt-calendar' ); ?></p>
 				<?php endif; ?>
+				<?php if ( $evvnt_series ) : ?>
+					<p class="evvnt-cal__badge evvnt-cal__badge--series"><?php echo $evvnt_icon( 'repeat', 12 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><?php echo esc_html( $evvnt_event->recurrence()->badge_label() ); ?></p>
+				<?php endif; ?>
 
 				<h1 class="evvnt-cal__title" id="evvnt-cal-event-title"><?php echo esc_html( $evvnt_event->title() ); ?></h1>
 
 				<ul class="evvnt-cal__facts">
-					<?php if ( $evvnt_event->start() ) : ?>
+					<?php if ( $evvnt_series ) : ?>
+						<li class="evvnt-cal__fact evvnt-cal__series-next">
+							<?php echo $evvnt_icon( 'calendar' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?>
+							<time datetime="<?php echo esc_attr( $evvnt_event->highlighted_date()['start']->format( DATE_ATOM ) ); ?>"><?php echo esc_html( $evvnt_event->series_date_label() ); ?></time>
+						</li>
+						<li class="evvnt-cal__fact evvnt-cal__series-repeats">
+							<?php echo $evvnt_icon( 'repeat' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?>
+							<span><?php echo esc_html( $evvnt_event->recurrence()->frequency_line() ); ?></span>
+						</li>
+					<?php elseif ( $evvnt_event->start() ) : ?>
 						<li class="evvnt-cal__fact">
 							<?php echo $evvnt_icon( 'calendar' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?>
 							<time datetime="<?php echo esc_attr( $evvnt_event->start()->format( DATE_ATOM ) ); ?>"><?php echo esc_html( $evvnt_event->date_label() ); ?></time>
@@ -79,7 +92,7 @@ $evvnt_icon = array( 'Evvnt_Calendar_Renderer', 'icon' );
 						<p class="evvnt-cal__price"><?php echo $evvnt_icon( 'ticket', 18 ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- static SVG. ?><span><?php echo esc_html( $evvnt_price ); ?></span></p>
 					<?php endif; ?>
 					<?php if ( $evvnt_link && ! $evvnt_expired ) : ?>
-						<a class="evvnt-cal__button evvnt-cal__button--large" href="<?php echo esc_url( $evvnt_link ); ?>" rel="<?php echo esc_attr( $evvnt_rel ); ?>" target="_blank"><?php echo esc_html( $evvnt_cta ); ?></a>
+						<a class="evvnt-cal__button evvnt-cal__button--large" href="<?php echo esc_url( $evvnt_link ); ?>" rel="<?php echo esc_attr( $evvnt_rel ); ?>" target="_blank"<?php echo Evvnt_Calendar_Tracking::click_attrs( $evvnt_event ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped by Evvnt_Calendar_Tracking. ?>><?php echo esc_html( $evvnt_cta ); ?></a>
 					<?php endif; ?>
 				</div>
 			</div>

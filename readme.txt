@@ -17,7 +17,11 @@ provides a Widget or Shortcode for displaying it on a page.
 
 = Rendering modes =
 
-By default the calendar is drawn in the browser by Evvnt's discovery app. Under Settings → Evvnt Calendar Settings → Rendering you can switch the [evvnt] shortcode to server rendering (beta). The calendar and event pages are then built on your server, so search engines and visitors without JavaScript see the events, and event pages get proper titles, canonical URLs, social tags and Event structured data. Widgets still use the discovery app.
+By default the calendar is drawn in the browser by Evvnt's discovery app. Under Settings → Evvnt Calendar Settings → Rendering you can switch the [evvnt] shortcode to server rendering (beta). The calendar and event pages are then built on your server, so search engines and visitors without JavaScript see the events, and event pages get proper titles, canonical URLs, social tags and Event structured data. Widgets of the "Widget" type are server-rendered too; calendar-type widgets still use the discovery app.
+
+= Analytics =
+
+Like Evvnt's discovery app, the server-rendered calendar, event pages and widget send anonymous usage analytics to Evvnt's Snowplow collector (com-evvnt-prod1.collector.snplow.net): a page view, which events were shown, and clicks on an event's ticket button. The Snowplow tracker sets first-party cookies (_sp_id, _sp_ses) and uses local storage. To turn this off, for example until a visitor accepts analytics cookies, use `add_filter( 'evvnt_calendar_tracking_enabled', '__return_false' );`. The bundled Snowplow JavaScript tracker (public/js/vendor/snowplow) is BSD-3-Clause licensed.
 
 == Installation ==
 
@@ -37,6 +41,7 @@ By default the calendar is drawn in the browser by Evvnt's discovery app. Under 
 * Calendar width setting: the theme's wide width (default) or the content column.
 * Event pages: full-width hero for featured events; standard layout like the discovery plugin for others; shared "About" and "Where It's Happening" panel with map, share buttons and clickable categories; recommended events.
 * Themes can override the calendar templates in {theme}/evvnt-calendar/.
+* Snowplow analytics on server-rendered pages and widgets, tracking page views, event views and ticket clicks as the discovery app does (filter: evvnt_calendar_tracking_enabled).
 = 0.0.2 =
 * Security: shortcode and widget options are now type-checked and JSON-encoded before reaching the page, fixing a script-injection issue in the [evvnt] shortcode.
 * Security: settings are sanitized on save and escaped on output; the API secret is no longer displayed or sent to the browser, and the API key is no longer printed on public pages.

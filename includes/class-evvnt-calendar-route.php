@@ -7,6 +7,8 @@
  * links are built as paths. Otherwise the discovery JS's query parameters are used:
  *   ?_evDiscoveryPath=/                         calendar
  *   ?_evDiscoveryPath=/{category-slug}          calendar filtered by a root category
+ *   ?_evDiscoveryPath=/{root}/{sub}/…           calendar filtered by a sub-category
+ *   ?_evDiscoveryPath=/categories               list of every category
  *   ?_evDiscoveryPath=/event/{urlId}-{slug}     event detail
  *   &evPage=N                                   1-based page of the calendar
  *   ?_ev_id=123                                 legacy event link (redirected)
@@ -30,7 +32,10 @@ class Evvnt_Calendar_Route {
 	const FROM_VAR   = 'fromDate';
 	const TO_VAR     = 'toDate';
 
-	/** @var string calendar|category|event|not_found */
+	/** Path of the category list (reserved: no category can use this slug). */
+	const CATEGORIES_PATH = 'categories';
+
+	/** @var string calendar|category|categories|event|not_found */
 	public $type = 'calendar';
 
 	/** @var string Event URL id (text before the first "-"), for event routes. */
@@ -39,8 +44,11 @@ class Evvnt_Calendar_Route {
 	/** @var string Full "{urlId}-{slug}" segment, for event routes. */
 	public $event_segment = '';
 
-	/** @var string Category slug, for category routes. */
+	/** @var string Root category slug, for category routes. */
 	public $category_slug = '';
+
+	/** @var string Slug path below the root ("performing-arts/comedy"), for sub-category routes, or ''. */
+	public $subcategory_path = '';
 
 	/** @var int Sub-category filter (?subcategory=id|name, as the discovery JS), or 0. */
 	public $subcategory_id = 0;
@@ -73,6 +81,10 @@ class Evvnt_Calendar_Route {
 			$event    = (string) get_query_var( Evvnt_Calendar_Router::EVENT_VAR );
 			$category = (string) get_query_var( Evvnt_Calendar_Router::CATEGORY_VAR );
 			$page     = (int) get_query_var( Evvnt_Calendar_Router::PAGE_VAR );
+			$view     = (string) get_query_var( Evvnt_Calendar_Router::VIEW_VAR );
+			if ( self::CATEGORIES_PATH === $view ) {
+				return self::from_query( array( self::PATH_VAR => '/' . self::CATEGORIES_PATH ) );
+			}
 			if ( '' !== $event || '' !== $category || $page ) {
 				$query = array();
 				if ( '' !== $event ) {
@@ -164,9 +176,15 @@ class Evvnt_Calendar_Route {
 				$route->page          = 1;
 				return $route;
 			}
-		} elseif ( 1 === count( $parts ) && 'event' !== $parts[0] && preg_match( '/^[a-z0-9-]{1,100}$/', $parts[0] ) ) {
-			$route->type          = 'category';
-			$route->category_slug = $parts[0];
+		} elseif ( array( self::CATEGORIES_PATH ) === $parts ) {
+			$route->type = 'categories';
+			$route->page = 1;
+			return $route;
+		} elseif ( 'event' !== $parts[0] && count( $parts ) <= 7 && count( $parts ) === count( preg_grep( '/^[a-z0-9-]{1,100}$/', $parts ) ) ) {
+			// A root category, or a sub-category by its slug path below the root.
+			$route->type             = 'category';
+			$route->category_slug    = $parts[0];
+			$route->subcategory_path = implode( '/', array_slice( $parts, 1 ) );
 			return $route;
 		}
 
@@ -175,10 +193,17 @@ class Evvnt_Calendar_Route {
 	}
 
 	/**
+	 * Full category slug path of a route ("arts" or "arts/performing-arts"), or ''.
+	 */
+	public function category_path() {
+		return '' === $this->subcategory_path ? $this->category_slug : $this->category_slug . '/' . $this->subcategory_path;
+	}
+
+	/**
 	 * URL of the calendar (optionally a category and page) on the given page URL.
 	 *
 	 * @param string $base          Permalink of the page holding the calendar.
-	 * @param string $category_slug Optional category slug.
+	 * @param string $category_slug Optional category slug, or a sub-category's slug path ("arts/comedy").
 	 * @param int    $page          1-based page.
 	 * @return string
 	 */
@@ -206,6 +231,20 @@ class Evvnt_Calendar_Route {
 			$args[ self::PAGE_VAR ] = (int) $page;
 		}
 		return self::build( $base, $args );
+	}
+
+	/**
+	 * URL of the list of every category on the given page URL.
+	 *
+	 * @param string $base Permalink of the page holding the calendar.
+	 * @return string
+	 */
+	public static function categories_url( $base ) {
+		$config = Evvnt_Calendar_Router::config();
+		if ( $config && Evvnt_Calendar_Router::is_calendar_base( $base ) ) {
+			return home_url( user_trailingslashit( $config['page_path'] . '/' . self::CATEGORIES_PATH ) );
+		}
+		return self::build( $base, array( self::PATH_VAR => '/' . self::CATEGORIES_PATH ) );
 	}
 
 	/**
