@@ -107,6 +107,20 @@ class Evvnt_Calendar {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-publisher-client.php';
 
 		/**
+		 * Server-side rendering: discovery API client, cache, routing, event model and SEO.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-cache.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-discovery-client.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-route.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-router.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-recurrence.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-category-tree.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-event.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-seo.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-evvnt-calendar-tracking.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-evvnt-calendar-renderer.php';
+
+		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-evvnt-calendar-admin.php';
@@ -169,6 +183,16 @@ class Evvnt_Calendar {
 	private function define_public_hooks() {
 		$plugin_public = new Evvnt_Calendar_Public($this->get_plugin_name(), $this->get_version());
 		$this->loader->add_action( 'init', $plugin_public, 'register_shortcode' );
+		$this->loader->add_action( 'template_redirect', $plugin_public, 'resolve' );
+		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_widget_styles' );
+		$this->loader->add_action( 'rest_api_init', $plugin_public, 'register_rest_routes' );
+		$this->loader->add_filter( 'evvnt_calendar_canonical_event_segment', $plugin_public, 'canonical_event_segment' );
+		$this->loader->add_action( Evvnt_Calendar_Category_Tree::CRON_HOOK, $plugin_public, 'refresh_category_tree' );
+
+		$router = new Evvnt_Calendar_Router();
+		$this->loader->add_action( 'init', $router, 'add_rules', 99 ); // After post types and taxonomies exist.
+		$this->loader->add_action( 'template_redirect', $router, 'redirect_query_urls', 1 );
+		$this->loader->add_filter( 'redirect_canonical', $router, 'redirect_canonical' );
 	}
 
 	/**

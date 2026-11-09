@@ -95,8 +95,15 @@ class Evvnt_Calendar_Widget extends WP_Widget {
 		);
 
 		// before_widget / after_widget are theme-supplied markup.
+		$instance = wp_parse_args( (array) $instance, Evvnt_Calendar_Public::display_defaults() );
+		// Server mode renders the compact "Widget" type in PHP; the full calendar type is
+		// still the discovery embed when placed in a widget area.
+		$html = ( Evvnt_Calendar_Public::server_mode() && 'widget' === $instance['config_type'] )
+			? Evvnt_Calendar_Public::render_widget( $instance )
+			: Evvnt_Calendar_Public::render_embed( $instance );
+
 		echo $args['before_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-		echo Evvnt_Calendar_Public::render_embed( (array) $instance ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in render_embed().
+		echo $html; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- escaped in render_widget() / render_embed().
 		echo $args['after_widget']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 

@@ -16,6 +16,11 @@ function evvnt_calendar_uninstall_site() {
 
 	delete_option( 'widget-for-evvnt-calendar-settings' );
 	delete_option( 'widget_evvnt_calendar_widget' ); // Saved widget instances.
+	delete_option( 'evvnt_calendar_cache_gen' );     // API cache generation counter.
+	delete_option( 'evvnt_calendar_rules_sig' );     // Rewrite rule signature.
+	delete_option( 'evvnt_calendar_category_tree' ); // Cached category tree.
+	wp_clear_scheduled_hook( 'evvnt_calendar_refresh_category_tree' );
+	delete_option( 'rewrite_rules' );                // Regenerated without our rules on the next request.
 
 	// Cached category lists: evvnt_calendar_* transients and their timeouts.
 	$wpdb->query(

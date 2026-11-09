@@ -1,0 +1,226 @@
+{
+ "rawEvent": {
+  "title": "Pink Floyd's The Dark Side of the Moon - Immersive Experience",
+  "category_ids": [
+   7
+  ],
+  "root_category_ids": [
+   28
+  ],
+  "summary": "Experience Pink Floyd\u2019s The Dark Side of the Moon like never before in a truly immersive experience at our 360\u00ba cinema. Returning to Wales due to popular demand.",
+  "description_html": null,
+  "hashtag": "",
+  "images": [
+   {
+    "id": 3409839,
+    "original": {
+     "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409839/event_image/1_copy_in_A4_single_sided.jpg",
+     "width": 764,
+     "height": 1080
+    },
+    "featured": {
+     "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409839/event_image/featured_1_copy_in_A4_single_sided.jpg"
+    },
+    "list_thumb": {
+     "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409839/event_image/list_thumb_1_copy_in_A4_single_sided.jpg"
+    },
+    "hero": {
+     "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409839/event_image/hero_1_copy_in_A4_single_sided.jpg"
+    },
+    "featured_webp": {
+     "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409839/event_image/featured_1_copy_in_A4_single_sided.webp"
+    },
+    "list_thumb_webp": {
+     "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409839/event_image/list_thumb_1_copy_in_A4_single_sided.webp"
+    },
+    "hero_webp": {
+     "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409839/event_image/hero_1_copy_in_A4_single_sided.webp"
+    }
+   }
+  ],
+  "links": {
+   "Tickets": "https://go.evvnt.com/3743362-0"
+  },
+  "artists": "",
+  "keywords": "pinkfloyd, immersivecinema, 360experience, thedarksideofthemoon",
+  "prices": {
+   "General Admission": "GBP 23.0"
+  },
+  "local_publisher_ids": null,
+  "country": {
+   "iso_code": "GB",
+   "name": "United Kingdom",
+   "region": "Europe",
+   "subregion": "Northern Europe"
+  },
+  "ugc_publisher_ids": [
+   5293
+  ],
+  "publisher_ids": [
+   21,
+   23,
+   269,
+   1120,
+   1125,
+   1374,
+   2350,
+   2874,
+   4839,
+   4955,
+   5148,
+   5196,
+   5293,
+   6581,
+   7684,
+   7790,
+   7898,
+   9038,
+   9483,
+   9669,
+   9670,
+   9671,
+   10123,
+   10531,
+   10731,
+   10766,
+   11415,
+   11440,
+   11513,
+   11641,
+   12132,
+   12133,
+   12188,
+   12210
+  ],
+  "featured_publisher_ids": [
+   5293
+  ],
+  "sources": [
+   "evvnt"
+  ],
+  "eventbrite_id": null,
+  "organiser_name": "CULTVR",
+  "category_name": "Film / Cinema",
+  "source_id_s": "3743362",
+  "publisher_editable": false,
+  "publisher_flags": {
+   "5293": [
+    "featured"
+   ]
+  },
+  "sources_with_ugc_publishers": [
+   5293,
+   "evvnt"
+  ],
+  "editorial_tools_publisher_ids_filter": [
+   21,
+   23,
+   269,
+   1120,
+   1125,
+   1374,
+   2350,
+   2874,
+   4839,
+   4955,
+   5148,
+   5196,
+   5293,
+   6581,
+   7684,
+   7790,
+   7898,
+   9038,
+   9483,
+   9669,
+   9670,
+   9671,
+   10123,
+   10531,
+   10731,
+   10766,
+   11415,
+   11440,
+   11513,
+   11641,
+   12132,
+   12133,
+   12188,
+   12210,
+   "non_backfill"
+  ],
+  "editorial_tools_category_ids_filter": [
+   7,
+   "non_backfill"
+  ],
+  "online_only": false,
+  "evvnt_ticketing_portal_id": null,
+  "premium": true,
+  "sub_brand": null,
+  "print_eligible": true,
+  "weighted_start_time_i": 1784993400,
+  "category_names_with_ids": [
+   "7|Film / Cinema"
+  ],
+  "has_evvnt_ticketing?": false,
+  "event_parent_id": 2810218,
+  "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3743362-pink-floyd-s-the-dark-side-of-the-moon-immersive-experience",
+  "source_id": 3743362,
+  "blacklisted_publisher_ids": [],
+  "editorial_pick_publisher_ids": [],
+  "editorial_publisher_ids": [],
+  "description": "This internationally acclaimed immersive production offers an audiovisual journey not to be missed.\nThis is the show everyone has been talking about. \n\nPink Floyd\u2019s The Dark Side of the Moon comes to life with immersive visuals and surround sound for a truly unforgettable journey.\n\n'What an amazing experience!'\n'Truly remarkable.'\n'What an amazing event, truly astonishing!'\n'Honestly one of the best experiences of my life.'\n'Pink Floyd Dark Side of the Moon was awesome. Totally exceeded expectation. Loved it.'\n'We made an 8hr round trip from Cornwall last night just to see this show and it didn\u2019t disappoint. Would happily go again today!'\n\nFrom July until November 2026.\n",
+  "main_category_path": [
+   28,
+   39,
+   7
+  ],
+  "category_path_ids": [
+   28,
+   39,
+   7
+  ],
+  "city_country": "Cardiff, United Kingdom",
+  "start_date": "2026-07-25",
+  "start_time": "2026-07-25T16:30:00+01:00",
+  "end_time": "2026-11-28T18:15:00+00:00",
+  "door_time": null,
+  "last_entry_time": null,
+  "source_status": null,
+  "open_house": {},
+  "original_links": {
+   "Tickets": "https://www.cultvr.cymru/events/pink-floyd/"
+  },
+  "venue": {
+   "name": "CULTVR",
+   "address_1": "327 Penarth Road",
+   "address_2": null,
+   "town": "Cardiff",
+   "country": "United Kingdom",
+   "post_code": "CF11 8TT",
+   "latitude": 51.4596377,
+   "longitude": -3.1962342
+  },
+  "_geoloc": {
+   "lat": 51.4596377,
+   "lng": -3.1962342
+  },
+  "start_time_i": 1784993400,
+  "end_time_i": 1795889700,
+  "created_time_i": 1784452357,
+  "last_indexed_i": 1785123378,
+  "score": 200,
+  "tags": [],
+  "objectID": "43824207",
+  "indexed_occurrences": [],
+  "recurrence": null
+ },
+ "editorialContent": {
+  "content": null,
+  "headline": null
+ },
+ "signedStaticMapUrl": "https://maps.googleapis.com/maps/api/staticmap?center=51.4596377,-3.1962342%0A%20%20%20%20&zoom=18&size=%0A%20%20%20%20600x%0A%20%20%20%20480&%0A%20%20%20%20maptype=roadmap&markers=51.4596377,-3.1962342&key=AIzaSyD3O19K9zXUA3vTKOuzcEatg0GI5ROF3-s&signature=-THaKPW6NbmYwpj-kYISIqHP9N8=",
+ "baseFacets": [],
+ "presentRootCategoryIds": [],
+ "origin": "db"
+}

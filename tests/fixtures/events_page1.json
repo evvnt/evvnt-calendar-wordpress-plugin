@@ -1,0 +1,5079 @@
+{
+ "events": [
+  {
+   "title": "Comedy Hypnotist: The Incredible Boris",
+   "category_ids": [
+    3
+   ],
+   "root_category_ids": [
+    28
+   ],
+   "summary": "A hilarious hypnotic event with comedy hypnotist The Incredible Boris.",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3296684,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3296684/event_image/boris.goldstar.jpg",
+      "width": 1440,
+      "height": 810
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3296684/event_image/featured_boris.goldstar.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3296684/event_image/list_thumb_boris.goldstar.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3296684/event_image/hero_boris.goldstar.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3296684/event_image/featured_boris.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3296684/event_image/list_thumb_boris.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3296684/event_image/hero_boris.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3612252-0",
+    "Website": "https://go.evvnt.com/3612252-2"
+   },
+   "artists": "",
+   "keywords": "comedy, standupcomedy, comedyclub",
+   "prices": {
+    "General Admission": "USD 39.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Boca Black Box",
+   "category_name": "Comedy",
+   "source_id_s": "3612252",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793752200,
+   "category_names_with_ids": [
+    "3|Comedy"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2731976,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3612252-comedy-hypnotist-the-incredible-boris",
+   "source_id": 3612252,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "A hilarious hypnotic event with comedy hypnotist The Incredible Boris. You WILL laugh! Boris has appeared on The Robert Irvine Show, The Howie Mandel Show, Maury, The Vegas Show, Comics, The Casino, and at Just for Laughs Festival and Boston Comedy Festival. He has headlined on the Las Vegas strip, entertained troops in Afghanistan and Kuwait, and empowered women at a leadership conference in Dubai. Originating from Toronto, Canada, Boris was named Entertainer of the Year 3 times by Canadian Special Events. The passion with which Boris takes the stage is engaging and contagious, while the laughter is unforgettable.  \n\n\n\u201cBoris never ceases to amaze!\u201d , Howie Mandel, Talk Show Host / Comedian, \nElevating hypnotism from parlor shtick to a comedic state of mind!\u201d Entertainment Weekly \n\u201cThis is your new best friend!\u201d, Maury Povich, Talk Show Host \n\u201cPrepare to gasp in wonder.\u201d Toronto Sun",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3
+   ],
+   "city_country": "Boca Raton, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:30:00-05:00",
+   "end_time": "2026-11-03T21:30:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "http://bocablackbox.showare.com/ComedyHypnotistTheIncredibleBorisBocaBlackBox",
+    "Website": "https://bocablackbox.showare.com/eventperformances.asp?evt=1191"
+   },
+   "venue": {
+    "name": "Boca Black Box",
+    "address_1": "8221 Glades Road",
+    "address_2": null,
+    "town": "Boca Raton",
+    "country": "United States",
+    "post_code": "33434",
+    "latitude": 26.3692588,
+    "longitude": -80.1737628
+   },
+   "_geoloc": {
+    "lat": 26.3692588,
+    "lng": -80.1737628
+   },
+   "start_time_i": 1793752200,
+   "end_time_i": 1793759400,
+   "created_time_i": 1777549900,
+   "last_indexed_i": 1777549900,
+   "score": 200,
+   "tags": [],
+   "objectID": "42853501"
+  },
+  {
+   "title": "Redd Singing Bartender Dinner Show",
+   "category_ids": [
+    240
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "Redd the Singing Bartender is a legendary experience. Redd sings from a list of 400 song list you pick for tips while she serves your dinner and drinks. Reservations Recommended",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3513644,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513644/event_image/redds-someplace-else-1080.jpg",
+      "width": 1435,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513644/event_image/featured_redds-someplace-else-1080.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513644/event_image/list_thumb_redds-someplace-else-1080.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513644/event_image/hero_redds-someplace-else-1080.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513644/event_image/featured_redds-someplace-else-1080.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513644/event_image/list_thumb_redds-someplace-else-1080.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3513644/event_image/hero_redds-someplace-else-1080.webp"
+     }
+    }
+   ],
+   "links": {
+    "Inquiries": "https://go.evvnt.com/3857206-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Mike McGuinness",
+   "category_name": "Professional Entertainment Industry",
+   "source_id_s": "3857206",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    240,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793752200,
+   "category_names_with_ids": [
+    "240|Professional Entertainment Industry"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2889225,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3857206-redd-singing-bartender-dinner-show",
+   "source_id": 3857206,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Redd the Singing Bartender is a legendary experience in Santa Rosa Beach since 2013.. Redd sings from a list of 400 song list you pick for tips while she serves your dinner and drinks. Reservations Recommended Food made fresh from scratch using local produce. Known for slow cooked ribs, Burgers and cauliflower gluten free pizzas",
+   "main_category_path": [
+    4,
+    111,
+    240
+   ],
+   "category_path_ids": [
+    4,
+    111,
+    240
+   ],
+   "city_country": "Santa Rosa Beach, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:30:00-06:00",
+   "end_time": "2026-11-03T21:45:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Inquiries": "https://reddspub.com"
+   },
+   "venue": {
+    "name": "Redds Pub",
+    "address_1": "3906 U.S. 98 unit 1",
+    "address_2": null,
+    "town": "Santa Rosa Beach",
+    "country": "United States",
+    "post_code": "32459",
+    "latitude": 30.3749782,
+    "longitude": -86.242802
+   },
+   "_geoloc": {
+    "lat": 30.3749782,
+    "lng": -86.242802
+   },
+   "start_time_i": 1793752200,
+   "end_time_i": 1793763900,
+   "created_time_i": 1791051198,
+   "last_indexed_i": 1791051198,
+   "score": 200,
+   "tags": [],
+   "objectID": "44741159"
+  },
+  {
+   "title": "The Robert Cray Band",
+   "category_ids": [
+    16
+   ],
+   "root_category_ids": [
+    16
+   ],
+   "summary": "The Robert Cray Band performs live at Buffalo State Performing Arts Center November 3 as part of their All Amped Up Tour ",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3517586,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517586/event_image/26.11-3FBevent-1920x1005.jpg",
+      "width": 1920,
+      "height": 1005
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517586/event_image/featured_26.11-3FBevent-1920x1005.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517586/event_image/list_thumb_26.11-3FBevent-1920x1005.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517586/event_image/hero_26.11-3FBevent-1920x1005.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517586/event_image/featured_26.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517586/event_image/list_thumb_26.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517586/event_image/hero_26.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3861488-0",
+    "Website": "https://go.evvnt.com/3861488-2"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {
+    "Reserved": "USD 51.75"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    2959
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    2959,
+    3698,
+    4955,
+    5293,
+    5351,
+    5563,
+    6581,
+    6630,
+    7790,
+    8058,
+    8087,
+    8362,
+    8537,
+    8610,
+    8824,
+    9038,
+    9195,
+    10758,
+    10787,
+    11117,
+    11150,
+    11359,
+    11415,
+    11440,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    11956,
+    11957,
+    12022,
+    12089,
+    12188,
+    12210,
+    12278,
+    12359
+   ],
+   "featured_publisher_ids": [
+    2959
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Buffalo State Performing Arts Center ",
+   "category_name": "Live Music",
+   "source_id_s": "3861488",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "2959": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    2959,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    2959,
+    3698,
+    4955,
+    5293,
+    5351,
+    5563,
+    6581,
+    6630,
+    7790,
+    8058,
+    8087,
+    8362,
+    8537,
+    8610,
+    8824,
+    9038,
+    9195,
+    10758,
+    10787,
+    11117,
+    11150,
+    11359,
+    11415,
+    11440,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    11956,
+    11957,
+    12022,
+    12089,
+    12188,
+    12210,
+    12278,
+    12359,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    16,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793752200,
+   "category_names_with_ids": [
+    "16|Live Music"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2892113,
+   "source_broadcast_url": "https://www.buffalonews.com/events/?_evDiscoveryPath=/event/3861488-the-robert-cray-band",
+   "source_id": 3861488,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The Buffalo State Performing Arts Center presents The Robert Cray Band: All Amped Up Tour on Tuesday, November 3 at 7:30 p.m. Blues icon. Soul man. Rock and roller. Robert Cray is all these things\u2013and more. From forming a teenage garage band to striding the stage alongside several of the world\u2019s greatest guitarists, Cray has sold millions of albums and countless concert tickets, won five Grammy Awards, been inducted into the Blues Hall of Fame and the recipient of the Americana Music Lifetime Achievement Award, and has designed two signature model Fender guitars\u2014but for him, what\u2019s always mattered most is the music. Cray has shared stage and/or studio with the likes of Muddy Waters, B.B. King, Buddy Guy, Chuck Berry, The Rolling Stones, Eric Clapton, Tina Turner, Stevie Ray Vaughan and more. In 1978, he was cast (as a musician) in Animal House, the blockbuster comedy that made John Belushi famous. 1978 was also the year Cray recorded his debut album, Who\u2019s Been Talkin\u2019. Cray\u2019s 1983 album Bad Influence established him internationally, and his 1986 album, Strong Persuader\u2014released after he\u2019d signed with Mercury Records\u2014ensured he became the first blues/soul musician to breakthrough in the MTV era. That album led to Cray gracing the cover of Rolling Stone magazine, winning the Grammy for Best Contemporary Blues Recording in 1988, and supporting Tina Turner by joining her on stage every night and touring with The Rolling Stone. Across five decades, Cray has created richly inclusive American music, revitalizing both blues and soul while rocking hard with the very best. To achieve 50 years in the music industry and still be as fresh and committed as when starting out is an achievement few can boast of, but Cray can count himself among those few. He has released 19 studio albums, every one replete with extremely distinctive songs, won five Grammy Awards, and continues to make music that sounds like no one but Robert Cray.",
+   "main_category_path": [
+    16
+   ],
+   "category_path_ids": [
+    16
+   ],
+   "city_country": "Buffalo, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:30:00-05:00",
+   "end_time": "2026-11-03T21:30:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.etix.com/ticket/p/38876529/robert-cray-band-buffalo-buffalo-state-performing-arts-center?gclid=",
+    "Website": "https://buffalostatepac.org/event/robert-cray-band/buffalo-state-performing-arts-center/"
+   },
+   "venue": {
+    "name": "Buffalo State Performing Arts Center",
+    "address_1": "1300 Elmwood Avenue",
+    "address_2": null,
+    "town": "Buffalo",
+    "country": "United States",
+    "post_code": "14222",
+    "latitude": 42.9327263,
+    "longitude": -78.8783256
+   },
+   "_geoloc": {
+    "lat": 42.9327263,
+    "lng": -78.8783256
+   },
+   "start_time_i": 1793752200,
+   "end_time_i": 1793759400,
+   "created_time_i": 1791308277,
+   "last_indexed_i": 1792659533,
+   "score": 200,
+   "tags": [],
+   "objectID": "44763769"
+  },
+  {
+   "title": "Terrance Simien and The Zydeco Experience presented by the Susquehanna University Artist Series",
+   "category_ids": [
+    16
+   ],
+   "root_category_ids": [
+    16
+   ],
+   "summary": "Two-time Grammy Award winners, Terrance Simien and The Zydeco Experience come to Susquehanna University as some of the most respected and accomplished artists in American roots music today.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3454541,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3454541/event_image/Terrance-live-Zoo-Bar_photographer-James-Dean_snall.jpg",
+      "width": 400,
+      "height": 267
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3454541/event_image/featured_Terrance-live-Zoo-Bar_photographer-James-Dean_snall.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3454541/event_image/list_thumb_Terrance-live-Zoo-Bar_photographer-James-Dean_snall.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3454541/event_image/hero_Terrance-live-Zoo-Bar_photographer-James-Dean_snall.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3454541/event_image/featured_Terrance-live-Zoo-Bar_photographer-James-Dean_snall.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3454541/event_image/list_thumb_Terrance-live-Zoo-Bar_photographer-James-Dean_snall.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3454541/event_image/hero_Terrance-live-Zoo-Bar_photographer-James-Dean_snall.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3793750-0",
+    "Website": "https://go.evvnt.com/3793750-2",
+    "Facebook": "https://go.evvnt.com/3793750-3",
+    "Instagram": "https://go.evvnt.com/3793750-4",
+    "YouTube": "https://go.evvnt.com/3793750-5"
+   },
+   "artists": "Terrance Simien and The Zydeco Experience",
+   "keywords": "music, livemusic, rock, r&b, folk",
+   "prices": {
+    "Adult": "USD 20.0",
+    "Senior": "USD 15.0",
+    "Student": "USD 5.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Susquehanna University Artist Series",
+   "category_name": "Live Music",
+   "source_id_s": "3793750",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    16,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793752200,
+   "category_names_with_ids": [
+    "16|Live Music"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2844515,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3793750-terrance-simien-and-the-zydeco-experience-presented-by-the-susquehanna-university-artist-series",
+   "source_id": 3793750,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "At its roots, Zydeco was an acoustic tradition built around the accordion, fiddle and triangle, with songs sung in French. Early generations simply called it French music. Before that, its origins can the traced to the 19th century call-and response jur\u00e9 songs, performed with little more than clapping hands, stomping feet and \u201cthe yearning\u201d \u2014 often voices of the oppressed French-speaking Black people of Louisiana. For over 40 years, two-time Grammy Award\u2013winning, eighth-generation Louisiana Creole musician Terrance Simien has carried the tradition forward with his acclaimed Zydeco Experience band. Widely regarded as one of America\u2019s foremost roots musicians, Simien has helped introduce Zydeco to audiences across the globe while honoring its rich cultural heritage. The band\u2019s music has been featured in major studio films, including Disney\u2019s The Princess and the Frog, as well as television programs and radio commercials. They have performed in over 45 countries and, since the mid-1980s, have served as cultural ambassadors on U.S. Department of State cultural diplomacy tours.\nTickets can be obtained online at https://susqu.universitytickets.com/ \nBox Office hours: Mon-Fri, 12pm \u2013 5pm; closed during breaks; 570-372-ARTS",
+   "main_category_path": [
+    16
+   ],
+   "category_path_ids": [
+    16
+   ],
+   "city_country": "Selinsgrove, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:30:00-05:00",
+   "end_time": "2026-11-03T21:30:00-05:00",
+   "door_time": "2026-11-03T19:00:00-05:00",
+   "last_entry_time": "2026-11-03T20:00:00-05:00",
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://susqu.universitytickets.com/",
+    "Website": "https://www.susqu.edu/campus-life/arts-lectures-and-performances/artist-series/",
+    "Facebook": "https://www.facebook.com/SusquehannaUniversityEvents",
+    "Instagram": "https://www.instagram.com/susqevents/",
+    "YouTube": "https://www.youtube.com/channel/UC5kCDKNolLQI3vBQ7l-Diiw"
+   },
+   "venue": {
+    "name": "Weber Chapel Auditorium",
+    "address_1": "514 University Avenue",
+    "address_2": null,
+    "town": "Selinsgrove",
+    "country": "United States",
+    "post_code": "17870",
+    "latitude": 40.7984172,
+    "longitude": -76.8751835
+   },
+   "_geoloc": {
+    "lat": 40.7984172,
+    "lng": -76.8751835
+   },
+   "start_time_i": 1793752200,
+   "end_time_i": 1793759400,
+   "created_time_i": 1787604755,
+   "last_indexed_i": 1787604755,
+   "score": 200,
+   "tags": [],
+   "objectID": "44218367"
+  },
+  {
+   "title": "RSVP through Sweatpals: The Stretch Social: Post-Marathon Recovery Edition | $20.00/each",
+   "category_ids": [
+    146
+   ],
+   "root_category_ids": [
+    2
+   ],
+   "summary": "Recover, stretch, and recharge after the NYC Marathon! Enjoy guided mobility exercises, stress relief, and community connections. \ud83e\uddd8\u2728",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3559704,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559704/event_image/Screenshot_2026-11-02_at_9.50.16_pm.png",
+      "width": 865,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559704/event_image/featured_Screenshot_2026-11-02_at_9.50.16_pm.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559704/event_image/list_thumb_Screenshot_2026-11-02_at_9.50.16_pm.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559704/event_image/hero_Screenshot_2026-11-02_at_9.50.16_pm.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559704/event_image/featured_Screenshot_2026-11-02_at_9.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559704/event_image/list_thumb_Screenshot_2026-11-02_at_9.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3559704/event_image/hero_Screenshot_2026-11-02_at_9.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3902807-0"
+   },
+   "artists": "",
+   "keywords": "marathon, fitness, wellness, running, movement, exercise, hamstring, mobility, stressrelief, stretching",
+   "prices": {
+    "RSVP through Sweatpals": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Sweatpals",
+   "category_name": "Sports, Health & Fitness",
+   "source_id_s": "3902807",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    146,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793754000,
+   "category_names_with_ids": [
+    "146|Sports, Health & Fitness"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2919099,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3902807-rsvp-through-sweatpals-the-stretch-social-post-marathon-recovery-edition-20-00-each",
+   "source_id": 3902807,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Important \u2013 Please read before RSVPing\nThis is a PAID event. EVVNT is used for discovery only.\n\nEach ticket is $20.00 and must be secured via the official RSVP link below. EVVNT RSVPs or tickets will not be accepted at check-in.\n\nSECURE YOUR SPOT HERE: https://jvklqpnsjkvbsdlnzywi.supabase.co/functions/v1/track-click?id=ce379478-dfdf-4fad-b5a4-2ef692b964fa\n\nEvent updates\nEvent details on EVVNT may not always reflect the most up-to-date information.\nAny important updates or changes will be shared through the official event page and community updates.\n\nEvent details\nThe Stretch Social: Post-Marathon Recovery Edition\n\nTwo days after the NYC Marathon, it's time to give your body some love. Whether you ran all 26.2 miles, cheered from the sidelines, or just want a good reset, this guided stretching session will help you loosen tight muscles, ease soreness, and move more freely again.\n\nLed by OUTSIDERS team member Thelmys Lopez, the session puts post-race recovery first, with a focus on the hips, hamstrings, quads, calves, and lower back. It's mobility work set to a personalized playlist in a feel-good atmosphere, made for recovery, flexibility, and stress relief, all in community. Come for the stretch, stay for the energy, and leave feeling a little more connected.\n\nAll levels welcome. No marathon required.\n\nDo not sign up for this if you might not be able to attend. If you need to cancel, please let us know 72 hours before the event. If you don't let us know, you won't be able to attend future THE MOVE events!\n\nTHE MOVE: Weekly Movement Club by OUTSIDERS\n\nNYC has no shortage of run clubs, so we thought: let's do something different. THE MOVE is our weekly movement club that gets the community together every Tuesday for something active, social, and just plain fun. Each week features a new partner, a new activity, and a new way to move, from workouts and training sessions to runs with a delicious twist.\n\nAlways free for members. Always good vibes. Always community first.\n\nEach week is hosted by OUTSIDERS founder Jeremy Asgari and the OUTSIDERS team, bringing the same energy you know and love from our adventures to this new weekly series.\n\nJoin us every Tuesday and find your MOVE.\n\n\nDiscover more fitness & wellness events like this near you. Explore upcoming experiences through Sweatpals.",
+   "main_category_path": [
+    2,
+    139,
+    146
+   ],
+   "category_path_ids": [
+    2,
+    139,
+    146
+   ],
+   "city_country": "New York, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T20:00:00-05:00",
+   "end_time": "2026-11-03T21:15:00-05:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://jvklqpnsjkvbsdlnzywi.supabase.co/functions/v1/track-click?id=ce379478-dfdf-4fad-b5a4-2ef692b964fa"
+   },
+   "venue": {
+    "name": "NYPT Health & Rehab",
+    "address_1": "138 5th Avenue",
+    "address_2": null,
+    "town": "New York",
+    "country": "United States",
+    "post_code": "10011",
+    "latitude": 40.739085,
+    "longitude": -73.991887
+   },
+   "_geoloc": {
+    "lat": 40.739085,
+    "lng": -73.991887
+   },
+   "start_time_i": 1793754000,
+   "end_time_i": 1793758500,
+   "created_time_i": 1793627726,
+   "last_indexed_i": 1793627726,
+   "score": 200,
+   "tags": [],
+   "objectID": "45071050"
+  },
+  {
+   "title": "Fencing for Beginners Youth ages 10 -14",
+   "category_ids": [
+    146,
+    194,
+    150
+   ],
+   "root_category_ids": [
+    2,
+    14
+   ],
+   "summary": "Learn to Fence! Classes for youth ages 10-14 at Front Range Fencing Club.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3484760,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3484760/event_image/IMG_0192.jpg",
+      "width": 1080,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3484760/event_image/featured_IMG_0192.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3484760/event_image/list_thumb_IMG_0192.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3484760/event_image/hero_IMG_0192.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3484760/event_image/featured_IMG_0192.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3484760/event_image/list_thumb_IMG_0192.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3484760/event_image/hero_IMG_0192.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3826284-0",
+    "Tickets": "https://go.evvnt.com/3826284-2"
+   },
+   "artists": "",
+   "keywords": "fencing, classes, beginningfencingforadults, beginningfencingforteens, beginningfencingforchildren, learntofence, olympicsport",
+   "prices": {
+    "Pre-registration for the 4 classes": "USD 120.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Front Range Fencing Club",
+   "category_name": "Sports, Health & Fitness",
+   "source_id_s": "3826284",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    146,
+    194,
+    150,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793754000,
+   "category_names_with_ids": [
+    "146|Sports, Health & Fitness",
+    "194|Classes",
+    "150|Classes, Courses & Workshops"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2867131,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3826284-fencing-for-beginners-youth-ages-10-14",
+   "source_id": 3826284,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "No class Thanksgiving week 11/24\nAll beginning classes include equipment use.\nSee our website at:  http://www.frontrangefencingclub.com/\nAll beginning classes include use of equipment.\nYouth Beginning Fencing Ages 9-14 class is for children with no fencing experience. Each class starts with a fun warmup activity.  New fencing positions and movement are added each week until beginners start to \"bout\" and use their basic knowledge. Youth Beginning Fencing meets Tuesdays, 6:00-6:50\nTo Register   https://www.frontrangefencingclub.com/youthclasses\n\nMusketeers Beginning Fencing class is for children (ages 6-9) with no fencing experience. Each half hour class includes lots of fun learning to fence activities.\u00a0 The Musketeers class meets Wednesdays, 5:30-6:00.\u00a0 https://www.frontrangefencingclub.com/musketeers\n\nTeens and Adults Beginning Fencing class is for beginners with no fencing experience, ages 15 and up. Each class starts with warmups and learning fencing positions and movement. Beginners will use their basic knowledge in \"bouting\". Class meets Tuesdays, 7:00-7:50pm.\nhttps://www.frontrangefencingclub.com/classes-for-adults\n\nClasses meet at Chinook Trail Elementary School\n11795 Grand Lawn Circle\nColorado Springs, Colorado 80924\n",
+   "main_category_path": [
+    2,
+    139,
+    146
+   ],
+   "category_path_ids": [
+    2,
+    139,
+    146,
+    14,
+    194,
+    147,
+    150
+   ],
+   "city_country": "Colorado Springs, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:00:00-07:00",
+   "end_time": "2026-12-01T18:50:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "http://www.frontrangefencingclub.com/",
+    "Tickets": "https://www.frontrangefencingclub.com/classes-for-adults"
+   },
+   "venue": {
+    "name": "Chinook Trail Elementary Gym",
+    "address_1": "11795 Grand Lawn Circle",
+    "address_2": null,
+    "town": "Colorado Springs",
+    "country": "United States",
+    "post_code": "80924",
+    "latitude": 38.9741712,
+    "longitude": -104.735034
+   },
+   "_geoloc": {
+    "lat": 38.9741712,
+    "lng": -104.735034
+   },
+   "start_time_i": 1793754000,
+   "end_time_i": 1796176200,
+   "created_time_i": 1789415369,
+   "last_indexed_i": 1790626555,
+   "score": 200,
+   "tags": [],
+   "objectID": "44469770"
+  },
+  {
+   "title": "Dr. Seuss's How the Grinch Stole Christmas!",
+   "category_ids": [
+    33
+   ],
+   "root_category_ids": [
+    28
+   ],
+   "summary": "Climb up to snowy Mount Crumpit for this hit holiday musical spectacular as the grumpy green Grinch tries to steal Christmas from Whoville! ",
+   "description_html": null,
+   "hashtag": "Grinch",
+   "images": [
+    {
+     "id": 3517282,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517282/event_image/Dr._Seuss_s_How_the_Grinch_Stole_Christmas__-_Key_Art_2.jpg",
+      "width": 1080,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517282/event_image/featured_Dr._Seuss_s_How_the_Grinch_Stole_Christmas__-_Key_Art_2.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517282/event_image/list_thumb_Dr._Seuss_s_How_the_Grinch_Stole_Christmas__-_Key_Art_2.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517282/event_image/hero_Dr._Seuss_s_How_the_Grinch_Stole_Christmas__-_Key_Art_2.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517282/event_image/featured_Dr.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517282/event_image/list_thumb_Dr.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3517282/event_image/hero_Dr.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3861228-2",
+    "Facebook": "https://go.evvnt.com/3861228-3",
+    "Instagram": "https://go.evvnt.com/3861228-4",
+    "Twitter": "https://go.evvnt.com/3861228-5",
+    "YouTube": "https://go.evvnt.com/3861228-6",
+    "Vimeo": "https://go.evvnt.com/3861228-7",
+    "Website": "https://go.evvnt.com/3861228-8"
+   },
+   "artists": "Millie Swenson, Dr. Seuss, Timothy Mason, Mel Marvin, Jason Hansen, Victor Zupanc, Karla Grotting, Dean Holt, Tom Butsch, David Kay Mickelsen, Nancy Schertler, Sean Healey\u202f, Craig Gottschalk \u202f, Stacy McIntosh , Angela Steele, Samantha Brown, Z Makila, Kenji Shoemaker, Meghan Gaffney, Jada B. Smith, Reed Sigmund, Dean Holt, Matthew Hall, Autumn Ness, Adam Qualls, Suzie Juul, Aidan Folvag, Ben Glisczinski, Elisheva Scheuer, Chauncy Thomas, Luciana Erika Mayer , Matea C\u00f3rdova Stuart, Julia Wissink, Truman Bednar, Aliya Bailey, Kelilah Berwald, Miles Rauk, Brandon Brooks, Antonisia (Nisi) Collins, Bradley Johnson, Angela Steele, Matt Axtman, Brody Breen, Emily Ann Cleary , Fiona Kocaman",
+   "keywords": "musical, kids, children, family, families, holiday, christmas, holidays, theatre, theater, show, performance, seuss, grinch",
+   "prices": {
+    "Tickets start at $25": "USD 25.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Children's Theatre Company",
+   "category_name": "Musical",
+   "source_id_s": "3861228",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    33,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793754000,
+   "category_names_with_ids": [
+    "33|Musical"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2891867,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3861228-dr-seuss-s-how-the-grinch-stole-christmas",
+   "source_id": 3861228,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Dr. Seuss\u2019s How the Grinch Stole Christmas!\n\nClimb up to snowy Mount Crumpit and revel in the holiday story that makes hearts grow three sizes! In this hit musical spectacular, the grumpy green Grinch hatches a plan to steal Christmas from the cheerful Whos of Who-ville\u2014snatching trees, swiping stockings, and sneaking away with every last present. But when one small voice and a spark of holiday spirit shine through, the Grinch begins to discover the true meaning of Christmas. Filled with music, mischief, and Seussian charm, this joyful production sparkles with laughs, warmth, and a little holiday magic for the whole family. \n\n\"Delightfully entertaining.\"\n- Rohan Preston, Star Tribunez\n\nChildren's Theatre Company\nNovember 3, 2026 - January 3, 2027\nUnitedHealth Group Stage\n\nTickets may be purchased at childrenstheatre.org/grinch or by calling the ticket office at 612.874.0400. Ticket prices start at $25.  \n\nSchool groups interested in attending Dr. Seuss\u2019s How the Grinch Stole Christmas! can contact schools@childrenstheatre.org for more information.\n \nDr. Seuss\u2019s How the Grinch Stole Christmas! has a run time of two hours with one 20-minute intermission.  \n \nThis production is great for all ages. Lap passes are available for children 3 years and younger.\n\nRun time: 2 hours with one 20-minute intermission.\n\nBased on the Book How the Grinch Stole Christmas by Dr. Seuss\nBook and Lyrics by Timothy Mason\nMusic by Mel Marvin\nMusic Direction by Jason Hansen and Victor Zupanc\nChoreography by Karla Grotting\nDirected by Dean Holt\nA Children\u2019s Theatre Company Original Production\n \nTM & \u00a9 2026 Dr. Seuss Enterprises, L.P. All Rights Reserved.\n\nQuestions? Email tickets@childrenstheatre.org  \n\nChildren's Theatre Company   \n2400 3rd Ave South \nMinneapolis, MN 55404 ",
+   "main_category_path": [
+    28,
+    30,
+    23,
+    33
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    23,
+    33
+   ],
+   "city_country": "Minneapolis, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-06:00",
+   "end_time": "2027-01-03T14:00:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://childrenstheatre.org/whats-on/how-the-grinch-stole-christmas-26-27/#book",
+    "Facebook": "https://www.facebook.com/childrenstheatremn/",
+    "Instagram": "https://www.instagram.com/childrenstheatrecompany/",
+    "Twitter": "https://x.com/ChildrensTheatr",
+    "YouTube": "https://www.youtube.com/channel/UCM3X8YquGMGHRPSBSjOIjoQ",
+    "Vimeo": "https://vimeo.com/channels/childrenstheatre",
+    "Website": "https://childrenstheatre.org/whats-on/how-the-grinch-stole-christmas-26-27/"
+   },
+   "venue": {
+    "name": "Children's Theatre Company",
+    "address_1": "2400 3rd Avenue South",
+    "address_2": null,
+    "town": "Minneapolis",
+    "country": "United States",
+    "post_code": "55404",
+    "latitude": 44.9581382,
+    "longitude": -93.2733517
+   },
+   "_geoloc": {
+    "lat": 44.9581382,
+    "lng": -93.2733517
+   },
+   "start_time_i": 1793754000,
+   "end_time_i": 1799006400,
+   "created_time_i": 1791302543,
+   "last_indexed_i": 1791302543,
+   "score": 200,
+   "tags": [],
+   "objectID": "44763478"
+  },
+  {
+   "title": "St. Louis Jewish Book Festival \u2013 November 1-10",
+   "category_ids": [
+    226
+   ],
+   "root_category_ids": [
+    28
+   ],
+   "summary": "Now in its 48th year, the St. Louis Jewish Book Festival and Speaker Series features Jewish authors and books across every genre.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3520536,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520536/event_image/JBF_FB_logo.png",
+      "width": 432,
+      "height": 432
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520536/event_image/featured_JBF_FB_logo.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520536/event_image/list_thumb_JBF_FB_logo.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520536/event_image/hero_JBF_FB_logo.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520536/event_image/featured_JBF_FB_logo.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520536/event_image/list_thumb_JBF_FB_logo.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3520536/event_image/hero_JBF_FB_logo.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3864852-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {
+    "General Admission varies": "USD 38.92"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Jewish Community Center",
+   "category_name": "Books & Literature",
+   "source_id_s": "3864852",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    226,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793754000,
+   "category_names_with_ids": [
+    "226|Books & Literature"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2894363,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3864852-st-louis-jewish-book-festival-november-1-10",
+   "source_id": 3864852,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The J, Creve Coeur\n\nhttps://jccstl.com/arts-ideas/st-louis-jewish-book-festival/\n\nNow in its 48th year, the St. Louis Jewish Book Festival and Speaker Series features Jewish authors and books across every genre. Headliners include St. Louis native Danny Meyer (Shake Shack founder, memoirist), and Marc Shaiman (Broadway/film/TV composer & author) and St. Louis native Jessica Radloff (NYT best-selling author of The Big Bang Theory: The Definitive, Inside Story of the Epic Hit Series, TV host & former Glamour editor).\n\nVarious dates/times \u2013 check website for details.",
+   "main_category_path": [
+    28,
+    226
+   ],
+   "category_path_ids": [
+    28,
+    226
+   ],
+   "city_country": "St. Louis, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-06:00",
+   "end_time": "2026-11-03T21:00:00-06:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://jccstl.com/arts-ideas/st-louis-jewish-book-festival-speaker-series/event-tickets-schedule-at-a-glance/"
+   },
+   "venue": {
+    "name": "The J, Creve Coeur",
+    "address_1": "2 Millstone Campus Drive",
+    "address_2": null,
+    "town": "St. Louis",
+    "country": "United States",
+    "post_code": "63146",
+    "latitude": 38.6855627,
+    "longitude": -90.4095461
+   },
+   "_geoloc": {
+    "lat": 38.6855627,
+    "lng": -90.4095461
+   },
+   "start_time_i": 1793754000,
+   "end_time_i": 1793761200,
+   "created_time_i": 1791410017,
+   "last_indexed_i": 1791410018,
+   "score": 200,
+   "tags": [],
+   "objectID": "44777934"
+  },
+  {
+   "title": "MindSpace",
+   "category_ids": [
+    223
+   ],
+   "root_category_ids": [
+    458
+   ],
+   "summary": "MindSpace is an open community gathering of young adults 18-40 years of age.",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3239989,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3239989/event_image/PXL_20230329_003200892.MP.jpg",
+      "width": 1434,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3239989/event_image/featured_PXL_20230329_003200892.MP.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3239989/event_image/list_thumb_PXL_20230329_003200892.MP.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3239989/event_image/hero_PXL_20230329_003200892.MP.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3239989/event_image/featured_PXL_20230329_003200892.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3239989/event_image/list_thumb_PXL_20230329_003200892.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3239989/event_image/hero_PXL_20230329_003200892.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3548472-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Bozeman Dharma Center",
+   "category_name": "Meditation & Yoga",
+   "source_id_s": "3548472",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    223,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793755800,
+   "category_names_with_ids": [
+    "223|Meditation & Yoga"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2689863,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3548472-mindspace",
+   "source_id": 3548472,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Through meditation we foster a clear mind, compassionate heart, and develop an intimacy with human experiences. We encourage and support each other in daily practice to embody mindfulness in everyday life.",
+   "main_category_path": [
+    458,
+    221,
+    223
+   ],
+   "category_path_ids": [
+    458,
+    221,
+    223
+   ],
+   "city_country": "Bozeman, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:30:00-07:00",
+   "end_time": "2026-11-03T19:45:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://bozemandharmacenter.org/mindspace/"
+   },
+   "venue": {
+    "name": "Bozeman Dharma Center",
+    "address_1": "3810 Valley Commons Drive",
+    "address_2": null,
+    "town": "Bozeman",
+    "country": "United States",
+    "post_code": "59718",
+    "latitude": 45.6718362,
+    "longitude": -111.0892253
+   },
+   "_geoloc": {
+    "lat": 45.6718362,
+    "lng": -111.0892253
+   },
+   "start_time_i": 1793755800,
+   "end_time_i": 1793760300,
+   "created_time_i": 1774370041,
+   "last_indexed_i": 1774370042,
+   "score": 200,
+   "objectID": "42084991"
+  },
+  {
+   "title": "Scottish Country Dance",
+   "category_ids": [
+    129
+   ],
+   "root_category_ids": [
+    2
+   ],
+   "summary": "Scottish Country Dance is a social dance activity. All are welcome! No partner or experience needed to come! We do encourage to change partners with each dance, however, it is not required.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3558213,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3558213/event_image/Screenshot_2026-09-01_201634.png",
+      "width": 448,
+      "height": 342
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3558213/event_image/featured_Screenshot_2026-09-01_201634.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3558213/event_image/list_thumb_Screenshot_2026-09-01_201634.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3558213/event_image/hero_Screenshot_2026-09-01_201634.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3558213/event_image/featured_Screenshot_2026-09-01_201634.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3558213/event_image/list_thumb_Screenshot_2026-09-01_201634.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3558213/event_image/hero_Screenshot_2026-09-01_201634.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3901160-0"
+   },
+   "artists": "",
+   "keywords": "dance,socialdance,",
+   "prices": {
+    "General Admission": "USD 10.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Trudy Sherman",
+   "category_name": "Dance",
+   "source_id_s": "3901160",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    129,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793757600,
+   "category_names_with_ids": [
+    "129|Dance"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2917927,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3901160-scottish-country-dance",
+   "source_id": 3901160,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Each dance is taught with walkthrough's and we dance in 3 or 4 couple sets. You will learn basic through intermediate dance steps and formations used within the dances. You will learn jigs, reels, and the slower strathspeys which are similar to a waltz time dance.\n\nNo reservation is required.\n\nInstructor Jean Hundley Klopp\n\n$10 per class",
+   "main_category_path": [
+    2,
+    128,
+    129
+   ],
+   "category_path_ids": [
+    2,
+    128,
+    129
+   ],
+   "city_country": "Mesa, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-07:00",
+   "end_time": "2026-11-03T21:00:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://www.rscdsphoenix.com/"
+   },
+   "venue": {
+    "name": "Kaleidoscope Dance Space",
+    "address_1": "2848 South Carriage Lane",
+    "address_2": null,
+    "town": "Mesa",
+    "country": "United States",
+    "post_code": "85202",
+    "latitude": 33.362802,
+    "longitude": -111.89248
+   },
+   "_geoloc": {
+    "lat": 33.362802,
+    "lng": -111.89248
+   },
+   "start_time_i": 1793757600,
+   "end_time_i": 1793764800,
+   "created_time_i": 1793397080,
+   "last_indexed_i": 1793397080,
+   "score": 200,
+   "tags": [],
+   "objectID": "45055000"
+  },
+  {
+   "title": "An Evening of Spanish Guitar with Diego Garc\u00eda in Taos",
+   "category_ids": [
+    277
+   ],
+   "root_category_ids": [
+    16
+   ],
+   "summary": "Latin Grammy-winning guitarist Diego Garc\u00eda (Twanguero) presents Backroads of the Americas, a solo concert blending Spanish folk, Latin American rhythms and American roots music.",
+   "description_html": null,
+   "hashtag": "BackroadsTaos",
+   "images": [
+    {
+     "id": 3493913,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3493913/event_image/Twanguero_Spanish_guitar_by_Felix_Salazar.jpg",
+      "width": 1440,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3493913/event_image/featured_Twanguero_Spanish_guitar_by_Felix_Salazar.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3493913/event_image/list_thumb_Twanguero_Spanish_guitar_by_Felix_Salazar.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3493913/event_image/hero_Twanguero_Spanish_guitar_by_Felix_Salazar.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3493913/event_image/featured_Twanguero_Spanish_guitar_by_Felix_Salazar.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3493913/event_image/list_thumb_Twanguero_Spanish_guitar_by_Felix_Salazar.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3493913/event_image/hero_Twanguero_Spanish_guitar_by_Felix_Salazar.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3836737-0",
+    "Instagram": "https://go.evvnt.com/3836737-2",
+    "YouTube": "https://go.evvnt.com/3836737-5",
+    "Facebook": "https://go.evvnt.com/3836737-4"
+   },
+   "artists": "Diego Garcia, Twanguero",
+   "keywords": "livemusic, spanishguitar, concert, fingerstyleguitar, fingerpicking, acousticconcert, acousticguitar, twanguero, backroadsoftheamericas, instrumentalmusic, guitarconcert, diegogarcia, spanishmusic, rootsmusic, spanishfolk, guitarist, acousticmusic, latinmusic, fingerstyle, tango, blues, americana, folk, latinamericanmusic, worldmusic, guitarmusic, spanishguitarist, guitarlovers, musiclovers, sologuitar, instrumentalguitar, worldguitar, guitarevent, guitarshow, fingerstylemusic, acousticguitarmusic, spanishfolkguitar, rootsguitar, latinamericanguitar, liveguitar, guitarperformance, spanishfolkmusic, americanroots, acousticguitarconcert, allages, newmexicomusic, newmexico, newmexicolivemusic, newmexicoevents, newmexicoguitar, newmexicoguitarconcert, newmexicoconcerts, newmexicoconcert, spanishguitarnewmexico, livemusicnewmexico, newmexicoarts, newmexicoculture, newmexicospanishguitar, taos, taoslivemusic, taosevents, taosconcerts, taosarts, taosculture, taosnewmexico, taosguitar, taosmusicevents, taoslivemusic, livemusictaos, taosspanishguitar, taosmusic, taosguitarconcert, guitarmusictaos, taosfingerstyle",
+   "prices": {
+    "First Release": "USD 25.0",
+    "Early Reservation": "USD 29.0",
+    "Advance ": "USD 34.0",
+    "General Admission ": "USD 38.0",
+    "Day Of / Door (subject to availability) ": "USD 42.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4951,
+    4957,
+    5268,
+    5293,
+    5563,
+    6371,
+    6581,
+    6630,
+    7790,
+    8831,
+    9038,
+    10758,
+    10787,
+    11150,
+    11359,
+    11415,
+    11440,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12188,
+    12210,
+    12278
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Mudita Agency ",
+   "category_name": "World Music",
+   "source_id_s": "3836737",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4951,
+    4957,
+    5268,
+    5293,
+    5563,
+    6371,
+    6581,
+    6630,
+    7790,
+    8831,
+    9038,
+    10758,
+    10787,
+    11150,
+    11359,
+    11415,
+    11440,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12188,
+    12210,
+    12278,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    277,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793757600,
+   "category_names_with_ids": [
+    "277|World Music"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2873923,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3836737-an-evening-of-spanish-guitar-with-diego-garcia-in-taos",
+   "source_id": 3836737,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Diego Garc\u00eda (Spain) \u2014 Solo Spanish Guitar\n\nOne guitar. Many roads. A lifetime of stories.\n\nJoin Latin Grammy-winning guitarist Diego Garc\u00eda (Twanguero) for Backroads of the Americas, a solo concert and musical journey across Spain, Latin America and the United States.\n\nRooted in Spanish tradition and shaped by years of travel, Diego's music moves effortlessly between Spanish folk, Latin American rhythms and American roots influences. Performed solo, each piece carries the traces of landscapes, cultures and moments gathered along the way.\n\nPraised by NPR as \"one of the most fascinating guitarists I've ever heard,\" Diego has performed throughout Europe, the Americas and Asia, earning international recognition for his expressive playing and distinctive sound.\n\nSet in the intimate sanctuary of First Presbyterian Church, this is an evening designed for listening\u2014a chance to slow down, connect through music, and experience one of today's most original guitar voices.\n\nPresented independently by Mudit\u0101 Agency.",
+   "main_category_path": [
+    16,
+    277
+   ],
+   "category_path_ids": [
+    16,
+    277
+   ],
+   "city_country": "Taos, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-07:00",
+   "end_time": "2026-11-03T20:30:00-07:00",
+   "door_time": "2026-11-03T18:00:00-07:00",
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://tickets.mudita.agency/events/muditaagency/2418140/r/evv",
+    "Instagram": "https://www.instagram.com/twangueroofficial/",
+    "YouTube": "https://www.youtube.com/watch?v=b_aLRlmBfZM&list=PL1E9Nl6XxGx_4RPfXytGuERQSrVJSf0zZ&index=3",
+    "Facebook": "https://www.facebook.com/twanguero"
+   },
+   "venue": {
+    "name": "First Presbyterian Church-Taos",
+    "address_1": "215 Paseo Del Pueblo Norte",
+    "address_2": null,
+    "town": "Taos",
+    "country": "United States",
+    "post_code": "87571",
+    "latitude": 36.4099027,
+    "longitude": -105.5705956
+   },
+   "_geoloc": {
+    "lat": 36.4099027,
+    "lng": -105.5705956
+   },
+   "start_time_i": 1793757600,
+   "end_time_i": 1793763000,
+   "created_time_i": 1789939112,
+   "last_indexed_i": 1792018619,
+   "score": 200,
+   "tags": [],
+   "objectID": "44543491"
+  },
+  {
+   "title": "Fencing for Beginning teens and adults, ages 15 & up",
+   "category_ids": [
+    146,
+    194,
+    150
+   ],
+   "root_category_ids": [
+    2,
+    14
+   ],
+   "summary": "Learn to Fence! Classes are available for teens and adults ages 15 and up at Front Range Fencing Club.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3409704,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409704/event_image/IMG_0210.jpg",
+      "width": 1623,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409704/event_image/featured_IMG_0210.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409704/event_image/list_thumb_IMG_0210.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409704/event_image/hero_IMG_0210.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409704/event_image/featured_IMG_0210.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409704/event_image/list_thumb_IMG_0210.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3409704/event_image/hero_IMG_0210.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3742944-0",
+    "Tickets": "https://go.evvnt.com/3742944-2"
+   },
+   "artists": "",
+   "keywords": "fencing, classes, beginningfencingforadults, beginningfencingforteens, beginningfencingforchildren, learntofence, olympicsport",
+   "prices": {
+    "Pre-registration for the 4 classes": "USD 120.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Front Range Fencing Club",
+   "category_name": "Sports, Health & Fitness",
+   "source_id_s": "3742944",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    146,
+    194,
+    150,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793757600,
+   "category_names_with_ids": [
+    "146|Sports, Health & Fitness",
+    "194|Classes",
+    "150|Classes, Courses & Workshops"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2810160,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3742944-fencing-for-beginning-teens-and-adults-ages-15-up",
+   "source_id": 3742944,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "No class Thanksgiving week 11/24\nAll beginning classes include equipment use.\nSee our website at:  http://www.frontrangefencingclub.com/\nAll beginning classes include use of equipment.\nTeens and Adults Beginning Fencing class is for beginners with no fencing experience. Each class starts with warmups and learning fencing positions and movement. Beginners will use their basic knowledge in \"bouting\". Class meets Wednesdays, 7:00-7:50pm.\nTo register   https://www.frontrangefencingclub.com/classes-for-adults\n\nMusketeers Beginning Fencing class is for children (ages 6-9) with no fencing experience. Each half hour class includes lots of fun learning to fence activities. The Musketeers class meets Wednesdays, 5:30-6:00.\nTo Register   https://www.frontrangefencingclub.com/musketeers\n\nYouth Beginning Fencing Ages 9-14 class is for children with no fencing experience. Each class starts with a fun warmup activity.  New fencing positions and movement are added each week until beginners start to \"bout\" and use their basic knowledge. Youth Beginning Fencing meets Tuesdays, 6:00-6:50\nTo Register   https://www.frontrangefencingclub.com/youthclasses\n\n\n\nClasses meet at Chinook Trail Elementary School\n11795 Grand Lawn Circle\nColorado Springs, Colorado 80924\n",
+   "main_category_path": [
+    2,
+    139,
+    146
+   ],
+   "category_path_ids": [
+    2,
+    139,
+    146,
+    14,
+    194,
+    147,
+    150
+   ],
+   "city_country": "Colorado Springs, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:00:00-07:00",
+   "end_time": "2026-12-01T20:00:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "http://www.frontrangefencingclub.com/",
+    "Tickets": "https://www.frontrangefencingclub.com/classes-for-adults"
+   },
+   "venue": {
+    "name": "Chinook Trail Elementary Gym",
+    "address_1": "11795 Grand Lawn Circle",
+    "address_2": null,
+    "town": "Colorado Springs",
+    "country": "United States",
+    "post_code": "80924",
+    "latitude": 38.9741712,
+    "longitude": -104.735034
+   },
+   "_geoloc": {
+    "lat": 38.9741712,
+    "lng": -104.735034
+   },
+   "start_time_i": 1793757600,
+   "end_time_i": 1796180400,
+   "created_time_i": 1784413533,
+   "last_indexed_i": 1790626679,
+   "score": 200,
+   "tags": [],
+   "objectID": "43822160"
+  },
+  {
+   "title": "Tacos and Trivia on a Tuesday at Tallman Brewing",
+   "category_ids": [
+    481,
+    284,
+    188
+   ],
+   "root_category_ids": [
+    458,
+    9
+   ],
+   "summary": "You think you're a wise guy? Test your knowledge every Tuesday at Tallman to prove us wrong.",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3137558,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3137558/event_image/506177216_733894402490639_6490382736336879143_n.jpg",
+      "width": 1080,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3137558/event_image/featured_506177216_733894402490639_6490382736336879143_n.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3137558/event_image/list_thumb_506177216_733894402490639_6490382736336879143_n.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3137558/event_image/hero_506177216_733894402490639_6490382736336879143_n.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3137558/event_image/featured_506177216_733894402490639_6490382736336879143_n.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3137558/event_image/list_thumb_506177216_733894402490639_6490382736336879143_n.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3137558/event_image/hero_506177216_733894402490639_6490382736336879143_n.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3430522-0"
+   },
+   "artists": "",
+   "keywords": "trivia, trivianight, triviatuesday, brewery, craftbeer, beer, foodtrucks, lebanon, free, familyfriendly, tallmanbrewing",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Tallman Brewing",
+   "category_name": "Quiz/Trivia Night",
+   "source_id_s": "3430522",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    481,
+    284,
+    188,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793759400,
+   "category_names_with_ids": [
+    "481|Quiz/Trivia Night",
+    "284|Beer",
+    "188|Restaurants"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2611585,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3430522-tacos-and-trivia-on-a-tuesday-at-tallman-brewing",
+   "source_id": 3430522,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Bring friends and family and have fun with Trivia and Tacos every Tuesday from 6:30 to 8:00 pm. Every winning team takes home a prize. Make sure to come down early to score a table, or reserve one from the owners themselves. Our host, Kolbe, will make you laugh out of your seat and make the environment family friendly for all.",
+   "main_category_path": [
+    458,
+    481
+   ],
+   "category_path_ids": [
+    458,
+    481,
+    9,
+    284,
+    188
+   ],
+   "city_country": "Lebanon, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:30:00-08:00",
+   "end_time": "2026-11-03T20:00:00-08:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://tallmanbrewing.com/events"
+   },
+   "venue": {
+    "name": "Tallman Brewing & Food Trucks",
+    "address_1": "2055 Primrose Street",
+    "address_2": null,
+    "town": "Lebanon",
+    "country": "United States",
+    "post_code": "97355",
+    "latitude": 44.5263283,
+    "longitude": -122.9048673
+   },
+   "_geoloc": {
+    "lat": 44.5263283,
+    "lng": -122.9048673
+   },
+   "start_time_i": 1793759400,
+   "end_time_i": 1793764800,
+   "created_time_i": 1768188625,
+   "last_indexed_i": 1768188625,
+   "score": 200,
+   "objectID": "41588361"
+  },
+  {
+   "title": "UB40",
+   "category_ids": [
+    448
+   ],
+   "root_category_ids": [
+    16
+   ],
+   "summary": "UB40 is one of the most successful and influential British groups of all time, with more than 100 million albums sold, and more than 50 charting singles in the UK.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3170333,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/2597cb6e-cb59-4129-a4e3-20d93033757a.jpg/2597cb6e-cb59-4129-a4e3-20d93033757a.jpg",
+      "width": 1920,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/2597cb6e-cb59-4129-a4e3-20d93033757a.jpg/2597cb6e-cb59-4129-a4e3-20d93033757a_featured.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/2597cb6e-cb59-4129-a4e3-20d93033757a.jpg/2597cb6e-cb59-4129-a4e3-20d93033757a_list_thumb.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/2597cb6e-cb59-4129-a4e3-20d93033757a.jpg/2597cb6e-cb59-4129-a4e3-20d93033757a_hero.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/2597cb6e-cb59-4129-a4e3-20d93033757a.jpg/featured_2597cb6e-cb59-4129-a4e3-20d93033757a.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/2597cb6e-cb59-4129-a4e3-20d93033757a.jpg/list_thumb_2597cb6e-cb59-4129-a4e3-20d93033757a.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/2597cb6e-cb59-4129-a4e3-20d93033757a.jpg/hero_2597cb6e-cb59-4129-a4e3-20d93033757a.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3471288-0",
+    "YouTube": "https://go.evvnt.com/3471288-2"
+   },
+   "artists": "UB40",
+   "keywords": "foxtucsontheatre, ub40",
+   "prices": {
+    "Admission": "USD 116.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    394,
+    1120,
+    1374,
+    2809,
+    2874,
+    3176,
+    3189,
+    3698,
+    4955,
+    5290,
+    5293,
+    5563,
+    6363,
+    6581,
+    6630,
+    7790,
+    8366,
+    8404,
+    8931,
+    9038,
+    10758,
+    10787,
+    11001,
+    11150,
+    11359,
+    11415,
+    11440,
+    11487,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    11962,
+    12022,
+    12188
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Fox Tucson Theatre",
+   "category_name": "Pop",
+   "source_id_s": "3471288",
+   "publisher_editable": false,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    394,
+    1120,
+    1374,
+    2809,
+    2874,
+    3176,
+    3189,
+    3698,
+    4955,
+    5290,
+    5293,
+    5563,
+    6363,
+    6581,
+    6630,
+    7790,
+    8366,
+    8404,
+    8931,
+    9038,
+    10758,
+    10787,
+    11001,
+    11150,
+    11359,
+    11415,
+    11440,
+    11487,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    11962,
+    12022,
+    12188,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    448,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793759400,
+   "category_names_with_ids": [
+    "448|Pop"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2636888,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3471288-ub40",
+   "source_id": 3471288,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "UB40 is one of the most successful and influential British groups of all time, with more than 100 million albums sold, and more than 50 charting singles in the UK, including their trademark global #1 hits \u201cRed Red Wine\u201d and \u201c(I Can\u2019t Help) Falling in Love With You\u201d; and U.S. Top 10s \u201cHere I Am (Come and Take Me)\u201d and \u201cThe Way You Do The Things You Do.\u201d The reggae/pop legends set the stage this fall for their highly anticipated Relentless tour, performing their iconic hit songs, along with new songs and reworked classics from their recently released hit 45th Anniversary album, UB45, which reached #5 on the UK official album chart. The nine-piece ensemble\u2019s 2025 tour includes on select dates, The English Beat, Inner Circle and Big Mountain.\n\n\u201cFor more than 40 years, we\u2019ve been one of the hardest working touring bands in pop music,\u201d says guitarist/vocalist and UB40 co- founder Robin Campbell, who along with Jimmy Brown (drums), Earl Falconer (bass, vocals) and Norman Hassan (percussion, trombone, vocals), have been the core of the band for its entire ever-evolving history. \u201cWe aim to have a party every show. As much as we\u2019ve enjoyed our Zoom chats during lockdown, there\u2019s no substitute for the relationship and synergy we have with our live audiences.\u201d\n\nLead singer Matt Doyle joined the band in 2021 when he was a member of the popular Birmingham reggae band KIOKO \u2013 taking over for Duncan Campbell, UB40\u2019s lead singer since 2008 who retired after suffering a stroke. UB40 first got wind of the magic Doyle brings to the stage as a singer and performer when KIOKO opened for them in 2018 at The Royal Albert Hall and supported UB40 on their subsequent UK and European tours. Says Campbell, \u201cWatching Matt standing there in the middle of the stage like a rabbit in headlights, full of shock and awe that he\u2019s playing with a band he loved growing up, was simply fantastic but now his confidence has grown and he\u2019s settled into the job with consummate ease.\u201d\n\nFor Doyle, naturally, it\u2019s beyond a dream to be in those proverbial headlights. \u201cEveryone has been so warm and welcoming,\u201d he says, \u201cand I\u2019ve received so many beautiful wishes from fans from around the world, saying I\u2019m the perfect guy for the job and they can\u2019t wait to see me perform. Not only is it amazing being with the band singing these incredible songs I grew up with, but it\u2019s also a blast sitting in a room just listening to these guys with so much worldwide touring experience tell their stories. KIOKO were doing very well, and\n\nI\u2019m grateful for my time with them which allowed me to find my voice and hone my craft. But joining UB40 is like jumping on a ladder and climbing straight to the top floor.\u201d\n\nIn addition to Doyle, Campbell, Brown, Falconer and Hassan, UB40\u2019s current lineup includes long time members Martin Meredith (saxophone/WX7/ keyboards), and Laurence Parry (trumpet/ flugal trombone), IanThompson (saxophone) and newest member Jahred Gordon (keyboards), backing vocalist Matt Campbell plus permanent guest emcee Gilly G.\n\n2023 marked UB40\u2019s 45th year as a band, and they celebrated with further shows including an emotional sold out Royal Albert Hall and a summer return to the US. They\u2019ve continued their 45th celebrations by recording a new album which is out on the 19th of April 2024, the album \u2013 UB45 \u2013 consists of seven brand new songs and seven re-recordings of some classic UB40, a mixture of originals and Labour of Love songs. UB40\u2019s 45 year celebrations will continue well into 2024. Following the release of UB45, the band will embark on a massive headline arena tour of the UK and Europe.\n\nRobin Campbell said: \u201cWe\u2019re so proud of this album and the new songs, but we also wanted to showcase Matt Doyle\u2019s vocals on some of the classics because he does them so well. He\u2019s brought a new lease of life to our music, as has fellow Brummie \u201cpermanent guest\u201d MC Gilly G. When you play songs over so many years, the arrangements and vocals evolve and change. These updated versions of our hits are still close to the originals, but now reflect how we perform them today and to me they sound better than ever\u201d.\n\n\u201cWe continue to make albums for the simple reason that we love doing it and we\u2019re forever inspired by the reactions of our multiple generations of fans,\u201d says Campbell. \u201cPlaying \u2018Red Red Wine\u2019 and having thousands of people sing back to us every night is fantastic, but we never want to become a cabaret act or do a Vegas residency where we only play decades-old hits for nostalgia\u2019s sake. There\u2019s always an incredible buzz when we present new material and get the stamp of approval from the audience.",
+   "main_category_path": [
+    16,
+    448
+   ],
+   "category_path_ids": [
+    16,
+    448
+   ],
+   "city_country": "Tucson, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:30:00-07:00",
+   "end_time": "2026-11-03T21:30:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://foxtucson.com/event/ub40/",
+    "YouTube": "https://youtu.be/UJvvDmxk0nk"
+   },
+   "venue": {
+    "name": "Fox Tucson Theatre",
+    "address_1": "17 West Congress Street",
+    "address_2": null,
+    "town": "Tucson",
+    "country": "United States",
+    "post_code": "85701",
+    "latitude": 32.2220224,
+    "longitude": -110.9716152
+   },
+   "_geoloc": {
+    "lat": 32.2220224,
+    "lng": -110.9716152
+   },
+   "start_time_i": 1793759400,
+   "end_time_i": 1793766600,
+   "created_time_i": 1770159934,
+   "last_indexed_i": 1793238538,
+   "score": 200,
+   "tags": [],
+   "objectID": "41741962"
+  },
+  {
+   "title": "Lamont Percussion Ensemble",
+   "category_ids": [
+    16,
+    37
+   ],
+   "root_category_ids": [
+    16,
+    28
+   ],
+   "summary": "The Lamont Percussion Ensemble performs traditional percussion ensemble music as well as music from today's important composers, which includes commissions specifically written for our group.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3508830,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3508830/event_image/5.28_Percussion_Ensemble.jpg",
+      "width": 1076,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3508830/event_image/featured_5.28_Percussion_Ensemble.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3508830/event_image/list_thumb_5.28_Percussion_Ensemble.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3508830/event_image/hero_5.28_Percussion_Ensemble.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3508830/event_image/featured_5.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3508830/event_image/list_thumb_5.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3508830/event_image/hero_5.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3852430-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Lamont School of Music & Theatre",
+   "category_name": "Live Music",
+   "source_id_s": "3852430",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    16,
+    37,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793759400,
+   "category_names_with_ids": [
+    "16|Live Music",
+    "37|Music"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2885377,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3852430-lamont-percussion-ensemble",
+   "source_id": 3852430,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The Lamont Percussion Ensemble performs traditional percussion ensemble music as well as music from today's important composers, which includes commissions specifically written for our group. Event will take place in Gates Concert Hall.\nFree admission, no ticket required",
+   "main_category_path": [
+    16
+   ],
+   "category_path_ids": [
+    16,
+    28,
+    30,
+    37
+   ],
+   "city_country": "Denver, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:30:00-07:00",
+   "end_time": "2026-11-03T21:00:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://calendar.du.edu/lamont/event/18332-lamont-percussion-ensemble"
+   },
+   "venue": {
+    "name": "Newman Center for the Performing Arts",
+    "address_1": "2344 East Iliff Avenue",
+    "address_2": null,
+    "town": "Denver",
+    "country": "United States",
+    "post_code": "80210",
+    "latitude": 39.6741921,
+    "longitude": -104.9600114
+   },
+   "_geoloc": {
+    "lat": 39.6741921,
+    "lng": -104.9600114
+   },
+   "start_time_i": 1793759400,
+   "end_time_i": 1793764800,
+   "created_time_i": 1790785679,
+   "last_indexed_i": 1790785679,
+   "score": 200,
+   "tags": [],
+   "objectID": "44693437"
+  },
+  {
+   "title": "Necessary Turbulence: Fifty Years, One Unbreakable Sisterhood",
+   "category_ids": [
+    226
+   ],
+   "root_category_ids": [
+    28
+   ],
+   "summary": "Join us for a panel discussion of decorated officers and contributing authors for Necessary Turbulence: Fifty Years, One Unbreakable Sisterhood Forged in the Crucible of the Air Force Academy.",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3522165,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3522165/event_image/Necessary_Turbulence__-_newsletter___1920_x_1080_px_.png",
+      "width": 1920,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3522165/event_image/featured_Necessary_Turbulence__-_newsletter___1920_x_1080_px_.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3522165/event_image/list_thumb_Necessary_Turbulence__-_newsletter___1920_x_1080_px_.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3522165/event_image/hero_Necessary_Turbulence__-_newsletter___1920_x_1080_px_.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3522165/event_image/featured_Necessary_Turbulence__-_newsletter___1920_x_1080_px_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3522165/event_image/list_thumb_Necessary_Turbulence__-_newsletter___1920_x_1080_px_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3522165/event_image/hero_Necessary_Turbulence__-_newsletter___1920_x_1080_px_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3866606-0",
+    "Website": "https://go.evvnt.com/3866606-2"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {
+    "General Admission": "USD 5.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Roundabout Books",
+   "category_name": "Books & Literature",
+   "source_id_s": "3866606",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    226,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793759400,
+   "category_names_with_ids": [
+    "226|Books & Literature"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2895675,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3866606-necessary-turbulence-fifty-years-one-unbreakable-sisterhood",
+   "source_id": 3866606,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Tickets for this event are $5 general admission or book purchase. \n\nJoin us for a panel discussion of decorated officers and contributing authors for Necessary Turbulence: Fifty Years, One Unbreakable Sisterhood Forged in the Crucible of the Air Force Academy. Our guest speakers are all graduates from the U.S. Air Force Academy, classes 1991\u20132006, who have served their country as doctors, professors, and pilots. They are now local leaders in medicine, consultancy, higher education, commercial aviation, and nonprofit work, as well as passionate volunteers deeply invested in our Central Oregon community. It\u2019s a chance to learn, connect, and hear about their unique experiences stemming from a shared sisterhood.\n\nFor fifty years, an extraordinary story has been hiding in plain sight.\n\nThis book is carried by the lives of 108 women.\n\nThey did not move through history together.\nThey did not follow the same paths.\nThey did not arrive at the same destinations.\n\nWhat connects them is not outcome or identity, but a shared beginning\u2014and a shared willingness to shoulder commitment and duty early, then carry it forward across a lifetime of leadership.\n\nTheirs is the definitive account of fifty years that changed everything.\u200b\n\nNecessary Turbulence is a collective narrative of women who came of age inside systems that were not built for them and learned, in real time, how to live, lead, and redefine themselves anyway. In 1976, 157 young women marched beneath the words \"Bring Me Men\" at the top of a ramp leading into a world that had never imagined them. They, and the more than 12,000 who followed, faced a contentious culture, inadequate facilities, and a system designed to break them. Told they were destroying standards and would never graduate, more than 7,000 women proved them wrong.\n\nDrawn from 108 voices across five decades, this narrative traces what it meant to begin without a roadmap: to enter environments where expectations were unclear, belonging was not guaranteed, and the cost of getting it wrong was high. It chronicles women learning to navigate pressure, claim authority, and build lives of consequence.\n\nPanelists include:\n\nLt Col Carlene Perry, USAF (Retired)\n\nLt Col Torree McGowan, USAF Medical Corps (Retired)\n\nLt Col Lisa (Jorgensen) Christensen, USAF (Retired)\n\nCaptain Kristin (Hamlett) Berg, USAF (Veteran)\n\nLt Col MaxieJane Frazier, USAF (Retired)",
+   "main_category_path": [
+    28,
+    226
+   ],
+   "category_path_ids": [
+    28,
+    226
+   ],
+   "city_country": "Bend, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T18:30:00-08:00",
+   "end_time": "2026-11-03T19:30:00-08:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://roundaboutbookshop.com/event/2026-11-03/necessary-turbulence-fifty-years-one-unbreakable-sisterhood-forged-crucible-air",
+    "Website": "https://roundaboutbookshop.com/event/2026-11-03/necessary-turbulence-fifty-years-one-unbreakable-sisterhood-forged-crucible-air"
+   },
+   "venue": {
+    "name": "Roundabout Books",
+    "address_1": "900 Northwest Mount Washington Drive",
+    "address_2": null,
+    "town": "Bend",
+    "country": "United States",
+    "post_code": "97703",
+    "latitude": 44.0594757,
+    "longitude": -121.3565458
+   },
+   "_geoloc": {
+    "lat": 44.0594757,
+    "lng": -121.3565458
+   },
+   "start_time_i": 1793759400,
+   "end_time_i": 1793763000,
+   "created_time_i": 1791495463,
+   "last_indexed_i": 1791495463,
+   "score": 200,
+   "tags": [],
+   "objectID": "44787339"
+  },
+  {
+   "title": "Wassermann Piano Series presents Youl Sun - Bachauer Gold Medalist",
+   "category_ids": [
+    16,
+    450
+   ],
+   "root_category_ids": [
+    16
+   ],
+   "summary": "Youl Sun, 2024 Gina Bachauer Gold Medalist, is an internationally acclaimed pianist celebrated for his exceptional technique and artistry, with top honors from prestigious global competitions.",
+   "description_html": null,
+   "hashtag": "WassermannPianoSeries",
+   "images": [
+    {
+     "id": 3530930,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3530930/event_image/1126-Youl-Sun-Digital_insta-post.png",
+      "width": 1080,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3530930/event_image/featured_1126-Youl-Sun-Digital_insta-post.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3530930/event_image/list_thumb_1126-Youl-Sun-Digital_insta-post.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3530930/event_image/hero_1126-Youl-Sun-Digital_insta-post.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3530930/event_image/featured_1126-Youl-Sun-Digital_insta-post.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3530930/event_image/list_thumb_1126-Youl-Sun-Digital_insta-post.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3530930/event_image/hero_1126-Youl-Sun-Digital_insta-post.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3875014-0"
+   },
+   "artists": "Youl Sun",
+   "keywords": "piano, music, livemusic, utahstate, arts, classical",
+   "prices": {
+    "General Admission": "USD 25.0",
+    "Youth/Students": "USD 10.0",
+    "ArtSci Students": "USD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    11124
+   ],
+   "publisher_ids": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4105,
+    4111,
+    4119,
+    4235,
+    4236,
+    4237,
+    4248,
+    4265,
+    4955,
+    5268,
+    5293,
+    5563,
+    6581,
+    6630,
+    7078,
+    7790,
+    8476,
+    8477,
+    9038,
+    10758,
+    10787,
+    10934,
+    11124,
+    11150,
+    11359,
+    11415,
+    11440,
+    11443,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12188,
+    12210,
+    12278
+   ],
+   "featured_publisher_ids": [
+    11124
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "USU ArtSci",
+   "category_name": "Live Music",
+   "source_id_s": "3875014",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "11124": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    11124,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    1120,
+    1374,
+    2809,
+    2874,
+    3698,
+    4105,
+    4111,
+    4119,
+    4235,
+    4236,
+    4237,
+    4248,
+    4265,
+    4955,
+    5268,
+    5293,
+    5563,
+    6581,
+    6630,
+    7078,
+    7790,
+    8476,
+    8477,
+    9038,
+    10758,
+    10787,
+    10934,
+    11124,
+    11150,
+    11359,
+    11415,
+    11440,
+    11443,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    12022,
+    12188,
+    12210,
+    12278,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    16,
+    450,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793759400,
+   "category_names_with_ids": [
+    "16|Live Music",
+    "450|Classical"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2901116,
+   "source_broadcast_url": "https://www.cachevalleydaily.com/local-events/?_evDiscoveryPath=/event/3875014-wassermann-piano-series-presents-youl-sun-bachauer-gold-medalist",
+   "source_id": 3875014,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Youl Sun came to international prominence with a remarkable triple victory at the 2024 Gina Bachauer International Artists Piano Competition, earning the Gold Medal, Audience Choice Prize, and Student Jury Prize. Known for his exceptional technique, musicality, and artistic maturity, he continues to build an international career with performances in Europe, Asia, and the United States.\n \n His recent accomplishments include First Prize at the 2024 Seoul International Music Competition, Second Prize and the Audience Prize at the 2023 Viseu International Piano Competition in Portugal, and top prizes at the Isang Yun International Music Competition, the Istanbul Orchestra'Sion International Piano Competition, and the Maria Canals International Music Competition. Earlier honors include First Prize and the Polonaise Prize at the Asia-Pacific International Fryderyk Chopin Piano Competition.\n \n A graduate of the Korea National University of Arts, where he was admitted as an artistic prodigy, Youl continued his studies in France at the Schola Cantorum de Paris and is currently enrolled at the \u00c9cole Normale de Musique de Paris, studying with Olivier Gardon.",
+   "main_category_path": [
+    16
+   ],
+   "category_path_ids": [
+    16,
+    450
+   ],
+   "city_country": "Logan, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T19:30:00-07:00",
+   "end_time": "2026-11-03T21:30:00-07:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://utahstateaggies.evenue.net/events/WPS"
+   },
+   "venue": {
+    "name": "USU Caine Performance Hall (Manon Caine Russell Kathryn Caine Wanlass)",
+    "address_1": " Engineering Lab Walkway",
+    "address_2": null,
+    "town": "Logan",
+    "country": "United States",
+    "post_code": "84321",
+    "latitude": 41.7432677,
+    "longitude": -111.806775
+   },
+   "_geoloc": {
+    "lat": 41.7432677,
+    "lng": -111.806775
+   },
+   "start_time_i": 1793759400,
+   "end_time_i": 1793766600,
+   "created_time_i": 1792001688,
+   "last_indexed_i": 1793185928,
+   "score": 200,
+   "tags": [],
+   "objectID": "44850176"
+  },
+  {
+   "title": "Bank Heist: One Diamond, One Big Score",
+   "category_ids": [
+    240
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "The Serpent Diamond is locked away in Founders National Bank. Can your team beat the security, crack the clues, and make a clean getaway?",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3541030,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3541030/event_image/Bank-Heist.jpg",
+      "width": 665,
+      "height": 399
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3541030/event_image/featured_Bank-Heist.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3541030/event_image/list_thumb_Bank-Heist.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3541030/event_image/hero_Bank-Heist.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3541030/event_image/featured_Bank-Heist.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3541030/event_image/list_thumb_Bank-Heist.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3541030/event_image/hero_Bank-Heist.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3885570-0",
+    "Website": "https://go.evvnt.com/3885570-2"
+   },
+   "artists": "",
+   "keywords": "thingstodoinbendigo, rainydayactivities, immersiveescaperoom",
+   "prices": {
+    "Claim Your Heist Slot": "AUD 56.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "AU",
+    "name": "Australia",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Great Escape Bendigo",
+   "category_name": "Professional Entertainment Industry",
+   "source_id_s": "3885570",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    240,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793761200,
+   "category_names_with_ids": [
+    "240|Professional Entertainment Industry"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2909090,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3885570-bank-heist-one-diamond-one-big-score",
+   "source_id": 3885570,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Founders National Bank holds a prize worth taking a risk for: the Serpent Diamond. But getting inside the vault won\u2019t be as simple as it sounds. Your team will need to search for clues, work through security challenges, and figure out how to get your hands on the diamond.\n\nKeep your heads clear, share your discoveries, and make every move count. You have 60 minutes to see if your crew can pull off the heist before the clock runs out.",
+   "main_category_path": [
+    4,
+    111,
+    240
+   ],
+   "category_path_ids": [
+    4,
+    111,
+    240
+   ],
+   "city_country": "Bendigo, Australia",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T14:00:00+11:00",
+   "end_time": "2026-11-04T21:30:00+11:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://greatescapeau.com/bendigo/game-overview/",
+    "Website": "https://greatescapeau.com/bendigo"
+   },
+   "venue": {
+    "name": "155A Lyttleton Terrace",
+    "address_1": "155A Lyttleton Terrace",
+    "address_2": null,
+    "town": "Bendigo",
+    "country": "Australia",
+    "post_code": "3550",
+    "latitude": -36.7586871,
+    "longitude": 144.2861895
+   },
+   "_geoloc": {
+    "lat": -36.7586871,
+    "lng": 144.2861895
+   },
+   "start_time_i": 1793761200,
+   "end_time_i": 1793788200,
+   "created_time_i": 1792669439,
+   "last_indexed_i": 1792669439,
+   "score": 200,
+   "tags": [],
+   "objectID": "44927450"
+  },
+  {
+   "title": "Liquid Laughs Underground Comedy Open Mic Near Me!",
+   "category_ids": [
+    3,
+    216,
+    188
+   ],
+   "root_category_ids": [
+    28,
+    6,
+    9
+   ],
+   "summary": "Free to the public! Watch Boise Best Comics work and hone their craft! Free Free Free! Comics Sign ups at 8:30pm show at 9pm!",
+   "description_html": null,
+   "hashtag": "liquidlaughs",
+   "images": [
+    {
+     "id": 3499107,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/62d847d9-2fdc-4e3a-b193-b4a448e65222.jpg/62d847d9-2fdc-4e3a-b193-b4a448e65222.jpg",
+      "width": 810,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/62d847d9-2fdc-4e3a-b193-b4a448e65222.jpg/62d847d9-2fdc-4e3a-b193-b4a448e65222_featured.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/62d847d9-2fdc-4e3a-b193-b4a448e65222.jpg/62d847d9-2fdc-4e3a-b193-b4a448e65222_list_thumb.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/62d847d9-2fdc-4e3a-b193-b4a448e65222.jpg/62d847d9-2fdc-4e3a-b193-b4a448e65222_hero.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/62d847d9-2fdc-4e3a-b193-b4a448e65222.jpg/featured_62d847d9-2fdc-4e3a-b193-b4a448e65222.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/62d847d9-2fdc-4e3a-b193-b4a448e65222.jpg/list_thumb_62d847d9-2fdc-4e3a-b193-b4a448e65222.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/event_image/62d847d9-2fdc-4e3a-b193-b4a448e65222.jpg/hero_62d847d9-2fdc-4e3a-b193-b4a448e65222.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3422872-0",
+    "Facebook": "https://go.evvnt.com/3422872-8",
+    "Instagram": "https://go.evvnt.com/3422872-9"
+   },
+   "artists": "LJ Sullivan, Reese Samuels, Saul Berman, Max Knudson, Dustin Chalifoux, Aleko Simba, Derek Hayden, Dad Jokes Dawayne , Resheed Jellio, Dad Jokes Dawayne",
+   "keywords": "comedy, standup, entertainment, downtownboise, funny, laughs, liquidlaughs, madswede, comedylounge, cowboycomedy, solid, liquidlaughs, liquidlaughsunderground, comedyclub, laughter",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "US",
+    "name": "United States",
+    "region": "Americas",
+    "subregion": "Northern America"
+   },
+   "ugc_publisher_ids": [
+    7074,
+    7076,
+    8996
+   ],
+   "publisher_ids": [
+    38,
+    47,
+    469,
+    1120,
+    1374,
+    1909,
+    2809,
+    2874,
+    3698,
+    4955,
+    5268,
+    5293,
+    5563,
+    6581,
+    6630,
+    7074,
+    7076,
+    7790,
+    8996,
+    9038,
+    10324,
+    10758,
+    10787,
+    11129,
+    11150,
+    11328,
+    11359,
+    11415,
+    11440,
+    11492,
+    11493,
+    11494,
+    11495,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    11994,
+    12022,
+    12127,
+    12188,
+    12210,
+    12278,
+    12279
+   ],
+   "featured_publisher_ids": [
+    7074,
+    7076,
+    8996
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Liquid Laughs Underground ",
+   "category_name": "Comedy",
+   "source_id_s": "3422872",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "7074": [
+     "featured"
+    ],
+    "7076": [
+     "featured"
+    ],
+    "8996": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    7074,
+    7076,
+    8996,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    38,
+    47,
+    469,
+    1120,
+    1374,
+    1909,
+    2809,
+    2874,
+    3698,
+    4955,
+    5268,
+    5293,
+    5563,
+    6581,
+    6630,
+    7074,
+    7076,
+    7790,
+    8996,
+    9038,
+    10324,
+    10758,
+    10787,
+    11129,
+    11150,
+    11328,
+    11359,
+    11415,
+    11440,
+    11492,
+    11493,
+    11494,
+    11495,
+    11512,
+    11517,
+    11641,
+    11710,
+    11729,
+    11738,
+    11931,
+    11994,
+    12022,
+    12127,
+    12188,
+    12210,
+    12278,
+    12279,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    3,
+    216,
+    188,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793761200,
+   "category_names_with_ids": [
+    "3|Comedy",
+    "216|Nightlife",
+    "188|Restaurants"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2607788,
+   "source_broadcast_url": "https://idahopress.com/boiseweekly/local-events/?_evDiscoveryPath=/event/3422872-liquid-laughs-underground-comedy-open-mic-near-me",
+   "source_id": 3422872,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Free to the public! Watch Boise Best Comics work and hone their craft! Free Free Free! Comics Sign ups at 8:30pm show at 9pm!",
+   "main_category_path": [
+    28,
+    30,
+    3
+   ],
+   "category_path_ids": [
+    28,
+    30,
+    3,
+    6,
+    216,
+    9,
+    188
+   ],
+   "city_country": "Boise, United States",
+   "start_date": "2026-11-03",
+   "start_time": "2026-11-03T20:00:00-07:00",
+   "end_time": "2026-11-03T21:45:00-07:00",
+   "door_time": "2026-10-27T20:00:00-06:00",
+   "last_entry_time": "2026-10-27T21:30:00-06:00",
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://liquidboise.com/",
+    "Facebook": "https://www.facebook.com/boisesfunniestperson/",
+    "Instagram": "https://www.instagram.com/p/DXphSVEkp29/"
+   },
+   "venue": {
+    "name": "Liquid Lounge",
+    "address_1": "405 South 8th Street",
+    "address_2": null,
+    "town": "Boise",
+    "country": "United States",
+    "post_code": "83702",
+    "latitude": 43.6134893,
+    "longitude": -116.2062617
+   },
+   "_geoloc": {
+    "lat": 43.6134893,
+    "lng": -116.2062617
+   },
+   "start_time_i": 1793761200,
+   "end_time_i": 1793767500,
+   "created_time_i": 1767811758,
+   "last_indexed_i": 1793157044,
+   "score": 200,
+   "tags": [],
+   "objectID": "41556610"
+  },
+  {
+   "title": "Best tiles showroom in Pondicherry",
+   "category_ids": [
+    104
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "Devaki Ceramics ,best tiles showroom in Pondicherry, offering premium branded ceramic tiles and stylish bathroom fittings for every modern home.\n",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3249906,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3249906/event_image/Devaki-CERAMICS_Logo.jpg",
+      "width": 870,
+      "height": 480
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3249906/event_image/featured_Devaki-CERAMICS_Logo.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3249906/event_image/list_thumb_Devaki-CERAMICS_Logo.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3249906/event_image/hero_Devaki-CERAMICS_Logo.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3249906/event_image/featured_Devaki-CERAMICS_Logo.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3249906/event_image/list_thumb_Devaki-CERAMICS_Logo.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3249906/event_image/hero_Devaki-CERAMICS_Logo.webp"
+     }
+    }
+   ],
+   "links": {
+    "Meetup": "https://go.evvnt.com/3559335-0"
+   },
+   "artists": "",
+   "keywords": "besttilesshowroorminpondy, besttilesshopinpondicherry, besttilesstoreinpondicherr",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "IN",
+    "name": "India",
+    "region": "Asia",
+    "subregion": "Southern Asia"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Devaki Ceramics",
+   "category_name": "Manufacturing",
+   "source_id_s": "3559335",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    104,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793763000,
+   "category_names_with_ids": [
+    "104|Manufacturing"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2697093,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3559335-best-tiles-showroom-in-pondicherry",
+   "source_id": 3559335,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Devaki Ceramics is best tiles showroom in Pondicherry, offering premium branded ceramic tiles and stylish bathroom fittings for every modern home. Choosing the right Tiles & Sanitary Showroom in Pondicherry can transform your home renovation experience. With 20+ years of expertise, Devaki Ceramics is a trusted destination for premium tiles, sanitary ware, and fittings. Featuring top brands like Somany, RAK, Jaquar, and Hindware, they offer the perfect mix of style, durability, and value. \n\nWhether it\u2019s a bathroom makeover or finding the best bathroom sanitaryware in Pondicherry, Devaki Ceramics provides expert guidance and a wide range of modern tiles, elegant basins, and sleek faucets to match your style effortlessly.\n\nDevaki Ceramics is Best Tiles Store in Pondicherry where you can Explore premium ceramic tiles crafted for stylish, modern living. As the best tiles showroom in Pondicherry, we offer durable designs for every space, backed by expert guidance and trusted brands.\n\nDevaki Ceramics is Best Tile Shops in Pondicherry Experience timeless elegance and superior quality at a leading ceramics shop in Pondicherry. Explore a refined collection of premium tiles and bathroom fittings crafted to enhance both modern and classic spaces, combining durability, style, and expert craftsmanship\n\nDevaki Ceramics Tiles Shop in Pondicherry Our knowledgeable team is dedicated to providing personalized guidance, ensuring that you find the perfect solutions for your home or commercial projects. Whether you\u2019re seeking the latest designs or reliable building materials, Devaki Ceramics is your trusted partner in Pondicherry.\n\n\nDevaki Ceramics is proud to be the top destination for premium tiles and sanitary ware in Pondicherry. With 20 years of industry expertise, we offer an extensive collection of products from renowned brands like Somany, RAK, Jaquar, and Hindware. Whether you\u2019re renovating your home or building a commercial space, our showroom provides a wide range of high-quality solutions that blend style, durability, and functionality.\n\nDevaki Ceramics stands as Pondicherry\u2019s premier showroom for high-quality tiles, sanitary ware, and fittings. With 20 years of experience in the industry, we offer a vast selection of products from leading brands such as Somany, RAK, Jaquar, and Hindware. Our commitment to excellence is reflected in our curated collection and personalized service, helping customers find the perfect solutions for both residential and commercial projects. Visit us to experience unparalleled quality and expertise under one roof.\n\nBest Tiles Showroom in Pondicherry Offering Premium Ceramic Tiles for Modern Homes\nExplore premium ceramic tiles crafted for stylish, modern living. As the best tiles showroom in Pondicherry, we offer durable designs for every space, backed by expert guidance and trusted brands.\n\nFor further more details please contact - https://devakiceramics.com\n\nDevaki Ceramics",
+   "main_category_path": [
+    4,
+    95,
+    104
+   ],
+   "category_path_ids": [
+    4,
+    95,
+    104
+   ],
+   "city_country": "Puducherry, India",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T09:00:00+05:30",
+   "end_time": "2026-11-04T21:00:00+05:30",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Meetup": "https://devakiceramics.com"
+   },
+   "venue": {
+    "name": "Kamaraj Salai",
+    "address_1": " Kamaraj Salai",
+    "address_2": null,
+    "town": "Puducherry",
+    "country": "India",
+    "post_code": null,
+    "latitude": 11.9372987,
+    "longitude": 79.822485
+   },
+   "_geoloc": {
+    "lat": 11.9372987,
+    "lng": 79.822485
+   },
+   "start_time_i": 1793763000,
+   "end_time_i": 1793806200,
+   "created_time_i": 1774875661,
+   "last_indexed_i": 1774875662,
+   "score": 200,
+   "objectID": "42469270"
+  },
+  {
+   "title": "6th International Conference on Pediatrics and Neonatology",
+   "category_ids": [
+    319
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "We are honored and extremely glad in announcing our next series after the grand success of Pediatrics 2025, the\u201c6th International Conference on Pediatrics and Neonatology\u201d in Dubai, UAE.",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3120823,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3120823/event_image/Schema_mark_up.png",
+      "width": 1920,
+      "height": 1047
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3120823/event_image/featured_Schema_mark_up.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3120823/event_image/list_thumb_Schema_mark_up.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3120823/event_image/hero_Schema_mark_up.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3120823/event_image/featured_Schema_mark_up.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3120823/event_image/list_thumb_Schema_mark_up.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3120823/event_image/hero_Schema_mark_up.webp"
+     }
+    }
+   ],
+   "links": {
+    "Booking": "https://go.evvnt.com/3405516-0"
+   },
+   "artists": "",
+   "keywords": "pediatrics, conference, event",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "AE",
+    "name": "United Arab Emirates",
+    "region": "Asia",
+    "subregion": "Western Asia"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Scientex conferences",
+   "category_name": "Paediatrics",
+   "source_id_s": "3405516",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    319,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793768400,
+   "category_names_with_ids": [
+    "319|Paediatrics"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2598555,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3405516-6th-international-conference-on-pediatrics-and-neonatology",
+   "source_id": 3405516,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Our conference covers a wide range of important topics related to pediatrics and neonatology, such as investigating the most recent developments in the care of newborns and their mothers, comprehending and treating respiratory conditions in newborns, addressing heart-related issues in children and infants, emphasizing optimal nutrition and healthy growth for children, exploring surgical interventions for pediatrics and neonatal conditions, managing critical conditions and emergency situations in children, diagnosing and treating neurological disorders in young patients; talking about hormonal disorders in young patients; addressing gastrointestinal issues in young patients; emphasizing the special healthcare needs of adolescents; addressing issues related to vision in young patients; talking about lung-related issues in young patients; addressing developmental and behavioral aspects in children; managing skin-related issues in pediatric patients; discussing about issues related to the ears, nose, and throat in children; conversing about medication-related aspects in pediatric care; covering a wide range of diseases and disorders affecting children and infants; presenting concrete instances of neurological disorders in young patients.\n\nWe cordially welcome all the Pediatricians and Neonatologist across the globe to come join us and make this conference a catalyst for innovation, a haven for learning, and a celebration of the noble pursuit of enhancing the lives of our children.!!\n\nThe program will grab on both international and regional speakers' who are experts in neonatal and pediatric knowledge. Topics would be focused on common and updated scientific knowledge with the theme of \u201cEvolving therapeutics in Pediatrics and Neonatology \u2013 Heal a child, change the world\u201d. The 6th International Conference on Pediatrics and Neonatology is a culmination of dedication, innovation, and a shared commitment to the advancement of pediatric care worldwide.\n\n\u201cChildren are the hands by which we take hold of heaven. Every child deserves high-quality health care and you could make it happen.\u201d\n",
+   "main_category_path": [
+    4,
+    84,
+    319
+   ],
+   "category_path_ids": [
+    4,
+    84,
+    319
+   ],
+   "city_country": "Dubai, United Arab Emirates",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T09:00:00+04:00",
+   "end_time": "2026-11-04T17:00:00+04:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Booking": "http://www.pediatrics.scientexconference.com/registration"
+   },
+   "venue": {
+    "name": "City Seasons Dubai Hotel",
+    "address_1": "2 27th Street",
+    "address_2": null,
+    "town": "Dubai",
+    "country": "United Arab Emirates",
+    "post_code": null,
+    "latitude": 25.2564608,
+    "longitude": 55.3349335
+   },
+   "_geoloc": {
+    "lat": 25.2564608,
+    "lng": 55.3349335
+   },
+   "start_time_i": 1793768400,
+   "end_time_i": 1793797200,
+   "created_time_i": 1766556457,
+   "last_indexed_i": 1766556457,
+   "score": 200,
+   "objectID": "41480357"
+  },
+  {
+   "title": "Test Automation Innovation Summit Bahrain",
+   "category_ids": [
+    338,
+    103,
+    171
+   ],
+   "root_category_ids": [
+    151,
+    4
+   ],
+   "summary": "Test Automation Innovation Summit 2026 is a focused leadership conference dedicated to the future of software testing and quality engineering.",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3300311,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3300311/event_image/WhatsApp_Image_2026-04-22_at_11.55.03_PM.jpg",
+      "width": 1600,
+      "height": 900
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3300311/event_image/featured_WhatsApp_Image_2026-04-22_at_11.55.03_PM.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3300311/event_image/list_thumb_WhatsApp_Image_2026-04-22_at_11.55.03_PM.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3300311/event_image/hero_WhatsApp_Image_2026-04-22_at_11.55.03_PM.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3300311/event_image/featured_WhatsApp_Image_2026-04-22_at_11.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3300311/event_image/list_thumb_WhatsApp_Image_2026-04-22_at_11.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3300311/event_image/hero_WhatsApp_Image_2026-04-22_at_11.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3617254-0",
+    "Booking": "https://go.evvnt.com/3617254-2"
+   },
+   "artists": "",
+   "keywords": "software, testing, bahrain, testautomation, qualityassurance",
+   "prices": {
+    "Free": "BHD 0.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "BH",
+    "name": "Bahrain",
+    "region": "Asia",
+    "subregion": "Western Asia"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Leadsspire",
+   "category_name": "Web Development",
+   "source_id_s": "3617254",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    338,
+    103,
+    171,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793768400,
+   "category_names_with_ids": [
+    "338|Web Development",
+    "103|Information Technologies",
+    "171|Computer & IT"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2734827,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3617254-test-automation-innovation-summit-bahrain",
+   "source_id": 3617254,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Test Automation Innovation Summit 2026 is a focused leadership conference dedicated to the future of software testing and quality engineering. The event is organised by Leadsspire and will be held in Bahrain.\n\nBahrain is a fast-growing technology hub, making it an ideal location to bring together the testing and QA community under one roof.\n\nAbout the Summit\n\nThe summit will bring together 200 plus leaders and experts from the software testing and quality assurance ecosystem, including\n\nQA and Test Leaders\nAutomation Engineers and SDETs\nDevOps and Engineering Heads\nAI and Testing Solution Providers\nTechnology Consultants and Product Teams\n\nThe focus is on real-world challenges, practical strategies, and future-ready solutions in test automation and quality engineering.\n\nKey Topics Covered\n\nTest automation strategy and frameworks\nAI and machine learning in software testing\nContinuous testing in DevOps environments\nPerformance, security, and API testing\nScaling automation and improving test efficiency\n\nEvent Highlights\n\nExpert keynote sessions from industry leaders\nPanel discussions with QA leaders and practitioners\nNetworking with decision makers and tech professionals\nStrong brand visibility before, during, and after the event\n\nWhy Partners Should Join\n\nReach a highly targeted QA and testing audience\nGain visibility among 200 plus industry professionals\nPosition your brand as a leader in testing innovation\nGet exposure through event promotions and media coverage\n\nWho Should Attend\n\nQA and Testing Leaders\nAutomation Engineers and Developers\nDevOps and Engineering Teams\nTechnology and QA Solution Providers\nStartups and product companies in the testing space\n\nWebsite Link:\nhttps://www.testautomationinnovationsummit.com/bahrain\n\nFor partnership opportunities, branding options, or collaboration details, please connect with the team or write to info@leadsspire.com\n\nNote:\nThis is a paid event. Secure your seat today by registering on the website.",
+   "main_category_path": [
+    151,
+    170,
+    338
+   ],
+   "category_path_ids": [
+    151,
+    170,
+    338,
+    4,
+    95,
+    103,
+    171
+   ],
+   "city_country": "Manama, Bahrain",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T08:00:00+03:00",
+   "end_time": "2026-11-04T17:00:00+03:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.testautomationinnovationsummit.com/bahrain",
+    "Booking": "https://www.testautomationinnovationsummit.com/bahrain"
+   },
+   "venue": {
+    "name": "Manama",
+    "address_1": "Manama",
+    "address_2": null,
+    "town": "Manama",
+    "country": "Bahrain",
+    "post_code": null,
+    "latitude": 26.2235305,
+    "longitude": 50.5875935
+   },
+   "_geoloc": {
+    "lat": 26.2235305,
+    "lng": 50.5875935
+   },
+   "start_time_i": 1793768400,
+   "end_time_i": 1793800800,
+   "created_time_i": 1777826423,
+   "last_indexed_i": 1777826423,
+   "score": 200,
+   "tags": [],
+   "objectID": "42897948"
+  },
+  {
+   "title": "Agentic Transformation Europe",
+   "category_ids": [
+    4
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "See how leading organisations are using agents to transform operations, sharpen decisions, and drive efficiency, with a clear focus on high\u2011value use cases, governance, and delivering results.",
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3361556,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3361556/event_image/GPPC_1200_x_300__840_x_400_px_.png",
+      "width": 1920,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3361556/event_image/featured_GPPC_1200_x_300__840_x_400_px_.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3361556/event_image/list_thumb_GPPC_1200_x_300__840_x_400_px_.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3361556/event_image/hero_GPPC_1200_x_300__840_x_400_px_.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3361556/event_image/featured_GPPC_1200_x_300__840_x_400_px_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3361556/event_image/list_thumb_GPPC_1200_x_300__840_x_400_px_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3361556/event_image/hero_GPPC_1200_x_300__840_x_400_px_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3680591-0",
+    "Brochure": "https://go.evvnt.com/3680591-2"
+   },
+   "artists": "",
+   "keywords": "agentic, agenticai, transformation",
+   "prices": {
+    "General Admission": "EUR 1099.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "NL",
+    "name": "Netherlands",
+    "region": "Europe",
+    "subregion": "Western Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "IQPC",
+   "category_name": "Conferences",
+   "source_id_s": "3680591",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    4,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793777400,
+   "category_names_with_ids": [
+    "4|Conferences"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2774629,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3680591-agentic-transformation-europe",
+   "source_id": 3680591,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "The two-day event offers a unique chance for our audience to see how leading organisations are using agents to transform operations, sharpen decisions, and drive efficiency, with a clear focus on high\u2011value use cases, governance, and delivering results that matter. \n\nAt the event, our audience will gain practical strategies to scale value across two focused tracks: governance & policy and business case & ROI.\n\nAs Europe\u2019s first agentic-focused event in 2025, and now the only dedicated back-office summit, we have built a strong community of senior leaders from across AI, data, governance, and transformation. Confirmed speakers include:\n\nAdri Purkayastha, Group Head AI Technology OpRisk, BNP Paribas\nOliver Patel, Head of Enterprise AI Governance, AstraZeneca\nMarinus den Breejen, Chief Architect, Nationale-Nederlanden International\nFabrizio Antonelli, VP, Global Head of Data and AI, Swarovski\nAritra Chakravarty, Group Head of Agentic AI, Lloyds Banking Group\nMercedes Pantoja Calero, Head of Global Data & AI, Siemens Healthineers AG\nJordi Escayola, Global Head Advanced Analytics, AI & Data Science, Sanofi ",
+   "main_category_path": [
+    4
+   ],
+   "category_path_ids": [
+    4
+   ],
+   "city_country": "Amsterdam, Netherlands",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T08:30:00+01:00",
+   "end_time": "2026-11-05T17:00:00+01:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.aidataanalytics.network/events-agentic-ai-summit/srspricing#/",
+    "Brochure": "https://www.aidataanalytics.network/events-agentic-ai-summit/agenda-mc/?utm_source=Evvnt&utm_medium=Media%20Partner&utm_campaign=51391.002_evvnt_listing&utm_term=&utm_content=&disc=&extTreatId=7636726"
+   },
+   "venue": {
+    "name": "Amsterdam Marriot Hotel",
+    "address_1": "Stadhouderskade 12, 1054 ES Amsterdam",
+    "address_2": null,
+    "town": "Amsterdam",
+    "country": "Netherlands",
+    "post_code": null,
+    "latitude": 52.3675734,
+    "longitude": 4.9041389
+   },
+   "_geoloc": {
+    "lat": 52.3675734,
+    "lng": 4.9041389
+   },
+   "start_time_i": 1793777400,
+   "end_time_i": 1793894400,
+   "created_time_i": 1781184357,
+   "last_indexed_i": 1781184357,
+   "score": 200,
+   "tags": [],
+   "objectID": "43402914"
+  },
+  {
+   "title": "AutomationSTAR Conference 4-5 Nov 2026 | Antwerp, Belgium",
+   "category_ids": [
+    95,
+    629
+   ],
+   "root_category_ids": [
+    4,
+    458
+   ],
+   "summary": "AutomationSTAR is a 2-day test automation conference. In 2026, it takes place in Antwerp, 4-5 Nov and is open to all test automation engineers, developers, QA and testers that want to automate.",
+   "hashtag": "AutomationSTAR2026",
+   "images": [
+    {
+     "id": 3156454,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3156454/event_image/AS2026-Join-Us-Active-Campaign-Header.png",
+      "width": 650,
+      "height": 366
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3156454/event_image/featured_AS2026-Join-Us-Active-Campaign-Header.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3156454/event_image/list_thumb_AS2026-Join-Us-Active-Campaign-Header.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3156454/event_image/hero_AS2026-Join-Us-Active-Campaign-Header.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3156454/event_image/featured_AS2026-Join-Us-Active-Campaign-Header.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3156454/event_image/list_thumb_AS2026-Join-Us-Active-Campaign-Header.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3156454/event_image/hero_AS2026-Join-Us-Active-Campaign-Header.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3455023-0"
+   },
+   "artists": "",
+   "keywords": "testautomation, automationstar, softwaretesting",
+   "prices": {
+    "General Admission": "EUR 1400.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "BE",
+    "name": "Belgium",
+    "region": "Europe",
+    "subregion": "Western Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "AutomationSTAR Conferences",
+   "category_name": "Engineering & Technology",
+   "source_id_s": "3455023",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    95,
+    629,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793779200,
+   "category_names_with_ids": [
+    "95|Engineering & Technology",
+    "629|Technology"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2626329,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3455023-automationstar-conference-4-5-nov-2026-antwerp-belgium",
+   "source_id": 3455023,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Ready for 2 epic days focused on test automation?  \n\nTechnical sessions. Dynamic speakers. Actionable advice.  \n\nThe AutomationSTAR speakers are world-class experts, dedicated to help you tackle challenges, answer your questions, and equip you with practical solutions. \n\nConnect with industry leaders and 500 test automation engineers, developers, QA and testers that want to automate. \n\nImmerse yourself in Frameworks, Strategies, Performance Testing, Web Automation, Testability, UI Automation, ETL Testing, Gen-AI, TestOps, Fuzz Testing, APIs, Tools such as Selenium, Playwright, Maven, Robot Framework as well as Python and Gherkin. \n\nWhether you're a code ninja, architect extraordinaire, or QA master, this is the event for you. ",
+   "main_category_path": [
+    4,
+    95
+   ],
+   "category_path_ids": [
+    4,
+    95,
+    458,
+    629
+   ],
+   "city_country": "Antwerpen, Belgium",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T09:00:00+01:00",
+   "end_time": "2026-11-05T17:00:00+01:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://automation.eurostarsoftwaretesting.com/tickets/"
+   },
+   "venue": {
+    "name": "Flanders Meeting & Convention Center Antwerp",
+    "address_1": "20 Koningin Astridplein",
+    "address_2": null,
+    "town": "Antwerpen",
+    "country": "Belgium",
+    "post_code": "2018",
+    "latitude": 51.2179594,
+    "longitude": 4.4227194
+   },
+   "_geoloc": {
+    "lat": 51.2179594,
+    "lng": 4.4227194
+   },
+   "start_time_i": 1793779200,
+   "end_time_i": 1793894400,
+   "created_time_i": 1769427272,
+   "last_indexed_i": 1769427272,
+   "score": 200,
+   "objectID": "41681759"
+  },
+  {
+   "title": "12th Biennial IBA Global Immigration Conference",
+   "category_ids": [
+    4
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "A conference presented by the IBA Immigration and Nationality Law Committee",
+   "description_html": null,
+   "hashtag": "IBAImm",
+   "images": [
+    {
+     "id": 3422253,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3422253/event_image/2844-Global-Immigation-London-1200x628-BN.jpg",
+      "width": 1200,
+      "height": 628
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3422253/event_image/featured_2844-Global-Immigation-London-1200x628-BN.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3422253/event_image/list_thumb_2844-Global-Immigation-London-1200x628-BN.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3422253/event_image/hero_2844-Global-Immigation-London-1200x628-BN.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3422253/event_image/featured_2844-Global-Immigation-London-1200x628-BN.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3422253/event_image/list_thumb_2844-Global-Immigation-London-1200x628-BN.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3422253/event_image/hero_2844-Global-Immigation-London-1200x628-BN.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3756762-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {
+    "IBA Member (before 2 Oct)": "GBP 825.0",
+    "IBA Non-member (before 2 Oct)": "GBP 1005.0",
+    "IBA Member  (after 2 Oct)": "GBP 915.0",
+    "IBA Non-member (after 2 Oct)": "GBP 1095.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    80,
+    154,
+    269,
+    1120,
+    1130,
+    1175,
+    1272,
+    1374,
+    1774,
+    1951,
+    2034,
+    2418,
+    2874,
+    4900,
+    4907,
+    4911,
+    5123,
+    5148,
+    5196,
+    5293,
+    5386,
+    5569,
+    6235,
+    6581,
+    7684,
+    7790,
+    9038,
+    9703,
+    9704,
+    10008,
+    10018,
+    10058,
+    10128,
+    10184,
+    10205,
+    10731,
+    11006,
+    11137,
+    11415,
+    11440,
+    11498,
+    11513,
+    11641,
+    12132,
+    12133,
+    12188,
+    12210
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "International Bar Association",
+   "category_name": "Conferences",
+   "source_id_s": "3756762",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    80,
+    154,
+    269,
+    1120,
+    1130,
+    1175,
+    1272,
+    1374,
+    1774,
+    1951,
+    2034,
+    2418,
+    2874,
+    4900,
+    4907,
+    4911,
+    5123,
+    5148,
+    5196,
+    5293,
+    5386,
+    5569,
+    6235,
+    6581,
+    7684,
+    7790,
+    9038,
+    9703,
+    9704,
+    10008,
+    10018,
+    10058,
+    10128,
+    10184,
+    10205,
+    10731,
+    11006,
+    11137,
+    11415,
+    11440,
+    11498,
+    11513,
+    11641,
+    12132,
+    12133,
+    12188,
+    12210,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    4,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793779200,
+   "category_names_with_ids": [
+    "4|Conferences"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2819687,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3756762-12th-biennial-iba-global-immigration-conference",
+   "source_id": 3756762,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Topics include:\nNavigating mobility through geopolitical, economic and technological disruption\nTechnology, innovation and the practice of immigration law\nNorth America immigration update\nCitizenship by descent: Law proof and policy in a changing world\nEmployer immigration compliance and enforcement risk: staying ahead of the curve\nIn conversation: law and literature\nDenaturalisation and loss of citizenship: powers, limits and emerging trends\nHow open is your jurisdiction to attracting global talent?\nTrends in global mobility\nWorking across cultures",
+   "main_category_path": [
+    4
+   ],
+   "category_path_ids": [
+    4
+   ],
+   "city_country": "London, United Kingdom",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T08:00:00+00:00",
+   "end_time": "2026-11-06T20:00:00+00:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.ibanet.org/conference-details/CONF2844"
+   },
+   "venue": {
+    "name": "Leonardo Royal London St Paul's",
+    "address_1": "10 Godliman Street",
+    "address_2": null,
+    "town": "London",
+    "country": "United Kingdom",
+    "post_code": "EC4V 5AJ",
+    "latitude": 51.5127807,
+    "longitude": -0.0996655
+   },
+   "_geoloc": {
+    "lat": 51.5127807,
+    "lng": -0.0996655
+   },
+   "start_time_i": 1793779200,
+   "end_time_i": 1793995200,
+   "created_time_i": 1785334136,
+   "last_indexed_i": 1785334137,
+   "score": 200,
+   "tags": [],
+   "objectID": "43942287"
+  },
+  {
+   "title": "Student Success UK&IE 2026",
+   "category_ids": [
+    4,
+    122,
+    185
+   ],
+   "root_category_ids": [
+    4,
+    151
+   ],
+   "summary": "Join us in Bath for an event focused on improving student outcomes through innovative pedagogical practices, support services and the data that underpins them.\n\n",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3418941,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3418941/event_image/SEO_image__4_.png",
+      "width": 1200,
+      "height": 630
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3418941/event_image/featured_SEO_image__4_.png"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3418941/event_image/list_thumb_SEO_image__4_.png"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3418941/event_image/hero_SEO_image__4_.png"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3418941/event_image/featured_SEO_image__4_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3418941/event_image/list_thumb_SEO_image__4_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3418941/event_image/hero_SEO_image__4_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3753424-0",
+    "Website": "https://go.evvnt.com/3753424-2"
+   },
+   "artists": "Arif Ahmed Director for Freedom of Speech and Academic Freedom Office for Students, Bugewa Apampa Pro Vice-Chancellor, Education and Experience University of East London, Stephen Carey Co-Founder and Senior Adviser English Language Standard Advisory Authority, Steve Cayzer Professor of Climate Education University of Bath, Anthony Finkelstein President City St George\u2019s, University of London, Rebecca Freeman Deputy Pro Vice-Chancellor of Education The University of Warwick, Josephine Gabi Associate Professor Manchester Metropolitan University, Nathalia Gjersoe Associate Pro Vice-Chancellor of Student Experience University of Bath, Roscoe Hastings Director of Teaching Excellence and Student Experience University of Exeter, Chris Havergal Editor Times Higher Education, Libby Homer Chief Student Experience Officer Buckinghamshire New University, Stephen Isherwood Joint Chief Executive Officer, Knowledge and Insights Institute of Employers, Sarah Jones Pro Vice-Chancellor of Education Southampton Solent University, ",
+   "keywords": "highereducation, conference, highereventsconference, systemchange, well-being, academicsucess, careersservices, teachinglearning, analytics",
+   "prices": {
+    "Early bird ": "GBP 269.0",
+    "Standard ": "GBP 419.0",
+    "Early bird I Corporate": "GBP 1999.0",
+    "Standard I Corporate ": "GBP 2499.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    80,
+    154,
+    269,
+    1120,
+    1175,
+    1374,
+    1774,
+    2034,
+    2874,
+    4800,
+    4833,
+    4852,
+    4868,
+    5123,
+    5148,
+    5196,
+    5293,
+    5386,
+    5569,
+    6581,
+    7684,
+    7790,
+    9038,
+    9676,
+    10008,
+    10018,
+    10046,
+    10058,
+    10128,
+    10205,
+    10731,
+    11137,
+    11415,
+    11440,
+    11513,
+    11641,
+    12132,
+    12133,
+    12188,
+    12210,
+    12273
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Times Higher Education",
+   "category_name": "Conferences",
+   "source_id_s": "3753424",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    80,
+    154,
+    269,
+    1120,
+    1175,
+    1374,
+    1774,
+    2034,
+    2874,
+    4800,
+    4833,
+    4852,
+    4868,
+    5123,
+    5148,
+    5196,
+    5293,
+    5386,
+    5569,
+    6581,
+    7684,
+    7790,
+    9038,
+    9676,
+    10008,
+    10018,
+    10046,
+    10058,
+    10128,
+    10205,
+    10731,
+    11137,
+    11415,
+    11440,
+    11513,
+    11641,
+    12132,
+    12133,
+    12188,
+    12210,
+    12273,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    4,
+    122,
+    185,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793779200,
+   "category_names_with_ids": [
+    "4|Conferences",
+    "122|Higher Education",
+    "185|Education & Training"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2817157,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3753424-student-success-uk-ie-2026",
+   "source_id": 3753424,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Designed for higher education professionals across student engagement, academic success, careers services, teaching, learning, well-being and student analytics, Student Success UK & IE unites leading voices from universities and industry to showcase impactful examples of collaboration as well as innovative approaches to promoting success at every stage of the student journey.\n\nThe event will explore three themes: \n\nTeaching and learning\nThese sessions will look at the future of educational delivery for changing demographics, efficient delivery through shared services and course co-creation, navigating regulatory frameworks, co-designing with industry, reimagining assessment strategies, curriculum models and flexible pathways to improve learning outcomes.\n\nStudent support\nThese sessions will explore academic advising, creating evidence-based, scalable tools for promoting mental well-being, models of pastoral care, improving sense of belonging on campus for traditional and non-traditional students, student partnership models, as well as increasing work readiness with career support, mentorship programmes and employer partnerships.\n\nRetention, engagement and impact\nThese sessions will spotlight how universities are using learner analytics to identifying at-risk students and creating interventions to prevent dropout, advancing the definition of engagement beyond attendance, unpacking data on student mental health, applying student experience metrics to inform service redesign and embedding transparency and trust into monitoring.\n\nThe agenda will feature workshops, panel discussions and networking opportunities. Sessions will include: \n\n- Beyond entry scores: English language performance as a foundation for student success and retention\n- Duty of care revisited: Where responsibility starts \u2013 and stops\n- Redesigning assessment for integrity, learning and scale in an AI-native environment\n- Inclusive pedagogy for the new majority: Rethinking teaching for real student lives\n- Learning sustainability through action: Vertically Integrated Projects in practice\n- Inclusive by design: Making support reliable for disabled students\n\nThe impressive line-up of speakers include: \n\nBugewa Apampa, Pro Vice-Chancellor, Education and Experience, University of East London\nStephen Carey, Co-Founder and Senior Adviser, English Language Standard Advisory Authority\nSteve Cayzer, Professor of Climate Education, University of Bath\nRebecca Freeman, Deputy Pro Vice-Chancellor of Education, The University of Warwick\nNathalia Gjersoe, Associate Pro Vice-Chancellor of Student Experience, University of Bath\nRoscoe Hastings, Director of Teaching Excellence and Student Experience, University of Exeter\nStephen Isherwood, Joint Chief Executive Officer, Knowledge and Insights, Institute of Employers\nWendy Larner, President and Vice-Chancellor, Cardiff University | Prifysgol Caerdydd\nJessica Markowski, Senior Director, Deliveroo\nJennie Shaw, Vice-Provost of Education and Student Experience, University College London\n\nJoin us from 4-5 November 2026 in Bath, UK. ",
+   "main_category_path": [
+    4
+   ],
+   "category_path_ids": [
+    4,
+    120,
+    122,
+    151,
+    185
+   ],
+   "city_country": "Bath, United Kingdom",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T08:00:00+00:00",
+   "end_time": "2026-11-05T16:00:00+00:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://www.timeshighered-events.com/student-success-ukie-2026/page/5320509/book-tickets",
+    "Website": "https://www.timeshighered-events.com/student-success-ukie-2026/home"
+   },
+   "venue": {
+    "name": "University of Bath",
+    "address_1": "Bath",
+    "address_2": null,
+    "town": "Bath",
+    "country": "United Kingdom",
+    "post_code": "BA2 7AY",
+    "latitude": 51.3781018,
+    "longitude": -2.3596827
+   },
+   "_geoloc": {
+    "lat": 51.3781018,
+    "lng": -2.3596827
+   },
+   "start_time_i": 1793779200,
+   "end_time_i": 1793894400,
+   "created_time_i": 1785158214,
+   "last_indexed_i": 1785158220,
+   "score": 200,
+   "tags": [],
+   "objectID": "43918192"
+  },
+  {
+   "title": "Reuters Events: Pharma Commercial Data & Tech 2026",
+   "category_ids": [
+    89
+   ],
+   "root_category_ids": [
+    4
+   ],
+   "summary": "Discover how modern infrastructure transforms pharma enterprises - secure data, AI automation & knowledge management - while meeting regulations. Reuters Events: Pharma Commercial Data & Tech 2026.",
+   "description_html": null,
+   "hashtag": "REPharmaTech",
+   "images": [
+    {
+     "id": 3302508,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3302508/event_image/7273_-_Event_Banners_-_.jpg",
+      "width": 1080,
+      "height": 1080
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3302508/event_image/featured_7273_-_Event_Banners_-_.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3302508/event_image/list_thumb_7273_-_Event_Banners_-_.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3302508/event_image/hero_7273_-_Event_Banners_-_.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3302508/event_image/featured_7273_-_Event_Banners_-_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3302508/event_image/list_thumb_7273_-_Event_Banners_-_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3302508/event_image/hero_7273_-_Event_Banners_-_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Tickets": "https://go.evvnt.com/3619982-0",
+    "Website": "https://go.evvnt.com/3619982-2"
+   },
+   "artists": "",
+   "keywords": "pharmadatastrategy, aigovernanceinpharmaevent, pharmaceuticalai, enterpriseaienablement, generativeaiinpharma, pharmadataplatform, digitaltransformation, pharmaaiinfrastructure, pharmadataanalytics, aiplatformforpharmaceutical, pharmadatagovernancesummit, aicapabilitybuilding, pharmaenterprisedata, pharmatechtransformation, aifordrugcommercialization",
+   "prices": {
+    "Super early - End Users (rate expires 31/07/2026)": "GBP 699.0",
+    "Super early - Vendors (rate expires 31/07/2026)": "GBP 2799.0",
+    "Earlybird - End Users (rate expires 04/09/2026)": "GBP 849.0",
+    "Earlybird - Vendors (rate expires 04/09/2026)": "GBP 3099.0",
+    "Standard - End Users (rate expires 09/10/2026)": "GBP 999.0",
+    "Standard - Vendors (rate expires 09/10/2026)": "GBP 3399.0",
+    "Late - End Users (rate expires 05/11/2026)": "GBP 1199.0",
+    "Late - Vendors (rate expires 05/11/2026)": "GBP 3799.0"
+   },
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    80,
+    154,
+    183,
+    185,
+    263,
+    269,
+    1120,
+    1130,
+    1175,
+    1272,
+    1374,
+    1774,
+    1951,
+    2034,
+    2418,
+    2874,
+    3037,
+    4672,
+    4828,
+    4900,
+    4907,
+    4911,
+    4914,
+    5123,
+    5148,
+    5196,
+    5293,
+    5386,
+    5569,
+    6235,
+    6581,
+    7684,
+    7790,
+    9038,
+    9703,
+    9704,
+    10007,
+    10008,
+    10018,
+    10058,
+    10128,
+    10158,
+    10184,
+    10205,
+    10337,
+    10372,
+    10731,
+    11006,
+    11137,
+    11415,
+    11440,
+    11498,
+    11513,
+    11641,
+    12132,
+    12133,
+    12188,
+    12210
+   ],
+   "featured_publisher_ids": [
+    5293
+   ],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Reuters Events",
+   "category_name": "Pharmaceuticals",
+   "source_id_s": "3619982",
+   "publisher_editable": false,
+   "publisher_flags": {
+    "5293": [
+     "featured"
+    ]
+   },
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    80,
+    154,
+    183,
+    185,
+    263,
+    269,
+    1120,
+    1130,
+    1175,
+    1272,
+    1374,
+    1774,
+    1951,
+    2034,
+    2418,
+    2874,
+    3037,
+    4672,
+    4828,
+    4900,
+    4907,
+    4911,
+    4914,
+    5123,
+    5148,
+    5196,
+    5293,
+    5386,
+    5569,
+    6235,
+    6581,
+    7684,
+    7790,
+    9038,
+    9703,
+    9704,
+    10007,
+    10008,
+    10018,
+    10058,
+    10128,
+    10158,
+    10184,
+    10205,
+    10337,
+    10372,
+    10731,
+    11006,
+    11137,
+    11415,
+    11440,
+    11498,
+    11513,
+    11641,
+    12132,
+    12133,
+    12188,
+    12210,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    89,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": true,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793779200,
+   "category_names_with_ids": [
+    "89|Pharmaceuticals"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2736445,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3619982-reuters-events-pharma-commercial-data-tech-2026",
+   "source_id": 3619982,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "We stand at a watershed moment.  \n  \nAI is no longer a roadmap item; it's a commercial imperative. Across Europe's pharma landscape, the organisations pulling ahead are those that have stopped experimenting and started executing turning fragmented data into intelligence engines, embedding AI into the workflows that drive revenue, and building the infrastructure that makes it all scale.  \n  \nThe gap between those teams and everyone else is widening fast. And it won't wait.  \n\nReuters Events: Pharma Commercial Data & Tech 2026 is where Europe's most senior pharma commercial, data, and digital leaders come together to close that gap. With around 250 attendees, this is an exclusive, high-level gathering, not a trade show floor, but a room of peers who are navigating the same pressures, making the same bets, and willing to be honest about what's working and what isn't.  \n  \nExpect bold conversations on transforming CRM systems from glorified contact databases into dynamic commercial intelligence engines, ones that predict opportunities, surface real-time insights at the point of engagement, and serve as the execution layer for agentic AI. Expect a hard look at what precision customer engagement actually means when HCP and patient expectations are shifting beneath your feet, and AI is reshaping how health information is sought, trusted, and acted upon. Expect a frank discussion on the data infrastructure decisions being made right now that will determine who is AI-ready in 2027, and who is still untangling governance frameworks while competitors scale.  \n  \nAnd expect the conversation that every digital transformation leader in the room is quietly having: why do 85% of AI pilots never reach production, and what does it actually take to turn experiments into revenue engines?  \n \nThese aren't hypothetical challenges. They are sitting on the desks of every CDO, commercial director, and analytics leader in European pharma today, and the window to get ahead of them is narrowing.  \n \nExplore how modern data architectures are reshaping enterprise capabilities - from privacy-preserving platforms and knowledge graphs to automation and LLM-ready infrastructure. Get practical on integrating GenAI safely, scaling analytics, and accelerating customer engagement from content to field enablement, all while meeting rigorous regulatory standards.  \n  \nGet on the front foot. Refocus. And walk away from Reuters Events: Pharma Commercial Data & Tech 2026 with the frameworks, partner relationships, and strategic clarity to deliver measurable commercial impact - not next year, but now.\n",
+   "main_category_path": [
+    4,
+    84,
+    89
+   ],
+   "category_path_ids": [
+    4,
+    84,
+    89
+   ],
+   "city_country": "London, United Kingdom",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T08:00:00+00:00",
+   "end_time": "2026-11-05T17:00:00+00:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Tickets": "https://events.reutersevents.com/pharma/commercial-data-and-tech-europe/register?utm_campaign=7463websiteregistrationpage_mediapartner_5may26_evvnt_listing_1&utm_medium=mediapartner&utm_source=evvnt",
+    "Website": "https://events.reutersevents.com/pharma/commercial-data-and-tech-europe?utm_campaign=7463websitehomepage_mediapartner_5may26_evvnt_listing_1&utm_medium=mediapartner&utm_source=evvnt"
+   },
+   "venue": {
+    "name": "Hilton London Tower Bridge",
+    "address_1": "5 Tooley Street",
+    "address_2": null,
+    "town": "London",
+    "country": "United Kingdom",
+    "post_code": "SE1 2BY",
+    "latitude": 51.5045597,
+    "longitude": -0.0825847
+   },
+   "_geoloc": {
+    "lat": 51.5045597,
+    "lng": -0.0825847
+   },
+   "start_time_i": 1793779200,
+   "end_time_i": 1793898000,
+   "created_time_i": 1777990714,
+   "last_indexed_i": 1785390819,
+   "score": 200,
+   "tags": [],
+   "objectID": "42921441"
+  },
+  {
+   "title": "Dolly's Clinic",
+   "category_ids": [
+    11
+   ],
+   "root_category_ids": [
+    28
+   ],
+   "summary": "Immersive art exhibition presenting animal sculptures as patients in aesthetics clinic",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3539926,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3539926/event_image/Dolly_s_Clinic_lead_image_1_.jpg",
+      "width": 1280,
+      "height": 914
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3539926/event_image/featured_Dolly_s_Clinic_lead_image_1_.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3539926/event_image/list_thumb_Dolly_s_Clinic_lead_image_1_.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3539926/event_image/hero_Dolly_s_Clinic_lead_image_1_.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3539926/event_image/featured_Dolly_s_Clinic_lead_image_1_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3539926/event_image/list_thumb_Dolly_s_Clinic_lead_image_1_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3539926/event_image/hero_Dolly_s_Clinic_lead_image_1_.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3884606-0"
+   },
+   "artists": "",
+   "keywords": "contemporaryart, sculpture, womanartist, cosmeticsurgery, beauty, multimedia, fitzrovia",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "factor-m",
+   "category_name": "Galleries / Art",
+   "source_id_s": "3884606",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    11,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793786400,
+   "category_names_with_ids": [
+    "11|Galleries / Art"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2908256,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3884606-dolly-s-clinic",
+   "source_id": 3884606,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Presented off-site by Mandy Zhang Art and guest curated by Jos\u00e9phine May Bailey, Dolly\u2019s Clinic places Annie Trevorah\u2019s enquiry into aesthetics, bodily modification and the politics of appearance in context of medieval bestiaries and surrealist imaginations.\n\nReferencing the language and rituals of the contemporary beauty industry, Trevorah introduces a meticulously realised aesthetics clinic for animals named after the first cloned mammal. A cast of six matte aluminium sculptures, each enhanced with organic elements, model a range of signature procedures, complete with consultant\u2019s notes and recovery plans. An interactive AR visualisation by multimedia artist Dr Blanca Regina invites viewers to join an exfoliated poodle\u2019s celebration of its smooth new body.\n\nBeneath a playful and humorous surface, the exhibition raises fundamental questions about humanity\u2019s relationship with other species. With Dolly\u2019s Clinic Annie Trevorah challenges the assumption that humans alone possess the authority to determine how other living beings should look, function and evolve, while exploring the contradictions between personal freedoms and external pressures.\n\nTuesday-Friday, 10am \u2013 6pm, Saturday, 11am \u2013 6pm\n",
+   "main_category_path": [
+    28,
+    39,
+    11
+   ],
+   "category_path_ids": [
+    28,
+    39,
+    11
+   ],
+   "city_country": "London, United Kingdom",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T10:00:00+00:00",
+   "end_time": "2026-11-14T18:00:00+00:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://www.coningsbygallery.com/exhibition/annie-trevorah-dolly39s-clinic-november-2026"
+   },
+   "venue": {
+    "name": "Coningsby Gallery",
+    "address_1": "30 Tottenham Street",
+    "address_2": null,
+    "town": "London",
+    "country": "United Kingdom",
+    "post_code": "W1T 4RJ",
+    "latitude": 51.5203179,
+    "longitude": -0.1360804
+   },
+   "_geoloc": {
+    "lat": 51.5203179,
+    "lng": -0.1360804
+   },
+   "start_time_i": 1793786400,
+   "end_time_i": 1794679200,
+   "created_time_i": 1792604732,
+   "last_indexed_i": 1792604732,
+   "score": 200,
+   "tags": [],
+   "objectID": "44912344"
+  },
+  {
+   "title": "What's in Store",
+   "category_ids": [
+    151
+   ],
+   "root_category_ids": [
+    151
+   ],
+   "summary": "An opportunity to see recent additions to the Chippenham Museum collection on display for the first time",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3506498,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3506498/event_image/Website_Grid.jpg",
+      "width": 600,
+      "height": 426
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3506498/event_image/featured_Website_Grid.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3506498/event_image/list_thumb_Website_Grid.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3506498/event_image/hero_Website_Grid.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3506498/event_image/featured_Website_Grid.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3506498/event_image/list_thumb_Website_Grid.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3506498/event_image/hero_Website_Grid.webp"
+     }
+    }
+   ],
+   "links": {
+    "Website": "https://go.evvnt.com/3850125-0"
+   },
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Chippenham Museum",
+   "category_name": "Exhibitions",
+   "source_id_s": "3850125",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    151,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793786400,
+   "category_names_with_ids": [
+    "151|Exhibitions"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2883613,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3850125-what-s-in-store",
+   "source_id": 3850125,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "An opportunity to see what\u2019s been going on behind the scenes at Chippenham Museum. From Bronze Age archaeological discoveries to modern and contemporary art, recent additions to the museum collection will be on display for the first time. Alongside this, see the results of recent community projects, including the work of the museum\u2019s Young Curators Group.",
+   "main_category_path": [
+    151
+   ],
+   "category_path_ids": [
+    151
+   ],
+   "city_country": "Chippenham, United Kingdom",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T10:00:00+00:00",
+   "end_time": "2026-11-04T16:00:00+00:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {
+    "Website": "https://www.chippenham.gov.uk/chippenham-museum/exhibitions/"
+   },
+   "venue": {
+    "name": "Chippenham Museum",
+    "address_1": "9-10 Market Place",
+    "address_2": null,
+    "town": "Chippenham",
+    "country": "United Kingdom",
+    "post_code": "SN15 3HF",
+    "latitude": 51.4574816,
+    "longitude": -2.1144068
+   },
+   "_geoloc": {
+    "lat": 51.4574816,
+    "lng": -2.1144068
+   },
+   "start_time_i": 1793786400,
+   "end_time_i": 1793808000,
+   "created_time_i": 1790675063,
+   "last_indexed_i": 1790675064,
+   "score": 200,
+   "tags": [],
+   "objectID": "44667516"
+  },
+  {
+   "title": "\"No one should feel alone\u201d \u2013 Whitstable care home invites community to friendship caf\u00e9",
+   "category_ids": [
+    201
+   ],
+   "root_category_ids": [
+    458
+   ],
+   "summary": "A care home in Whitstable is inviting people to build new friendships with their neighbours this autumn. ",
+   "description_html": null,
+   "hashtag": "",
+   "images": [
+    {
+     "id": 3543157,
+     "original": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3543157/event_image/Cafe__carers_or_friendship_.jpg",
+      "width": 700,
+      "height": 700
+     },
+     "featured": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3543157/event_image/featured_Cafe__carers_or_friendship_.jpg"
+     },
+     "list_thumb": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3543157/event_image/list_thumb_Cafe__carers_or_friendship_.jpg"
+     },
+     "hero": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3543157/event_image/hero_Cafe__carers_or_friendship_.jpg"
+     },
+     "featured_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3543157/event_image/featured_Cafe__carers_or_friendship_.webp"
+     },
+     "list_thumb_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3543157/event_image/list_thumb_Cafe__carers_or_friendship_.webp"
+     },
+     "hero_webp": {
+      "url": "https://cdn.prod.discovery.evvnt.com/uploads/event_image/3543157/event_image/hero_Cafe__carers_or_friendship_.webp"
+     }
+    }
+   ],
+   "links": {},
+   "artists": "",
+   "keywords": "",
+   "prices": {},
+   "local_publisher_ids": null,
+   "country": {
+    "iso_code": "GB",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "subregion": "Northern Europe"
+   },
+   "ugc_publisher_ids": [
+    5293
+   ],
+   "publisher_ids": [
+    5293
+   ],
+   "featured_publisher_ids": [],
+   "sources": [
+    "evvnt"
+   ],
+   "eventbrite_id": null,
+   "organiser_name": "Harrier Lodge",
+   "category_name": "Local / Community",
+   "source_id_s": "3887490",
+   "publisher_editable": true,
+   "publisher_flags": {},
+   "sources_with_ugc_publishers": [
+    5293,
+    "evvnt"
+   ],
+   "editorial_tools_publisher_ids_filter": [
+    5293,
+    "non_backfill"
+   ],
+   "editorial_tools_category_ids_filter": [
+    201,
+    "non_backfill"
+   ],
+   "online_only": false,
+   "evvnt_ticketing_portal_id": null,
+   "premium": false,
+   "sub_brand": null,
+   "print_eligible": true,
+   "weighted_start_time_i": 1793788200,
+   "category_names_with_ids": [
+    "201|Local / Community"
+   ],
+   "has_evvnt_ticketing?": false,
+   "event_parent_id": 2910684,
+   "source_broadcast_url": "https://evvnt.com/events/?_evDiscoveryPath=/event/3887490-no-one-should-feel-alone-whitstable-care-home-invites-community-to-friendship-cafe",
+   "source_id": 3887490,
+   "blacklisted_publisher_ids": [],
+   "editorial_pick_publisher_ids": [],
+   "editorial_publisher_ids": [],
+   "description": "Care UK\u2019s Harrier Lodge, on Thanet Way, is opening its doors to residents of Whitstable and surrounding areas for to its Friendship Caf\u00e9 on Wednesday 4th November, from 10.30am\u201311.30am, as part of their permanent community hub at the home. \n\nOn the first Wednesday of every month, local people are encouraged to visit the home\u2019s caf\u00e9 and enjoy hot drinks and freshly baked treats in good company. The caf\u00e9 is open to anyone who wishes to make new friends and chat with residents, team members and other community members in a relaxed environment.  \n\nSusan Simmonds, Home Manager at Harrier Lodge, said: \u201cWe think these events are a lovely way to have a positive impact on our community, and support anyone who may be feeling lonely. \n\n\u201cBuilding support systems is extremely important, and we are committed to helping local people understand the help and expertise available at our Friendship Caf\u00e9 \u2013 a space where everyone is able to relax and enjoy themselves.  \n\n\u201cWe\u2019re looking forward to welcoming local people and meeting some new faces while enjoying a chat over a cup of tea and slice of cake.\u201d \n\nHarrier Lodge is a purpose-built care home that has been designed to enable residents to lead active and fulfilled lives, while also\u202fpromoting independence. The expert team provides full-time residential, nursing and specialist dementia care for up to 65 older people in Whitstable. The\u202fstunning home\u202fincorporates plenty of space for leisure activities and hobbies, including its own cinema, hair and beauty salon,\u202fand pub.\u202f \n\nFor more information\u202fabout\u202fHarrier Lodge, or to book your place at the event, please call Customer Relations Manager\u202fKyran Chalmers on\u202f01227 919 438,\u202femail\u202fkyran.chalmers@careuk.com\u202for visit\u202fcareuk.com/harrier-lodge ",
+   "main_category_path": [
+    458,
+    201
+   ],
+   "category_path_ids": [
+    458,
+    201
+   ],
+   "city_country": "Whitstable, United Kingdom",
+   "start_date": "2026-11-04",
+   "start_time": "2026-11-04T10:30:00+00:00",
+   "end_time": "2026-11-04T11:30:00+00:00",
+   "door_time": null,
+   "last_entry_time": null,
+   "source_status": null,
+   "open_house": {},
+   "original_links": {},
+   "venue": {
+    "name": "Harrier Lodge Care Home - Care UK",
+    "address_1": " Thanet Way",
+    "address_2": null,
+    "town": "Whitstable",
+    "country": "United Kingdom",
+    "post_code": "CT5 3FS",
+    "latitude": 51.341221,
+    "longitude": 1.0231638
+   },
+   "_geoloc": {
+    "lat": 51.341221,
+    "lng": 1.0231638
+   },
+   "start_time_i": 1793788200,
+   "end_time_i": 1793791800,
+   "created_time_i": 1792771637,
+   "last_indexed_i": 1792771638,
+   "score": 200,
+   "tags": [],
+   "objectID": "44944432"
+  }
+ ]
+}

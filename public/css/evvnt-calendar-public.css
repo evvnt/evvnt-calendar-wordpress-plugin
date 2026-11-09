@@ -1,0 +1,2190 @@
+/* Evvnt Calendar: server-rendered views. Inherits the theme's fonts and colours. */
+.evvnt-cal {
+	--evvnt-cal-primary: #e8384f;
+	--evvnt-cal-primary-text: #fff;
+	--evvnt-cal-border: rgba(0, 0, 0, 0.12);
+	--evvnt-cal-border: color-mix(in srgb, currentColor 16%, transparent);
+	--evvnt-cal-muted: rgba(0, 0, 0, 0.62);
+	--evvnt-cal-muted: color-mix(in srgb, currentColor 68%, transparent);
+	--evvnt-cal-hero-overlay: rgba(15, 23, 42, 0.6);
+	--evvnt-cal-hero-max: 1200px;
+	/* "Wide" width: the theme's wide size (block themes), else 1200px, within the viewport. */
+	--evvnt-cal-gutter: clamp(1rem, 5vw, 4rem);
+	--evvnt-cal-wide: min(var(--wp--style--global--wide-size, 1200px), calc(100vw - 2 * var(--evvnt-cal-gutter)));
+	--evvnt-cal-radius: 8px;
+	/* Dropdown surface: the block theme's base colour if defined, else white. */
+	--evvnt-cal-surface: var(--wp--preset--color--base, #fff);
+	--evvnt-cal-gap: 1.25rem;
+	/* Tints of the primary colour (the discovery plugin's --theme-primary-tint*). */
+	--evvnt-cal-tint: rgba(232, 56, 79, 0.08);
+	--evvnt-cal-tint: color-mix(in srgb, var(--evvnt-cal-primary) 8%, transparent);
+	--evvnt-cal-tint-strong: rgba(232, 56, 79, 0.14);
+	--evvnt-cal-tint-strong: color-mix(in srgb, var(--evvnt-cal-primary) 14%, transparent);
+	--evvnt-cal-tint-border: rgba(232, 56, 79, 0.25);
+	--evvnt-cal-tint-border: color-mix(in srgb, var(--evvnt-cal-primary) 25%, transparent);
+	--evvnt-cal-tint-border-strong: rgba(232, 56, 79, 0.45);
+	--evvnt-cal-tint-border-strong: color-mix(in srgb, var(--evvnt-cal-primary) 45%, transparent);
+	margin: 1.5rem 0;
+}
+
+.evvnt-cal *,
+.evvnt-cal *::before,
+.evvnt-cal *::after {
+	box-sizing: border-box;
+}
+
+.evvnt-cal a {
+	color: inherit;
+}
+
+/*
+ * Reset theme content styles inside the calendar. Themes often decorate every list item
+ * (custom bullets via ::before, padding) and underline every link in post content; the
+ * doubled class out-ranks typical ".entry-content ul li" selectors.
+ */
+.evvnt-cal.evvnt-cal ul,
+.evvnt-cal.evvnt-cal ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.evvnt-cal.evvnt-cal li {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.evvnt-cal.evvnt-cal li::before,
+.evvnt-cal.evvnt-cal li::after {
+	content: none !important;
+	display: none !important;
+}
+
+.evvnt-cal.evvnt-cal li::marker {
+	content: none;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__button,
+.evvnt-cal.evvnt-cal .evvnt-cal__card-title a,
+.evvnt-cal.evvnt-cal .evvnt-cal__nav a,
+.evvnt-cal.evvnt-cal .evvnt-cal__categories a,
+.evvnt-cal.evvnt-cal .evvnt-cal__share-row a,
+.evvnt-cal.evvnt-cal .evvnt-cal__card-image {
+	text-decoration: none;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__card-title a:hover,
+.evvnt-cal.evvnt-cal .evvnt-cal__card-title a:focus-visible {
+	text-decoration: underline;
+}
+
+.evvnt-cal__button {
+	display: inline-block;
+	padding: 0.6em 1.1em;
+	border-radius: var(--evvnt-cal-radius);
+	background: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text) !important;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+}
+
+.evvnt-cal__button:hover,
+.evvnt-cal__button:focus-visible {
+	filter: brightness(0.92);
+}
+
+.evvnt-cal__toolbar {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 1rem;
+}
+
+.evvnt-cal__nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: var(--evvnt-cal-gap);
+}
+
+.evvnt-cal__nav a {
+	display: inline-block;
+	padding: 0.35em 0.85em;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+.evvnt-cal__nav a[aria-current="page"] {
+	background: var(--evvnt-cal-primary);
+	border-color: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text);
+}
+
+.evvnt-cal__heading {
+	margin: 0 0 0.75rem;
+	font-size: 1.35em;
+}
+
+.evvnt-cal__page {
+	color: var(--evvnt-cal-muted);
+	font-weight: 400;
+	font-size: 0.8em;
+}
+
+.evvnt-cal__section {
+	margin-bottom: calc(var(--evvnt-cal-gap) * 1.5);
+}
+
+.evvnt-cal__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+	gap: var(--evvnt-cal-gap);
+}
+
+/* Event list: as many columns as fit (3 at the 1200px wide width, 2 on tablets, 1 on phones). */
+.evvnt-cal__list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+	gap: 1rem;
+}
+
+.evvnt-cal__card {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: var(--evvnt-cal-radius);
+}
+
+.evvnt-cal__list .evvnt-cal__card {
+	flex-direction: row;
+}
+
+.evvnt-cal__card-image {
+	display: block;
+	flex: 0 0 auto;
+	aspect-ratio: 16 / 9;
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.evvnt-cal__list .evvnt-cal__card-image {
+	width: min(38%, 220px);
+}
+
+.evvnt-cal__card-image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.evvnt-cal__card-body {
+	padding: 0.85rem 1rem;
+	min-width: 0;
+}
+
+.evvnt-cal__card-title {
+	margin: 0 0 0.6rem;
+	font-size: 1.05em;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.evvnt-cal__card-title a {
+	text-decoration: none;
+}
+
+.evvnt-cal__card-title a:hover,
+.evvnt-cal__card-title a:focus-visible {
+	text-decoration: underline;
+}
+
+.evvnt-cal__meta {
+	display: grid;
+	gap: 0.35rem;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.9em;
+	line-height: 1.4;
+}
+
+.evvnt-cal__meta li {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	min-width: 0;
+}
+
+.evvnt-cal__meta li > span:not(.evvnt-cal__card-series),
+.evvnt-cal__meta li > time {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.evvnt-cal__meta .evvnt-cal__icon {
+	flex: 0 0 auto;
+	width: 18px;
+	height: 18px;
+}
+
+.evvnt-cal__pagination {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-bottom: var(--evvnt-cal-gap);
+}
+
+.evvnt-cal__pagination [rel="next"] {
+	margin-left: auto;
+}
+
+.evvnt-cal__notice {
+	padding: 0.75rem 1rem;
+	border-left: 4px solid var(--evvnt-cal-primary);
+	background: rgba(0, 0, 0, 0.04);
+}
+
+.evvnt-cal__powered {
+	margin-left: auto;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.8em;
+	text-align: right;
+}
+
+/* Bottom of every listing: "Browse all categories" and the evvnt credit. */
+.evvnt-cal__footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.75rem 1.5rem;
+	margin-top: 2rem;
+	padding-top: 1.25rem;
+	border-top: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal__footer .evvnt-cal__powered {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.evvnt-cal .evvnt-cal__all-categories {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	color: var(--evvnt-cal-primary);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__all-categories:hover,
+.evvnt-cal .evvnt-cal__all-categories:focus-visible {
+	text-decoration: underline;
+}
+
+/* The list of every category: one group per root category, sub-categories nested below. */
+.evvnt-cal__category-index {
+	columns: 18rem;
+	column-gap: 1.25rem;
+	margin: 1rem 0 0;
+}
+
+.evvnt-cal__category-group {
+	break-inside: avoid;
+	margin: 0 0 1.25rem;
+	padding: 0.25rem 0 1rem;
+	border-bottom: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal .evvnt-cal__category-group h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1.1rem;
+	line-height: 1.4;
+}
+
+.evvnt-cal .evvnt-cal__category-group h3 a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__category-group h3 a:hover,
+.evvnt-cal .evvnt-cal__category-group h3 a:focus-visible {
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal .evvnt-cal__category-group h3 .evvnt-cal__icon {
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group ul ul {
+	margin: 0.15rem 0 0.25rem;
+	padding: 0 0 0 1rem;
+	border-left: 1px solid var(--evvnt-cal-border);
+	font-size: 0.95em;
+}
+
+[dir="rtl"] .evvnt-cal.evvnt-cal .evvnt-cal__category-group ul ul {
+	padding: 0 1rem 0 0;
+	border-right: 1px solid var(--evvnt-cal-border);
+	border-left: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group li {
+	margin: 0;
+	padding: 0.1rem 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group li::before,
+.evvnt-cal.evvnt-cal .evvnt-cal__category-group li::marker {
+	content: none;
+}
+
+.evvnt-cal .evvnt-cal__category-group li > a {
+	color: var(--evvnt-cal-muted);
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__category-group li > a:hover,
+.evvnt-cal .evvnt-cal__category-group li > a:focus-visible {
+	color: var(--evvnt-cal-primary);
+	text-decoration: underline;
+}
+
+/* Sub-category pages: links up the category's ancestors. */
+.evvnt-cal.evvnt-cal .evvnt-cal__breadcrumbs ol {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem 0.5rem;
+	margin: 0 0 0.25rem;
+	padding: 0;
+	border: 0;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.9rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__breadcrumbs li {
+	margin: 0;
+	padding: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__breadcrumbs li::marker {
+	content: none;
+}
+
+/* The separator is followed by a space in the markup; widen it a little. */
+.evvnt-cal__crumb-sep {
+	margin: 0 0.25rem 0 0;
+}
+
+[dir="rtl"] .evvnt-cal__crumb-sep {
+	margin: 0 0 0 0.25rem;
+}
+
+.evvnt-cal .evvnt-cal__breadcrumbs a {
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__breadcrumbs a:hover,
+.evvnt-cal .evvnt-cal__breadcrumbs a:focus-visible {
+	color: var(--evvnt-cal-primary);
+	text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------
+ * Event detail: full-width hero with a blurred, enlarged copy of the event
+ * image behind the title, key facts and ticket button.
+ * ------------------------------------------------------------------ */
+
+/* The hero spans the viewport from inside the theme's content column. */
+body.evvnt-cal-event-page {
+	overflow-x: clip;
+}
+
+/* The event title is the page heading; hide the theme's page title. */
+.evvnt-cal-hide-page-title .entry-header,
+.evvnt-cal-hide-page-title .wp-block-post-title {
+	display: none;
+}
+
+.evvnt-cal--detail {
+	margin-top: 0;
+}
+
+.evvnt-cal__hero {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	border-radius: var(--evvnt-cal-radius);
+	padding: clamp(1.5rem, 4vw, 3.5rem) clamp(1rem, 5vw, 4rem) 1.75rem;
+	background: #0f172a;
+	color: #fff;
+}
+
+.evvnt-cal__hero-backdrop {
+	position: absolute;
+	inset: 0;
+	z-index: -2;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	object-fit: cover;
+	filter: blur(16px);
+	transform: scale(1.1);
+}
+
+.evvnt-cal__hero::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: var(--evvnt-cal-hero-overlay);
+}
+
+.evvnt-cal__hero a {
+	color: inherit;
+}
+
+.evvnt-cal__hero-inner {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	gap: clamp(2rem, 5vw, 4rem);
+	align-items: center;
+	max-width: var(--evvnt-cal-hero-max);
+	margin: 0 auto;
+}
+
+.evvnt-cal__hero--no-image .evvnt-cal__hero-inner {
+	grid-template-columns: minmax(0, 46rem);
+}
+
+.evvnt-cal__back {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.evvnt-cal__back:hover,
+.evvnt-cal__back:focus-visible {
+	opacity: 1;
+	text-decoration: underline;
+}
+
+.evvnt-cal__back .evvnt-cal__icon {
+	width: 16px;
+	height: 16px;
+}
+
+.evvnt-cal__badge {
+	display: inline-block;
+	margin: 0 0 1rem;
+	padding: 0.3em 0.85em;
+	border-radius: 999px;
+	background: rgba(255, 255, 255, 0.16);
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+.evvnt-cal .evvnt-cal__title {
+	margin: 0 0 1.25rem;
+	color: #fff;
+	font-size: clamp(1.75rem, 1.2rem + 1.8vw, 2.5rem);
+	font-weight: 800;
+	line-height: 1.1;
+	letter-spacing: -0.01em;
+	text-wrap: balance;
+}
+
+.evvnt-cal__facts {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem 2.5rem;
+	font-weight: 600;
+}
+
+.evvnt-cal__fact {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.75rem;
+	line-height: 1.4;
+}
+
+.evvnt-cal__fact--place {
+	flex-basis: 100%;
+}
+
+.evvnt-cal__fact .evvnt-cal__icon {
+	flex: 0 0 auto;
+	margin-top: 0.05em;
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal__hero .evvnt-cal__fact .evvnt-cal__icon {
+	color: color-mix(in srgb, var(--evvnt-cal-primary) 70%, #fff);
+}
+
+.evvnt-cal__muted {
+	display: block;
+	font-weight: 400;
+	font-size: 0.9em;
+	opacity: 0.8;
+}
+
+.evvnt-cal__cta {
+	margin-top: 1.75rem;
+}
+
+.evvnt-cal .evvnt-cal__button--large {
+	padding: 1rem 2.5rem;
+	font-size: 1.125rem;
+}
+
+.evvnt-cal__price {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	margin: 0 0 1rem;
+	font-size: 1.05rem;
+	font-weight: 600;
+}
+
+.evvnt-cal__hero .evvnt-cal__price .evvnt-cal__icon {
+	color: color-mix(in srgb, var(--evvnt-cal-primary) 70%, #fff);
+}
+
+.evvnt-cal__hero-media {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+}
+
+/* Natural shape (posters are often portrait), capped in height; never cropped. */
+.evvnt-cal__hero-media img {
+	display: block;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	max-height: 360px;
+	border-radius: 12px;
+	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Recommended events (mirrors the discovery plugin: two-column list cards) */
+.evvnt-cal__recommended {
+	margin: clamp(2.5rem, 5vw, 4rem) 0 0;
+	padding-top: clamp(2rem, 4vw, 3rem);
+	border-top: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal__recommended h2 {
+	margin: 0 0 1.5rem;
+	font-size: 1.35rem;
+	font-weight: 800;
+}
+
+.evvnt-cal__recommended-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
+	gap: 1rem;
+}
+
+.evvnt-cal__recommended-grid .evvnt-cal__card {
+	flex-direction: row;
+	height: 165px;
+}
+
+.evvnt-cal__recommended-grid .evvnt-cal__card-image {
+	width: clamp(100px, 28%, 165px);
+	aspect-ratio: auto;
+}
+
+.evvnt-cal__recommended-grid .evvnt-cal__card-title {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Lists written in event descriptions keep normal bullets. */
+.evvnt-cal.evvnt-cal .evvnt-cal__description ul {
+	list-style: disc;
+	padding-left: 1.5em;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__description ol {
+	list-style: decimal;
+	padding-left: 1.5em;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__description li {
+	list-style: inherit;
+}
+
+/* Below the hero */
+.evvnt-cal__body {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(260px, 20rem);
+	gap: clamp(2rem, 5vw, 4rem);
+	align-items: start;
+	margin: clamp(2rem, 5vw, 4rem) 0 0;
+}
+
+.evvnt-cal__about h2 {
+	margin: 0 0 1rem;
+	font-size: 1.75rem;
+	font-weight: 800;
+	line-height: 1.2;
+}
+
+.evvnt-cal__summary {
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.evvnt-cal__description {
+	margin: 0 0 1.5rem;
+	overflow-wrap: anywhere;
+}
+
+.evvnt-cal__description img {
+	max-width: 100%;
+	height: auto;
+}
+
+.evvnt-cal__details {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 0.5rem 1.25rem;
+	margin: 1.5rem 0 0;
+	padding-top: 1.5rem;
+	border-top: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal__details dt {
+	font-weight: 600;
+}
+
+.evvnt-cal__details dd {
+	margin: 0;
+	color: var(--evvnt-cal-muted);
+}
+
+.evvnt-cal__side {
+	display: grid;
+	gap: 1.25rem;
+}
+
+.evvnt-cal__panel {
+	padding: 1.75rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: var(--evvnt-cal-radius);
+	box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+.evvnt-cal__panel h2 {
+	margin: 0 0 1.25rem;
+	font-size: 1.25rem;
+	font-weight: 800;
+	line-height: 1.3;
+}
+
+.evvnt-cal__panel .evvnt-cal__fact {
+	margin-bottom: 1.5rem;
+}
+
+.evvnt-cal .evvnt-cal__button--outline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	width: 100%;
+	margin-top: 0.75rem;
+	border: 1px solid var(--evvnt-cal-border);
+	background: transparent;
+	color: inherit !important;
+	font-size: 0.95rem;
+}
+
+.evvnt-cal__button--outline:hover,
+.evvnt-cal__button--outline:focus-visible {
+	filter: none;
+	border-color: currentColor;
+}
+
+.evvnt-cal__button--outline .evvnt-cal__icon {
+	width: 16px;
+	height: 16px;
+}
+
+.evvnt-cal__promote {
+	margin: 0;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+@media (max-width: 860px) {
+	.evvnt-cal__hero-inner,
+	.evvnt-cal__body {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.evvnt-cal__hero-media {
+		order: -1;
+	}
+
+	.evvnt-cal__hero-media img {
+		max-height: min(300px, 45vh);
+	}
+
+	.evvnt-cal__cta .evvnt-cal__button--large {
+		display: block;
+		text-align: center;
+	}
+
+	.evvnt-cal__details {
+		grid-template-columns: 1fr;
+		gap: 0.15rem;
+	}
+
+	.evvnt-cal__details dd {
+		margin-bottom: 0.6rem;
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.evvnt-cal__button,
+	.evvnt-cal__share-row a {
+		transition: filter 0.15s, background-color 0.15s, border-color 0.15s;
+	}
+}
+
+/* ------------------------------------------------------------------
+ * Event detail, standard layout (non-featured events): the discovery
+ * plugin's header; the body below is shared with featured events.
+ * ------------------------------------------------------------------ */
+.evvnt-cal__std {
+	container-type: inline-size;
+	color: inherit;
+}
+
+.evvnt-cal__back--std {
+	margin-bottom: 1.25rem;
+}
+
+.evvnt-cal__std-top {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.evvnt-cal__std-main {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: 1.25rem;
+	min-width: 0;
+}
+
+.evvnt-cal__std-badge {
+	align-self: flex-start;
+	margin: 0;
+	padding: 0.25em 0.75em;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.evvnt-cal .evvnt-cal__std-title {
+	display: -webkit-box;
+	overflow: hidden;
+	margin: 0;
+	font-size: clamp(1.5rem, 1.2rem + 1vw, 1.875rem);
+	font-weight: 700;
+	line-height: 1.3;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.evvnt-cal__std-summary {
+	display: -webkit-box;
+	overflow: hidden;
+	margin: -0.5rem 0 0;
+	font-size: 1rem;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.evvnt-cal__std-facts {
+	display: grid;
+	gap: 0.5rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.evvnt-cal__std-facts li {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.evvnt-cal__std-facts .evvnt-cal__icon {
+	flex: 0 0 auto;
+	color: var(--evvnt-cal-muted);
+}
+
+.evvnt-cal__std-cta {
+	margin: 0;
+}
+
+.evvnt-cal .evvnt-cal__button--std {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	padding: 0.55rem 0.9rem;
+	box-shadow: 0 1px 3px rgba(15, 23, 42, 0.15);
+	font-size: 0.9rem;
+}
+
+.evvnt-cal__std-media {
+	margin: 0;
+}
+
+.evvnt-cal__std-media img {
+	display: block;
+	width: 100%;
+	height: 13rem;
+	object-fit: contain;
+}
+
+@container (min-width: 640px) {
+	.evvnt-cal__std-media img {
+		height: 24rem;
+	}
+}
+
+@container (min-width: 860px) {
+	.evvnt-cal__std-top {
+		flex-direction: row;
+	}
+
+	.evvnt-cal__std-media {
+		flex: 0 0 24rem;
+		width: 24rem;
+	}
+
+	.evvnt-cal__std-media img {
+		height: 18rem;
+	}
+}
+
+/* Share buttons above the "Where It's Happening" panel (both layouts) */
+/* "Share This Event" heading above the buttons, as the discovery plugin. */
+.evvnt-cal .evvnt-cal__share-title {
+	margin: 0 0 1rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.evvnt-cal__share-buttons {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.evvnt-cal__share-row a {
+	display: inline-grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	border-radius: 50%;
+	background: color-mix(in srgb, currentColor 8%, transparent);
+	color: inherit;
+}
+
+.evvnt-cal__share-row a:hover,
+.evvnt-cal__share-row a:focus-visible {
+	background: color-mix(in srgb, currentColor 16%, transparent);
+}
+
+/* Clickable categories in "About This Event" */
+.evvnt-cal__categories {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.4rem;
+}
+
+.evvnt-cal__categories a,
+.evvnt-cal__categories span {
+	display: inline-block;
+	padding: 0.15em 0.75em;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	font-size: 0.85rem;
+	line-height: 1.6;
+	text-decoration: none;
+}
+
+.evvnt-cal__categories a {
+	color: inherit;
+}
+
+.evvnt-cal__categories a:hover,
+.evvnt-cal__categories a:focus-visible {
+	border-color: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary);
+}
+
+/* The standard header sits directly above the shared body. */
+.evvnt-cal--standard .evvnt-cal__body {
+	margin-top: 0;
+	padding-top: 2.5rem;
+	border-top: 1px solid var(--evvnt-cal-border);
+}
+
+.evvnt-cal__subcategory {
+	font-weight: 400;
+}
+
+.evvnt-cal__subcategory a {
+	margin-left: 0.25em;
+	text-decoration: none;
+	opacity: 0.6;
+}
+
+.evvnt-cal__subcategory a:hover,
+.evvnt-cal__subcategory a:focus-visible {
+	opacity: 1;
+}
+
+.evvnt-cal__panel-map {
+	display: block;
+	margin: 0 0 1.25rem;
+}
+
+.evvnt-cal__panel-map img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 5 / 4;
+	object-fit: cover;
+	border-radius: calc(var(--evvnt-cal-radius) - 2px);
+}
+
+/* ------------------------------------------------------------------
+ * Width. "Wide" (default) breaks out of the theme's content column to the
+ * theme's wide width, centred; "Content column" stays inside it (for pages
+ * with a sidebar). The featured hero spans the full viewport in wide mode.
+ * ------------------------------------------------------------------ */
+/*
+ * Symmetric margins centre the box on its parent in LTR and RTL alike. !important (with a
+ * doubled class) is needed to beat core's constrained-layout rule, which forces
+ * margin-left/right: auto !important on every block-theme child.
+ */
+.evvnt-cal.evvnt-cal--wide.evvnt-cal--calendar,
+.evvnt-cal.evvnt-cal--wide.evvnt-cal--categories,
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__std,
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__body,
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__recommended,
+.evvnt-cal.evvnt-cal--wide.evvnt-cal--not-found,
+.evvnt-cal.evvnt-cal--wide.evvnt-cal--unavailable {
+	box-sizing: border-box;
+	width: var(--evvnt-cal-wide);
+	max-width: none;
+	margin-left: calc(50% - var(--evvnt-cal-wide) / 2) !important;
+	margin-right: calc(50% - var(--evvnt-cal-wide) / 2) !important;
+}
+
+/* Nested inside an element that is already wide: no further offset. */
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__std .evvnt-cal__body,
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__std .evvnt-cal__recommended {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.evvnt-cal.evvnt-cal--wide .evvnt-cal__hero {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: calc(50% - 50vw) !important;
+	margin-right: calc(50% - 50vw) !important;
+	border-radius: 0;
+}
+
+/* Arrow icons point the reading direction's way. */
+[dir="rtl"] .evvnt-cal__all-categories svg,
+[dir="rtl"] .evvnt-cal__category-group h3 svg,
+[dir="rtl"] .evvnt-cal__datecal-nav svg,
+[dir="rtl"] .evvnt-cal__row-controls svg,
+[dir="rtl"] .evvnt-cal__row-more svg,
+[dir="rtl"] .evvnt-cal__row-end svg,
+[dir="rtl"] .evvnt-cal__button--std svg,
+[dir="rtl"] .evvnt-cal__back svg {
+	transform: scaleX(-1);
+}
+
+/* ------------------------------------------------------------------
+ * Category rows layout
+ * ------------------------------------------------------------------ */
+.evvnt-cal__row {
+	margin-bottom: clamp(1.75rem, 4vw, 2.75rem);
+}
+
+.evvnt-cal__row-head {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem 1rem;
+	margin-bottom: 0.9rem;
+}
+
+.evvnt-cal__row-head .evvnt-cal__heading {
+	margin: 0;
+	min-width: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-more {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.3rem;
+	margin-left: auto;
+	color: inherit;
+	font-size: 0.9rem;
+	font-weight: 600;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.evvnt-cal__row-more:hover,
+.evvnt-cal__row-more:focus-visible {
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal__row-more .evvnt-cal__icon {
+	width: 16px;
+	height: 16px;
+}
+
+.evvnt-cal__row-controls {
+	display: flex;
+	gap: 0.4rem;
+	margin-left: auto;
+}
+
+.evvnt-cal__row-controls[hidden] {
+	display: none;
+}
+
+.evvnt-cal__row-more + .evvnt-cal__row-controls {
+	margin-left: 0.25rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-controls button {
+	display: inline-grid;
+	place-items: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	margin: 0;
+	padding: 0;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 50%;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+
+.evvnt-cal__row-controls button:hover:not(:disabled),
+.evvnt-cal__row-controls button:focus-visible {
+	border-color: currentColor;
+}
+
+.evvnt-cal__row-controls button:disabled {
+	opacity: 0.35;
+	cursor: default;
+}
+
+.evvnt-cal__row-controls .evvnt-cal__icon {
+	width: 18px;
+	height: 18px;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-track {
+	display: flex;
+	gap: 1rem;
+	padding: 0.25rem 0.1rem 0.9rem;
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x proximity;
+	scroll-padding-inline: 0.1rem;
+	scrollbar-width: thin;
+	-webkit-overflow-scrolling: touch;
+}
+
+.evvnt-cal__row-track:focus-visible {
+	outline: 2px solid var(--evvnt-cal-primary);
+	outline-offset: 2px;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-track > li {
+	flex: 0 0 clamp(220px, 23%, 290px);
+	scroll-snap-align: start;
+}
+
+.evvnt-cal__row-track .evvnt-cal__card {
+	flex-direction: column;
+}
+
+.evvnt-cal__row-track .evvnt-cal__card-image {
+	width: 100%;
+	min-height: 0;
+	overflow: hidden;
+}
+
+/* Tiles always show a 16:9 crop, whatever the poster's shape. */
+.evvnt-cal__row-track .evvnt-cal__card-image img,
+.evvnt-cal__grid .evvnt-cal__card-image img {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	object-fit: cover;
+}
+
+.evvnt-cal__row-track .evvnt-cal__card-title {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-track > .evvnt-cal__row-end {
+	flex-basis: clamp(140px, 14%, 180px);
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__row-end a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	height: 100%;
+	min-height: 10rem;
+	padding: 1rem;
+	border: 1px dashed var(--evvnt-cal-border);
+	border-radius: var(--evvnt-cal-radius);
+	color: inherit;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+}
+
+.evvnt-cal__row-end a:hover,
+.evvnt-cal__row-end a:focus-visible {
+	border-color: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary);
+}
+
+@media (max-width: 600px) {
+	.evvnt-cal.evvnt-cal .evvnt-cal__row-track > li {
+		flex-basis: 78%;
+	}
+
+	/* Rows are swiped on phones; keep the header for the title and "See all". */
+	.evvnt-cal__row-controls {
+		display: none !important;
+	}
+}
+
+.evvnt-cal .screen-reader-text {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+}
+
+.evvnt-cal__toolbar {
+	align-items: center;
+	gap: 1rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__home {
+	margin: 0 auto 0 0;
+}
+
+.evvnt-cal__home .evvnt-cal__back {
+	margin-bottom: 0;
+	font-weight: 600;
+	opacity: 1;
+}
+
+/* ------------------------------------------------------------------
+ * Search bar and live suggestions
+ * ------------------------------------------------------------------ */
+.evvnt-cal__search {
+	position: relative;
+	margin: 0 0 1.25rem;
+}
+
+.evvnt-cal__search-field {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.35rem 1rem 0.35rem 0.9rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	background: color-mix(in srgb, currentColor 3%, transparent);
+}
+
+.evvnt-cal__search-field:focus-within {
+	border-color: var(--evvnt-cal-primary);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--evvnt-cal-primary) 20%, transparent);
+}
+
+.evvnt-cal__search-field > .evvnt-cal__icon {
+	flex: 0 0 auto;
+	color: var(--evvnt-cal-muted);
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__search input[type="search"] {
+	flex: 1;
+	min-width: 0;
+	margin: 0;
+	padding: 0.45rem 0.25rem;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	box-shadow: none;
+	color: inherit;
+	font: inherit;
+	font-size: 1rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__suggest {
+	position: absolute;
+	top: calc(100% + 0.4rem);
+	left: 0;
+	right: 0;
+	z-index: 50;
+	max-height: min(70vh, 30rem);
+	overflow-y: auto;
+	padding: 0.4rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: var(--evvnt-cal-radius);
+	background: var(--evvnt-cal-surface, #fff);
+	box-shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.25);
+}
+
+.evvnt-cal__suggest[hidden] {
+	display: none;
+}
+
+.evvnt-cal__suggest-group {
+	padding: 0.5rem 0.6rem 0.25rem;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__suggest-item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 0.5rem 0.6rem;
+	border-radius: calc(var(--evvnt-cal-radius) - 2px);
+	cursor: pointer;
+}
+
+.evvnt-cal__suggest-item[aria-selected="true"],
+.evvnt-cal__suggest-item:hover {
+	background: color-mix(in srgb, var(--evvnt-cal-primary) 10%, transparent);
+}
+
+.evvnt-cal__suggest-item img,
+.evvnt-cal__suggest-noimg {
+	flex: 0 0 auto;
+	width: 3.5rem;
+	height: 2.25rem;
+	border-radius: 4px;
+	object-fit: cover;
+	background: color-mix(in srgb, currentColor 8%, transparent);
+}
+
+.evvnt-cal__suggest-text {
+	display: grid;
+	min-width: 0;
+}
+
+.evvnt-cal__suggest-title,
+.evvnt-cal__suggest-meta {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.evvnt-cal__suggest-title {
+	font-weight: 600;
+}
+
+.evvnt-cal__suggest-meta {
+	color: var(--evvnt-cal-muted);
+	font-size: 0.85rem;
+}
+
+.evvnt-cal__suggest-cat {
+	display: inline-block;
+	padding: 0.1em 0.75em;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	font-size: 0.9rem;
+}
+
+.evvnt-cal__suggest-item--all {
+	margin-top: 0.25rem;
+	border-top: 1px solid var(--evvnt-cal-border);
+	color: var(--evvnt-cal-primary);
+	font-weight: 600;
+}
+
+.evvnt-cal__suggest-empty {
+	padding: 0.6rem;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.9rem;
+}
+
+.evvnt-cal__search-categories {
+	margin-top: 0.5rem;
+}
+
+.evvnt-cal__search-categories .evvnt-cal__heading {
+	font-size: 1.1em;
+}
+
+@media (forced-colors: active) {
+	.evvnt-cal__search-field:focus-within {
+		outline: 2px solid Highlight;
+		outline-offset: 2px;
+	}
+
+	.evvnt-cal__suggest-item[aria-selected="true"] {
+		outline: 2px solid Highlight;
+	}
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__suggest-groupwrap > ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Image-left list cards at a fixed height (as the discovery plugin's 165px list items), so
+ * tall posters are cropped instead of stretching their row.
+ */
+.evvnt-cal.evvnt-cal .evvnt-cal__list .evvnt-cal__card {
+	height: 165px;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__list .evvnt-cal__card-image {
+	position: relative;
+	flex: 0 0 clamp(100px, 36%, 150px);
+	width: clamp(100px, 36%, 150px);
+	height: 100%;
+	aspect-ratio: auto;
+	overflow: hidden;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__list .evvnt-cal__card-image img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	object-fit: cover;
+}
+
+.evvnt-cal__list .evvnt-cal__card-body {
+	overflow: hidden;
+}
+
+.evvnt-cal__list .evvnt-cal__card-title {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Category pages: the category name above its featured events. */
+.evvnt-cal.evvnt-cal .evvnt-cal__category-title {
+	margin: 0.25rem 0 1.25rem;
+	font-size: clamp(1.6rem, 1.2rem + 1.2vw, 2.25rem);
+	font-weight: 800;
+	line-height: 1.15;
+}
+
+.evvnt-cal__category-title .evvnt-cal__subcategory {
+	font-size: 0.7em;
+}
+
+/* Repeat icon in place of the calendar icon on a card of a recurring series. */
+.evvnt-cal .evvnt-cal__card-series {
+	display: inline-flex;
+	flex: 0 0 auto;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	margin: 0 -1px;
+	border: 1px solid var(--evvnt-cal-tint-border);
+	border-radius: 999px;
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal .evvnt-cal__meta .evvnt-cal__card-series .evvnt-cal__icon {
+	width: 12px;
+	height: 12px;
+	color: inherit;
+}
+
+/* ------------------------------------------------------------------
+ * Recurring series (both detail layouts), as the discovery plugin:
+ * the series pill, "Next: …" / "Repeats …" lines and Upcoming dates.
+ * ------------------------------------------------------------------ */
+.evvnt-cal__series-pill {
+	display: inline-flex;
+	align-self: flex-start;
+	align-items: center;
+	gap: 0.375rem;
+	margin: 0 0 -0.5rem;
+	padding: 0.25rem 0.625rem;
+	border: 1px solid var(--evvnt-cal-tint-border);
+	border-radius: 999px;
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+	font-size: 0.75rem;
+	font-weight: 600;
+	line-height: 1.33;
+}
+
+.evvnt-cal__std-facts--series .evvnt-cal__series-next {
+	font-weight: 600;
+}
+
+.evvnt-cal__std-facts--series .evvnt-cal__series-next .evvnt-cal__icon {
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal__std-facts--series .evvnt-cal__series-repeats {
+	color: var(--evvnt-cal-muted);
+	font-weight: 400;
+}
+
+.evvnt-cal__badge--series {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	width: max-content;
+	max-width: 100%;
+}
+
+.evvnt-cal__series {
+	container-type: inline-size;
+	overflow: hidden;
+	margin: 0 0 2rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 12px;
+}
+
+.evvnt-cal--standard .evvnt-cal__series {
+	margin-top: 2rem;
+}
+
+.evvnt-cal--featured .evvnt-cal__series {
+	width: min(100%, var(--evvnt-cal-hero-max));
+	margin: 2rem auto;
+}
+
+.evvnt-cal__series-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem;
+	padding: 0.75rem 1rem;
+	border-bottom: 1px solid var(--evvnt-cal-border);
+	background: rgba(0, 0, 0, 0.025);
+	background: color-mix(in srgb, currentColor 3%, transparent);
+}
+
+.evvnt-cal .evvnt-cal__series-title {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.5;
+}
+
+.evvnt-cal__series-caption {
+	margin: 0.125rem 0 0;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+	line-height: 1.33;
+}
+
+.evvnt-cal__series-toggle {
+	display: inline-flex;
+	padding: 2px;
+	border-radius: 8px;
+	background: rgba(0, 0, 0, 0.08);
+	background: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.evvnt-cal .evvnt-cal__series-toggle a {
+	padding: 0.375rem 0.75rem;
+	border-radius: 6px;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.875rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__series-toggle a:hover {
+	color: inherit;
+}
+
+.evvnt-cal .evvnt-cal__series-toggle a[aria-current] {
+	background: var(--evvnt-cal-surface);
+	box-shadow: 0 1px 2px rgba(15, 23, 42, 0.12);
+	color: inherit;
+}
+
+.evvnt-cal__series-body {
+	padding: 1rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr);
+	gap: 0.75rem;
+	border: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates--chips {
+	display: flex;
+	overflow-x: auto;
+	padding-bottom: 0.25rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates > li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates > li::before,
+.evvnt-cal.evvnt-cal .evvnt-cal__series-dates > li::marker {
+	content: none;
+}
+
+.evvnt-cal .evvnt-cal__series-date {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.125rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 8px;
+	background: var(--evvnt-cal-surface);
+	text-decoration: none;
+	transition: background-color 0.15s, border-color 0.15s;
+}
+
+.evvnt-cal__series-dates--chips .evvnt-cal__series-date {
+	flex-shrink: 0;
+	align-items: center;
+	padding: 0.625rem 1.25rem;
+	border-radius: 16px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.evvnt-cal__series-date time {
+	display: contents;
+}
+
+.evvnt-cal__series-day {
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.evvnt-cal__series-time {
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+}
+
+a.evvnt-cal__series-date.is-upcoming:hover,
+a.evvnt-cal__series-date.is-upcoming:focus-visible {
+	border-color: var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-tint);
+}
+
+.evvnt-cal .evvnt-cal__series-date.is-next {
+	border-color: var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal .evvnt-cal__series-date.is-viewed {
+	border-color: var(--evvnt-cal-primary);
+	background: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text);
+}
+
+.evvnt-cal__series-date.is-next .evvnt-cal__series-time,
+.evvnt-cal__series-date.is-viewed .evvnt-cal__series-time {
+	color: inherit;
+	opacity: 0.8;
+}
+
+.evvnt-cal__series-badge {
+	position: absolute;
+	top: -0.625rem;
+	right: 0.75rem;
+	padding: 0.125rem 0.5rem;
+	border-radius: 999px;
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.025em;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+[dir="rtl"] .evvnt-cal__series-badge {
+	right: auto;
+	left: 0.75rem;
+}
+
+.is-next > .evvnt-cal__series-badge {
+	background: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text);
+}
+
+.is-viewed > .evvnt-cal__series-badge {
+	border: 1px solid var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-surface);
+	color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal__series-more {
+	margin: 1rem 0 0;
+}
+
+.evvnt-cal .evvnt-cal__series-more a {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.375rem 0.75rem;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 999px;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__series-more a:hover {
+	border-color: var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+}
+
+/* Month calendar of a dense series; without JavaScript every month is listed. */
+.evvnt-cal__datecal-nav {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-bottom: 0.75rem;
+}
+
+.evvnt-cal__datecal-nav[hidden] {
+	display: none;
+}
+
+.evvnt-cal .evvnt-cal__datecal-nav button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	border: 1px solid var(--evvnt-cal-border);
+	border-radius: 6px;
+	background: var(--evvnt-cal-surface);
+	color: inherit;
+	cursor: pointer;
+}
+
+.evvnt-cal .evvnt-cal__datecal-nav button:disabled {
+	opacity: 0.4;
+	cursor: default;
+}
+
+.evvnt-cal__datecal-label {
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+.evvnt-cal .evvnt-cal__datecal-caption {
+	margin: 0 0 0.5rem;
+	font-size: 0.875rem;
+	font-weight: 700;
+}
+
+/* Paged: the month shows in the nav; the heading stays for screen readers (it names the table). */
+.evvnt-cal__datecal--paged .evvnt-cal__datecal-caption {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	white-space: nowrap;
+}
+
+.evvnt-cal__datecal-month + .evvnt-cal__datecal-month {
+	margin-top: 1.5rem;
+}
+
+.evvnt-cal__datecal--paged .evvnt-cal__datecal-month + .evvnt-cal__datecal-month {
+	margin-top: 0;
+}
+
+.evvnt-cal .evvnt-cal__datecal table {
+	width: 100%;
+	margin: 0;
+	border: 0;
+	border-collapse: separate;
+	border-spacing: 0.25rem;
+	table-layout: fixed;
+	font-size: 0.875rem;
+}
+
+.evvnt-cal .evvnt-cal__datecal th {
+	padding: 0.5rem 0;
+	border: 0;
+	background: none;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.evvnt-cal .evvnt-cal__datecal abbr[title] {
+	border: 0;
+	text-decoration: none;
+	cursor: default;
+}
+
+.evvnt-cal .evvnt-cal__datecal td {
+	height: 3.5rem;
+	padding: 0;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	background: none;
+	font-weight: 500;
+	text-align: center;
+	vertical-align: middle;
+	transition: background-color 0.15s, border-color 0.15s;
+}
+
+.evvnt-cal__datecal td > a,
+.evvnt-cal__datecal td > span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__datecal td.is-scheduled {
+	border-color: var(--evvnt-cal-tint-border);
+	background: var(--evvnt-cal-tint);
+	color: var(--evvnt-cal-primary);
+	font-weight: 700;
+}
+
+.evvnt-cal .evvnt-cal__datecal td.is-scheduled:hover {
+	border-color: var(--evvnt-cal-tint-border-strong);
+	background: var(--evvnt-cal-tint-strong);
+}
+
+.evvnt-cal .evvnt-cal__datecal td.is-next {
+	border-color: var(--evvnt-cal-primary);
+}
+
+.evvnt-cal .evvnt-cal__datecal td.is-viewed {
+	border-color: var(--evvnt-cal-primary);
+	background: var(--evvnt-cal-primary);
+	color: var(--evvnt-cal-primary-text);
+}
+
+@container (min-width: 420px) {
+	.evvnt-cal.evvnt-cal .evvnt-cal__series-dates--list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@container (min-width: 600px) {
+	.evvnt-cal__series-head {
+		padding: 1rem 1.25rem;
+	}
+
+	.evvnt-cal__series-body {
+		padding: 1.25rem;
+	}
+
+	.evvnt-cal.evvnt-cal .evvnt-cal__series-dates--list {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.evvnt-cal .evvnt-cal__datecal td {
+		height: 5.5rem;
+	}
+}
+
+@container (min-width: 800px) {
+	.evvnt-cal.evvnt-cal .evvnt-cal__series-dates--list {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.evvnt-cal .evvnt-cal__series-date,
+	.evvnt-cal .evvnt-cal__datecal td {
+		transition: none;
+	}
+}
+
+/* ------------------------------------------------------------------
+ * Compact widget ([evvnt config_type="widget"] and the WordPress widget),
+ * as the discovery plugin's JS widget (portrait) looks.
+ * ------------------------------------------------------------------ */
+.evvnt-cal.evvnt-cal--widget {
+	container-type: inline-size;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 32rem;
+	margin: 1rem auto;
+}
+
+.evvnt-cal .evvnt-cal__widget-create {
+	display: block;
+	width: 100%;
+	margin: 0 0 0.5rem;
+	padding: 0.5rem;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	font-weight: 600;
+	line-height: 1.25rem;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Search: a plain rounded box, no button (Enter searches). */
+.evvnt-cal .evvnt-cal__search--widget {
+	margin: 0 0 0.5rem;
+}
+
+.evvnt-cal .evvnt-cal__search--widget .evvnt-cal__search-field {
+	padding: 0 0.75rem;
+	border-color: #d1d5db;
+	border-radius: 12px;
+	background: #fff;
+	color: #111827; /* Dark text on the white box, whatever the theme's text colour. */
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__search--widget input[type="search"] {
+	height: 2.5rem;
+	padding: 0 0.25rem;
+	font-size: 0.875rem;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__widget-list {
+	display: grid;
+	gap: 1.25rem;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.evvnt-cal.evvnt-cal .evvnt-cal__widget-list > li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*
+ * Event tiles in the event page's hero style: the image blurred and darkened behind the
+ * tile, the image itself inset on the left, white title (two lines at most), date and place.
+ */
+.evvnt-cal .evvnt-cal__widget-item {
+	position: relative;
+	isolation: isolate;
+	display: flex;
+	align-items: stretch;
+	gap: 0.875rem;
+	min-height: 172.5px; /* 150px + 15%. */
+	padding: 0 0.875rem 0 0;
+	overflow: hidden;
+	border-radius: 12px;
+	background: #0f172a;
+	box-shadow: 0 10px 25px -12px rgba(15, 23, 42, 0.55);
+	color: #fff;
+	text-decoration: none;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.evvnt-cal .evvnt-cal__widget-item::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background: var(--evvnt-cal-hero-overlay);
+}
+
+.evvnt-cal .evvnt-cal__widget-item .evvnt-cal__widget-backdrop {
+	position: absolute;
+	inset: 0;
+	z-index: -2;
+	width: 100%;
+	max-width: none;
+	height: 100%;
+	margin: 0;
+	object-fit: cover;
+	filter: blur(14px) saturate(1.2);
+	transform: scale(1.2);
+	transition: transform 0.4s ease;
+}
+
+.evvnt-cal .evvnt-cal__widget-item:hover,
+.evvnt-cal .evvnt-cal__widget-item:focus-visible {
+	transform: translateY(-2px);
+	box-shadow: 0 18px 35px -14px rgba(15, 23, 42, 0.65);
+}
+
+.evvnt-cal .evvnt-cal__widget-item:hover .evvnt-cal__widget-backdrop {
+	transform: scale(1.3);
+}
+
+.evvnt-cal .evvnt-cal__widget-item:focus-visible {
+	outline: 3px solid var(--evvnt-cal-primary);
+	outline-offset: 2px;
+}
+
+/* The image itself, whole, filling the tile's left side edge to edge. */
+.evvnt-cal__widget-image {
+	position: relative;
+	/* Half the whole tile: % here is of the tile minus its 0.875rem right padding, so add half of that back. */
+	flex: 0 0 calc(50% + 0.4375rem);
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.25);
+	box-shadow: 8px 0 24px -12px rgba(0, 0, 0, 0.6);
+}
+
+.evvnt-cal .evvnt-cal__widget-image img {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	max-width: none;
+	height: 100%;
+	margin: 0;
+	object-fit: contain;
+}
+
+.evvnt-cal__widget-body {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.625rem;
+	min-width: 0;
+	padding: 0.75rem 0;
+}
+
+/* Two lines at most, ending in an ellipsis. */
+.evvnt-cal .evvnt-cal__widget-title {
+	display: -webkit-box;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 1.0625rem;
+	font-weight: 700;
+	line-height: 1.35;
+	text-overflow: ellipsis;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+	overflow-wrap: break-word;
+	hyphens: auto;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+.evvnt-cal__widget-meta {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 0.8125rem;
+	font-weight: 500;
+	line-height: 1.25rem;
+}
+
+.evvnt-cal__widget-meta > span {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	min-width: 0;
+}
+
+.evvnt-cal__widget-meta > span > span,
+.evvnt-cal__widget-meta time {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.evvnt-cal .evvnt-cal__widget-meta .evvnt-cal__icon {
+	flex: 0 0 auto;
+	width: 16px;
+	height: 16px;
+	color: var(--evvnt-cal-primary);
+	filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+/* Narrow widgets (sidebars): with the image at half the width, smaller text fits whole words. */
+@container (max-width: 340px) {
+	.evvnt-cal .evvnt-cal__widget-item {
+		gap: 0.75rem;
+		padding-right: 0.75rem;
+	}
+
+	.evvnt-cal__widget-image {
+		flex-basis: calc(50% + 0.375rem); /* Half the tile with the narrower padding. */
+	}
+
+	.evvnt-cal .evvnt-cal__widget-title {
+		font-size: 0.875rem;
+		line-height: 1.3;
+	}
+
+	.evvnt-cal__widget-meta {
+		font-size: 0.75rem;
+		line-height: 1.1rem;
+	}
+
+	.evvnt-cal .evvnt-cal__widget-meta .evvnt-cal__icon {
+		width: 14px;
+		height: 14px;
+	}
+}
+
+[dir="rtl"] .evvnt-cal .evvnt-cal__widget-item {
+	padding: 0 0 0 0.875rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.evvnt-cal .evvnt-cal__widget-item,
+	.evvnt-cal .evvnt-cal__widget-item .evvnt-cal__widget-backdrop {
+		transition: none;
+	}
+
+	.evvnt-cal .evvnt-cal__widget-item:hover,
+	.evvnt-cal .evvnt-cal__widget-item:focus-visible,
+	.evvnt-cal .evvnt-cal__widget-item:hover .evvnt-cal__widget-backdrop {
+		transform: none;
+	}
+}
+
+.evvnt-cal__widget-ad a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.25rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.evvnt-cal .evvnt-cal__widget-ad img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.evvnt-cal__widget-empty {
+	margin: 0.5rem 0;
+	color: var(--evvnt-cal-muted);
+	font-size: 0.875rem;
+}
+
+.evvnt-cal__widget-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-top: 0.25rem;
+	padding-top: 0.5rem;
+}
+
+.evvnt-cal .evvnt-cal__widget-more {
+	padding: 0.5rem 2.5rem;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 1.25rem;
+	text-decoration: none;
+}
+
+.evvnt-cal .evvnt-cal__widget-powered {
+	display: block;
+	opacity: 0.6;
+	transition: opacity 0.15s;
+}
+
+.evvnt-cal .evvnt-cal__widget-powered:hover,
+.evvnt-cal .evvnt-cal__widget-powered:focus-visible {
+	opacity: 1;
+}
+
+.evvnt-cal .evvnt-cal__widget-powered img {
+	display: block;
+	width: auto;
+	height: 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.evvnt-cal .evvnt-cal__widget-powered {
+		transition: none;
+	}
+}

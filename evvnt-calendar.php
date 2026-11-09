@@ -4,7 +4,7 @@
 Plugin Name: Evvnt Calendar
 Plugin URI: https://evvnt.com/
 Description: Provides Evvnt Discovery Plugin for Wordpress
-Version: 0.0.2
+Version: 0.1.0
 Author: Evvnt, Inc.
 Author URI: https://evvnt.com/
 License: GPLv2 or later
@@ -34,7 +34,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define( 'EVVNT_CALENDAR_VERSION', '0.0.2' );
+define( 'EVVNT_CALENDAR_VERSION', '0.1.0' );
 
 /**
  * The code that runs during plugin activation.
@@ -49,9 +49,9 @@ function activate_evvnt_calendar() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-evvnt-calendar-deactivator.php
  */
-function deactivate_evvnt_calendar() {
+function deactivate_evvnt_calendar( $network_wide = false ) {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-evvnt-calendar-deactivator.php';
-	Evvnt_Calendar_Deactivator::deactivate();
+	Evvnt_Calendar_Deactivator::deactivate( $network_wide );
 }
 
 register_activation_hook( __FILE__, 'activate_evvnt_calendar' );
